@@ -1,7 +1,7 @@
 from stage import checker
 from game import game
 from util import util
-
+from alert import alert
 class slime_select:
     
     def exit():
@@ -48,3 +48,4 @@ class shiny_slime_weekend(game):
             if self.ck.is_battle_page():
                 self.mouse.click_full()
             self.ck.is_goal_page(180)
+        alert().run()   

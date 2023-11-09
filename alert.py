@@ -7,15 +7,11 @@ class alert:
         pass
 
     def run(self):
-        end_box()
-        sound()
-
+        self.sound()
+        self.end_box()
 
     def sound(self):
         print("\a")
 
-    def end_box(self,
-            msg = '打完了'，
-            title = "gbf script",
-            bt = 'ok'):
-        pyautogui.alert(msg, titile, bt)
+    def end_box(self, msg = "打完", title = "gbf script",bt = 'ok'):
+        pyautogui.alert(msg, title, bt)

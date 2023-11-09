@@ -1,6 +1,7 @@
 from game import game
 from alert import alert
 from util import util 
+from elementfinder import elefinder 
 class btb_select:
 
     def __exit():
@@ -58,8 +59,53 @@ class extreme_battle_of_the_beasts(game):
             if self.ck.is_battle_page():
                 self.mouse.click_full()
                 self.auto_refresh()
-        alert.run()
+            if self.find_extreme_plus():
+                self.play_extreme_plus()
+            elif self.find_impossible():
+                self.play_impossible()
+        alert().run()
+    
+    def find_impossible(self):
+        data = util.btb_impossible
+        url = util.btb_event_main_url
+        self.stage.goto(url)
+        elf = elefinder(data['by'], data['element'], 3, self.chm)
+        if elf.is_element_presence():
+            if not ( '' == self.chm.find_element(data['by'], data['element']).text) :
+                return True
+        else:
+            return False
 
+    def play_impossible(self):
+        data = util.btb_impossible
+        ele = self.chm.find_element(data['by'], data['element'])
+        ele.click()
+        self.mouse.click_friend_summon()
+        self.mouse.click_party_ok()
+        if self.ck.is_battle_page():
+            self.mouse.click_full()
+            self.auto_refresh()
+
+    def play_extreme_plus(self):
+        data = util.btb_extreme_plus 
+        ele = self.chm.find_element(data['by'], data['element'])
+        ele.click()
+        self.mouse.click_friend_summon()
+        self.mouse.click_party_ok()
+        if self.ck.is_battle_page():
+            self.mouse.click_full()
+            self.auto_refresh()
+
+
+    def find_extreme_plus(self):
+        url = util.btb_event_main_url
+        self.stage.goto(url)
+        data = util.btb_extreme_plus 
+        elf = elefinder(data['by'], data['element'], 3, self.chm)
+        if elf.is_element_presence():
+            return True
+        else:
+            return False
 
 
 
@@ -88,6 +134,4 @@ class extreme_zhuque(extreme_battle_of_the_beasts):
     
     def __init__(self):
         super().__init__(self.data)
- 
-
 

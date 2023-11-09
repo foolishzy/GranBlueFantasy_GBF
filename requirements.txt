@@ -1,0 +1,2 @@
+PyAutoGUI.egg==info
+selenium==4.0.0a1

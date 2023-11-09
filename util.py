@@ -10,6 +10,15 @@ class util:
             }
 
     # 四象降临
+    btb_event_main_url = "https://game.granbluefantasy.jp/#event/advent"
+    btb_extreme_plus = {
+            'by' : By.CLASS_NAME,
+            'element' : "prt-raid-image"
+            }
+    btb_impossible = {
+            'by': By.CLASS_NAME,
+            'element': "img-hl-multi"          
+            }
     btb_extreme_xuanwu ={
             'url' : "https://game.granbluefantasy.jp/#quest/supporter/711041/1",
             'time_limit' : 5
@@ -35,7 +44,7 @@ class util:
 
     # 选择队伍界面的ok确认键
     mouse_position_party_ok = {'x': 300, 'y': 560}
-    mouse_position_party_ok_dert = {'x' : 50, 'y' : 10}
+    mouse_position_party_ok_dert = {'x' : 25 , 'y' : 5}
     # 选择第一个好友的召唤石
     mouse_position_friend_summon = {'x' : 100, 'y' : 500}
     mouse_position_friend_summon_dert = {'x' : 5, 'y' : 5}
