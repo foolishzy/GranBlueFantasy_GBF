@@ -62,6 +62,6 @@ class game:
         t1 = Thread(target = self.lpl.start )
         t1.start()
         #  t1.join()
-    
+            
 
    

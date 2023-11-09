@@ -1,3 +1,4 @@
+from alert import alert
 import time
 from game import game
 from stage import stage
@@ -34,6 +35,8 @@ class replicard_common(game):
                 self.auto_refresh()
             if self.ck.check_gauge(self.gauge_url):
                 self.play_gauge()
+        alert.run()    
+
 
     def play_gauge(self):
         if self.ck.check_gauge(self.gauge_url):

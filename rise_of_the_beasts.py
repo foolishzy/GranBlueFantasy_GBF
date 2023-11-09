@@ -1,4 +1,5 @@
 from game import game
+from alert import alert
 from util import util 
 class btb_select:
 
@@ -57,7 +58,8 @@ class extreme_battle_of_the_beasts(game):
             if self.ck.is_battle_page():
                 self.mouse.click_full()
                 self.auto_refresh()
-                
+        alert.run()
+
 
 
 
