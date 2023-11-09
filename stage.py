@@ -1,4 +1,6 @@
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import WebDriverException
 from selenium.common.exceptions import UnexpectedAlertPresentException
 from util import util
@@ -6,6 +8,8 @@ from elementfinder import elefinder
 from selenium.webdriver.common.by import By
 import re
 import time
+from selenium.webdriver.support import expected_conditions as EC
+
 
 class stage:
 
@@ -38,6 +42,24 @@ class stage:
     def __init__(self, chm : webdriver.Chrome):
         self.chm = chm
         self.util = util
+    
+    def loading_page_refresh(self, waittime = 10):
+        ele = util.loading_page_element['element']
+        by = util.loading_page_element['by']
+        ck = checker(self.chm, waittime)
+        if ck.is_loading_page():
+            i = 0 
+            while i < 3:
+                i = i + 1
+                try:
+                    WebDriverWait(self.chm, waittime).until_not(
+                             EC.visibility_of_element_located((by, ele))
+                            )
+                    break
+                except TimeoutException:
+                    refresh()
+                except WebDriverException:
+                    pass
 
 
     def goto(self, url, tagetpage_selector = {'element' : "", 'by': ""}):
@@ -52,6 +74,10 @@ class stage:
                         break
                 else:
                     break
+                    # 这里loading_page_refresh判断的逻辑有问题，不知道该抓哪个元素，要是按照loading哪个图片的标签进行对比，好像很多webwait的判断都要重新写，麻烦。
+                    #  不加的话也可以，就是网速不好卡住的时候要等很久
+                    # 在game的play方法中加一个线程专门判断是否卡在刷新界面
+                    # self.loading_page_refresh()
                     # 成功打开则跳出while
             except UnexpectedAlertPresentException:
             # 解决那个app更新的对话框
@@ -68,7 +94,7 @@ class stage:
         by =  '//div[@class="prt-command"]'
         ele = By.XPATH
         self.loader(url, by, ele, 3)
-
+    
 
 class checker:
 
@@ -141,5 +167,17 @@ class checker:
             if text ==  elf.get_element_text():
                 flag = True
         return flag
+
+    def is_loading_page(self):
+        ele = util.loading_page_element['element']
+        by = util.loading_page_element['by']
+        elf = elefinder(by, ele, 10, self.chm)
+        return elf.is_element_visibility()      
+
+
+
+
+
+
 
 

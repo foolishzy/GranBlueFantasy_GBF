@@ -1,11 +1,13 @@
 from stage import checker
 import time
+from loading_page_locator import lpl 
 from mouse import Mouse
 from util import util
 from stage import checker
 from stage import stage
 from selenium import webdriver
 from elementfinder import elefinder
+from threading import Thread
 class game:
 
 
@@ -19,6 +21,7 @@ class game:
         self.stage = stage(self.chm)
         self.mouse = Mouse(self.chm)
         self.ck = checker(self.chm)
+        self.lpl = lpl(self.chm)
 
     def connect_chrome(self):
         #连接到打开远程调试模式的chrome浏览器
@@ -56,4 +59,9 @@ class game:
 
 
     def play(self):
-        pass
+        t1 = Thread(target = self.lpl.start )
+        t1.start()
+        #  t1.join()
+    
+
+   

@@ -37,6 +37,7 @@ class shiny_slime_weekend(game):
         super().__init__(time_limit)
 
     def play(self):
+        super().play()
         repeat_times = int(input("pls input repeat times :"))
         while repeat_times > 0:
             repeat_times = repeat_times - 1

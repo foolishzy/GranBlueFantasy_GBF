@@ -3,6 +3,32 @@ from selenium.webdriver.common.by import By
 
 class util:
 
+    # 场景切换页面的loading元素
+    loading_page_element = {
+            'element': "img-load",
+            'by': By.CLASS_NAME
+            }
+
+    # 四象降临
+    btb_extreme_xuanwu ={
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/711041/1",
+            'time_limit' : 5
+            }
+    btb_extreme_zhuque ={
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/711191/1",
+            'time_limit' : 5
+            }
+    btb_extreme_qinglong ={
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/711091/1",
+            'time_limit' : 5
+            }
+    btb_extreme_baihu ={
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/711141/1",
+            'time_limit' : 5
+            }
+    
+
+
     # 踢馆
     shiny_slime_weekend = {'url' : "https://game.granbluefantasy.jp/#quest/supporter/400151/4", 'time_limit' : 2 }
     chrome_remote_host = "127.0.0.1:9222"

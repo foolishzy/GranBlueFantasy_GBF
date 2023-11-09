@@ -1,3 +1,8 @@
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+
+
+
 def is_element_exist(by, element, waittime = 10):
     #判断元素是否存在页面之上
     #存在返回t 不存在 None
@@ -214,7 +219,7 @@ def auto_refresh(single_battle_time_limit):
 def connect_chrome():
     #连接到打开远程调试模式的chrome浏览器
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.debugger_address = cheome_remote_host
+    chrome_options.debugger_address = chrome_remote_host
     global chm
     chm = webdriver.Chrome(options=chrome_options)
 

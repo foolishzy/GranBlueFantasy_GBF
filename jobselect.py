@@ -1,7 +1,7 @@
 from event import event_select 
 from arcumgame import arcum_select
 from shiny_slime_weekend import slime_select
-
+from rise_of_the_beasts import btb_select
 
 
 class jobselect:
@@ -18,8 +18,9 @@ class jobselect:
         1.event
         2.arcum
         3.slime
-        '''
-        index_max = 3
+        4.rise of the beast
+'''
+        index_max = 4
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -36,4 +37,8 @@ class jobselect:
             arcum_select()
         elif index == 3:
             slime_select()
+        elif index ==4:
+            btb_select()
+
+
 

@@ -21,6 +21,7 @@ class replicard_common(game):
         self.gauge_url = gauge_url
 
     def play(self):
+        super().play()
         repeat_times = int(input("pls input repeat times :"))
         while repeat_times > 0:
             print("while loop start")
