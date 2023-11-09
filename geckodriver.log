@@ -1,0 +1,18 @@
+1697346951569	geckodriver	INFO	Listening on 127.0.0.1:49709
+1697346952573	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileRFb5oH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to open renderDeviceFD.
+
+1697346952959	Marionette	INFO	Marionette enabled
+1697346953016	Marionette	INFO	Listening on port 35225
+Read port: 35225
+1697346953198	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
