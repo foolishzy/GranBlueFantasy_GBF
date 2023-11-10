@@ -90,7 +90,7 @@ class goal_page_locator:
                 flag = True
             else:
                 current_url = self.chm.current_url
-                if re.match(current_url, 'result') and re.match(current_url, 'result').span()[1] > 0:
+                if (re.match(current_url, 'result') and re.match(current_url, 'result').span()[1] > 0) or (re.match(current_url, 'quest') and re.Match(current_url, 'quest').span()[1] > 0):
                     flag = True
             if flag :
                 self.ctrl_event.clear()

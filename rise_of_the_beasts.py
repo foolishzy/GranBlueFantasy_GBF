@@ -1,4 +1,5 @@
 from game import game
+import time
 from alert import alert
 from util import util 
 from elementfinder import elefinder 
@@ -15,8 +16,9 @@ class btb_select:
        2. extreme_zhuque
        3. extreme_baihu
        4. extreme_qinglong
-        '''
-        index_max = 18 
+       5. impossible
+       '''
+        index_max = 5 
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -35,7 +37,8 @@ class btb_select:
             extreme_baihu().play()
         elif index == 4:
             extreme_qinglong().play()
-
+        elif index == 5:
+            impossible().play()
 class extreme_battle_of_the_beasts(game):
 
 # 四象降临活动
@@ -43,11 +46,24 @@ class extreme_battle_of_the_beasts(game):
         'url' : "",
         'time_limit' : ""
         }):
+        self.oneturn = False
         btl = game_data['time_limit']
         self.url = game_data['url']
         super().__init__(btl)
    
     def play(self):
+        i = int(input("""
+        100% chargebar and one turn?
+        pls selcet:
+        1. yes
+        2. no
+        """
+        ))
+        if i == 1:
+            self.oneturn = True
+        else:
+            self.oneturn = False
+
         super().play()
         repeat_times = int(input('pls input repeat times: '))
         while repeat_times > 0 :
@@ -57,12 +73,17 @@ class extreme_battle_of_the_beasts(game):
             self.mouse.click_friend_summon()
             self.mouse.click_party_ok()
             if self.ck.is_battle_page():
-                self.mouse.click_full()
-                self.auto_refresh()
+                if self.oneturn:
+                    self.mouse.click_attack()
+                    time.sleep(1)
+                    self.chm.refresh()
+                else:    
+                    self.mouse.click_full()
+                    self.auto_refresh()
             if self.find_extreme_plus():
                 self.play_extreme_plus()
-            elif self.find_impossible():
-                self.play_impossible()
+            #  elif self.find_impossible():
+                #  self.play_impossible()
         alert().run()
     
     def find_impossible(self):
@@ -72,9 +93,10 @@ class extreme_battle_of_the_beasts(game):
         elf = elefinder(data['by'], data['element'], 3, self.chm)
         if elf.is_element_presence():
             if not ( '' == self.chm.find_element(data['by'], data['element']).text) :
-                return True
-        else:
-            return False
+                flag  =  True
+            else:
+                flag =  False
+        return flag
 
     def play_impossible(self):
         data = util.btb_impossible
@@ -105,10 +127,10 @@ class extreme_battle_of_the_beasts(game):
         data = util.btb_extreme_plus 
         elf = elefinder(data['by'], data['element'], 3, self.chm)
         if elf.is_element_presence():
-            return True
+            flag =  True
         else:
-            return False
-
+            flag =  False
+        return flag
 
 
 
@@ -134,6 +156,12 @@ class extreme_baihu(extreme_battle_of_the_beasts):
 class extreme_zhuque(extreme_battle_of_the_beasts):
     data = util.btb_extreme_zhuque
     
+    def __init__(self):
+        super().__init__(self.data)
+
+class impossible(extreme_battle_of_the_beasts):
+    data = util.btb_impossible
+
     def __init__(self):
         super().__init__(self.data)
 

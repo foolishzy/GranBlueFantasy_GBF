@@ -20,7 +20,6 @@ def run():
 
 
 
-
 def test():
 #    hope_from_a_snow_drop().play_impossible()
     g = game(10)

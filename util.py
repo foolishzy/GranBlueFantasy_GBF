@@ -17,8 +17,9 @@ class util:
             'time_limit' : 10
              }
     btb_impossible = {
+            'url': "https://game.granbluefantasy.jp/#quest/supporter/743451/1",
             'by': By.CLASS_NAME,
-            'element': "img-hl-multi",          
+            'element': "prt-hl-count",          
             'time_limit' : 10
             }
     btb_extreme_xuanwu ={
@@ -55,8 +56,8 @@ class util:
     mouse_position_arcum_party_ok = {'x' : 300, 'y' : 600}
     mouse_position_arcum_party_ok_dert = {'x' : 50, 'y' : 10}
     # 战斗界面的attack键坐标和偏移量
-    mouse_position_battle_attack = {'x' : 280, 'y' : '380'}
-    mouse_position_battle_attack_dert = {'x' : 70, 'y' : '30'}
+    mouse_position_battle_attack = {'x' : 280, 'y' : 380}
+    mouse_position_battle_attack_dert = {'x' : 70, 'y' : 30}
     # 战斗界面的full键坐标和偏移量
     mouse_position_battle_full = {'x' : 85, 'y' : 410}
     mouse_position_battle_full_dert = {'x' : 10, 'y' : 10}
@@ -88,6 +89,72 @@ class util:
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
             }
 
+    # stage 2
+    zoneeletio_fire_de_cleansing_wyrmgod = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/3/811101/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_5_slithering_seductress = {
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10,
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/3/811011/25"
+            }
+    zoneeletio_light_3_living_lighting_rod = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/5/811021/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_5_eletion_drake = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/6/811031/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_de_usurper_of_the_throne = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/8/811111/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_5_paradoxical_gate = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/8/811041/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_3_blazing_everwing = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/11/811061/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_light_5_death_seer = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/13/811051/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_light_de_violetflash_sovereign = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/13/811121/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_light_3_hundred_armed_hulk = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/15/811081/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_3_rageborn_one = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/17/811091/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_5_terror_trifecta = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/19/811071/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
+    zoneeletio_fire_boss_eletion_glider = {
+            'url' : "",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/2",
+            "time_limit" : 10
+            }
 
     # stage 7
     joculator_dark_3_Dreadful_scourge = {
