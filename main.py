@@ -19,15 +19,6 @@ def run():
     jobselect()    
 
 
-    #  arcumgame.mundus_dark_5_love_meeee().play()
-    #  arcumgame.jurassic_dino.play()
-    #  vestige_of_truth_data = util.arcum_vestige_of_truth
-    #  vestige_of_truth = replicard_common(vestige_of_truth_data)
-    #  vestige_of_truth.play()
-    #  jurassic_dino_data = util.arcum_jurassic_dino
-    #  jurassic_dino = replicard_common(jurassic_dino_data)
-    #  jurassic_dino.play()
-#
 
 
 def test():
@@ -42,12 +33,5 @@ if __name__ == '__main__':
     print("cao")
     #  test()
     run()
-    #  t1 = threading.Thread(target = test)
-    #  t2 = threading.Thread(target = printstate)
-    #  t1.start()
-    #  t2.start()
-    #  t1.join()
-    #  t2.join()
-    #  arcumgame().joculator_dark_3_Dreadful_scourge().play()
 
 

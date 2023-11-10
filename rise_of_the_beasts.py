@@ -80,21 +80,23 @@ class extreme_battle_of_the_beasts(game):
         data = util.btb_impossible
         ele = self.chm.find_element(data['by'], data['element'])
         ele.click()
-        self.mouse.click_friend_summon()
-        self.mouse.click_party_ok()
-        if self.ck.is_battle_page():
-            self.mouse.click_full()
-            self.auto_refresh()
+        ipg = game(data['time_limit'])
+        ipg.mouse.click_friend_summon()
+        ipg.mouse.click_party_ok()
+        if ipg.ck.is_battle_page():
+            ipg.mouse.click_full()
+            ipg.auto_refresh()
 
     def play_extreme_plus(self):
         data = util.btb_extreme_plus 
         ele = self.chm.find_element(data['by'], data['element'])
         ele.click()
-        self.mouse.click_friend_summon()
-        self.mouse.click_party_ok()
-        if self.ck.is_battle_page():
-            self.mouse.click_full()
-            self.auto_refresh()
+        exg = game(data['time_limit'])
+        exg.mouse.click_friend_summon()
+        exg.mouse.click_party_ok()
+        if exg.ck.is_battle_page():
+            exg.mouse.click_full()
+            exg.auto_refresh()
 
 
     def find_extreme_plus(self):

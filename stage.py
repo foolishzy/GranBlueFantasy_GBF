@@ -128,15 +128,15 @@ class checker:
                 return False
 
 
-    def is_goal_page(self, waittime = 10):
+    def is_goal_page(self, waittime = 5):
         """
-        默认waittime = 10 单位秒
+        默认waittime = 5 单位秒
         """
         # 判断是否为战斗结算后的exp gain page
         by = self.util.screen_label_battle_goal_exp['by']
         ele = self.util.screen_label_battle_goal_exp['element']
         flag = False 
-        elf = elefinder(by, ele, 10, self.chm)
+        elf = elefinder(by, ele, waittime, self.chm)
         if elf.is_element_visibility():
             flag = True
         else:
@@ -148,7 +148,7 @@ class checker:
         by = self.util.screen_label_battle_page['by']
         ele = self.util.screen_label_battle_page['element']
         flag = False 
-        elf = elefinder(by, ele, 10, self.chm)
+        elf = elefinder(by, ele, 5, self.chm)
         if elf.is_element_visibility():
             flag = True
         return flag

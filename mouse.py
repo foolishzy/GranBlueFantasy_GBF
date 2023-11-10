@@ -18,8 +18,10 @@ class Mouse:
         pyautogui.moveTo(x, y)
 
     def click(self, x, y):
-        pyautogui.click(x, y)
-    
+        pyautogui.click(x, y, interval = 0.1)
+
+
+
     def click_by_positon(
             self, 
             position_data = {'x' : 0, 'y' : 0}, 
@@ -139,9 +141,9 @@ class Mouse:
         self.click_check_by_sel_and_click_by_pos(select_data, positon, dert)
 
    
-    def click_full(self):
-        ele_lt = self.util.screen_label_battle_lastturn_processing['element']
-        by_lt = self.util.screen_label_battle_lastturn_processing['by']
+    def click_full(self, waittime = 10):
+        #  ele_lt = self.util.screen_label_battle_lastturn_processing['element']
+        #  by_lt = self.util.screen_label_battle_lastturn_processing['by']
         ele_full = self.util.screen_label_battle_full['element']
         by_full = self.util.screen_label_battle_full['by']
         x = self.util.mouse_position_battle_full['x']
@@ -150,18 +152,28 @@ class Mouse:
         dert_y = self.util.mouse_position_battle_full_dert['y']
         x = x + int(random.random() * dert_x)
         y = y + int(random.random() * dert_y)
-        string_lt = self.util.screen_label_battle_lastturn_processing['text']
-        elf = elefinder(by_full, ele_full, 10, self.chm)
+        #  string_lt = self.util.screen_label_battle_lastturn_processing['text']
+        elf = elefinder(by_full, ele_full, waittime, self.chm)
+        print(157)
         if elf.is_element_clickable():
+            print(159)
             self.click(x, y)
-            elf_lt = elefinder(by_lt, ele_lt, 2, self.chm)
-            if elf_lt.is_element_visibility():
-                text = elf_lt.get_element_text()
-                if re.match(text, string_lt) and re.match(text, string_lt).span()[1] > 0:
-                    self.chm.refresh()
-                    self.click_full()
-                else:
-                    self.click(x, y)
+            print(161)
+            #  elf_lt = elefinder(by_lt, ele_lt, 3, self.chm)
+            #  print(163)
+            #  if elf_lt.is_element_visibility():
+                #  print(165)
+                #  text = elf_lt.get_element_text()
+                #  print(167)
+                #  if re.match(text, string_lt) and re.match(text, string_lt).span()[1] > 0:
+                    #  print(169)
+                    #  self.chm.refresh()
+                    #  print(171)
+                    #  self.click_full()
+                    #  print(173)
+                #  else:
+                    #  print(175)
+                    #  self.click(x, y)
 
     def click_gague_ok(self):
         selector_data = self.util.screen_label_arcum_gauge_ok
