@@ -33,8 +33,8 @@ class replicard_common(game):
             if self.ck.is_battle_page():
                 self.mouse.click_full()
                 self.auto_refresh()
-            if self.ck.check_gauge(self.gauge_url):
-                self.play_gauge()
+            #  if self.ck.check_gauge(self.gauge_url):
+                #  self.play_gauge()
         alert().run()    
 
 

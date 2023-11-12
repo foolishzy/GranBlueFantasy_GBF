@@ -45,15 +45,17 @@ class arcum_select:
        312. zoneeletio_light_3_hundred_armed_hulk
        313. zoneeletio_fire_boss_eletion_glider
         '''
-        index_max = 18 
-        index_min = 0
-        index = -1
-        while not (index >= index_min and index <= index_max):
+        flag = False
+        while not flag:
             try:
                 index = int(input(string_hint))
             except KeyboardInterrupt:
                 index = 0
                 break
+            index_range = [[0, 0], [101, 116], [201, 202], [301, 313]]
+            for i in index_range:
+                if index >= i[0] and index <= i[1]:
+                    flag = True
         if index == 0:
             self.exit()
         elif index == 101:

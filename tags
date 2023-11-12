@@ -4,13 +4,18 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Model	play_transitions.py	/^class Model:$/;"	c	inherits:
 Mouse	mouse.py	/^class Mouse:$/;"	c	inherits:
-PROXY	tt.py	/^PROXY = "172.30.208.1:4780"$/;"	v
+PROXY	craft/tt.py	/^PROXY = "172.30.208.1:4780"$/;"	v
 __exit	event.py	/^    def __exit(self):$/;"	m	class:event_select	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
 __exit	jobselect.py	/^    def __exit(self):$/;"	m	class:jobselect	file:	access:private
+__exit	rise_of_the_beasts.py	/^    def __exit():$/;"	m	class:btb_select	file:	access:private
+__init__	alert.py	/^    def __init__(self):$/;"	m	class:alert	access:public
 __init__	arcum_boss.py	/^    def __init__(self):$/;"	m	class:arcum_boss	access:public
 __init__	arcum_replicard.py	/^    def __init__($/;"	m	class:replicard_common	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.joculator_dark_3_Dreadful_scourge	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.joculator_dark_ve_jurassic_dino	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_dark_3_proud_war_princess_of_dragons	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_dark_5_love_meeee	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_earth_3_elephant_stomping_ground	access:public
@@ -22,112 +27,180 @@ __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_light_3_goddess_of_the_wild_hunt	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_light_5_high_voltage_rock	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_water_3_tide_caller	access:public
-__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_water_parasite_steve	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_water_5_parasite_steve	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_wind_3_dragon_in_glittering_green	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_wind_5_winged_demin_cat	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.mundus_wind_v2de_morrigna_militis	access:public
-__init__	arcumgame.py	/^       def __init__(self):$/;"	m	class:arcumgame.mundus_light_3_goddess_of_the_wild_hunt	access:public
-__init__	arcumgame.py	/^    def __init__():$/;"	m	class:arcum_select	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_3_blazing_everwing	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_3_rageborn_one	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_5_eletion_drake	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_5_paradoxical_gate	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_5_slithering_seductress	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_5_terror_trifecta	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_boss_eletion_glider	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_de_cleansing_wyrmgod	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_de_usurper_of_the_throne	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_light_3_hundred_armed_hulk	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_light_3_living_lighting_rod	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_light_5_death_seer	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_light_de_violetflash_sovereign	access:public
+__init__	arcumgame.py	/^    def __init__(self):$/;"	m	class:arcum_select	access:public
 __init__	arcumgame.py	/^    def __init__(self):$/;"	m	class:arcumgame	access:public
-__init__	autorefresher.py	/^    def __init__(self):$/;"	m	class:autorefresh	access:public
+__init__	craft/play_event.py	/^    def __init__(self):$/;"	m	class:six_dragon	access:public
 __init__	elementfinder.py	/^    def __init__(self, by : By, element, waittime  : int, chm_webdriver : webdriver.chrome):$/;"	m	class:elefinder	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:event_select	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:hope_from_a_snow_drop	access:public
 __init__	event.py	/^    def __init__(self, $/;"	m	class:event_common	access:public
 __init__	game.py	/^    def __init__(self, battle_time_limit ):$/;"	m	class:game	access:public
 __init__	jobselect.py	/^    def __init__(self):$/;"	m	class:jobselect	access:public
+__init__	loading_page_locator.py	/^    def __init__(self, chm : webdriver.Chrome, event : Event, ctrl_event : Event):$/;"	m	class:goal_page_locator	access:public
+__init__	loading_page_locator.py	/^    def __init__(self, chm : webdriver.Chrome, event : Event, mouse : Mouse):$/;"	m	class:last_turn_locator	access:public
+__init__	loading_page_locator.py	/^    def __init__(self, chm : webdriver.Chrome, refreshtime = 10):$/;"	m	class:lpl	access:public
 __init__	mouse.py	/^    def __init__(self, chm : webdriver.Chrome):$/;"	m	class:Mouse	access:public
-__init__	play_event.py	/^    def __init__(self):$/;"	m	class:six_dragon	access:public
+__init__	play_transitions.py	/^    def __init__(self):$/;"	m	class:Model	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_select	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_baihu	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_qinglong	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_xuanwu	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_zhuque	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:impossible	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self, game_data = {$/;"	m	class:extreme_battle_of_the_beasts	access:public
+__init__	shiny_slime_weekend.py	/^    def __init__(self):$/;"	m	class:shiny_slime_weekend	access:public
+__init__	shiny_slime_weekend.py	/^    def __init__(self):$/;"	m	class:slime_select	access:public
 __init__	stage.py	/^    def __init__(self, chm : webdriver.Chrome):$/;"	m	class:stage	access:public
 __init__	stage.py	/^    def __init__(self, chm : webdriver.Chrome, waittime = 10 ):$/;"	m	class:checker	access:public
 __init__	util.py	/^    def __init__(self):$/;"	m	class:util	access:public
 __play	event.py	/^    def __play(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
+alert	alert.py	/^class alert:$/;"	c	inherits:
 arcum_boss	arcum_boss.py	/^class arcum_boss(game):$/;"	c	inherits:game
 arcum_defender	arcum_defender.py	/^class arcum_defender(replicard_common):$/;"	c	inherits:replicard_common
 arcum_jurassic_dino	util.py	/^    arcum_jurassic_dino = {$/;"	v	class:util
 arcum_select	arcumgame.py	/^class arcum_select:$/;"	c	inherits:
 arcum_vestige_of_truth	util.py	/^    arcum_vestige_of_truth = {$/;"	v	class:util
 arcumgame	arcumgame.py	/^class arcumgame:$/;"	c	inherits:
+auto_refresh	craft/play_event.py	/^def auto_refresh(single_battle_time_limit):$/;"	f	access:public
 auto_refresh	game.py	/^    def auto_refresh(self):$/;"	m	class:game	access:public
-auto_refresh	play_event.py	/^def auto_refresh(single_battle_time_limit):$/;"	f	access:public
-auto_reverse	play_event.py	/^def auto_reverse(times = 50):$/;"	f	access:public
-autorefresh	autorefresher.py	/^class autorefresh:$/;"	c	inherits:
-check_and_play_arcum_gague	play_event.py	/^def check_and_play_arcum_gague(url):$/;"	f	access:public
+auto_reverse	craft/play_event.py	/^def auto_reverse(times = 50):$/;"	f	access:public
+btb_event_main_url	util.py	/^    btb_event_main_url = "https:\/\/game.granbluefantasy.jp\/#event\/advent"$/;"	v	class:util
+btb_extreme_baihu	util.py	/^    btb_extreme_baihu ={$/;"	v	class:util
+btb_extreme_plus	util.py	/^    btb_extreme_plus = {$/;"	v	class:util
+btb_extreme_qinglong	util.py	/^    btb_extreme_qinglong ={$/;"	v	class:util
+btb_extreme_xuanwu	util.py	/^    btb_extreme_xuanwu ={$/;"	v	class:util
+btb_extreme_zhuque	util.py	/^    btb_extreme_zhuque ={$/;"	v	class:util
+btb_impossible	util.py	/^    btb_impossible = {$/;"	v	class:util
+btb_select	rise_of_the_beasts.py	/^class btb_select:$/;"	c	inherits:
+by	loading_page_locator.py	/^    by = util.loading_page_element['by']$/;"	v	class:lpl
+by	loading_page_locator.py	/^    by = util.screen_label_battle_goal_exp['by']$/;"	v	class:goal_page_locator
+by_lt	loading_page_locator.py	/^    by_lt = util.screen_label_battle_lastturn_processing['by']$/;"	v	class:last_turn_locator
+check_and_play_arcum_gague	craft/play_event.py	/^def check_and_play_arcum_gague(url):$/;"	f	access:public
 check_gauge	stage.py	/^    def check_gauge(self, gauge_url):$/;"	m	class:checker	access:public
 check_gauge_mimic	stage.py	/^    def check_gauge_mimic(self):$/;"	m	class:checker	access:public
 check_opportunities	arcum_defender.py	/^    def check_opportunities():$/;"	m	class:arcum_defender	access:public
 checker	stage.py	/^class checker:$/;"	c	inherits:
-chrome_options	play_event_times.py	/^chrome_options = Options()$/;"	v
+chrome_options	craft/play_event_times.py	/^chrome_options = Options()$/;"	v
 chrome_remote_host	util.py	/^    chrome_remote_host = "127.0.0.1:9222"$/;"	v	class:util
 click	mouse.py	/^    def click(self, x, y):$/;"	m	class:Mouse	access:public
+click_arcum_part_ok	craft/play_event.py	/^def click_arcum_part_ok():$/;"	f	access:public
 click_arcum_part_ok	mouse.py	/^    def click_arcum_part_ok(self):$/;"	m	class:Mouse	access:public
-click_arcum_part_ok	play_event.py	/^def click_arcum_part_ok():$/;"	f	access:public
+click_attack	craft/play_event.py	/^def click_attack():$/;"	f	access:public
 click_attack	mouse.py	/^    def click_attack(self):$/;"	m	class:Mouse	access:public
-click_attack	play_event.py	/^def click_attack():$/;"	f	access:public
 click_by_element	mouse.py	/^    def click_by_element($/;"	m	class:Mouse	access:public
 click_by_positon	mouse.py	/^    def click_by_positon($/;"	m	class:Mouse	access:public
 click_check_by_sel_and_click_by_pos	mouse.py	/^    def click_check_by_sel_and_click_by_pos($/;"	m	class:Mouse	access:public
-click_filter_battles_first	play_event.py	/^def click_filter_battles_first():$/;"	f	access:public
+click_filter_battles_first	craft/play_event.py	/^def click_filter_battles_first():$/;"	f	access:public
+click_friend_summon	craft/play_event.py	/^def click_friend_summon():$/;"	f	access:public
 click_friend_summon	mouse.py	/^    def click_friend_summon(self):$/;"	m	class:Mouse	access:public
-click_friend_summon	play_event.py	/^def click_friend_summon():$/;"	f	access:public
-click_full	mouse.py	/^    def click_full(self):$/;"	m	class:Mouse	access:public
-click_full	play_event.py	/^def click_full():$/;"	f	access:public
+click_full	craft/play_event.py	/^def click_full():$/;"	f	access:public
+click_full	mouse.py	/^    def click_full(self, waittime = 10):$/;"	m	class:Mouse	access:public
 click_gague_ok	mouse.py	/^    def click_gague_ok(self):$/;"	m	class:Mouse	access:public
 click_gauge	mouse.py	/^    def click_gauge(self):$/;"	m	class:Mouse	access:public
 click_mimic	mouse.py	/^    def click_mimic(self):$/;"	m	class:Mouse	access:public
+click_party_ok	craft/play_event.py	/^def click_party_ok():$/;"	f	access:public
 click_party_ok	mouse.py	/^    def click_party_ok(self):$/;"	m	class:Mouse	access:public
-click_party_ok	play_event.py	/^def click_party_ok():$/;"	f	access:public
 click_rapid_filter_frist	mouse.py	/^    def click_rapid_filter_frist(self):$/;"	m	class:Mouse	access:public
-click_refresh	play_event.py	/^def click_refresh():$/;"	f	access:public
+click_refresh	craft/play_event.py	/^def click_refresh():$/;"	f	access:public
+connect_chrome	craft/play_event.py	/^def connect_chrome():$/;"	f	access:public
 connect_chrome	game.py	/^    def connect_chrome(self):$/;"	m	class:game	access:public
-connect_chrome	play_event.py	/^def connect_chrome():$/;"	f	access:public
-cookies	tt.py	/^cookies = [$/;"	v
-driver	play_event_times.py	/^driver = webdriver.Chrome(options=chrome_options)$/;"	v
-ele	play_event_times.py	/^    ele = driver.find_element_by_class_name("btn-auto")$/;"	v
-ele	play_event_times.py	/^    ele = driver.find_element_by_class_name("btn-usual-ok se-quest-start")$/;"	v
-ele	play_event_times.py	/^    ele = driver.find_element_by_class_name("prt-button-cover")$/;"	v
+cookies	craft/tt.py	/^cookies = [$/;"	v
+data	rise_of_the_beasts.py	/^    data = util.btb_extreme_baihu$/;"	v	class:extreme_baihu
+data	rise_of_the_beasts.py	/^    data = util.btb_extreme_qinglong$/;"	v	class:extreme_qinglong
+data	rise_of_the_beasts.py	/^    data = util.btb_extreme_xuanwu$/;"	v	class:extreme_xuanwu
+data	rise_of_the_beasts.py	/^    data = util.btb_extreme_zhuque$/;"	v	class:extreme_zhuque
+data	rise_of_the_beasts.py	/^    data = util.btb_impossible$/;"	v	class:impossible
+driver	craft/play_event_times.py	/^driver = webdriver.Chrome(options=chrome_options)$/;"	v
+ele	craft/play_event_times.py	/^    ele = driver.find_element_by_class_name("btn-auto")$/;"	v
+ele	craft/play_event_times.py	/^    ele = driver.find_element_by_class_name("btn-usual-ok se-quest-start")$/;"	v
+ele	craft/play_event_times.py	/^    ele = driver.find_element_by_class_name("prt-button-cover")$/;"	v
+ele	loading_page_locator.py	/^    ele = util.loading_page_element['element']$/;"	v	class:lpl
+ele	loading_page_locator.py	/^    ele = util.screen_label_battle_goal_exp['element']$/;"	v	class:goal_page_locator
+ele_lt	loading_page_locator.py	/^    ele_lt = util.screen_label_battle_lastturn_processing['element']$/;"	v	class:last_turn_locator
 elefinder	elementfinder.py	/^class elefinder:$/;"	c	inherits:
-end_msgbox	play_event.py	/^def end_msgbox(msg="打完了", title="gbf script", bt="ok"):$/;"	f	access:public
+end_box	alert.py	/^    def end_box(self, msg = "打完", title = "gbf script",bt = 'ok'):$/;"	m	class:alert	access:public
+end_msgbox	craft/play_event.py	/^def end_msgbox(msg="打完了", title="gbf script", bt="ok"):$/;"	f	access:public
 event_common	event.py	/^class event_common(game):$/;"	c	inherits:game
-event_paly_page	play_event.py	/^def event_paly_page(url):$/;"	f	access:public
+event_paly_page	craft/play_event.py	/^def event_paly_page(url):$/;"	f	access:public
 event_select	event.py	/^class event_select:$/;"	c	inherits:
 exit	arcumgame.py	/^    def exit():$/;"	m	class:arcum_select	access:public
+exit	shiny_slime_weekend.py	/^    def exit():$/;"	m	class:slime_select	access:public
+extreme_baihu	rise_of_the_beasts.py	/^class extreme_baihu(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
+extreme_battle_of_the_beasts	rise_of_the_beasts.py	/^class extreme_battle_of_the_beasts(game):$/;"	c	inherits:game
 extreme_data	event.py	/^    extreme_data = util.hope_from_a_snow_drop_extreme$/;"	v	class:hope_from_a_snow_drop
+extreme_qinglong	rise_of_the_beasts.py	/^class extreme_qinglong(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
+extreme_xuanwu	rise_of_the_beasts.py	/^class extreme_xuanwu(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
+extreme_zhuque	rise_of_the_beasts.py	/^class extreme_zhuque(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
+find_extreme_plus	rise_of_the_beasts.py	/^    def find_extreme_plus(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
+find_impossible	rise_of_the_beasts.py	/^    def find_impossible(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 game	game.py	/^class game:$/;"	c	inherits:
 game_data	event.py	/^    game_data = impossible_data$/;"	v	class:hope_from_a_snow_drop
 get_chm	game.py	/^    def get_chm(self):$/;"	m	class:game	access:public
 get_element_text	elementfinder.py	/^    def get_element_text(self):$/;"	m	class:elefinder	access:public
+goal_page_locator	loading_page_locator.py	/^class goal_page_locator:$/;"	c	inherits:
 goto	stage.py	/^    def goto(self, url, tagetpage_selector = {'element' : "", 'by': ""}):$/;"	m	class:stage	access:public
-home_page	play_event.py	/^def home_page():$/;"	f	access:public
+home_page	craft/play_event.py	/^def home_page():$/;"	f	access:public
 homepage	stage.py	/^    def homepage(self):$/;"	m	class:stage	access:public
 hope_from_a_snow_drop	event.py	/^class hope_from_a_snow_drop(event_common):$/;"	c	inherits:event_common
 hope_from_a_snow_drop_extreme	util.py	/^    hope_from_a_snow_drop_extreme = {$/;"	v	class:util
 hope_from_a_snow_drop_impossible	util.py	/^    hope_from_a_snow_drop_impossible = {$/;"	v	class:util
 hope_from_a_snow_drop_veryhard	util.py	/^    hope_from_a_snow_drop_veryhard = {$/;"	v	class:util
+impossible	rise_of_the_beasts.py	/^class impossible(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
 impossible_data	event.py	/^    impossible_data = util.hope_from_a_snow_drop_impossible$/;"	v	class:hope_from_a_snow_drop
-is_battle_page	play_event.py	/^def is_battle_page():$/;"	f	access:public
+is_battle_page	craft/play_event.py	/^def is_battle_page():$/;"	f	access:public
 is_battle_page	stage.py	/^    def is_battle_page(self):$/;"	m	class:checker	access:public
-is_dead	play_event.py	/^def is_dead():$/;"	f	access:public
+is_dead	craft/play_event.py	/^def is_dead():$/;"	f	access:public
 is_element_clickable	elementfinder.py	/^    def is_element_clickable(self):$/;"	m	class:elefinder	access:public
-is_element_exist	play_event.py	/^def is_element_exist(by, element, waittime = 10):$/;"	f	access:public
+is_element_exist	craft/play_event.py	/^def is_element_exist(by, element, waittime = 10):$/;"	f	access:public
 is_element_presence	elementfinder.py	/^    def is_element_presence(self):$/;"	m	class:elefinder	access:public
 is_element_visibility	elementfinder.py	/^    def is_element_visibility(self):$/;"	m	class:elefinder	access:public
-is_goal_page	play_event.py	/^def is_goal_page(waittime = 2):$/;"	f	access:public
-is_goal_page	stage.py	/^    def is_goal_page(self):$/;"	m	class:checker	access:public
+is_goal_page	craft/play_event.py	/^def is_goal_page(waittime = 2):$/;"	f	access:public
+is_goal_page	stage.py	/^    def is_goal_page(self, waittime = 5):$/;"	m	class:checker	access:public
+is_loading_page	loading_page_locator.py	/^    def is_loading_page(self):$/;"	m	class:lpl	access:public
+is_loading_page	stage.py	/^    def is_loading_page(self):$/;"	m	class:checker	access:public
 is_party_all_dead	stage.py	/^    def is_party_all_dead(self):$/;"	m	class:checker	access:public
 jobselect	jobselect.py	/^class jobselect:$/;"	c	inherits:
+joculator_dark_3_Dreadful_scourge	arcumgame.py	/^    class joculator_dark_3_Dreadful_scourge(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+joculator_dark_3_Dreadful_scourge	util.py	/^    joculator_dark_3_Dreadful_scourge = {$/;"	v	class:util
+joculator_dark_ve_jurassic_dino	arcumgame.py	/^    class joculator_dark_ve_jurassic_dino(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+joculator_dark_ve_jurassic_dino	util.py	/^    joculator_dark_ve_jurassic_dino = {$/;"	v	class:util
+last_turn_locator	loading_page_locator.py	/^class last_turn_locator:$/;"	c	inherits:
 liber_boss_wind_garuda_militis	util.py	/^    liber_boss_wind_garuda_militis = {$/;"	v	class:util
 loader	stage.py	/^    def loader(self, url : str, flag_by : By, flag_ele : str, retry_times = 3  ):$/;"	m	class:stage	access:public
+loading_page_element	util.py	/^    loading_page_element = {$/;"	v	class:util
+loading_page_refresh	stage.py	/^    def loading_page_refresh(self, waittime = 10):$/;"	m	class:stage	access:public
+lpl	loading_page_locator.py	/^class lpl:$/;"	c	inherits:
+m	play_transitions.py	/^m = Model()$/;"	v
+machine	play_transitions.py	/^machine = GraphMachine(model=m, )$/;"	v
+machine	play_transitions.py	/^machine = GraphMachine(model=m, show_auto_transitions=True, )$/;"	v
+machine	play_transitions.py	/^machine = GraphMachine(model=m, use_pygraphviz=False, )$/;"	v
 mouse_position_arcum_party_ok	util.py	/^    mouse_position_arcum_party_ok = {'x' : 300, 'y' : 600}$/;"	v	class:util
 mouse_position_arcum_party_ok_dert	util.py	/^    mouse_position_arcum_party_ok_dert = {'x' : 50, 'y' : 10}$/;"	v	class:util
-mouse_position_battle_attack	util.py	/^    mouse_position_battle_attack = {'x' : 280, 'y' : '380'}$/;"	v	class:util
-mouse_position_battle_attack_dert	util.py	/^    mouse_position_battle_attack_dert = {'x' : 70, 'y' : '30'}$/;"	v	class:util
+mouse_position_battle_attack	util.py	/^    mouse_position_battle_attack = {'x' : 280, 'y' : 380}$/;"	v	class:util
+mouse_position_battle_attack_dert	util.py	/^    mouse_position_battle_attack_dert = {'x' : 70, 'y' : 30}$/;"	v	class:util
 mouse_position_battle_full	util.py	/^    mouse_position_battle_full = {'x' : 85, 'y' : 410}$/;"	v	class:util
 mouse_position_battle_full_dert	util.py	/^    mouse_position_battle_full_dert = {'x' : 10, 'y' : 10}$/;"	v	class:util
 mouse_position_friend_summon	util.py	/^    mouse_position_friend_summon = {'x' : 100, 'y' : 500}$/;"	v	class:util
 mouse_position_friend_summon_dert	util.py	/^    mouse_position_friend_summon_dert = {'x' : 5, 'y' : 5}$/;"	v	class:util
-mouse_position_party_ok	util.py	/^    mouse_position_party_ok = {'x': 300, 'y': 560}$/;"	v	class:util
-mouse_position_party_ok_dert	util.py	/^    mouse_position_party_ok_dert = {'x' : 50, 'y' : 10}$/;"	v	class:util
+mouse_position_party_ok	util.py	/^    mouse_position_party_ok = {'x': 250, 'y': 570}$/;"	v	class:util
+mouse_position_party_ok_dert	util.py	/^    mouse_position_party_ok_dert = {'x' : 100 , 'y' : 10}$/;"	v	class:util
 mouse_position_rapid_filter_frist	util.py	/^    mouse_position_rapid_filter_frist = {'x' : 200, 'y' : 400}$/;"	v	class:util
 mouse_position_rapid_filter_frist_dert	util.py	/^    mouse_position_rapid_filter_frist_dert = {'x' : 50, 'y' : 50}$/;"	v	class:util
 move_to	mouse.py	/^    def move_to(self, x, y):$/;"	m	class:Mouse	access:public
@@ -153,8 +226,8 @@ mundus_light_5_high_voltage_rock	arcumgame.py	/^    class mundus_light_5_high_vo
 mundus_light_5_high_voltage_rock	util.py	/^    mundus_light_5_high_voltage_rock ={$/;"	v	class:util
 mundus_water_3_tide_caller	arcumgame.py	/^    class mundus_water_3_tide_caller(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 mundus_water_3_tide_caller	util.py	/^    mundus_water_3_tide_caller = {$/;"	v	class:util
+mundus_water_5_parasite_steve	arcumgame.py	/^    class mundus_water_5_parasite_steve(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 mundus_water_5_parasite_steve	util.py	/^    mundus_water_5_parasite_steve = {$/;"	v	class:util
-mundus_water_parasite_steve	arcumgame.py	/^    class mundus_water_parasite_steve(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 mundus_wind_3_dragon_glittering_green	util.py	/^    mundus_wind_3_dragon_glittering_green = {$/;"	v	class:util
 mundus_wind_3_dragon_in_glittering_green	arcumgame.py	/^    class mundus_wind_3_dragon_in_glittering_green(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 mundus_wind_5_winged_demin_cat	arcumgame.py	/^    class mundus_wind_5_winged_demin_cat(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
@@ -164,31 +237,39 @@ mundus_wind_v2de_morrigna_militis	util.py	/^    mundus_wind_v2de_morrigna_militi
 play	arcum_boss.py	/^    def play(self):$/;"	m	class:arcum_boss	access:public
 play	arcum_defender.py	/^    def play(self):$/;"	m	class:arcum_defender	access:public
 play	arcum_replicard.py	/^    def play(self):$/;"	m	class:replicard_common	access:public
+play	arcumgame.py	/^        def play(self):$/;"	m	class:arcumgame.zoneeletio_fire_boss_eletion_glider	access:public
+play	craft/play_event.py	/^    def play(self,url):$/;"	m	class:six_dragon	access:public
+play	craft/play_event.py	/^def play():$/;"	f	access:public
 play	event.py	/^    def play(self):$/;"	m	class:hope_from_a_snow_drop	access:public
 play	game.py	/^    def play(self):$/;"	m	class:game	access:public
-play	play_event.py	/^    def play(self,url):$/;"	m	class:six_dragon	access:public
-play	play_event.py	/^def play():$/;"	f	access:public
-play_arcum_icebergchampion	play_event.py	/^def play_arcum_icebergchampion():$/;"	f	access:public
-play_arcum_vestige_of_truth	play_event.py	/^def play_arcum_vestige_of_truth():$/;"	f	access:public
-play_arcum_zoone_faym_madshearwielder	play_event.py	/^def play_arcum_zoone_faym_madshearwielder():$/;"	f	access:public
-play_common_arcum	play_event.py	/^def play_common_arcum(url, battletimelimit,gauge_url):$/;"	f	access:public
-play_event_hope_from_a_snow_drop	play_event.py	/^def play_event_hope_from_a_snow_drop():$/;"	f	access:public
-play_event_reflections_for_a_white_clover	play_event.py	/^def play_event_reflections_for_a_white_clover(times = 10):$/;"	f	access:public
+play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
+play	shiny_slime_weekend.py	/^    def play(self):$/;"	m	class:shiny_slime_weekend	access:public
+play_arcum_icebergchampion	craft/play_event.py	/^def play_arcum_icebergchampion():$/;"	f	access:public
+play_arcum_vestige_of_truth	craft/play_event.py	/^def play_arcum_vestige_of_truth():$/;"	f	access:public
+play_arcum_zoone_faym_madshearwielder	craft/play_event.py	/^def play_arcum_zoone_faym_madshearwielder():$/;"	f	access:public
+play_common_arcum	craft/play_event.py	/^def play_common_arcum(url, battletimelimit,gauge_url):$/;"	f	access:public
+play_event_hope_from_a_snow_drop	craft/play_event.py	/^def play_event_hope_from_a_snow_drop():$/;"	f	access:public
+play_event_reflections_for_a_white_clover	craft/play_event.py	/^def play_event_reflections_for_a_white_clover(times = 10):$/;"	f	access:public
 play_extreme	event.py	/^    def play_extreme(self):$/;"	m	class:hope_from_a_snow_drop	access:public
-play_finder_filter1_1	play_event.py	/^def play_finder_filter1_1(repeat_times = 10):$/;"	f	access:public
-play_fire	play_event.py	/^    def play_fire(self):$/;"	m	class:six_dragon	access:public
+play_extreme_plus	rise_of_the_beasts.py	/^    def play_extreme_plus(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
+play_finder_filter1_1	craft/play_event.py	/^def play_finder_filter1_1(repeat_times = 10):$/;"	f	access:public
+play_fire	craft/play_event.py	/^    def play_fire(self):$/;"	m	class:six_dragon	access:public
 play_gauge	arcum_replicard.py	/^    def play_gauge(self):$/;"	m	class:replicard_common	access:public
-play_halloween_exclusive_quest	play_event.py	/^def play_halloween_exclusive_quest(times = 10):$/;"	f	access:public
-play_halloween_rapid	play_event.py	/^def play_halloween_rapid(times = 5):$/;"	f	access:public
+play_halloween_exclusive_quest	craft/play_event.py	/^def play_halloween_exclusive_quest(times = 10):$/;"	f	access:public
+play_halloween_rapid	craft/play_event.py	/^def play_halloween_rapid(times = 5):$/;"	f	access:public
 play_impossible	event.py	/^    def play_impossible(self):$/;"	m	class:hope_from_a_snow_drop	access:public
+play_impossible	rise_of_the_beasts.py	/^    def play_impossible(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 play_veryhard	event.py	/^    def play_veryhard(self):$/;"	m	class:hope_from_a_snow_drop	access:public
 printstate	main.py	/^def printstate():$/;"	f	access:public
-refresh	play_event.py	/^def refresh(element =  '\/\/div[@class="prt-command"]' , waittime = 10, by = By.XPATH):$/;"	f	access:public
+refresh	craft/play_event.py	/^def refresh(element =  '\/\/div[@class="prt-command"]' , waittime = 10, by = By.XPATH):$/;"	f	access:public
 refresh	stage.py	/^    def refresh(self):$/;"	m	class:stage	access:public
 replicard_common	arcum_replicard.py	/^class replicard_common(game):$/;"	c	inherits:game
 right_click	mouse.py	/^    def right_click(self, x, y):$/;"	m	class:Mouse	access:public
+roi	play_transitions.py	/^roi = m.get_graph(show_roi=True).draw('my_state_diagram.png', prog='dot')$/;"	v
+run	alert.py	/^    def run(self):$/;"	m	class:alert	access:public
 run	main.py	/^def run():$/;"	f	access:public
 screen_label_arcum_gauge	util.py	/^    screen_label_arcum_gauge = {'element' : "txt-chest-name", 'by' : By.CLASS_NAME}$/;"	v	class:util
+screen_label_arcum_gauge_goto_url	util.py	/^    screen_label_arcum_gauge_goto_url = {'element' : 'prt-aap-num', "by" : By.CLASS_NAME}$/;"	v	class:util
 screen_label_arcum_gauge_mimic	util.py	/^    screen_label_arcum_gauge_mimic = {'text' : "Mimic", 'by' : By.CLASS_NAME, 'element' : "txt-quest-name"}$/;"	v	class:util
 screen_label_arcum_gauge_ok	util.py	/^    screen_label_arcum_gauge_ok = {'element' : 'btn-usual-ok', 'by' : By.CLASS_NAME}$/;"	v	class:util
 screen_label_battle_alldead	util.py	/^    screen_label_battle_alldead = {'text' : "Use Auto Select" , 'element' : "txt-title", 'by' : By.CLASS_NAME} $/;"	v	class:util
@@ -199,20 +280,53 @@ screen_label_battle_page	util.py	/^    screen_label_battle_page = {'element' : "
 screen_label_friend_summmon_page	util.py	/^    screen_label_friend_summmon_page = {'text' : 'Choose a Summon', 'by' : By.CLASS_NAME, 'element' : 'prt-supporter-title'}$/;"	v	class:util
 screen_label_home	util.py	/^    screen_label_home = {'by' :  By.ID, 'element': "btm-campaign-toggle"}    $/;"	v	class:util
 selfrandom	mouse.py	/^    def selfrandom(self, value, dert):$/;"	m	class:Mouse	access:public
-six_dragon	play_event.py	/^class six_dragon:$/;"	c	inherits:
-sound	play_event.py	/^def sound():$/;"	f	access:public
+shiny_slime_weekend	shiny_slime_weekend.py	/^class shiny_slime_weekend(game):$/;"	c	inherits:game
+shiny_slime_weekend	util.py	/^    shiny_slime_weekend = {'url' : "https:\/\/game.granbluefantasy.jp\/#quest\/supporter\/400151\/4", 'time_limit' : 2 }$/;"	v	class:util
+six_dragon	craft/play_event.py	/^class six_dragon:$/;"	c	inherits:
+slime_select	shiny_slime_weekend.py	/^class slime_select:$/;"	c	inherits:
+sound	alert.py	/^    def sound(self):$/;"	m	class:alert	access:public
+sound	craft/play_event.py	/^def sound():$/;"	f	access:public
 stage	stage.py	/^class stage:$/;"	c	inherits:
+start	loading_page_locator.py	/^    def start(self):$/;"	m	class:goal_page_locator	access:public
+start	loading_page_locator.py	/^    def start(self):$/;"	m	class:last_turn_locator	access:public
+start	loading_page_locator.py	/^    def start(self):$/;"	m	class:lpl	access:public
 test	main.py	/^def test():$/;"	f	access:public
-tiguan	play_event.py	/^def tiguan():$/;"	f	access:public
-times	play_event_times.py	/^    times = times - 1$/;"	v
-times	play_event_times.py	/^times = 1 $/;"	v
-url_dark	play_event.py	/^    url_dark = ""$/;"	v	class:six_dragon
-url_earth	play_event.py	/^    url_earth = ""$/;"	v	class:six_dragon
-url_fire	play_event.py	/^    url_fire = "https:\/\/game.granbluefantasy.jp\/#quest\/supporter\/305191\/1\/0\/41"$/;"	v	class:six_dragon
+tiguan	craft/play_event.py	/^def tiguan():$/;"	f	access:public
+times	craft/play_event_times.py	/^    times = times - 1$/;"	v
+times	craft/play_event_times.py	/^times = 1 $/;"	v
+url_dark	craft/play_event.py	/^    url_dark = ""$/;"	v	class:six_dragon
+url_earth	craft/play_event.py	/^    url_earth = ""$/;"	v	class:six_dragon
+url_fire	craft/play_event.py	/^    url_fire = "https:\/\/game.granbluefantasy.jp\/#quest\/supporter\/305191\/1\/0\/41"$/;"	v	class:six_dragon
 url_home	util.py	/^    url_home = "https:\/\/game.granbluefantasy.jp\/#mypage"$/;"	v	class:util
-url_light	play_event.py	/^    url_light = ""$/;"	v	class:six_dragon
-url_water	play_event.py	/^    url_water = ""$/;"	v	class:six_dragon
-url_wind	play_event.py	/^    url_wind = ""$/;"	v	class:six_dragon
+url_light	craft/play_event.py	/^    url_light = ""$/;"	v	class:six_dragon
+url_water	craft/play_event.py	/^    url_water = ""$/;"	v	class:six_dragon
+url_wind	craft/play_event.py	/^    url_wind = ""$/;"	v	class:six_dragon
 util	util.py	/^class util:$/;"	c	inherits:
 veryhard_data	event.py	/^    veryhard_data = util.hope_from_a_snow_drop_veryhard $/;"	v	class:hope_from_a_snow_drop
-zhanche_play	play_event.py	/^def zhanche_play():$/;"	f	access:public
+zhanche_play	craft/play_event.py	/^def zhanche_play():$/;"	f	access:public
+zoneeletio_fire_3_blazing_everwing	arcumgame.py	/^    class zoneeletio_fire_3_blazing_everwing(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_3_blazing_everwing	util.py	/^    zoneeletio_fire_3_blazing_everwing = {$/;"	v	class:util
+zoneeletio_fire_3_rageborn_one	arcumgame.py	/^    class zoneeletio_fire_3_rageborn_one(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_3_rageborn_one	util.py	/^    zoneeletio_fire_3_rageborn_one = {$/;"	v	class:util
+zoneeletio_fire_5_eletion_drake	arcumgame.py	/^    class zoneeletio_fire_5_eletion_drake(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_5_eletion_drake	util.py	/^    zoneeletio_fire_5_eletion_drake = {$/;"	v	class:util
+zoneeletio_fire_5_paradoxical_gate	arcumgame.py	/^    class zoneeletio_fire_5_paradoxical_gate(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_5_paradoxical_gate	util.py	/^    zoneeletio_fire_5_paradoxical_gate = {$/;"	v	class:util
+zoneeletio_fire_5_slithering_seductress	arcumgame.py	/^    class zoneeletio_fire_5_slithering_seductress(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_5_slithering_seductress	util.py	/^    zoneeletio_fire_5_slithering_seductress = {$/;"	v	class:util
+zoneeletio_fire_5_terror_trifecta	arcumgame.py	/^    class zoneeletio_fire_5_terror_trifecta(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_5_terror_trifecta	util.py	/^    zoneeletio_fire_5_terror_trifecta = {$/;"	v	class:util
+zoneeletio_fire_boss_eletion_glider	arcumgame.py	/^    class zoneeletio_fire_boss_eletion_glider(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_boss_eletion_glider	util.py	/^    zoneeletio_fire_boss_eletion_glider = {$/;"	v	class:util
+zoneeletio_fire_de_cleansing_wyrmgod	arcumgame.py	/^    class zoneeletio_fire_de_cleansing_wyrmgod(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_de_cleansing_wyrmgod	util.py	/^    zoneeletio_fire_de_cleansing_wyrmgod = {$/;"	v	class:util
+zoneeletio_fire_de_usurper_of_the_throne	arcumgame.py	/^    class zoneeletio_fire_de_usurper_of_the_throne(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_fire_de_usurper_of_the_throne	util.py	/^    zoneeletio_fire_de_usurper_of_the_throne = {$/;"	v	class:util
+zoneeletio_light_3_hundred_armed_hulk	arcumgame.py	/^    class zoneeletio_light_3_hundred_armed_hulk(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_light_3_hundred_armed_hulk	util.py	/^    zoneeletio_light_3_hundred_armed_hulk = {$/;"	v	class:util
+zoneeletio_light_3_living_lighting_rod	arcumgame.py	/^    class zoneeletio_light_3_living_lighting_rod(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_light_3_living_lighting_rod	util.py	/^    zoneeletio_light_3_living_lighting_rod = {$/;"	v	class:util
+zoneeletio_light_5_death_seer	arcumgame.py	/^    class zoneeletio_light_5_death_seer(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_light_5_death_seer	util.py	/^    zoneeletio_light_5_death_seer = {$/;"	v	class:util
+zoneeletio_light_de_violetflash_sovereign	arcumgame.py	/^    class zoneeletio_light_de_violetflash_sovereign(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zoneeletio_light_de_violetflash_sovereign	util.py	/^    zoneeletio_light_de_violetflash_sovereign = {$/;"	v	class:util
