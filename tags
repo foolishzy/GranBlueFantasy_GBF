@@ -4,13 +4,22 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-Model	play_transitions.py	/^class Model:$/;"	c	inherits:
+HL2	HL2.py	/^class HL2(game):$/;"	c	inherits:game
 Mouse	mouse.py	/^class Mouse:$/;"	c	inherits:
 PROXY	craft/tt.py	/^PROXY = "172.30.208.1:4780"$/;"	v
 __exit	event.py	/^    def __exit(self):$/;"	m	class:event_select	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
 __exit	jobselect.py	/^    def __exit(self):$/;"	m	class:jobselect	file:	access:private
 __exit	rise_of_the_beasts.py	/^    def __exit():$/;"	m	class:btb_select	file:	access:private
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:avatar_impossible	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:europa_impossible	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:godsworn_alexiel_impossible	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:grimnir_impossible	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:hl_select	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:metatron_impossible	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:rose_queen_impossible	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:shiva_impossible	access:public
+__init__	HL2.py	/^    def __init__(self, data ={'url' : "", 'time_limit': 10,}):$/;"	m	class:HL2	access:public
 __init__	alert.py	/^    def __init__(self):$/;"	m	class:alert	access:public
 __init__	arcum_boss.py	/^    def __init__(self):$/;"	m	class:arcum_boss	access:public
 __init__	arcum_replicard.py	/^    def __init__($/;"	m	class:replicard_common	access:public
@@ -57,7 +66,8 @@ __init__	loading_page_locator.py	/^    def __init__(self, chm : webdriver.Chrome
 __init__	loading_page_locator.py	/^    def __init__(self, chm : webdriver.Chrome, event : Event, mouse : Mouse):$/;"	m	class:last_turn_locator	access:public
 __init__	loading_page_locator.py	/^    def __init__(self, chm : webdriver.Chrome, refreshtime = 10):$/;"	m	class:lpl	access:public
 __init__	mouse.py	/^    def __init__(self, chm : webdriver.Chrome):$/;"	m	class:Mouse	access:public
-__init__	play_transitions.py	/^    def __init__(self):$/;"	m	class:Model	access:public
+__init__	play_transitions.py	/^        def __init__(self):$/;"	m	class:arcum_machine.model	access:public
+__init__	play_transitions.py	/^    def __init__(self, model : model):$/;"	m	class:arcum_machine	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_select	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_baihu	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_qinglong	access:public
@@ -72,15 +82,18 @@ __init__	stage.py	/^    def __init__(self, chm : webdriver.Chrome, waittime = 10
 __init__	util.py	/^    def __init__(self):$/;"	m	class:util	access:public
 __play	event.py	/^    def __play(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
 alert	alert.py	/^class alert:$/;"	c	inherits:
+am	play_transitions.py	/^am = arcum_machine(m)$/;"	v
 arcum_boss	arcum_boss.py	/^class arcum_boss(game):$/;"	c	inherits:game
 arcum_defender	arcum_defender.py	/^class arcum_defender(replicard_common):$/;"	c	inherits:replicard_common
 arcum_jurassic_dino	util.py	/^    arcum_jurassic_dino = {$/;"	v	class:util
+arcum_machine	play_transitions.py	/^class arcum_machine:$/;"	c	inherits:
 arcum_select	arcumgame.py	/^class arcum_select:$/;"	c	inherits:
 arcum_vestige_of_truth	util.py	/^    arcum_vestige_of_truth = {$/;"	v	class:util
 arcumgame	arcumgame.py	/^class arcumgame:$/;"	c	inherits:
 auto_refresh	craft/play_event.py	/^def auto_refresh(single_battle_time_limit):$/;"	f	access:public
 auto_refresh	game.py	/^    def auto_refresh(self):$/;"	m	class:game	access:public
 auto_reverse	craft/play_event.py	/^def auto_reverse(times = 50):$/;"	f	access:public
+avatar_impossible	HL2.py	/^class avatar_impossible(HL2):$/;"	c	inherits:HL2
 btb_event_main_url	util.py	/^    btb_event_main_url = "https:\/\/game.granbluefantasy.jp\/#event\/advent"$/;"	v	class:util
 btb_extreme_baihu	util.py	/^    btb_extreme_baihu ={$/;"	v	class:util
 btb_extreme_plus	util.py	/^    btb_extreme_plus = {$/;"	v	class:util
@@ -119,9 +132,17 @@ click_party_ok	craft/play_event.py	/^def click_party_ok():$/;"	f	access:public
 click_party_ok	mouse.py	/^    def click_party_ok(self):$/;"	m	class:Mouse	access:public
 click_rapid_filter_frist	mouse.py	/^    def click_rapid_filter_frist(self):$/;"	m	class:Mouse	access:public
 click_refresh	craft/play_event.py	/^def click_refresh():$/;"	f	access:public
+click_request_backup	mouse.py	/^    def click_request_backup(self):$/;"	m	class:Mouse	access:public
 connect_chrome	craft/play_event.py	/^def connect_chrome():$/;"	f	access:public
 connect_chrome	game.py	/^    def connect_chrome(self):$/;"	m	class:game	access:public
 cookies	craft/tt.py	/^cookies = [$/;"	v
+data	HL2.py	/^    data = util.hl2_avatar_impossible$/;"	v	class:avatar_impossible
+data	HL2.py	/^    data = util.hl2_europa_impossible$/;"	v	class:europa_impossible
+data	HL2.py	/^    data = util.hl2_godsworn_alexxiel_impossible$/;"	v	class:godsworn_alexiel_impossible
+data	HL2.py	/^    data = util.hl2_grimnir_impossible$/;"	v	class:grimnir_impossible
+data	HL2.py	/^    data = util.hl2_metatron_impossible$/;"	v	class:metatron_impossible
+data	HL2.py	/^    data = util.hl2_rose_queen_impossible$/;"	v	class:rose_queen_impossible
+data	HL2.py	/^    data = util.hl2_shiva_impossible$/;"	v	class:shiva_impossible
 data	rise_of_the_beasts.py	/^    data = util.btb_extreme_baihu$/;"	v	class:extreme_baihu
 data	rise_of_the_beasts.py	/^    data = util.btb_extreme_qinglong$/;"	v	class:extreme_qinglong
 data	rise_of_the_beasts.py	/^    data = util.btb_extreme_xuanwu$/;"	v	class:extreme_xuanwu
@@ -137,9 +158,11 @@ ele_lt	loading_page_locator.py	/^    ele_lt = util.screen_label_battle_lastturn_
 elefinder	elementfinder.py	/^class elefinder:$/;"	c	inherits:
 end_box	alert.py	/^    def end_box(self, msg = "打完", title = "gbf script",bt = 'ok'):$/;"	m	class:alert	access:public
 end_msgbox	craft/play_event.py	/^def end_msgbox(msg="打完了", title="gbf script", bt="ok"):$/;"	f	access:public
+europa_impossible	HL2.py	/^class europa_impossible(HL2):$/;"	c	inherits:HL2
 event_common	event.py	/^class event_common(game):$/;"	c	inherits:game
 event_paly_page	craft/play_event.py	/^def event_paly_page(url):$/;"	f	access:public
 event_select	event.py	/^class event_select:$/;"	c	inherits:
+exit	HL2.py	/^    def exit():$/;"	m	class:hl_select	access:public
 exit	arcumgame.py	/^    def exit():$/;"	m	class:arcum_select	access:public
 exit	shiny_slime_weekend.py	/^    def exit():$/;"	m	class:slime_select	access:public
 extreme_baihu	rise_of_the_beasts.py	/^class extreme_baihu(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
@@ -152,10 +175,21 @@ find_extreme_plus	rise_of_the_beasts.py	/^    def find_extreme_plus(self):$/;"	m
 find_impossible	rise_of_the_beasts.py	/^    def find_impossible(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 game	game.py	/^class game:$/;"	c	inherits:
 game_data	event.py	/^    game_data = impossible_data$/;"	v	class:hope_from_a_snow_drop
+generate_png	play_transitions.py	/^    def generate_png(self):$/;"	m	class:arcum_machine	access:public
 get_chm	game.py	/^    def get_chm(self):$/;"	m	class:game	access:public
 get_element_text	elementfinder.py	/^    def get_element_text(self):$/;"	m	class:elefinder	access:public
 goal_page_locator	loading_page_locator.py	/^class goal_page_locator:$/;"	c	inherits:
+godsworn_alexiel_impossible	HL2.py	/^class godsworn_alexiel_impossible(HL2):$/;"	c	inherits:HL2
 goto	stage.py	/^    def goto(self, url, tagetpage_selector = {'element' : "", 'by': ""}):$/;"	m	class:stage	access:public
+grimnir_impossible	HL2.py	/^class grimnir_impossible(HL2):$/;"	c	inherits:HL2
+hl2_avatar_impossible	util.py	/^    hl2_avatar_impossible = {$/;"	v	class:util
+hl2_europa_impossible	util.py	/^    hl2_europa_impossible = {$/;"	v	class:util
+hl2_godsworn_alexxiel_impossible	util.py	/^    hl2_godsworn_alexxiel_impossible = {$/;"	v	class:util
+hl2_grimnir_impossible	util.py	/^    hl2_grimnir_impossible = {$/;"	v	class:util
+hl2_metatron_impossible	util.py	/^    hl2_metatron_impossible = {$/;"	v	class:util
+hl2_rose_queen_impossible	util.py	/^    hl2_rose_queen_impossible = {$/;"	v	class:util
+hl2_shiva_impossible	util.py	/^    hl2_shiva_impossible = {$/;"	v	class:util
+hl_select	HL2.py	/^class hl_select:$/;"	c	inherits:
 home_page	craft/play_event.py	/^def home_page():$/;"	f	access:public
 homepage	stage.py	/^    def homepage(self):$/;"	m	class:stage	access:public
 hope_from_a_snow_drop	event.py	/^class hope_from_a_snow_drop(event_common):$/;"	c	inherits:event_common
@@ -187,10 +221,9 @@ loader	stage.py	/^    def loader(self, url : str, flag_by : By, flag_ele : str, 
 loading_page_element	util.py	/^    loading_page_element = {$/;"	v	class:util
 loading_page_refresh	stage.py	/^    def loading_page_refresh(self, waittime = 10):$/;"	m	class:stage	access:public
 lpl	loading_page_locator.py	/^class lpl:$/;"	c	inherits:
-m	play_transitions.py	/^m = Model()$/;"	v
-machine	play_transitions.py	/^machine = GraphMachine(model=m, )$/;"	v
-machine	play_transitions.py	/^machine = GraphMachine(model=m, show_auto_transitions=True, )$/;"	v
-machine	play_transitions.py	/^machine = GraphMachine(model=m, use_pygraphviz=False, )$/;"	v
+m	play_transitions.py	/^m = arcum_machine.model()$/;"	v
+metatron_impossible	HL2.py	/^class metatron_impossible(HL2):$/;"	c	inherits:HL2
+model	play_transitions.py	/^    class model:$/;"	c	class:arcum_machine	inherits:
 mouse_position_arcum_party_ok	util.py	/^    mouse_position_arcum_party_ok = {'x' : 300, 'y' : 600}$/;"	v	class:util
 mouse_position_arcum_party_ok_dert	util.py	/^    mouse_position_arcum_party_ok_dert = {'x' : 50, 'y' : 10}$/;"	v	class:util
 mouse_position_battle_attack	util.py	/^    mouse_position_battle_attack = {'x' : 280, 'y' : 380}$/;"	v	class:util
@@ -234,6 +267,7 @@ mundus_wind_5_winged_demin_cat	arcumgame.py	/^    class mundus_wind_5_winged_dem
 mundus_wind_5_winged_demon_cat	util.py	/^    mundus_wind_5_winged_demon_cat = {$/;"	v	class:util
 mundus_wind_v2de_morrigna_militis	arcumgame.py	/^    class mundus_wind_v2de_morrigna_militis(arcum_defender):$/;"	c	class:arcumgame	inherits:arcum_defender
 mundus_wind_v2de_morrigna_militis	util.py	/^    mundus_wind_v2de_morrigna_militis = {$/;"	v	class:util
+play	HL2.py	/^    def play(self):$/;"	m	class:HL2	access:public
 play	arcum_boss.py	/^    def play(self):$/;"	m	class:arcum_boss	access:public
 play	arcum_defender.py	/^    def play(self):$/;"	m	class:arcum_defender	access:public
 play	arcum_replicard.py	/^    def play(self):$/;"	m	class:replicard_common	access:public
@@ -265,7 +299,7 @@ refresh	craft/play_event.py	/^def refresh(element =  '\/\/div[@class="prt-comman
 refresh	stage.py	/^    def refresh(self):$/;"	m	class:stage	access:public
 replicard_common	arcum_replicard.py	/^class replicard_common(game):$/;"	c	inherits:game
 right_click	mouse.py	/^    def right_click(self, x, y):$/;"	m	class:Mouse	access:public
-roi	play_transitions.py	/^roi = m.get_graph(show_roi=True).draw('my_state_diagram.png', prog='dot')$/;"	v
+rose_queen_impossible	HL2.py	/^class rose_queen_impossible(HL2):$/;"	c	inherits:HL2
 run	alert.py	/^    def run(self):$/;"	m	class:alert	access:public
 run	main.py	/^def run():$/;"	f	access:public
 screen_label_arcum_gauge	util.py	/^    screen_label_arcum_gauge = {'element' : "txt-chest-name", 'by' : By.CLASS_NAME}$/;"	v	class:util
@@ -279,9 +313,12 @@ screen_label_battle_lastturn_processing	util.py	/^    screen_label_battle_lasttu
 screen_label_battle_page	util.py	/^    screen_label_battle_page = {'element' : "prt-gauge-area", 'by' : By.CLASS_NAME}$/;"	v	class:util
 screen_label_friend_summmon_page	util.py	/^    screen_label_friend_summmon_page = {'text' : 'Choose a Summon', 'by' : By.CLASS_NAME, 'element' : 'prt-supporter-title'}$/;"	v	class:util
 screen_label_home	util.py	/^    screen_label_home = {'by' :  By.ID, 'element': "btm-campaign-toggle"}    $/;"	v	class:util
+screen_lable_battle_request_backup	util.py	/^    screen_lable_battle_request_backup = {'element' : 'btn-assist', "by" : By.CLASS_NAME}$/;"	v	class:util
+screen_lable_battle_request_backup_dialog_backup	util.py	/^    screen_lable_battle_request_backup_dialog_backup = {'element' : "btn-usual-text with-potion", "by" : By.CLASS_NAME}$/;"	v	class:util
 selfrandom	mouse.py	/^    def selfrandom(self, value, dert):$/;"	m	class:Mouse	access:public
 shiny_slime_weekend	shiny_slime_weekend.py	/^class shiny_slime_weekend(game):$/;"	c	inherits:game
 shiny_slime_weekend	util.py	/^    shiny_slime_weekend = {'url' : "https:\/\/game.granbluefantasy.jp\/#quest\/supporter\/400151\/4", 'time_limit' : 2 }$/;"	v	class:util
+shiva_impossible	HL2.py	/^class shiva_impossible(HL2):$/;"	c	inherits:HL2
 six_dragon	craft/play_event.py	/^class six_dragon:$/;"	c	inherits:
 slime_select	shiny_slime_weekend.py	/^class slime_select:$/;"	c	inherits:
 sound	alert.py	/^    def sound(self):$/;"	m	class:alert	access:public

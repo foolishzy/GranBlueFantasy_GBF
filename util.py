@@ -8,7 +8,35 @@ class util:
             'element': "img-load",
             'by': By.CLASS_NAME
             }
-
+    # HL2.0
+    hl2_shiva_impossible = {
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/303151/1/0/522",
+            'time_limit' : 10
+            }  
+    hl2_europa_impossible = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/303161/1/0/523',
+            'time_limit' : 10
+            }
+    hl2_godsworn_alexxiel_impossible = {
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/303171/1/0/524",
+            "time_limit" : 10
+            }
+    hl2_grimnir_impossible = {
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/303181/1/0/525",
+            'time_limit' : 10
+            }
+    hl2_metatron_impossible = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/303191/1/0/526',
+            'time_limit' : 10
+            }
+    hl2_avatar_impossible = {
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter/303221/1/0/527",
+            'time_limit' : 10
+            }
+    hl2_rose_queen_impossible = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/300471/1/0/1204',
+            'time_limit' : 10
+            }    
     # 四象降临
     btb_event_main_url = "https://game.granbluefantasy.jp/#event/advent"
     btb_extreme_plus = {
@@ -38,17 +66,15 @@ class util:
             'url' : "https://game.granbluefantasy.jp/#quest/supporter/711141/1",
             'time_limit' : 5
             }
-    
-
-
     # 踢馆
     shiny_slime_weekend = {'url' : "https://game.granbluefantasy.jp/#quest/supporter/400151/4", 'time_limit' : 2 }
     chrome_remote_host = "127.0.0.1:9222"
-
     # 选择队伍界面的ok确认键
+    screen_mouse_party_ok = {'by': By.XPATH, 'element' : '//*[@id="wrapper"]/div[3]/div[3]/div[3]/div[2]'}
     mouse_position_party_ok = {'x': 250, 'y': 570}
     mouse_position_party_ok_dert = {'x' : 100 , 'y' : 10}
     # 选择第一个好友的召唤石
+    screen_lable_friend_summon = {'by': By.XPATH, 'element' : '//*[@id="cnt-quest"]/div[2]/div[6]/div[1]/div[4]'}
     mouse_position_friend_summon = {'x' : 100, 'y' : 500}
     mouse_position_friend_summon_dert = {'x' : 5, 'y' : 5}
     screen_label_friend_summmon_page = {'text' : 'Choose a Summon', 'by' : By.CLASS_NAME, 'element' : 'prt-supporter-title'}
@@ -80,9 +106,11 @@ class util:
     screen_label_arcum_gauge_goto_url = {'element' : 'prt-aap-num', "by" : By.CLASS_NAME}
     screen_label_arcum_gauge_mimic = {'text' : "Mimic", 'by' : By.CLASS_NAME, 'element' : "txt-quest-name"}
     screen_label_arcum_gauge_ok = {'element' : 'btn-usual-ok', 'by' : By.CLASS_NAME}
+    screen_lable_battle_request_backup = {'element' : 'btn-assist', "by" : By.CLASS_NAME}
+    screen_lable_battle_request_backup_dialog_ok = {'element' : 'btn-usual-ok', 'by' : By.CLASS_NAME}
+    screen_lable_battle_request_backup_dialog_backup = {'element' : "/html/body/div/div[2]/div/div[3]/div[3]/div[6]/div/div[3]/a", "by" : By.XPATH}
     #url
     url_home = "https://game.granbluefantasy.jp/#mypage"
-
     #arcum
     #stage 9
     liber_boss_wind_garuda_militis = {

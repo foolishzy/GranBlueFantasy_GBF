@@ -7,6 +7,7 @@ from elementfinder import elefinder
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import ElementClickInterceptedException
 class Mouse:
 
     def __init__(self, chm : webdriver.Chrome):
@@ -39,6 +40,8 @@ class Mouse:
         pyautogui.rightClick(x, y)
 
     def click_friend_summon(self):
+        #  data = util.screen_lable_friend_summon
+        #  self.click_by_element(data)
         position = util.mouse_position_friend_summon
         dert = util.mouse_position_friend_summon_dert
         selector = util.screen_label_friend_summmon_page
@@ -68,13 +71,22 @@ class Mouse:
 #
 
     def click_party_ok(self):
-        self.click_check_by_sel_and_click_by_pos(
-                self.util.screen_label_party_ok,
-                self.util.mouse_position_party_ok,
-                self.util.mouse_position_party_ok_dert
-                )
-
-       
+        data = util.screen_label_party_ok
+        self.click_by_element()
+        #  self.click_check_by_sel_and_click_by_pos(
+                #  self.util.screen_label_party_ok,
+                #  self.util.mouse_position_party_ok,
+                #  self.util.mouse_position_party_ok_dert
+                #  )
+#
+    def click_request_backup(self):
+        time.sleep(3)
+        data = util.screen_lable_battle_request_backup 
+        self.click_by_element(data, waittime=5)
+        data = util.screen_lable_battle_request_backup_dialog_backup 
+        self.click_by_element(data,  waittime=5) 
+        data = util.screen_lable_battle_request_backup_dialog_ok
+        self.click_by_element(data,  waittime=5)
 
     def click_check_by_sel_and_click_by_pos(
             self, 
@@ -121,7 +133,8 @@ class Mouse:
                 print(' StaleElementReferenceException')
                 print(' can not ensure element have been clicked ')
                 pass
-
+            except ElementClickInterceptedException:
+               self.chm.execute_script( "$(arguments[0]).click()"  , e)
         else:
             print('element ', ele, " can not be clicked")
 

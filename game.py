@@ -1,6 +1,7 @@
 from threading import Event
 from stage import checker
-import time
+import timei
+from loading_page_locator import request_dialog_locator
 from loading_page_locator import goal_page_locator
 from loading_page_locator import last_turn_locator
 from loading_page_locator import lpl 
@@ -47,6 +48,11 @@ class game:
         play_event = Event()
         lst_turn_event = Event()
         goal_page_event = Event()
+        request_locator_ctrl_event = Event()
+        req_thread = Thread(
+                target = request_dialog_locator(self.mouse, self.chm, request_locator_ctrl_event).start
+                )    
+    
         lst_turn_thread = Thread(
                 target = last_turn_locator(self.chm, lst_turn_event, self.mouse).start
                 )
@@ -58,6 +64,7 @@ class game:
         lst_turn_event.set()
         lst_turn_thread.start()
         goal_page_thread.start()
+        request_locator_ctrl_event.clear()
         while play_event.is_set()  and end_time - start_time < self.btl * 60 :
             #  i = 0
             #  print('main pro flag: ', play_event.is_set())
@@ -70,6 +77,9 @@ class game:
                 #  break
             if flag:
                 self.stage.refresh()
+                req_thread.start()
+                if request_locator_ctrl_event.is_set():
+                    req_thread.join()
                 print('play_event_set, ', play_event.is_set() )
                 if play_event.is_set():
                     self.mouse.click_full()

@@ -77,7 +77,7 @@ class goal_page_locator:
     ele = util.screen_label_battle_goal_exp['element']
 
     def __init__(self, chm : webdriver.Chrome, event : Event, ctrl_event : Event):
-        self.eve = event
+        self.eve = event 
         self.chm = chm
         self.ctrl_event = ctrl_event
         pass
@@ -96,3 +96,26 @@ class goal_page_locator:
                 self.ctrl_event.clear()
             #  print('ctrl_event: ',self.ctrl_event.is_set())
             time.sleep(1)    
+
+class request_dialog_locator:
+
+    dialog_locator = util.screen_lable_battle_request_backup_dialog_backup 
+    dialog_ok_locator = util.screen_lable_battle_request_backup_dialog_ok
+    def __init__(self, mouse: Mouse, chm : webdriver.Chrome, ctrl_event : Event):
+        self.chm =chm
+        self.mouse = mouse
+        self.ctrl_eve = ctrl_event
+
+        pass
+    def start(self):
+        flag = False
+        elf = elefinder(self.dialog_locator['by'], self.dialog_locator['element'], 2, self.chm)
+        if elf.is_element_visibility():
+            flag = True
+            self.ctrl_eve.set()
+            self.mouse.click_by_element(self.dialog_locator)
+            time.sleep(1)
+            self.mouse.click_by_element(self.dialog_ok_locator)
+            time.sleep(0.5)
+            self.ctrl_eve.clear()
+
