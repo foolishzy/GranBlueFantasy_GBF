@@ -79,6 +79,7 @@ class util:
     mouse_position_friend_summon_dert = {'x' : 5, 'y' : 5}
     screen_label_friend_summmon_page = {'text' : 'Choose a Summon', 'by' : By.CLASS_NAME, 'element' : 'prt-supporter-title'}
     # arcum选择队伍界面的ok确认键
+    screen_label_arcum_party_ok = {'by' : By.XPATH, 'element' : '//*[@id="wrapper"]/div[3]/div[3]/div[3]/div[2]'}
     mouse_position_arcum_party_ok = {'x' : 300, 'y' : 600}
     mouse_position_arcum_party_ok_dert = {'x' : 50, 'y' : 10}
     # 战斗界面的attack键坐标和偏移量
@@ -112,6 +113,30 @@ class util:
     #url
     url_home = "https://game.granbluefantasy.jp/#mypage"
     #arcum
+    arcum_zone_faym_gauge_box_data = {
+    'box_ele' : 'txt-chest-name',
+    'box_txt' : "Splendid Chest",
+    'gauge_ele' : 'txt-quest-name',
+    'gauge_name' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
+    'box_enemy_ele' : 'txt-quest-name',
+    'box_enemy_name' : ['Mimic', 'Obsidian Machina']
+}
+    arcum_zone_eletio_gauge_box_data = {
+    'box_ele' : 'txt-chest-name',
+    'box_txt' : "Splendid Chest",
+    'gauge_ele' : 'txt-quest-name',
+    'gauge_name' : ['Herald of The Star','Herald of The Sun','Herald of The Devil' ] ,
+    'box_enemy_ele' : 'txt-quest-name',
+    'box_enemy_name' : ['Mimic', 'Ruby Machina']
+}
+    arcum_mundus_gauge_box_data = {
+    'box_ele' : 'txt-chest-name',
+    'box_txt' : "Splendid Chest",
+    'gauge_ele' : 'txt-quest-name',
+    'gauge_name' : ['Herald of Water','Herald of Fire','Herald of Earth', 'Herald of Wind', 'Herald of Light', 'Herald of Dark' ] ,
+    'box_enemy_ele' : 'txt-quest-name',
+    'box_enemy_name' : ['Mimic']
+}
     #stage 9
     liber_boss_wind_garuda_militis = {
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
@@ -232,7 +257,13 @@ class util:
     mundus_water_5_parasite_steve = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/9/819071/25',
             'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/10",
-            'time_limit' : 3
+            'time_limit' : 3,
+            'box_xpath_element' : '//*[@id="cnt-division"]/div/div[2]/div[1]/div'
+            }
+    mundus_water_v2de_ca_ong_militis = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/10/10/9/819151/25",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/10",
+            'time_limit' : 10
             }
     mundus_fire_v2de_prometheus_militis = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/2/819141/25',
@@ -273,6 +304,75 @@ class util:
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/10/10/8/819061/25",
             'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/10",
             'time_limit' : 3
+            }
+    #zone faym
+    zone_faym_water_de_creeping_seashadow = {
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/4/812101/25',
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' :  3
+            }
+    zone_faym_water_5_trident_grandmaster = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/3/3/4/812011/25"
+            }
+    zone_faym_water_3_hoarfrost_icequeen = {
+            "url" : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/3/812021/25',
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3
+
+            }
+    zone_faym_dark_5_oceanic_archon = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/3/3/6/812031/25"
+            }
+    zone_faym_water_5_farsea_predator = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/8/812041/25'
+            }
+    zone_faym_water_3_faymian_fortress = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/10/812051/25'
+
+            }
+    zone_faym_water_de_lilywhite_paragon = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/10/812111/25'
+
+            }
+    zone_faym_dark_de_iceberg_champion = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/11/812121/25'
+
+            }
+    zone_faym_dark_5_draconic_simulacrum = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/11/812061/25'
+
+            }
+    zone_faym_water_5_azureflame_dragon = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/14/812081/25'
+
+            }
+    zone_faym_water_5_eyes_of_sorrow = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/13/812071/25'
+
+            }
+    zone_faym_dark_3_mad_shearwielder = {
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
+            'time_limit' : 3,
+            'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/16/812091/25'
+
             }
     arcum_jurassic_dino = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/7/7/14/816081/25',

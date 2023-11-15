@@ -70,7 +70,7 @@ class last_turn_locator:
                 if re.match(text, string_lt) and re.match(text, string_lt).span()[1] > 0:
                     self.chm.refresh()
                     self.mouse.click_full()
-            time.sleep(1)    
+            time.sleep(0.5)    
 
 class goal_page_locator:
     by = util.screen_label_battle_goal_exp['by']
@@ -95,7 +95,7 @@ class goal_page_locator:
             if flag :
                 self.ctrl_event.clear()
             #  print('ctrl_event: ',self.ctrl_event.is_set())
-            time.sleep(1)    
+            time.sleep(0.5)    
 
 class request_dialog_locator:
 

@@ -48,27 +48,12 @@ class Mouse:
         self.click_check_by_sel_and_click_by_pos(selector, position, dert, 10 )
 
     def click_arcum_part_ok(self):
-        selector_data = self.util.screen_label_arcum_part_ok
-        position_data = self.util.mouse_position_arcum_party_ok
-        dert_data = self.util.mouse_position_party_ok_dert
-        self.click_check_by_sel_and_click_by_pos(selector_data, position_data, dert_data, 10)
-        #  x = self.util.mouse_position_arcum_party_ok[0]
-        #  y = self.util.mouse_position_arcum_party_ok[1]
-        #  x = int(random.random()*50) + x
-        #  y = int(random.random()*10) + y
-        #  times = 0
-        #  by = self.util.screen_label_arcum_part_ok[0]
-        #  ele = self.util.screen_label_arcum_part_ok[1]
-#
-        #  while times < 3:
-            #  times = times + 1
-            #  if elefinder(by, ele, 10, self.chm).is_element_visibility():
-                #  time.sleep(random.random())
-                #  pyautogui.click(x, y)
-                #  break
-            #  else:
-                #  print ("click_arcum_party_ok erro: couldn't find prt-btn-deck")
-#
+        #  selector_data = self.util.screen_label_arcum_part_ok
+        #  position_data = self.util.mouse_position_arcum_party_ok
+        #  dert_data = self.util.mouse_position_party_ok_dert
+        #  self.click_check_by_sel_and_click_by_pos(selector_data, position_data, dert_data, 10)
+        data = util.screen_label_arcum_part_ok
+        self.click_by_element(data, 3)
 
     def click_party_ok(self):
         data = util.screen_label_party_ok
@@ -114,7 +99,9 @@ class Mouse:
             else:
                 print('click erro , can not find element')
 
-
+    def click_gauge_ok(self):
+        data = util.screen_label_arcum_gauge_ok
+        self.click_by_element(data)
 
     def click_by_element(
             self,
@@ -138,14 +125,59 @@ class Mouse:
         else:
             print('element ', ele, " can not be clicked")
 
+    def click_box(self, 
+            gauge_and_box_data ={
+                'box_ele' : 'txt-chest-name',
+                'box_txt' : "Splendid Chest",
+                'gauge_ele' : 'txt-quest-name',
+                'gauge_txt' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
+                'enemy_ele' : 'txt-quest-name',
+                'enemy_txt' : ['Mimic', 'Obsidian Machina']
+                } ):
+        select_data = {
+                        'by': By.CLASS_NAME,
+                        'element' : gauge_and_box_data['box_ele']
+                        }
+        self.click_by_element(select_data)
+    
+    def click_gauge_enemy(self, 
+            gauge_and_box_data ={
+                'box_ele' : 'txt-chest-name',
+                'box_txt' : "Splendid Chest",
+                'gauge_ele' : 'txt-quest-name',
+                'gauge_txt' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
+                'enemy_ele' : 'txt-quest-name',
+                'enemy_txt' : ['Mimic', 'Obsidian Machina']
+                } ):
+        select_data = {
+                        'by': By.CLASS_NAME,
+                        'element' : gauge_and_box_data['enemy_ele']
+                        }
+        self.click_by_element(select_data)
+    
+    def click_gauge(self, 
+            gauge_and_box_data ={
+                'box_ele' : 'txt-chest-name',
+                'box_txt' : "Splendid Chest",
+                'gauge_ele' : 'txt-quest-name',
+                'gauge_txt' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
+                'enemy_ele' : 'txt-quest-name',
+                'enemy_txt' : ['Mimic', 'Obsidian Machina']
+                } ):
+        select_data = {
+                        'by': By.CLASS_NAME,
+                        'element' : gauge_and_box_data['gauge_ele']
+                        }
+        self.click_by_element(select_data)
+        
 
-    def click_gauge(self):
-        select_data = self.util.screen_label_arcum_gauge
-        self.click_by_element(select_data) 
-
-    def click_mimic(self):
-        select_data = self.util.screen_label_arcum_gauge_mimic
-        self.click_by_element(select_data) 
+    #  def click_gauge(self):
+        #  select_data = self.util.screen_label_arcum_gauge
+        #  self.click_by_element(select_data)
+#
+    #  def click_mimic(self):
+        #  select_data = self.util.screen_label_arcum_gauge_mimic
+        #  self.click_by_element(select_data)
 
     def click_attack(self):
         select_data = self.util.screen_label_battle_attack

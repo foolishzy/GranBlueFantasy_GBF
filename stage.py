@@ -103,30 +103,66 @@ class checker:
         self.util = util
         self.waittime = waittime 
         self.stage = stage(self.chm)
-
-    def check_gauge(self, gauge_url):
-# 这里的判断好像没有能够通用的 不同线路出现的宝箱怪和宝箱是不一样的text element 要针对不同的怪物分布写 下面的mimic也是 不是所有的宝箱怪都叫做micmic
-        selector = util.screen_label_arcum_gauge_goto_url
-        self.stage.goto(gauge_url, selector)
-        by = self.util.screen_label_arcum_gauge['by']
-        ele = self.util.screen_label_arcum_gauge['element']
-        elf = elefinder(by, ele, 2, self.chm)
+  
+    def check_box(self,
+            gauge_box_data ={
+                'box_ele' : 'txt-chest-name',
+                'box_txt' : "Splendid Chest",
+                'gauge_ele' : 'txt-quest-name',
+                'gauge_name' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
+                'box_enemy_ele' : 'txt-quest-name',
+                'box_enemy_name' : ['Mimic', 'Obsidian Machina']
+                }    ):
+        txt = gauge_box_data['box_txt']
+        by = By.CLASS_NAME
+        ele = gauge_box_data['box_ele']
+        elf = elefinder(by, ele, 1, self.chm)
         if elf.is_element_visibility():
-            return True
-        else:
-            return False
-
-    def check_gauge_mimic(self):
-        text = self.util.screen_label_arcum_gauge_mimic['text']
-        by = self.util.screen_label_arcum_gauge_mimic['by']
-        ele = self.util.screen_label_arcum_gauge_mimic['element']
-        elf = elefinder(by, ele, 2, self.chm)
-        if elf.is_element_visibility():
-            if elf.get_element_text() == text : 
+            if elf.get_element_text() == txt:
                 return True
             else:
                 return False
+    
+    def check_gauge(self,
+                    gauge_box_data ={
+                    'box_ele' : 'txt-chest-name',
+                    'box_txt' : "Splendid Chest",
+                    'gauge_ele' : 'txt-quest-name',
+                    'gauge_name' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
+                    'box_enemy_ele' : 'txt-quest-name',
+                    'box_enemy_name' : ['Mimic', 'Obsidian Machina']
+                    }    ):
+        txt = gauge_box_data['gauge_name']
+        by = By.CLASS_NAME
+        ele = gauge_box_data['gauge_ele']
+        elf = elefinder(by, ele, 1, self.chm)
+        if elf.is_element_visibility():
+            for t in txt:
+                if elf.get_element_text() == t:
+                    return True
+                else:
+                    return False
 
+
+    def check_gauge_enemy(self,
+                gauge_box_data ={
+                    'box_ele' : 'txt-chest-name',
+                    'box_txt' : "Splendid Chest",
+                    'gauge_ele' : 'txt-quest-name',
+                    'gauge_name' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
+                    'box_enemy_ele' : 'txt-quest-name',
+                    'box_enemy_name' : ['Mimic', 'Obsidian Machina']
+                    }    ):
+        txt = gauge_box_data['box_enemy_name']
+        by = By.CLASS_NAME
+        ele = gauge_box_data['box_enemy_ele']
+        elf = elefinder(by, ele, 1, self.chm)
+        if elf.is_element_visibility():
+            for t in txt:
+                if elf.get_element_text() == t:
+                    return True
+                else:
+                    return False
 
     def is_goal_page(self, waittime = 5):
         """
