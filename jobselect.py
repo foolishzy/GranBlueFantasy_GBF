@@ -3,6 +3,7 @@ from arcumgame import arcum_select
 from shiny_slime_weekend import slime_select
 from rise_of_the_beasts import btb_select
 from HL2 import hl_select
+from unite_and_fight import unite_and_fight_select
 
 
 class jobselect:
@@ -21,8 +22,9 @@ class jobselect:
         3.slime
         4.rise of the beast
         5.hl2.0
+        6.unite and fight
 '''
-        index_max = 5
+        index_max = 6
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -43,5 +45,6 @@ class jobselect:
             btb_select()
         elif index == 5:
             hl_select()
-
+        elif index == 6:
+            unite_and_fight_select()
 

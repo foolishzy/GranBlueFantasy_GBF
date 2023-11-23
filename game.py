@@ -14,8 +14,6 @@ from elementfinder import elefinder
 from threading import Thread
 class game:
 
-
-
     def __init__(self, battle_time_limit ):
         # 单场战斗预计最长时间 单位分钟
         self.chm = None
@@ -32,9 +30,6 @@ class game:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.debugger_address = self.util.chrome_remote_host
         self.chm = webdriver.Chrome(options=chrome_options)
-
-
-
 
     def auto_refresh(self):
         """
@@ -90,10 +85,8 @@ class game:
     def get_chm(self):
         return self.chm
 
-
     def play(self):
         t1 = Thread(target = self.lpl.start )
         t1.start()
         #  t1.join()
                     
-

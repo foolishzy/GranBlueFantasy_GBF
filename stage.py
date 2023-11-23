@@ -180,11 +180,11 @@ class checker:
                 flag = True
         return flag
         
-    def is_battle_page(self):
+    def is_battle_page(self, waittime = 5):
         by = self.util.screen_label_battle_page['by']
         ele = self.util.screen_label_battle_page['element']
         flag = False 
-        elf = elefinder(by, ele, 5, self.chm)
+        elf = elefinder(by, ele, waittime, self.chm)
         if elf.is_element_visibility():
             flag = True
         return flag

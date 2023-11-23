@@ -3,6 +3,33 @@ from selenium.webdriver.common.by import By
 
 class util:
 
+
+    # unite and fight
+    uf_solo_normal = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912611/3/0',
+            'time_limit' : 2
+            }
+    uf_solo_hard = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912621/3/0',
+            'time_limit' : 2
+            }
+    uf_solo_veryhard = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912631/3/0',
+            'time_limit' : 2
+            }
+    uf_rapid_extreme = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912641/1/0',
+            'time_limit' : 3
+            }
+    uf_rapid_extreme_plus = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912651/1/0',
+            'time_limit' : 3
+            }
+    uf_rapid_nightmare = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912661/1/0/10116',
+            'time_limit' : 5
+            }
+
     # 场景切换页面的loading元素
     loading_page_element = {
             'element': "img-load",
@@ -227,7 +254,7 @@ class util:
     mundus_wind_v2de_morrigna_militis = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/15/819171/25',
             'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/10",
-            'time_limit' : 3
+            'time_limit' : 10
             }
     mundus_light_3_goddess_of_the_wild_hunt = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/15/819121/25',
@@ -268,7 +295,7 @@ class util:
     mundus_fire_v2de_prometheus_militis = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/2/819141/25',
             'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/10",
-            'time_limit' : 3
+            'time_limit' : 10
             }
     mundus_fire_5_hotheaded_pincers = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/2/819011/25',
@@ -278,7 +305,7 @@ class util:
     mundus_earth_v2de_gilgamesh_militis = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/6/819161/25',
             'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/10",
-            'time_limit' : 3
+            'time_limit' : 15
             }
     mundus_earth_5_princess_of_the_horde ={
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/6/819041/25',
@@ -309,7 +336,7 @@ class util:
     zone_faym_water_de_creeping_seashadow = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/4/812101/25',
             'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
-            'time_limit' :  3
+            'time_limit' :  10
             }
     zone_faym_water_5_trident_grandmaster = {
             'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
@@ -340,13 +367,13 @@ class util:
             }
     zone_faym_water_de_lilywhite_paragon = {
             'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
-            'time_limit' : 3,
+            'time_limit' : 10,
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/10/812111/25'
 
             }
     zone_faym_dark_de_iceberg_champion = {
             'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
-            'time_limit' : 3,
+            'time_limit' : 10,
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/11/812121/25'
 
             }

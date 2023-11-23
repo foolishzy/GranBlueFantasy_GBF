@@ -6,7 +6,7 @@ from game import game
 
 class arcum_select:
 
-    def exit():
+    def exit(self):
         pass
 
     def __init__(self):
@@ -135,7 +135,7 @@ class arcum_select:
             arcumgame().zoneeletio_light_3_hundred_armed_hulk().play()
         elif index == 313:
             arcumgame().zoneeletio_fire_boss_eletion_glider().play()
-        elif index == 402:
+        elif index == 401:
             arcumgame().zone_faym_water_de_creeping_seashadow().play()
         elif index == 402:
             arcumgame().zone_faym_water_de_lilywhite_paragon().play()

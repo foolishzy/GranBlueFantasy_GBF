@@ -63,7 +63,12 @@ class Mouse:
                 #  self.util.mouse_position_party_ok,
                 #  self.util.mouse_position_party_ok_dert
                 #  )
-#
+
+    def click_request_cancel(self):
+        self.click_by_element(
+                {'by' : By.CLASS_NAME,
+                'element' : "btn-usual-cancel"},
+                5)
     def click_request_backup(self):
         time.sleep(3)
         data = util.screen_lable_battle_request_backup 

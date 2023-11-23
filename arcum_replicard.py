@@ -1,4 +1,6 @@
+from selenium.webdriver.common.by import By
 from alert import alert
+from elementfinder import elefinder
 import time
 from game import game
 from stage import stage
@@ -32,6 +34,22 @@ class replicard_common(game):
         self.gauge_box_data = gauge_box_data
 
     def play(self):
+ 
+        # one turn
+        i = int(input("""
+        100% chargebar and one turn?
+        pls selcet:
+        1. yes
+        2. no
+        """
+        ))
+        if i == 1:
+            self.oneturn = True
+        else:
+            self.oneturn = False
+        #one turn
+        by = self.util.screen_label_auto_refresh['by']
+        ele = self.util.screen_label_auto_refresh['element']
         super().play()
         repeat_times = int(input("pls input repeat times :"))
         while repeat_times > 0:
@@ -41,14 +59,20 @@ class replicard_common(game):
             self.stage.goto(self.url)
             self.mouse.click_arcum_part_ok()
             if self.ck.is_battle_page():
-                self.mouse.click_full()
-                self.auto_refresh()
+                if self.oneturn:
+                    self.mouse.click_full()
+                    if elefinder(by, ele, 30, self.chm ).is_element_presence():
+                        self.stage.refresh()
+                else:
+                    self.mouse.click_full()
+                    self.auto_refresh()
+            self.stage.goto(self.gauge_url,{'element' : 'prt-division-list', 'by' : By.CLASS_NAME })
             if self.ck.check_box(self.gauge_box_data):
-                pass
+                self.play_box() 
             elif self.ck.check_gauge(self.gauge_box_data):
-                pass
+                self.play_gauge()
             elif self.ck.check_gauge_enemy(self.gauge_box_data):
-                pass
+                self.play_gauge_enemy()
         alert().run()
     
     def play_box(self):
