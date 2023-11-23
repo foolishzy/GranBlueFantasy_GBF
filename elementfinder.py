@@ -25,9 +25,7 @@ class elefinder:
 
     def is_element_clickable(self):
         flag = False
-        times  = 0 
-        while times < 3:
-            times = times + 1
+        while True :
             try:
                 WebDriverWait(self.chm, self.waittime).until(
                         EC.element_to_be_clickable(
@@ -37,7 +35,8 @@ class elefinder:
                 flag = True
                 break
             except TimeoutException:
-                pass
+                flag = False 
+                break
             except WebDriverException:
                 pass
         return flag

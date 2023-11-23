@@ -57,10 +57,6 @@ class game:
         goal_page_thread.start()
         request_locator_ctrl_event.clear()
         while play_event.is_set()  and end_time - start_time < self.btl * 60 :
-            #  i = 0
-            #  print('main pro flag: ', play_event.is_set())
-            #  while i < 3:
-                #  i = i + 1
             end_time = time.time()
             flag = False
             if elefinder(by, ele, 2, self.chm).is_element_presence():

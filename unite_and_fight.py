@@ -40,7 +40,6 @@ class uf_game(game):
             if self.ck.is_battle_page(10):
                 if elefinder(By.CLASS_NAME, 'btn-usual-cancel', 5, self.chm):
                     self.mouse.click_request_cancel()
-
                 if self.oneturn:
                     self.mouse.click_full()
                     if  elefinder(by, ele, 30, self.chm).is_element_presence():

@@ -175,21 +175,11 @@ class Mouse:
                         }
         self.click_by_element(select_data)
         
-
-    #  def click_gauge(self):
-        #  select_data = self.util.screen_label_arcum_gauge
-        #  self.click_by_element(select_data)
-#
-    #  def click_mimic(self):
-        #  select_data = self.util.screen_label_arcum_gauge_mimic
-        #  self.click_by_element(select_data)
-
     def click_attack(self):
         select_data = self.util.screen_label_battle_attack
         positon = self.util.mouse_position_battle_attack
         dert = self.util.mouse_position_battle_attack_dert
         self.click_check_by_sel_and_click_by_pos(select_data, positon, dert)
-
    
     def click_full(self, waittime = 10):
         #  ele_lt = self.util.screen_label_battle_lastturn_processing['element']
@@ -209,31 +199,11 @@ class Mouse:
             print(159)
             self.click(x, y)
             print(161)
-            #  elf_lt = elefinder(by_lt, ele_lt, 3, self.chm)
-            #  print(163)
-            #  if elf_lt.is_element_visibility():
-                #  print(165)
-                #  text = elf_lt.get_element_text()
-                #  print(167)
-                #  if re.match(text, string_lt) and re.match(text, string_lt).span()[1] > 0:
-                    #  print(169)
-                    #  self.chm.refresh()
-                    #  print(171)
-                    #  self.click_full()
-                    #  print(173)
-                #  else:
-                    #  print(175)
-                    #  self.click(x, y)
-
-    def click_gague_ok(self):
         selector_data = self.util.screen_label_arcum_gauge_ok
         self.click_by_element(selector_data, 5)
 
-
-
     def selfrandom(self, value, dert):
         return int(random.random() * dert) + value
-
 
     def click_rapid_filter_frist(self):
         position = self.util.mouse_position_rapid_filter_frist
