@@ -113,22 +113,29 @@ class Mouse:
             selector_data = {'by' : By.CLASS_NAME,'element' : 'prt-btn-deck' } ,
             waittime = 2 ):
         # 这里参数的默认值是乱写的，传入参数满足这个数据格式要求
+        flag = True 
         by = selector_data['by']
         ele = selector_data['element']
         elf = elefinder(by, ele, waittime, self.chm)
         if  elf.is_element_clickable():
             e = self.chm.find_element(by, ele)
             time.sleep(3 + 2 * random.random())
-            try: 
-                e.click()
-            except StaleElementReferenceException:
-                print(' StaleElementReferenceException')
-                print(' can not ensure element have been clicked ')
-                pass
-            except ElementClickInterceptedException:
-               self.chm.execute_script( "$(arguments[0]).click()"  , e)
+            index = 0 
+            while index < 2:
+                try: 
+                    e.click()
+                    index = 2
+                except StaleElementReferenceException:
+                    print(' StaleElementReferenceException')
+                    print(' can not ensure element have been clicked ')
+                    index = index + 1
+                except ElementClickInterceptedException:
+                   self.chm.execute_script( "$(arguments[0]).click()"  , e)
+                   index = 2
         else:
+            flag = False 
             print('element ', ele, " can not be clicked")
+        return flag
 
     def click_box(self, 
             gauge_and_box_data ={

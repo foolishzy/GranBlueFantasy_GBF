@@ -8,8 +8,9 @@ import threading
 from stage import checker 
 from arcumgame import arcumgame
 from selenium.webdriver.support import expected_conditions as EC
-
+import traceback
 if __name__ == '__main__':
+    traceback.print_stack()
     jobselect()
 
 

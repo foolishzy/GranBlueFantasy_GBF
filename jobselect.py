@@ -4,7 +4,7 @@ from shiny_slime_weekend import slime_select
 from rise_of_the_beasts import btb_select
 from HL2 import hl_select
 from unite_and_fight import unite_and_fight_select
-
+from reserve_crate import reserve_select 
 
 class jobselect:
 
@@ -23,8 +23,9 @@ class jobselect:
         4.rise of the beast
         5.hl2.0
         6.unite and fight
+        7.clear_crate
 '''
-        index_max = 6
+        index_max = 7
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -41,10 +42,12 @@ class jobselect:
             arcum_select()
         elif index == 3:
             slime_select()
-        elif index ==4:
+        elif index == 4:
             btb_select()
         elif index == 5:
             hl_select()
         elif index == 6:
             unite_and_fight_select()
+        elif index == 7:
+            reserve_select()
 

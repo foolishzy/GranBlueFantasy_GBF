@@ -106,7 +106,7 @@ class unite_and_fight_select:
                 if index >= i[0] and index <= i[1]:
                     flag = True
         if index == 0:
-            self.exit()
+            self.__exit()
         elif index == 1:
             solo_battle_normal().play()
         elif index == 2:

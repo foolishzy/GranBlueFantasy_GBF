@@ -4,6 +4,37 @@ from selenium.webdriver.common.by import By
 class util:
 
 
+
+    #reserve
+    reserve_weapon_bt_data = {
+            'by' : By.XPATH,
+            'element' : "/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[3]/div[3]/div"
+            }
+    reserve_summon_bt_data = {
+            'by' : By.XPATH,
+            'element' : '/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[4]/div[4]/div'
+            }
+    reserve_bt_dialog_ok = {
+            'by' : By.XPATH,
+            'element' : '//div[@class="btn-usual-ok"]'
+            }
+    reserve_bt_dialog_use = {
+            'by' : By.XPATH,
+            'element' : '//div[@class="btn-usual-ok btn-usual-use btn-silent-se"]'
+            }
+    reserve_bt_dialog_reserve = {
+            'by' : By.XPATH,
+            'element' : '/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[2]/div[6]/div/div[3]/div[2]'
+            }
+    reserve_bt_timelimit = {
+            'by' : By.XPATH,
+            'element' : '/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/div[2]'
+            }
+    reserve_bt_nolimit = {
+            'by' : By.XPATH,
+            'element' : "/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/div[1]"
+            }
+    reserve_page_url = "https://game.granbluefantasy.jp/#present"
     # unite and fight
     uf_solo_normal = {
             'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912611/3/0',
