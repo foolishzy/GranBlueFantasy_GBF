@@ -57,6 +57,7 @@ class arcum_select:
        410. zone_faym_dark_5_draconic_simulacrum
        411. zone_faym_dark_5_oceanic_archon
        412. zone_faym_dark_3_mad_shearwielder
+       801. zone_kalendae_xneo_vohu_manah_militis
     '''
         flag = False
         while not flag:
@@ -65,7 +66,7 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [101, 117], [201, 202], [301, 313], [401, 412]]
+            index_range = [[0, 0], [101, 117], [201, 202], [301, 313], [401, 412],[801, 801]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -159,10 +160,17 @@ class arcum_select:
             arcumgame().zone_faym_dark_5_oceanic_archon().play()
         elif index == 412:
             arcumgame().zone_faym_dark_3_mad_shearwielder().play() 
+        elif index == 801:
+            arcumgame().zone_kalendae_xeno_vohu_manah_militis().play()
 class arcumgame:
     def __init__(self):
         pass
-
+    
+    class zone_kalendae_xeno_vohu_manah_militis(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_kalendae_gauge_box_data 
+            data = util.zone_kalendae_xeno_vohu_manah_militis
+            super().__init__(data, gb_data)
     class mundus_earth_5_princess_of_the_horde(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data

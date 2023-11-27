@@ -171,6 +171,14 @@ class util:
     #url
     url_home = "https://game.granbluefantasy.jp/#mypage"
     #arcum
+    arcum_zone_kalendae_gauge_box_data = {
+    'box_ele' : 'txt-chest-name',
+    'box_txt' : "Splendid Chest",
+    'gauge_ele' : 'txt-quest-name',
+    'gauge_name' : ['Herald of Earth', 'Herald of Dark' ] ,
+    'box_enemy_ele' : 'txt-quest-name',
+    'box_enemy_name' : ['Mimic']
+}
     arcum_zone_faym_gauge_box_data = {
     'box_ele' : 'txt-chest-name',
     'box_txt' : "Splendid Chest",
@@ -199,7 +207,12 @@ class util:
     liber_boss_wind_garuda_militis = {
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
             }
-
+    #stage 8
+    zone_kalendae_xeno_vohu_manah_militis = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/8/8/9/817131/25/0/25083",
+            'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/8",
+            "time_limit" : 10
+            }
     # stage 2
     zoneeletio_fire_de_cleansing_wyrmgod = {
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/2/2/3/811101/25",
