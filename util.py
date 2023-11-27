@@ -2,9 +2,6 @@ from selenium.webdriver.common.by import By
 
 
 class util:
-
-
-
     #reserve
     reserve_weapon_bt_data = {
             'by' : By.XPATH,
@@ -60,7 +57,10 @@ class util:
             'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912661/1/0/10116',
             'time_limit' : 5
             }
-
+    uf_final_rally = {
+            'url' : "https://game.granbluefantasy.jp/#quest/supporter_raid/35368078507/912771/1/0/0/2",
+            'time_limit' : 5
+            }
     # 场景切换页面的loading元素
     loading_page_element = {
             'element': "img-load",

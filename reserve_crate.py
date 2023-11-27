@@ -80,7 +80,6 @@ class clear_timelimit_weapon(auto_reserve):
             self.game.chm.find_element_by_tag_name('body').send_keys(Keys.END)
             self.game.mouse.click_by_element(self.weapon_bt_data, 5)
             self.game.mouse.click_by_element(self.reserve_bt, 5)
-
             if self.game.mouse.click_by_element(self.use_bt, 5):
                 self.game.mouse.click_by_element(self.ok_bt, 5)
             else:
@@ -118,5 +117,4 @@ class clear_no_limit_weapon(auto_reserve):
                 break
 
 
-clear_timelimit_weapon().run()
 

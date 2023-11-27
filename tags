@@ -10,6 +10,7 @@ PROXY	craft/tt.py	/^PROXY = "172.30.208.1:4780"$/;"	v
 __exit	event.py	/^    def __exit(self):$/;"	m	class:event_select	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
 __exit	jobselect.py	/^    def __exit(self):$/;"	m	class:jobselect	file:	access:private
+__exit	reserve_crate.py	/^    def __exit(self):$/;"	m	class:reserve_select	file:	access:private
 __exit	rise_of_the_beasts.py	/^    def __exit():$/;"	m	class:btb_select	file:	access:private
 __exit	unite_and_fight.py	/^    def __exit(self):$/;"	m	class:unite_and_fight_select	file:	access:private
 __init__	HL2.py	/^    def __init__(self):$/;"	m	class:avatar_impossible	access:public
@@ -83,6 +84,12 @@ __init__	loading_page_locator.py	/^    def __init__(self, mouse: Mouse, chm : we
 __init__	mouse.py	/^    def __init__(self, chm : webdriver.Chrome):$/;"	m	class:Mouse	access:public
 __init__	play_transitions.py	/^        def __init__(self):$/;"	m	class:arcum_machine.model	access:public
 __init__	play_transitions.py	/^    def __init__(self, model : model):$/;"	m	class:arcum_machine	access:public
+__init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:auto_reserve	access:public
+__init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:clear_no_limit_summon	access:public
+__init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:clear_no_limit_weapon	access:public
+__init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:clear_timelimit_summon	access:public
+__init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:clear_timelimit_weapon	access:public
+__init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:reserve_select	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_select	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_baihu	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:extreme_qinglong	access:public
@@ -119,6 +126,7 @@ arcum_zone_faym_gauge_box_data	util.py	/^    arcum_zone_faym_gauge_box_data = {$
 arcumgame	arcumgame.py	/^class arcumgame:$/;"	c	inherits:
 auto_refresh	craft/play_event.py	/^def auto_refresh(single_battle_time_limit):$/;"	f	access:public
 auto_refresh	game.py	/^    def auto_refresh(self):$/;"	m	class:game	access:public
+auto_reserve	reserve_crate.py	/^class auto_reserve:$/;"	c	inherits:
 auto_reverse	craft/play_event.py	/^def auto_reverse(times = 50):$/;"	f	access:public
 avatar_impossible	HL2.py	/^class avatar_impossible(HL2):$/;"	c	inherits:HL2
 btb_event_main_url	util.py	/^    btb_event_main_url = "https:\/\/game.granbluefantasy.jp\/#event\/advent"$/;"	v	class:util
@@ -140,6 +148,10 @@ check_opportunities	arcum_defender.py	/^    def check_opportunities():$/;"	m	cla
 checker	stage.py	/^class checker:$/;"	c	inherits:
 chrome_options	craft/play_event_times.py	/^chrome_options = Options()$/;"	v
 chrome_remote_host	util.py	/^    chrome_remote_host = "127.0.0.1:9222"$/;"	v	class:util
+clear_no_limit_summon	reserve_crate.py	/^class clear_no_limit_summon(auto_reserve):$/;"	c	inherits:auto_reserve
+clear_no_limit_weapon	reserve_crate.py	/^class clear_no_limit_weapon(auto_reserve):$/;"	c	inherits:auto_reserve
+clear_timelimit_summon	reserve_crate.py	/^class clear_timelimit_summon(auto_reserve):$/;"	c	inherits:auto_reserve
+clear_timelimit_weapon	reserve_crate.py	/^class clear_timelimit_weapon(auto_reserve):$/;"	c	inherits:auto_reserve
 click	mouse.py	/^    def click(self, x, y):$/;"	m	class:Mouse	access:public
 click_arcum_part_ok	craft/play_event.py	/^def click_arcum_part_ok():$/;"	f	access:public
 click_arcum_part_ok	mouse.py	/^    def click_arcum_part_ok(self):$/;"	m	class:Mouse	access:public
@@ -154,7 +166,6 @@ click_friend_summon	craft/play_event.py	/^def click_friend_summon():$/;"	f	acces
 click_friend_summon	mouse.py	/^    def click_friend_summon(self):$/;"	m	class:Mouse	access:public
 click_full	craft/play_event.py	/^def click_full():$/;"	f	access:public
 click_full	mouse.py	/^    def click_full(self, waittime = 10):$/;"	m	class:Mouse	access:public
-click_gague_ok	mouse.py	/^    def click_gague_ok(self):$/;"	m	class:Mouse	access:public
 click_gauge	mouse.py	/^    def click_gauge(self, $/;"	m	class:Mouse	access:public
 click_gauge_enemy	mouse.py	/^    def click_gauge_enemy(self, $/;"	m	class:Mouse	access:public
 click_gauge_ok	mouse.py	/^    def click_gauge_ok(self):$/;"	m	class:Mouse	access:public
@@ -339,9 +350,23 @@ refresh	craft/play_event.py	/^def refresh(element =  '\/\/div[@class="prt-comman
 refresh	stage.py	/^    def refresh(self):$/;"	m	class:stage	access:public
 replicard_common	arcum_replicard.py	/^class replicard_common(game):$/;"	c	inherits:game
 request_dialog_locator	loading_page_locator.py	/^class request_dialog_locator:$/;"	c	inherits:
+reserve_bt_dialog_ok	util.py	/^    reserve_bt_dialog_ok = {$/;"	v	class:util
+reserve_bt_dialog_reserve	util.py	/^    reserve_bt_dialog_reserve = {$/;"	v	class:util
+reserve_bt_dialog_use	util.py	/^    reserve_bt_dialog_use = {$/;"	v	class:util
+reserve_bt_nolimit	util.py	/^    reserve_bt_nolimit = {$/;"	v	class:util
+reserve_bt_timelimit	util.py	/^    reserve_bt_timelimit = {$/;"	v	class:util
+reserve_page_url	util.py	/^    reserve_page_url = "https:\/\/game.granbluefantasy.jp\/#present"$/;"	v	class:util
+reserve_select	reserve_crate.py	/^class reserve_select:$/;"	c	inherits:
+reserve_summon_bt_data	util.py	/^    reserve_summon_bt_data = {$/;"	v	class:util
+reserve_weapon_bt_data	util.py	/^    reserve_weapon_bt_data = {$/;"	v	class:util
 right_click	mouse.py	/^    def right_click(self, x, y):$/;"	m	class:Mouse	access:public
 rose_queen_impossible	HL2.py	/^class rose_queen_impossible(HL2):$/;"	c	inherits:HL2
 run	alert.py	/^    def run(self):$/;"	m	class:alert	access:public
+run	reserve_crate.py	/^    def run(self):$/;"	m	class:auto_reserve	access:public
+run	reserve_crate.py	/^    def run(self):$/;"	m	class:clear_no_limit_summon	access:public
+run	reserve_crate.py	/^    def run(self):$/;"	m	class:clear_no_limit_weapon	access:public
+run	reserve_crate.py	/^    def run(self):$/;"	m	class:clear_timelimit_summon	access:public
+run	reserve_crate.py	/^    def run(self):$/;"	m	class:clear_timelimit_weapon	access:public
 screen_label_arcum_gauge	util.py	/^    screen_label_arcum_gauge = {'element' : "txt-chest-name", 'by' : By.CLASS_NAME}$/;"	v	class:util
 screen_label_arcum_gauge_goto_url	util.py	/^    screen_label_arcum_gauge_goto_url = {'element' : 'prt-aap-num', "by" : By.CLASS_NAME}$/;"	v	class:util
 screen_label_arcum_gauge_mimic	util.py	/^    screen_label_arcum_gauge_mimic = {'text' : "Mimic", 'by' : By.CLASS_NAME, 'element' : "txt-quest-name"}$/;"	v	class:util
