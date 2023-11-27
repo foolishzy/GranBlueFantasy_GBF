@@ -125,6 +125,9 @@ class util:
             'time_limit' : 5
             }
     # 踢馆
+    shiny_slime_week = {'url' : 'https://game.granbluefantasy.jp/#quest/supporter/400181/4',
+            'time_limit' : 2}
+
     shiny_slime_weekend = {'url' : "https://game.granbluefantasy.jp/#quest/supporter/400151/4", 'time_limit' : 2 }
     chrome_remote_host = "127.0.0.1:9222"
     # 选择队伍界面的ok确认键
@@ -443,7 +446,6 @@ class util:
             'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/3',
             'time_limit' : 3,
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/16/812091/25'
-
             }
     arcum_jurassic_dino = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/7/7/14/816081/25',
