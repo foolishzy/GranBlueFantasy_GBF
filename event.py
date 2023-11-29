@@ -51,7 +51,7 @@ class detective_barawa(event_common):
     impossible_data = util.Detective_Barawa_impossible
     extreme_data = util.Detective_Barawa_extreme
     game_data = impossible_data
-    
+    nightmare_data = util.Detective_solo_Nightmare 
     def __exit(self):
         pass
 
@@ -62,9 +62,10 @@ class detective_barawa(event_common):
         1.veryhard
         2.extreme
         3.impossible
+        4.solo night mare
         '''
         index = -1
-        index_max = 3
+        index_max = 4
         index_min = 0
         while (not (index >= index_min and index <= index_max)):
             
@@ -81,7 +82,8 @@ class detective_barawa(event_common):
             self.play_extreme()
         elif index == 3:
             self.play_impossible()
-
+        elif index == 4:
+            self.play_nightmare()
 
     def __init__(self):
         super().__init__(self.game_data)
@@ -91,6 +93,11 @@ class detective_barawa(event_common):
         self.__init__()
         self.__play()
     
+    def play_nightmare(self):
+        self.game_data = self.nightmare_data
+        self.__init__()
+        self.__play()
+
     def play_extreme(self):
         self.game_data = self.extreme_data
         self.__init__()

@@ -2,6 +2,11 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+    #anubis showdown 大马
+    anubis_showdown_data = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/103901/3',
+            'time_limit' : 10
+            }
     #reserve
     reserve_weapon_bt_data = {
             'by' : By.XPATH,
@@ -520,6 +525,10 @@ class util:
     Detective_Barawa_impossible = {
             'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912941/1/0/10505',
             'time_limit' : 8
+            }
+    Detective_solo_Nightmare = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912911/3',
+            'time_limit' : 5
             }
     hope_from_a_snow_drop_impossible = {
             'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912341/1/0/10504',

@@ -6,6 +6,7 @@ from HL2 import hl_select
 from unite_and_fight import unite_and_fight_select
 from reserve_crate import reserve_select 
 from backup_request_game import select 
+from scales_of_dominion import scales_of_dominion_select
 class jobselect:
 
 
@@ -25,8 +26,9 @@ class jobselect:
         6.unite and fight
         7.clear_crate
         8.backup
+        9.anubis showdown 大马的天平
 '''
-        index_max = 8
+        index_max = 9 
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -53,4 +55,5 @@ class jobselect:
             reserve_select()
         elif index == 8:
             select()
-
+        elif index == 9:
+            scales_of_dominion_select()
