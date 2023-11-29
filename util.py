@@ -302,7 +302,6 @@ class util:
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/12/816051/25",
             'time_limit' : 3,
             'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
-            
             }
     joculator_water_5_glacial_hellbeast = {
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/3/816011/25",

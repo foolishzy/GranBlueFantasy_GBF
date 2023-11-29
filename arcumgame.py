@@ -118,7 +118,7 @@ class arcum_select:
         elif index == 202:
             arcumgame().joculator_dark_3_Dreadful_scourge().play()
         elif index == 203:
-            arcumgame().joculator_dart_5_bloody_soothsayer().play()
+            arcumgame().joculator_dark_5_bloody_soothsayer().play()
         elif index == 204:
             arcumgame().joculator_dark_5_nebulous_one().play()
         elif index == 205:
@@ -302,21 +302,21 @@ class arcumgame:
     class joculator_water_5_glacial_hellbeast(replicard_common):
         def __init__(self):
             gb_data = util.arcum_joculator_gauge_box_data
-            data = 
+            data = util.joculator_water_5_glacial_hellbeast
             super().__init__(data, gb_data)
     class joculator_water_3_maiden_of_the_depiths(replicard_common):
         def __init__(self):
             gb_data = util.arcum_joculator_gauge_box_data
-            data = 
+            data = util.joculator_water_3_maiden_of_the_depiths
             super().__init__(data, gb_data)
     class joculator_de_water_lady_of_redemption(replicard_common):
         def __init__(self):
-            data = 
+            data = util.joculator_de_water_lady_of_the_redemption
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
-    class joculator_dart_5_bloody_soothsayer(replicard_common):
+    class joculator_dark_5_bloody_soothsayer(replicard_common):
         def __init__(self):
-            data = 
+            data = util.joculator_dark_5_bloody_soothsayer
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
             
@@ -327,12 +327,12 @@ class arcumgame:
             super().__init__(data, gb_data)
     class joculator_dark_5_nebulous_one(replicard_common):
         def __init__(self):
-            data = 
+            data = util.joculator_dark_5_nebulous_one 
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
     class joculator_water_xeno_cocytus_militis(replicard_common):
         def __init__(self):
-            data = 
+            data =  util.joculator_water_xeno_cocytus_militis
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
 
