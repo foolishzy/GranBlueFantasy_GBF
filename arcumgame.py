@@ -32,6 +32,13 @@ class arcum_select:
        117. mundus_water_v2de_ca_ong_militis
        201. joculator_dark_ve_jurassic_dino
        202. joculator_dark_3_Dreadful_scourge
+       203. joculator_dark_5_bloody_soothsayer
+       204. joculator_dark_5_nebulous_one
+       205. joculator_water_5_giant_sea_plant
+       206. joculator_water_5_glacial_hellbeast
+       207. joculator_water_3_maiden_of_the_depiths
+       208. joculator_de_water_lady_of_redemption
+       209. joculator_water_xeno_cocytus_militis
        301. zoneeletio_fire_de_cleansing_wyrmgod
        302. zoneeletio_fire_5_slithering_seductress
        303. zoneeletio_fire_5_eletion_drake
@@ -66,7 +73,7 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [101, 117], [201, 202], [301, 313], [401, 412],[801, 801]]
+            index_range = [[0, 0], [101, 117], [201, 20999999999], [301, 313], [401, 412],[801, 801]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -110,6 +117,20 @@ class arcum_select:
             arcumgame().joculator_dark_ve_jurassic_dino().play()
         elif index == 202:
             arcumgame().joculator_dark_3_Dreadful_scourge().play()
+        elif index == 203:
+            arcumgame().joculator_dart_5_bloody_soothsayer().play()
+        elif index == 204:
+            arcumgame().joculator_dark_5_nebulous_one().play()
+        elif index == 205:
+            arcumgame().joculator_water_5_giant_sea_plant().play()
+        elif index == 206:
+            arcumgame().joculator_water_5_glacial_hellbeast().play()
+        elif index == 207:
+            arcumgame().joculator_water_3_maiden_of_the_depiths().play()
+        elif index == 208:
+            arcumgame().joculator_de_water_lady_of_redemption().play()
+        elif index == 209:
+            arcumgame().joculator_water_xeno_cocytus_militis
         elif index == 301:
             arcumgame().zoneeletio_fire_de_cleansing_wyrmgod().play()
         elif index == 302:
@@ -270,11 +291,49 @@ class arcumgame:
     class joculator_dark_ve_jurassic_dino(replicard_common):
         def __init__(self):
             data = util.joculator_dark_ve_jurassic_dinol
+            gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
 
     class joculator_dark_3_Dreadful_scourge(replicard_common):
         def __init__(self):
+            gb_data = util.arcum_joculator_gauge_box_data
             data = util.joculator_dark_3_Dreadful_scourge
+            super().__init__(data, gb_data)
+    class joculator_water_5_glacial_hellbeast(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_joculator_gauge_box_data
+            data = 
+            super().__init__(data, gb_data)
+    class joculator_water_3_maiden_of_the_depiths(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_joculator_gauge_box_data
+            data = 
+            super().__init__(data, gb_data)
+    class joculator_de_water_lady_of_redemption(replicard_common):
+        def __init__(self):
+            data = 
+            gb_data = util.arcum_joculator_gauge_box_data
+            super().__init__(data, gb_data)
+    class joculator_dart_5_bloody_soothsayer(replicard_common):
+        def __init__(self):
+            data = 
+            gb_data = util.arcum_joculator_gauge_box_data
+            super().__init__(data, gb_data)
+            
+    class joculator_water_5_giant_sea_plant(replicard_common):
+        def __init__(self):
+            data = util.joculator_water_5_giant_sea_plant
+            gb_data = util.arcum_joculator_gauge_box_data
+            super().__init__(data, gb_data)
+    class joculator_dark_5_nebulous_one(replicard_common):
+        def __init__(self):
+            data = 
+            gb_data = util.arcum_joculator_gauge_box_data
+            super().__init__(data, gb_data)
+    class joculator_water_xeno_cocytus_militis(replicard_common):
+        def __init__(self):
+            data = 
+            gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
 
     class zoneeletio_fire_de_cleansing_wyrmgod(replicard_common):

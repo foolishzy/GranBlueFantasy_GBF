@@ -206,6 +206,14 @@ class util:
     'box_enemy_ele' : 'txt-quest-name',
     'box_enemy_name' : ['Mimic']
 }
+    arcum_joculator_gauge_box_data = {
+    'box_ele' : 'txt-chest-name',
+    'box_txt' : "Splendid Chest",
+    'gauge_ele' : 'txt-quest-name',
+    'gauge_name' : ['Herald of Water', 'Herald of Dark' ] ,
+    'box_enemy_ele' : 'txt-quest-name',
+    'box_enemy_name' : ['Mimic']
+}
     #stage 9
     liber_boss_wind_garuda_militis = {
             'url' : "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
@@ -284,6 +292,48 @@ class util:
             }
 
     # stage 7
+    joculator_dark_5_bloody_soothsayer = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/10/816041/25",
+            'time_limit' : 3,
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
+            
+            }
+    joculator_dark_5_nebulous_one = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/12/816051/25",
+            'time_limit' : 3,
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
+            
+            }
+    joculator_water_5_glacial_hellbeast = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/3/816011/25",
+            'time_limit' : 3,
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
+                       
+            }
+    joculator_water_3_maiden_of_the_depiths = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/7/816031/25",
+            'time_limit' : 3,
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
+            
+            }
+    joculator_de_water_lady_of_the_redemption = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/3/816071/25",
+            'time_limit' : 10,
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
+            
+            }
+    joculator_water_xeno_cocytus_militis = {
+            'url' : "https://game.granbluefantasy.jp/#replicard/supporter/7/7/15/816131/25/0/25083",
+            'time_limit' : 15,
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
+            
+            }
+    joculator_water_5_giant_sea_plant = {
+            'url' :'https://game.granbluefantasy.jp/#replicard/supporter/7/7/5/816021/25',
+            'time_limit' : 3,
+            'gauge_url' : 'https://game.granbluefantasy.jp/#replicard/stage/7'
+            }
+
     joculator_dark_3_Dreadful_scourge = {
             'url' : 'https://game.granbluefantasy.jp/#replicard/supporter/7/7/14/816061/25',
             'gauge_url' : "https://game.granbluefantasy.jp/#replicard/stage/7",
