@@ -2,6 +2,9 @@ from alert import alert
 from selenium.webdriver.common.by import By
 from elementfinder import elefinder 
 from game import game
+class select:
+    def __init__(self):
+        backup_request_game().play()
 
 class backup_request_game(game):
 
@@ -11,12 +14,13 @@ class backup_request_game(game):
     
 
     def goto_backup_page(self):
-        self.url = 'https://game.granbluefantasy.jp/#quest/assisti'
-        selector = {
-                'element' : '//*[@id="tab-search"]',
-                'by' : By.XPATH
-                } 
-        self.stage.goto(self.url, selector )
+        self.url = 'https://game.granbluefantasy.jp/#quest/multi/0'
+        self.stage.goto(self.url)
+        elf = elefinder(By.XPATH, '/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[2]/div/div[2]', 5, self.chm)
+        while True:
+            if elf.is_element_clickable():
+                self.chm.find_element_by_xpath('/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[2]/div/div[2]').click()
+                break
 
     def click_max_progress(self):
         e = self.chm.find_elements_by_class_name('prt-raid-gauge-inner')
@@ -57,6 +61,4 @@ class backup_request_game(game):
             super().play()
         alert.run()
 
-g = backup_request_game()
-g.play()
 

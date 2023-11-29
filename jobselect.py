@@ -5,7 +5,7 @@ from rise_of_the_beasts import btb_select
 from HL2 import hl_select
 from unite_and_fight import unite_and_fight_select
 from reserve_crate import reserve_select 
-
+from backup_request_game import select 
 class jobselect:
 
 
@@ -24,8 +24,9 @@ class jobselect:
         5.hl2.0
         6.unite and fight
         7.clear_crate
+        8.backup
 '''
-        index_max = 7
+        index_max = 8
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -50,4 +51,6 @@ class jobselect:
             unite_and_fight_select()
         elif index == 7:
             reserve_select()
+        elif index == 8:
+            select()
 
