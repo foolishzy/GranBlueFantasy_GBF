@@ -460,6 +460,18 @@ class util:
     
 
     # event
+    Detective_Barawa_very_hard = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912921/1',
+            'time_limit' : 3
+            }
+    Detective_Barawa_extreme = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912931/1/0/10505',
+            'time_limit' : 3
+            }
+    Detective_Barawa_impossible = {
+            'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912941/1/0/10505',
+            'time_limit' : 8
+            }
     hope_from_a_snow_drop_impossible = {
             'url' : 'https://game.granbluefantasy.jp/#quest/supporter/912341/1/0/10504',
             'time_limit' : 10

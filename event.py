@@ -13,7 +13,7 @@ class event_select:
         请选择：
         0.退出
         1.hope_from_a_snow_drop
-        2....
+        2.Detective Barawa...
         '''
         index_max = 2
         index_min = 0
@@ -28,9 +28,11 @@ class event_select:
             self.__exit()
         elif index == 1:
             hope_from_a_snow_drop().play()            
-
+        elif index == 2:
+            detective_barawa().play()
 
 class event_common(game):
+
     def __init__(self, 
             game_data = {'url' : "", 'time_limit' : 10
                 }
@@ -40,6 +42,78 @@ class event_common(game):
                 game_data['time_limit']
                 )
         pass
+
+class detective_barawa(event_common): 
+    '''
+    20231128
+    '''
+    veryhard_data = util.Detective_Barawa_very_hard 
+    impossible_data = util.Detective_Barawa_impossible
+    extreme_data = util.Detective_Barawa_extreme
+    game_data = impossible_data
+    
+    def __exit(self):
+        pass
+
+    def play(self):
+        string_hint = '''
+        \n
+        0.exit
+        1.veryhard
+        2.extreme
+        3.impossible
+        '''
+        index = -1
+        index_max = 3
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+            
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.play_veryhard()
+        elif index == 2:
+            self.play_extreme()
+        elif index == 3:
+            self.play_impossible()
+
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def play_veryhard(self):
+        self.game_data = self.veryhard_data
+        self.__init__()
+        self.__play()
+    
+    def play_extreme(self):
+        self.game_data = self.extreme_data
+        self.__init__()
+        self.__play()
+
+    def play_impossible(self):
+        self.game_data = self.impossible_data
+        self.__init__()
+        self.__play()
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        while times > 0:
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            #打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
 
 
 class hope_from_a_snow_drop(event_common):
