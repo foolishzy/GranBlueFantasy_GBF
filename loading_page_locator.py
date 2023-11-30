@@ -67,7 +67,7 @@ class last_turn_locator:
         while self.eve.is_set():
             if elf.is_element_visibility():
                 text = elf.get_element_text()
-                if re.match(text, string_lt) and re.match(text, string_lt).span()[1] > 0:
+                if re.search(text, string_lt) and re.search(text, string_lt).span()[1] > 0:
                     self.chm.refresh()
                     self.mouse.click_full()
             time.sleep(0.5)    
@@ -90,7 +90,7 @@ class goal_page_locator:
                 flag = True
             else:
                 current_url = self.chm.current_url
-                if (re.match(current_url, 'result') and re.match(current_url, 'result').span()[1] > 0) or (re.match(current_url, 'quest') and re.Match(current_url, 'quest').span()[1] > 0):
+                if (re.search(current_url, 'result') and re.search(current_url, 'result').span()[1] > 0) or (re.search(current_url, 'quest') and re.search(current_url, 'quest').span()[1] > 0):
                     flag = True
             if flag :
                 self.ctrl_event.clear()

@@ -20,6 +20,8 @@ class scales_of_dominion(game):
             super().play()
             self.mouse.click_friend_summon()
             self.mouse.click_party_ok()
+            self.party.update()
+            self.party.player_one.use_skill(2)
             self.mouse.click_full()
             self.auto_refresh()
         alert().run()
