@@ -2,30 +2,45 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from enum import Enum
 from selenium import webdriver
+import time
 import re
 from mouse import Mouse
 from stage import checker  
 from elementfinder import elefinder
-
+from selenium.common.exceptions import  NoSuchElementException
 class party:
     def __init__(self, chm : webdriver.Chrome, mouse : Mouse):
         self.chm = chm
         self.mouse = mouse
    
     def update(self):
-         if checker(self.chm, 15).is_battle_page(15):
+        if checker(self.chm, 15).is_battle_page(15):
             self.player_one = character(1, self.chm, self.mouse)
-            print('player 1 updated')
+            print('player 1 updated ' + self.player_one.state.name)
             self.player_two = character(2, self.chm, self.mouse)
-            print('player 2 updated')
+            print('player 2 updated ' + self.player_two.state.name)
             self.player_three = character(3, self.chm, self.mouse)
-            print('player 3 updated')
+            print('player 3 updated ' + self.player_three.state.name)
             self.player_four = character(4, self.chm, self.mouse)
-            print('player 4 updated')
+            print('player 4 updated ' + self.player_four.state.name)
+            self.players = [self.player_one, self.player_two, self.player_three, self.player_four]
+        else:
+            self.player_one = None
+            self.player_two = None
+            self.player_three = None
+            self.player_four = None
             self.players = [self.player_one, self.player_two, self.player_three, self.player_four]
 
     def print_info(self):
         pass
+    
+    def use_skill(self, player_num : int, skill_num : int):
+        if player_num > 0 and player_num < 5 and skill_num > 0 and skill_num < 5:
+            for p in self.players:
+                if p.index == player_num:
+                    p.use_skill(skill_num)
+        else:
+            print('get wrong num')
 
 
 class character:
@@ -36,21 +51,22 @@ class character:
         self.chm = chm
         self.mouse = mouse
         if index < 5 and index > 0:
-            
+                    
             self.brief_element_xpath = '//*[@id="prt-command-top"]/div/div/div[' + str(index) +  ']'
             self.extend_element_xpath = '//div[@class="prt-command-chara chara' + str(index) + '"]' 
             self.state = self.check_character_state()         
-            
+            self.index = index    
             brief_element = self.get_brief_element()
             extend_element = self.get_extend_element()
-            
-            skill_brief_element = brief_element.find_element_by_class_name('prt-ability-state')
-            skill_extend_element = extend_element.find_element_by_class_name('prt-ability-list')
-            
-            self.skill_one = skill(1, skill_brief_element, skill_extend_element, self.chm  )
-            self.skill_two = skill(2, skill_brief_element, skill_extend_element, self.chm ) 
-            self.skill_three = skill(3, skill_brief_element, skill_extend_element, self.chm )
-            self.skill_four = skill(4, skill_brief_element, skill_extend_element, self.chm )
+
+            if brief_element and extend_element and self.state == character_state.exist  :
+                skill_brief_element = brief_element.find_element_by_class_name('prt-ability-state')
+                skill_extend_element = extend_element.find_element_by_class_name('prt-ability-list')
+                
+                self.skill_one = skill(1, skill_brief_element, skill_extend_element, self.chm  )
+                self.skill_two = skill(2, skill_brief_element, skill_extend_element, self.chm ) 
+                self.skill_three = skill(3, skill_brief_element, skill_extend_element, self.chm )
+                self.skill_four = skill(4, skill_brief_element, skill_extend_element, self.chm )
 
         else:
             print('input wrong!')
@@ -138,18 +154,36 @@ class skill:
         if (not l1 ) and l2:
             try:
                 self.ex_e.click()
-            except:
+            except NoSuchElementException:
+                print('NoSuchElementException')
                 pass
    
     def get_extend_element(self):
         ele = './div[' + str(self.index)  +']'
-        #  if elefinder(By.XPATH, ele, 5, self.chm ).is_element_presence():
-        return self.group_extend_ele.find_element_by_xpath(ele)
-   
+        i = 0
+        while i < 5:
+            try:
+                result = self.group_extend_ele.find_element_by_xpath(ele)
+                break
+            except NoSuchElementException:
+                i = i + 1
+                time.sleep(1)
+                result = None
+        return result
+
     def get_brief_element(self):
         ele =  './div[' + str(self.index)  +']'
-        #  if elefinder(By.XPATH, ele, 5, self.chm).is_element_presence():
-        return  self.group_brife_ele.find_element_by_xpath(ele)       
+        i = 0
+        while i < 5:
+            try: 
+                result = self.group_brife_ele.find_element_by_xpath(ele)       
+                break
+            except NoSuchElementException:
+                i = i + 1
+                time.sleep(1)
+                result = None
+        return result
+
 
     def update_state(self):
         xpath = '//div[@class="lis-ability-state ability' + str(self.index) + '"]'        

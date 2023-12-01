@@ -13,6 +13,7 @@ from selenium import webdriver
 from elementfinder import elefinder
 from threading import Thread
 from skill_clicker import party
+from click_summon import battle_summons
 class game:
 
     def __init__(self, battle_time_limit ):
@@ -26,6 +27,7 @@ class game:
         self.ck = checker(self.chm)
         self.lpl = lpl(self.chm)
         self.party = party(self.chm, self.mouse)
+        self.summons = battle_summons(self.chm, self.mouse)
         #在战斗页面初始化party
 
     def connect_chrome(self):
@@ -76,6 +78,7 @@ class game:
                 print('play_event_set, ', play_event.is_set() )
                 if play_event.is_set():
                     self.party.update()
+                    self.summons.update()
                     self.mouse.click_full()
                 else:
                     break
