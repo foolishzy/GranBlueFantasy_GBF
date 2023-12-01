@@ -5,26 +5,27 @@ import time
 from game import game
 from stage import stage
 from mouse import Mouse
+
+
 class replicard_common(game):
 
-    
     def __init__(
             self,
-            game_data = {
-                'url' : "",
-                'gauge_url' : "",
-                'time_limit' : 3
-                },
-            gauge_box_data = {
-                'box_ele' : 'txt-chest-name',
-                'box_txt' : "Splendid Chest",
-                'gauge_ele' : 'txt-quest-name',
-                'gauge_txt' : ['Herald of The Moon','Herald of Death','Herald of Justice' ] ,
-                'enemy_ele' : 'txt-quest-name',
-                'enemy_txt' : ['Mimic', 'Obsidian Machina']
-                }
-                
-            ):
+            game_data={
+                'url': "",
+                'gauge_url': "",
+                'time_limit': 3
+            },
+            gauge_box_data={
+                'box_ele': 'txt-chest-name',
+                'box_txt': "Splendid Chest",
+                'gauge_ele': 'txt-quest-name',
+                'gauge_txt': ['Herald of The Moon', 'Herald of Death', 'Herald of Justice'],
+                'enemy_ele': 'txt-quest-name',
+                'enemy_txt': ['Mimic', 'Obsidian Machina']
+            }
+
+    ):
         battle_time_limit = game_data['time_limit']
         url = game_data['url']
         gauge_url = game_data['gauge_url']
@@ -34,7 +35,7 @@ class replicard_common(game):
         self.gauge_box_data = gauge_box_data
 
     def play(self):
- 
+
         # one turn
         i = int(input("""
         100% chargebar and one turn?
@@ -42,12 +43,12 @@ class replicard_common(game):
         1. yes
         2. no
         """
-        ))
+                      ))
         if i == 1:
             self.oneturn = True
         else:
             self.oneturn = False
-        #one turn
+        # one turn
         by = self.util.screen_label_auto_refresh['by']
         ele = self.util.screen_label_auto_refresh['element']
         super().play()
@@ -61,20 +62,21 @@ class replicard_common(game):
             if self.ck.is_battle_page():
                 if self.oneturn:
                     self.mouse.click_full()
-                    if elefinder(by, ele, 30, self.chm ).is_element_presence():
+                    if elefinder(by, ele, 30, self.chm).is_element_presence():
                         self.stage.refresh()
                 else:
                     self.mouse.click_full()
                     self.auto_refresh()
-            self.stage.goto(self.gauge_url,{'element' : 'prt-division-list', 'by' : By.CLASS_NAME })
+            self.stage.goto(self.gauge_url, {
+                            'element': 'prt-division-list', 'by': By.CLASS_NAME})
             if self.ck.check_box(self.gauge_box_data):
-                self.play_box() 
+                self.play_box()
             elif self.ck.check_gauge(self.gauge_box_data):
                 self.play_gauge()
             elif self.ck.check_gauge_enemy(self.gauge_box_data):
                 self.play_gauge_enemy()
         alert().run()
-    
+
     def play_box(self):
         self.mouse.click_box()
         self.mouse.click_gague_ok()
@@ -94,8 +96,3 @@ class replicard_common(game):
         self.mouse.click_arcum_part_ok()
         self.mouse.click_full()
         self.ck.is_goal_page(30)
-
-
-
-
-

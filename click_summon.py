@@ -8,7 +8,6 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 class summon:
-
     brief_element_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
     summon_okbt_dialog_xpath = '//*[@id="wrapper"]/div[3]/div[14]'
     def __init__(self, index: int, chm: webdriver.Chrome, mouse: Mouse):
@@ -64,11 +63,9 @@ class summon_state(Enum):
 
 class battle_summons:
 
-            extend_summon_panel_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div/div[1]'
-
-
+    extend_summon_panel_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div/div[1]'
     close_summon_panel_xpath = '//*[@id="cnt-raid-information"]/div[1]'
-        brief_summons_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
+    brief_summons_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
 
     def use_all_summon(self):
         flag = False
@@ -86,7 +83,6 @@ class battle_summons:
         if index > 0 and index < 7:
             self.open_summon_panel()
             self.summon_group[index].use()
-            self.close_summon_panel()
         pass
 
     def close_summon_panel(self):

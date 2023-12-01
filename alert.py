@@ -1,4 +1,5 @@
-import pyautogui 
+import pyautogui
+
 
 class alert:
 
@@ -13,5 +14,5 @@ class alert:
     def sound(self):
         print("\a")
 
-    def end_box(self, msg = "打完", title = "gbf script",bt = 'ok'):
+    def end_box(self, msg="打完", title="gbf script", bt='ok'):
         pyautogui.alert(msg, title, bt)
