@@ -3,15 +3,15 @@ from enum import Enum
 from mouse import Mouse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from elementfinder import elefinder 
-
+from elementfinder import elefinder
+from selenium.common.exceptions import NoSuchElementException
 
 
 class summon:
 
     brief_element_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
-
-    def __init__(self, index : int, chm : webdriver.Chrome, mouse : Mouse):
+    summon_okbt_dialog_xpath = '//*[@id="wrapper"]/div[3]/div[14]'
+    def __init__(self, index: int, chm: webdriver.Chrome, mouse: Mouse):
 
         self.index = index
         self.chm = chm
@@ -32,6 +32,18 @@ class summon:
     def use(self):
         if self.state == summon_state.avilable:
             self.element.click()
+            elf = elefinder(
+                By.XPATH, self.summon_okbt_dialog_xpath, 3, self.chm)
+            if elf.is_element_presence():
+                dialog_ele = self.chm.find_element_by_xpath(
+                    self.summon_okbt_dialog_xpath)
+                try:
+                    ok_ele = dialog_ele.find_element_by_xpath(
+                        './div[3]/div[2]')
+                    ok_ele.click()
+                except NoSuchElementException:
+                    print('NoSuchElementException')
+                    pass
             print('summon ' + str(self.index) + ' used')
         pass
 
@@ -44,16 +56,19 @@ class summon:
                 s = summon_state.unavilable
         return s
 
+
 class summon_state(Enum):
     avilable = 1
-    unavilable = 0 
+    unavilable = 0
 
 
 class battle_summons:
-    
-    extend_summon_panel_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div/div[1]'
+
+            extend_summon_panel_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div/div[1]'
+
+
     close_summon_panel_xpath = '//*[@id="cnt-raid-information"]/div[1]'
-    brief_summons_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'   
+        brief_summons_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
 
     def use_all_summon(self):
         flag = False
@@ -76,22 +91,25 @@ class battle_summons:
 
     def close_summon_panel(self):
         selector = {
-                'by' : By.XPATH,
-                'element' : self.close_summon_panel
-                }
-        self.mouse.click_by_element(selector, 3)
-        print('summon panel closed')
+            'by': By.XPATH,
+            'element': self.close_summon_panel
+        }
+        elf = elefinder(selector['by'], selector['element'], 3, self.chm)
+        if elf.is_element_clickable():
+            self.mouse.click_by_element(selector, 3)
+            print('summon panel closed')
 
     def open_summon_panel(self):
         selector = {
-                'by' : By.XPATH, 
-                'element' : self.extend_summon_panel_xpath
-                }
-        self.mouse.click_by_element(selector , 3)         
-        print('summon panel opened')
+            'by': By.XPATH,
+            'element': self.extend_summon_panel_xpath
+        }
+        elf = elefinder(selector['by'], selector['element'], 3, self.chm)
+        if elf.is_element_clickable():
+            self.mouse.click_by_element(selector, 3)
+            print('summon panel opened')
 
-
-    def __init__(self, chm : webdriver.Chrome, mouse : Mouse):
+    def __init__(self, chm: webdriver.Chrome, mouse: Mouse):
         self.chm = chm
         self.mouse = mouse
         self.summon_group = list()
@@ -99,7 +117,7 @@ class battle_summons:
 
     def update(self):
         xpath = self.brief_summons_xpath
-        elf = elefinder(By.XPATH, xpath, 3, self.chm) 
+        elf = elefinder(By.XPATH, xpath, 3, self.chm)
         if elf.is_element_presence():
             self.brief_summons_element = self.chm.find_element_by_xpath(xpath)
             self.summon_group = list()
@@ -107,4 +125,3 @@ class battle_summons:
                 s = summon(i, self.chm, self.mouse)
                 self.summon_group.append(s)
         print('summons updated ')
-
