@@ -5,11 +5,14 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from elementfinder import elefinder
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import ElementNotInteractableException
+import time
 
 
 class summon:
     brief_element_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
     summon_okbt_dialog_xpath = '//*[@id="wrapper"]/div[3]/div[14]'
+
     def __init__(self, index: int, chm: webdriver.Chrome, mouse: Mouse):
 
         self.index = index
@@ -17,7 +20,19 @@ class summon:
         self.mouse = mouse
         self.element = self.get_brief_element()
         self.state = self.get_state()
-        print('summon ' + str(self.index) + ' init...')
+        self.name = self.get_summon_name()
+        self.cold_down = self.get_cd()
+        print('summon ' + str(self.index) + ' init...  ' +
+              self.state.name + '  cd: ' + self.cold_down +
+              " " + self.name)
+
+    def get_cd(self):
+        if self.element:
+            return self.element.get_attribute('summon-recast')
+
+    def get_summon_name(self):
+        if self.element:
+            return self.element.get_attribute('summon-name')
 
     def get_brief_element(self):
         summons_xpath = self.brief_element_xpath
@@ -29,8 +44,13 @@ class summon:
         return ee
 
     def use(self):
-        if self.state == summon_state.avilable:
-            self.element.click()
+        if self.state == summon_state.available:
+            try:
+                self.element.click()
+            except ElementNotInteractableException:
+                self.chm.execute_script(
+                    '$(arguments[0]).click()', self.element)
+            time.sleep(1)
             elf = elefinder(
                 By.XPATH, self.summon_okbt_dialog_xpath, 3, self.chm)
             if elf.is_element_presence():
@@ -40,25 +60,27 @@ class summon:
                     ok_ele = dialog_ele.find_element_by_xpath(
                         './div[3]/div[2]')
                     ok_ele.click()
+                except ElementNotInteractableException:
+                    self.chm.execute_script("$(arguments[0]).click()", ok_ele)
                 except NoSuchElementException:
                     print('NoSuchElementException')
                     pass
-            print('summon ' + str(self.index) + ' used')
+            print('summon ' + str(self.index) + self.name + ' used')
         pass
 
     def get_state(self):
         if self.element:
             class_name = self.element.get_attribute('class')
             if not re.search('unavailable', class_name):
-                s = summon_state.avilable
+                s = summon_state.available
             else:
-                s = summon_state.unavilable
+                s = summon_state.unavailable
         return s
 
 
 class summon_state(Enum):
-    avilable = 1
-    unavilable = 0
+    available = 1
+    unavailable = 0
 
 
 class battle_summons:
@@ -70,10 +92,9 @@ class battle_summons:
     def use_all_summon(self):
         flag = False
         for s in self.summon_group:
-            if s.state == summon_state.avilable:
+            if s.state == summon_state.available:
                 self.open_summon_panel()
                 s.use()
-                self.close_summon_panel()
                 flag = True
                 break
         if not flag:
@@ -103,6 +124,7 @@ class battle_summons:
         elf = elefinder(selector['by'], selector['element'], 3, self.chm)
         if elf.is_element_clickable():
             self.mouse.click_by_element(selector, 3)
+            time.sleep(0.5)
             print('summon panel opened')
 
     def __init__(self, chm: webdriver.Chrome, mouse: Mouse):
@@ -117,7 +139,7 @@ class battle_summons:
         if elf.is_element_presence():
             self.brief_summons_element = self.chm.find_element_by_xpath(xpath)
             self.summon_group = list()
-            for i in range(6):
+            for i in range(1, 6):
                 s = summon(i, self.chm, self.mouse)
                 self.summon_group.append(s)
         print('summons updated ')
