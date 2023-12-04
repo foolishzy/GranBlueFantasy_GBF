@@ -15,10 +15,10 @@ class party:
     def __init__(self, chm: webdriver.Chrome, mouse: Mouse):
         self.chm = chm
         self.mouse = mouse
-        self.manual_skill_list = [[1, [1]]]
+        self.manual_skill_list = [[0, [0]]]
 
     def update(self):
-        if checker(self.chm, 15).is_battle_page(15):
+        if (not self.manual_skill_list == [[0, [0]]]) and checker(self.chm, 15).is_battle_page(15):
             self.player_one = character(1, self.chm, self.mouse)
             print('player 1 updated ' + self.player_one.state.name)
             self.player_two = character(2, self.chm, self.mouse)
@@ -109,9 +109,13 @@ class character:
             print('input wrong!')
 
     def get_hp(self):
-        if self.state == character_state.exist:
+        if self.state == character_state.exist and self.brief_element:
             xpath = './div[3]/div[2]'
-            txt = self.brief_element.find_element_by_xpath(xpath).text
+            try:
+                txt = self.brief_element.find_element_by_xpath(xpath).text
+            except StaleElementReferenceException:
+                txt = ""
+                pass
             if txt == "":
                 txt = "0"
             return int(txt)
@@ -121,7 +125,11 @@ class character:
     def get_gauge_attack(self):
         if self.state == character_state.exist:
             xpath = './div[4]/div[3]'
-            txt = self.brief_element.find_element_by_xpath(xpath).text
+            try:
+                txt = self.brief_element.find_element_by_xpath(xpath).text
+            except StaleElementReferenceException:
+                txt = ""
+                pass
             if txt == "":
                 txt = "0"
             else:
@@ -154,12 +162,20 @@ class character:
     def check_character_state(self):
         elf = elefinder(By.XPATH, self.brief_element_xpath, 5, self.chm)
         if elf.is_element_presence():
-            e = self.chm.find_element_by_xpath(self.brief_element_xpath)
-            class_name = e.get_attribute('class')
-            if re.search('blank', class_name):
-                return character_state.dead
-            else:
-                return character_state.exist
+            try:
+                e = self.chm.find_element_by_xpath(self.brief_element_xpath)
+                class_name = e.get_attribute('class')
+                if re.search('blank', class_name):
+                    state = character_state.dead
+                else:
+                    state = character_state.exist
+            except StaleElementReferenceException:
+                state = character_state.dead
+                pass
+            if state:
+                return state
+        else:
+            return character_state.dead
 
     def open_skill_panel(self):
         selector_data = {
@@ -237,6 +253,7 @@ class skill:
     def get_extend_element(self):
         ele = './div[' + str(self.index) + ']'
         i = 0
+        result = None
         while i < 5:
             try:
                 result = self.group_extend_ele.find_element_by_xpath(ele)
@@ -261,18 +278,29 @@ class skill:
                 i = i + 1
                 time.sleep(1)
                 result = None
+            except StaleElementReferenceException:
+                i = i + 1
+                time.sleep(1)
+                result = None
         return result
 
     def update_state(self):
-        class_name = self.ex_e.get_attribute('class')
-        l1 = re.search('disable', class_name) or re.search(
-            'unavailable', class_name)
+        if self.ex_e:
+            class_name = self.ex_e.get_attribute('class')
+            l1 = re.search('disable', class_name) or re.search(
+                'unavailable', class_name)
+        else:
+            l1 = None
         xpath = './div[' + \
             str(self.index) + ']'
         #  if elefinder(By.XPATH, xpath, 5, self.chm).is_element_presence():
-        e = self.group_brife_ele.find_element_by_xpath(xpath)
-        state = e.get_attribute('state')
-        #  skill_type = e.get_attribute('type')
+        state = None
+        if self.group_brife_ele:
+            try:
+                e = self.group_brife_ele.find_element_by_xpath(xpath)
+                state = e.get_attribute('state')
+            except StaleElementReferenceException:
+                pass
 
         if l1 and (state == "1" or state == "2"):
             self.state = skill_state.forbidden

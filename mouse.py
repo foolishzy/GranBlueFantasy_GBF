@@ -110,6 +110,7 @@ class Mouse:
     def click_gauge_ok(self):
         data = util.screen_label_arcum_gauge_ok
         self.click_by_element(data)
+        time.sleep(1)
 
     def click_by_element(
             self,
@@ -157,6 +158,7 @@ class Mouse:
             'element': gauge_and_box_data['box_ele']
         }
         self.click_by_element(select_data)
+        time.sleep(5)
 
     def click_gauge_enemy(self,
                           gauge_and_box_data={
@@ -172,6 +174,7 @@ class Mouse:
             'element': gauge_and_box_data['enemy_ele']
         }
         self.click_by_element(select_data)
+        time.sleep(1)
 
     def click_gauge(self,
                     gauge_and_box_data={
@@ -187,6 +190,7 @@ class Mouse:
             'element': gauge_and_box_data['gauge_ele']
         }
         self.click_by_element(select_data)
+        time.sleep(1)
 
     def click_attack(self):
         select_data = self.util.screen_label_battle_attack

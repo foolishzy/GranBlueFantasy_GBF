@@ -93,7 +93,7 @@ class stage:
         url = self.chm.current_url
         ele = '//div[@class="prt-command"]'
         by = By.XPATH
-        self.loader(url, by, ele, 3)
+        self.loader(url, by, ele, 2)
        # self.chm.execute_script('location.reload()')
 
 

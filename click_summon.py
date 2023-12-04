@@ -4,8 +4,8 @@ from mouse import Mouse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from elementfinder import elefinder
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import ElementNotInteractableException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
+from selenium.common.exceptions import ElementNotInteractableException, WebDriverException
 import time
 from stage import checker
 
@@ -23,25 +23,41 @@ class summon:
         self.state = self.get_state()
         self.name = self.get_summon_name()
         self.cold_down = self.get_cd()
-        print('summon ' + str(self.index) + ' init...  ' +
-              self.state.name + '  cd: ' + self.cold_down +
-              " " + self.name)
+        print('summon ',  self.index,  ' init...  ',
+              self.state, '  cd: ', self.cold_down,
+              self.name)
 
     def get_cd(self):
+        e = None
         if self.element:
-            return self.element.get_attribute('summon-recast')
+            try:
+                e = self.element.get_attribute('summon-recast')
+            except StaleElementReferenceException:
+                pass
+        return e
 
     def get_summon_name(self):
+        e = None
         if self.element:
-            return self.element.get_attribute('summon-name')
+            try:
+                e = self.element.ger_attribute('summon-name')
+            except StaleElementReferenceException:
+                pass
+            except AttributeError:
+                pass
+        return e
 
     def get_brief_element(self):
         summons_xpath = self.brief_element_xpath
         summon_xpath = './div[' + str(self.index + 1) + ']'
+        ee = None
         elf = elefinder(By.XPATH, summons_xpath, 5, self.chm)
         if elf.is_element_presence():
-            e = self.chm.find_element_by_xpath(summons_xpath)
-            ee = e.find_element_by_xpath(summon_xpath)
+            try:
+                e = self.chm.find_element_by_xpath(summons_xpath)
+                ee = e.find_element_by_xpath(summon_xpath)
+            except WebDriverException:
+                pass
         return ee
 
     def use(self):
@@ -70,12 +86,17 @@ class summon:
         pass
 
     def get_state(self):
-        if self.element:
-            class_name = self.element.get_attribute('class')
-            if not re.search('unavailable', class_name):
-                s = summon_state.available
+        try:
+            if self.element:
+                class_name = self.element.get_attribute('class')
+                if not re.search('unavailable', class_name):
+                    s = summon_state.available
+                else:
+                    s = summon_state.unavailable
             else:
-                s = summon_state.unavailable
+                s = None
+        except StaleElementReferenceException:
+            s = None
         return s
 
 
@@ -92,19 +113,22 @@ class battle_summons:
 
     def set_use_all_summons_flag(self, flag: bool):
         if type(flag) == bool:
-            self.set_use_all_summons_flag = flag
+            self.use_all_summons_flag = flag
 
     def use_all_summon(self):
-        if self.use_all_summon_flag:
-            flag = False
-            for s in self.summon_group:
-                if s.state == summon_state.available:
-                    self.open_summon_panel()
-                    s.use()
-                    flag = True
-                    break
-            if not flag:
-                print('summons are not available')
+        try:
+            if self.use_all_summons_flag:
+                flag = False
+                for s in self.summon_group:
+                    if s.state == summon_state.available:
+                        self.open_summon_panel()
+                        s.use()
+                        flag = True
+                        break
+                if not flag:
+                    print('summons are not available')
+        except AttributeError:
+            pass
 
     def use_summon(self, index):
         if checker(self.chm, 10).is_battle_page(10) and index > 0 and index < 7:
@@ -144,9 +168,14 @@ class battle_summons:
         xpath = self.brief_summons_xpath
         elf = elefinder(By.XPATH, xpath, 3, self.chm)
         if elf.is_element_presence():
-            self.brief_summons_element = self.chm.find_element_by_xpath(xpath)
-            self.summon_group = list()
-            for i in range(1, 6):
-                s = summon(i, self.chm, self.mouse)
-                self.summon_group.append(s)
-            print('summons updated ')
+            try:
+                self.brief_summons_element = self.chm.find_element_by_xpath(
+                    xpath)
+                self.summon_group = list()
+                for i in range(1, 6):
+                    s = summon(i, self.chm, self.mouse)
+                    self.summon_group.append(s)
+                print('summons updated ')
+            except NoSuchElementException:
+                self.summon_group = list()
+                print('cannot find summons')

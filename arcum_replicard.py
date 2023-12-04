@@ -59,7 +59,7 @@ class replicard_common(game):
             print("left times : ", repeat_times)
             self.stage.goto(self.url)
             self.mouse.click_arcum_part_ok()
-            if self.ck.is_battle_page():
+            if self.ck.is_battle_page(10):
                 if self.oneturn:
                     self.mouse.click_full()
                     if elefinder(by, ele, 30, self.chm).is_element_presence():
@@ -79,7 +79,7 @@ class replicard_common(game):
 
     def play_box(self):
         self.mouse.click_box()
-        self.mouse.click_gague_ok()
+        self.mouse.click_gauge_ok()
         if self.ck.check_gauge_enemy(self.gauge_box_data):
             self.play_gauge_enemy()
         else:

@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from elementfinder import elefinder
 from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import ElementNotInteractableException
+from selenium.common.exceptions import ElementNotInteractableException, WebDriverException
 import time
 from stage import checker
 
@@ -25,9 +25,17 @@ class turn_counter:
 
     def get_turn_num(self):
         if elefinder(By.XPATH, self.xpath, 3, self.chm).is_element_presence():
-            e = self.chm.find_element_by_xpath(self.xpath)
-            txt = e.get_attribute('class')
-            txt = txt.replace(self.phrase_str, '')
+            try:
+                e = self.chm.find_element_by_xpath(self.xpath)
+                txt = e.get_attribute('class')
+                txt = txt.replace(self.phrase_str, '')
+            except NoSuchElementException:
+                txt = ""
+                pass
+            except WebDriverException:
+                txt = ""
+                pass
+
             if txt == '':
                 num = 0
             else:

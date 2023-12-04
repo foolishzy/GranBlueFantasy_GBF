@@ -1,8 +1,9 @@
-from arcum_defender import  arcum_defender
+from arcum_defender import arcum_defender
 from arcum_replicard import replicard_common
 from util import util
 from mouse import Mouse
 from game import game
+
 
 class arcum_select:
 
@@ -73,7 +74,8 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [101, 117], [201, 20999999999], [301, 313], [401, 412],[801, 801]]
+            index_range = [[0, 0], [101, 117], [201, 20999999999], [
+                301, 313], [401, 412], [801, 801]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -93,9 +95,9 @@ class arcum_select:
             arcumgame().mundus_fire_v2de_prometheus_militis().play()
         elif index == 107:
             arcumgame().mundus_fire_5_hotheaded_pincers().play()
-        elif arcumgame == 108:
+        elif index == 108:
             arcumgame().mundus_fire_3_earth_shattering_fire_demon().play()
-        elif index == 109 :
+        elif index == 109:
             arcumgame().mundus_water_5_parasite_steve().play()
         elif index == 110:
             arcumgame().mundus_water_3_tide_caller().play()
@@ -180,18 +182,21 @@ class arcum_select:
         elif index == 411:
             arcumgame().zone_faym_dark_5_oceanic_archon().play()
         elif index == 412:
-            arcumgame().zone_faym_dark_3_mad_shearwielder().play() 
+            arcumgame().zone_faym_dark_3_mad_shearwielder().play()
         elif index == 801:
             arcumgame().zone_kalendae_xeno_vohu_manah_militis().play()
+
+
 class arcumgame:
     def __init__(self):
         pass
-    
+
     class zone_kalendae_xeno_vohu_manah_militis(replicard_common):
         def __init__(self):
-            gb_data = util.arcum_zone_kalendae_gauge_box_data 
+            gb_data = util.arcum_zone_kalendae_gauge_box_data
             data = util.zone_kalendae_xeno_vohu_manah_militis
             super().__init__(data, gb_data)
+
     class mundus_earth_5_princess_of_the_horde(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
@@ -201,49 +206,49 @@ class arcumgame:
     class mundus_fire_v2de_prometheus_militis(arcum_defender):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data = util.mundus_fire_v2de_prometheus_militis 
+            data = util.mundus_fire_v2de_prometheus_militis
             super().__init__(data, gb_data)
 
     class mundus_fire_5_hotheaded_pincers(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data =  util.mundus_fire_5_hotheaded_pincers
+            data = util.mundus_fire_5_hotheaded_pincers
             super().__init__(data, gb_data)
 
     class mundus_water_5_parasite_steve(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data =  util.mundus_water_5_parasite_steve
+            data = util.mundus_water_5_parasite_steve
             super().__init__(data, gb_data)
 
     class mundus_wind_5_winged_demin_cat(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data =  util.mundus_wind_5_winged_demon_cat
+            data = util.mundus_wind_5_winged_demon_cat
             super().__init__(data, gb_data)
 
     class mundus_water_3_tide_caller(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data =  util.mundus_water_3_tide_callers
+            data = util.mundus_water_3_tide_callers
             super().__init__(data, gb_data)
 
     class mundus_wind_v2de_morrigna_militis(arcum_defender):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data =  util.mundus_wind_v2de_morrigna_militis
+            data = util.mundus_wind_v2de_morrigna_militis
             super().__init__(data, gb_data)
 
     class mundus_wind_3_dragon_in_glittering_green(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data =  util.mundus_wind_3_dragon_glittering_green
+            data = util.mundus_wind_3_dragon_glittering_green
             super().__init__(data, gb_data)
 
     class mundus_light_3_goddess_of_the_wild_hunt(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data =  util.mundus_light_3_goddess_of_the_wild_hunt
+            data = util.mundus_light_3_goddess_of_the_wild_hunt
             super().__init__(data, gb_data)
 
     class mundus_earth_3_elephant_stomping_ground(replicard_common):
@@ -290,7 +295,7 @@ class arcumgame:
 
     class joculator_dark_ve_jurassic_dino(replicard_common):
         def __init__(self):
-            data = util.joculator_dark_ve_jurassic_dinol
+            data = util.joculator_dark_ve_jurassic_dino
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
 
@@ -299,127 +304,134 @@ class arcumgame:
             gb_data = util.arcum_joculator_gauge_box_data
             data = util.joculator_dark_3_Dreadful_scourge
             super().__init__(data, gb_data)
+
     class joculator_water_5_glacial_hellbeast(replicard_common):
         def __init__(self):
             gb_data = util.arcum_joculator_gauge_box_data
             data = util.joculator_water_5_glacial_hellbeast
             super().__init__(data, gb_data)
+
     class joculator_water_3_maiden_of_the_depiths(replicard_common):
         def __init__(self):
             gb_data = util.arcum_joculator_gauge_box_data
             data = util.joculator_water_3_maiden_of_the_depiths
             super().__init__(data, gb_data)
+
     class joculator_de_water_lady_of_redemption(replicard_common):
         def __init__(self):
             data = util.joculator_de_water_lady_of_the_redemption
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
+
     class joculator_dark_5_bloody_soothsayer(replicard_common):
         def __init__(self):
             data = util.joculator_dark_5_bloody_soothsayer
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
-            
+
     class joculator_water_5_giant_sea_plant(replicard_common):
         def __init__(self):
             data = util.joculator_water_5_giant_sea_plant
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
+
     class joculator_dark_5_nebulous_one(replicard_common):
         def __init__(self):
-            data = util.joculator_dark_5_nebulous_one 
+            data = util.joculator_dark_5_nebulous_one
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
+
     class joculator_water_xeno_cocytus_militis(replicard_common):
         def __init__(self):
-            data =  util.joculator_water_xeno_cocytus_militis
+            data = util.joculator_water_xeno_cocytus_militis
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
 
     class zoneeletio_fire_de_cleansing_wyrmgod(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
-            data = util.zoneeletio_fire_de_cleansing_wyrmgod 
+            data = util.zoneeletio_fire_de_cleansing_wyrmgod
             super().__init__(data, gb_data)
- 
+
     class zoneeletio_fire_5_slithering_seductress(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
-            data = util.zoneeletio_fire_5_slithering_seductress 
+            data = util.zoneeletio_fire_5_slithering_seductress
             super().__init__(data, gb_data)
-   
+
     class zoneeletio_fire_5_eletion_drake(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
-            data = util.zoneeletio_fire_5_eletion_drake 
+            data = util.zoneeletio_fire_5_eletion_drake
             super().__init__(data, gb_data)
-  
+
     class zoneeletio_fire_de_usurper_of_the_throne(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_fire_de_usurper_of_the_throne
             super().__init__(data, gb_data)
- 
+
     class zoneeletio_fire_5_paradoxical_gate(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_fire_5_paradoxical_gate
             super().__init__(data, gb_data)
-   
+
     class zoneeletio_fire_3_blazing_everwing(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_fire_3_blazing_everwing
             super().__init__(data, gb_data)
- 
+
     class zoneeletio_fire_3_rageborn_one(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_fire_3_rageborn_one
             super().__init__(data, gb_data)
- 
+
     class zoneeletio_fire_5_terror_trifecta(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_fire_5_terror_trifecta
             super().__init__(data, gb_data)
-   
+
     class zoneeletio_light_3_living_lighting_rod(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_light_3_living_lighting_rod
             super().__init__(data, gb_data)
- 
+
     class zoneeletio_light_5_death_seer(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_light_5_death_seer
             super().__init__(data, gb_data)
- 
+
     class zoneeletio_light_de_violetflash_sovereign(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
-            data = util.zoneeletio_light_de_violetflash_sovereign 
+            data = util.zoneeletio_light_de_violetflash_sovereign
             super().__init__(data, gb_data)
-   
+
     class zoneeletio_light_3_hundred_armed_hulk(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_light_3_hundred_armed_hulk
             super().__init__(data, gb_data)
-    
+
     class zoneeletio_fire_boss_eletion_glider(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_eletio_gauge_box_data
             data = util.zoneeletio_fire_boss_eletion_glider
             super().__init__(data, gb_data)
+
         def play(self):
             print('waitting for compeleting...!')
 
     class zone_faym_water_de_creeping_seashadow(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
-            data = util.zone_faym_water_de_creeping_seashadow 
+            data = util.zone_faym_water_de_creeping_seashadow
             super().__init__(data, gb_data)
 
     class zone_faym_water_de_lilywhite_paragon(replicard_common):
@@ -427,11 +439,13 @@ class arcumgame:
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_water_de_lilywhite_paragon
             super().__init__(data, gb_data)
+
     class zone_faym_water_5_trident_grandmaster(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_water_5_trident_grandmaster
             super().__init__(data, gb_data)
+
     class zone_faym_water_5_farsea_predator(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
@@ -443,39 +457,45 @@ class arcumgame:
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_water_5_azureflame_dragon
             super().__init__(data, gb_data)
+
     class zone_faym_water_5_eyes_of_sorrow(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_water_5_eyes_of_sorrow
             super().__init__(data, gb_data)
+
     class zone_faym_water_3_hoarfrost_icequeen(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_water_3_hoarfrost_icequeen
             super().__init__(data, gb_data)
+
     class zone_faym_water_3_faymian_fortress(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_water_3_faymian_fortress
             super().__init__(data, gb_data)
+
     class zone_faym_dark_de_iceberg_champion(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_dark_de_iceberg_champion
             super().__init__(data, gb_data)
+
     class zone_faym_dark_5_draconic_simulacrum(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_dark_5_draconic_simulacrum
             super().__init__(data, gb_data)
+
     class zone_faym_dark_5_oceanic_archon(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_dark_5_oceanic_archon
             super().__init__(data, gb_data)
+
     class zone_faym_dark_3_mad_shearwielder(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
-            data = util.zone_faym_dark_3_mad_shearwielder 
+            data = util.zone_faym_dark_3_mad_shearwielder
             super().__init__(data, gb_data)
- 

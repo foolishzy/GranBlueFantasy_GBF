@@ -1,8 +1,8 @@
 from threading import Event
-from elementfinder import elefinder 
+from elementfinder import elefinder
 from util import util
 from mouse import Mouse
-import re 
+import re
 import time
 from selenium import webdriver
 from threading import Thread
@@ -10,14 +10,16 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import  StaleElementReferenceException
+from selenium.common.exceptions import StaleElementReferenceException
+
+
 class lpl:
-    
+
     ele = util.loading_page_element['element']
     by = util.loading_page_element['by']
 
-    def __init__(self, chm : webdriver.Chrome, refreshtime = 10):
-        self.chm =chm
+    def __init__(self, chm: webdriver.Chrome, refreshtime=10):
+        self.chm = chm
         self.time = refreshtime
       # 超过五秒刷新
         pass
@@ -27,15 +29,15 @@ class lpl:
         try:
             WebDriverWait(self.chm, 0.5).until(
                 EC.visibility_of_element_located(
-                (self.by, self.ele)
-            )
+                    (self.by, self.ele)
                 )
+            )
             flag = True
         except StaleElementReferenceException:
             pass
         except TimeoutException:
             pass
-        except  WebDriverException:
+        except WebDriverException:
             pass
         return flag
 
@@ -47,15 +49,16 @@ class lpl:
                 start_time = time.time()
                 while self.is_loading_page():
                     end_time = time.time()
-            if end_time - start_time > self.time :
+            if end_time - start_time > self.time:
                 self.chm.refresh()
+
 
 class last_turn_locator:
 
     ele_lt = util.screen_label_battle_lastturn_processing['element']
     by_lt = util.screen_label_battle_lastturn_processing['by']
-    
-    def __init__(self, chm : webdriver.Chrome, event : Event, mouse : Mouse):
+
+    def __init__(self, chm: webdriver.Chrome, event: Event, mouse: Mouse):
         self.eve = event
         self.chm = chm
         self.mouse = mouse
@@ -63,21 +66,22 @@ class last_turn_locator:
 
     def start(self):
         string_lt = util.screen_label_battle_lastturn_processing['text']
-        elf = elefinder(self.by_lt, self.ele_lt, 2,self.chm )
+        elf = elefinder(self.by_lt, self.ele_lt, 2, self.chm)
         while self.eve.is_set():
             if elf.is_element_visibility():
                 text = elf.get_element_text()
                 if re.search(text, string_lt) and re.search(text, string_lt).span()[1] > 0:
                     self.chm.refresh()
                     self.mouse.click_full()
-            time.sleep(0.5)    
+            time.sleep(0.1)
+
 
 class goal_page_locator:
     by = util.screen_label_battle_goal_exp['by']
     ele = util.screen_label_battle_goal_exp['element']
 
-    def __init__(self, chm : webdriver.Chrome, event : Event, ctrl_event : Event):
-        self.eve = event 
+    def __init__(self, chm: webdriver.Chrome, event: Event, ctrl_event: Event):
+        self.eve = event
         self.chm = chm
         self.ctrl_event = ctrl_event
         pass
@@ -92,30 +96,32 @@ class goal_page_locator:
                 current_url = self.chm.current_url
                 if (re.search(current_url, 'result') and re.search(current_url, 'result').span()[1] > 0) or (re.search(current_url, 'quest') and re.search(current_url, 'quest').span()[1] > 0):
                     flag = True
-            if flag :
+            if flag:
                 self.ctrl_event.clear()
             #  print('ctrl_event: ',self.ctrl_event.is_set())
-            time.sleep(0.5)    
+            time.sleep(0.1)
+
 
 class request_dialog_locator:
 
-    dialog_locator = util.screen_lable_battle_request_backup_dialog_backup 
+    dialog_locator = util.screen_lable_battle_request_backup_dialog_backup
     dialog_ok_locator = util.screen_lable_battle_request_backup_dialog_ok
-    def __init__(self, mouse: Mouse, chm : webdriver.Chrome, ctrl_event : Event):
-        self.chm =chm
+
+    def __init__(self, mouse: Mouse, chm: webdriver.Chrome, ctrl_event: Event):
+        self.chm = chm
         self.mouse = mouse
         self.ctrl_eve = ctrl_event
-
         pass
+
     def start(self):
         flag = False
-        elf = elefinder(self.dialog_locator['by'], self.dialog_locator['element'], 2, self.chm)
+        elf = elefinder(
+            self.dialog_locator['by'], self.dialog_locator['element'], 2, self.chm)
         if elf.is_element_visibility():
             flag = True
             self.ctrl_eve.set()
             self.mouse.click_by_element(self.dialog_locator)
             time.sleep(1)
             self.mouse.click_by_element(self.dialog_ok_locator)
-            time.sleep(0.5)
+            time.sleep(0.1)
             self.ctrl_eve.clear()
-
