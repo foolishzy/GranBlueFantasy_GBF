@@ -16,6 +16,11 @@ class scales_of_dominion(game):
         super().__init__(time)
 
     def play(self):
+        self.party.set_manual_skill_list([
+            [1, [2]],
+            [4, [1, 2]]
+        ])
+        self.summons.set_use_all_summons_flag(True)
         print('play scales of dominion ')
         repeat_times = int(input("pls input repeat times :"))
         while repeat_times > 0:

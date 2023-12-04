@@ -7,6 +7,7 @@ from elementfinder import elefinder
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException
 import time
+from stage import checker
 
 
 class summon:
@@ -89,19 +90,24 @@ class battle_summons:
     close_summon_panel_xpath = '//*[@id="cnt-raid-information"]/div[1]'
     brief_summons_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
 
+    def set_use_all_summons_flag(self, flag: bool):
+        if type(flag) == bool:
+            self.set_use_all_summons_flag = flag
+
     def use_all_summon(self):
-        flag = False
-        for s in self.summon_group:
-            if s.state == summon_state.available:
-                self.open_summon_panel()
-                s.use()
-                flag = True
-                break
-        if not flag:
-            print('summons are not available')
+        if self.use_all_summon_flag:
+            flag = False
+            for s in self.summon_group:
+                if s.state == summon_state.available:
+                    self.open_summon_panel()
+                    s.use()
+                    flag = True
+                    break
+            if not flag:
+                print('summons are not available')
 
     def use_summon(self, index):
-        if index > 0 and index < 7:
+        if checker(self.chm, 10).is_battle_page(10) and index > 0 and index < 7:
             self.open_summon_panel()
             self.summon_group[index].use()
         pass
@@ -131,6 +137,7 @@ class battle_summons:
         self.chm = chm
         self.mouse = mouse
         self.summon_group = list()
+        self.use_all_summon_flag = False
         pass
 
     def update(self):
@@ -142,4 +149,4 @@ class battle_summons:
             for i in range(1, 6):
                 s = summon(i, self.chm, self.mouse)
                 self.summon_group.append(s)
-        print('summons updated ')
+            print('summons updated ')

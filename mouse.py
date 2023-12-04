@@ -22,7 +22,7 @@ class Mouse:
         pyautogui.moveTo(x, y)
 
     def click(self, x, y):
-        pyautogui.click(x, y, interval=0.1)
+        pyautogui.click(x, y, interval=0.2)
 
     def click_by_positon(
             self,
@@ -58,7 +58,7 @@ class Mouse:
 
     def click_party_ok(self):
         data = util.screen_label_party_ok
-        self.click_by_element()
+        self.click_by_element(data, 2)
         #  self.click_check_by_sel_and_click_by_pos(
         #  self.util.screen_label_party_ok,
         #  self.util.mouse_position_party_ok,
@@ -79,6 +79,7 @@ class Mouse:
         self.click_by_element(data,  waittime=5)
         data = util.screen_lable_battle_request_backup_dialog_ok
         self.click_by_element(data,  waittime=5)
+        time.sleep(1)
 
     def click_check_by_sel_and_click_by_pos(
             self,
@@ -194,8 +195,6 @@ class Mouse:
         self.click_check_by_sel_and_click_by_pos(select_data, positon, dert)
 
     def click_full(self, waittime=10):
-        #  ele_lt = self.util.screen_label_battle_lastturn_processing['element']
-        #  by_lt = self.util.screen_label_battle_lastturn_processing['by']
         ele_full = self.util.screen_label_battle_full['element']
         by_full = self.util.screen_label_battle_full['by']
         x = self.util.mouse_position_battle_full['x']
@@ -204,15 +203,15 @@ class Mouse:
         dert_y = self.util.mouse_position_battle_full_dert['y']
         x = x + int(random.random() * dert_x)
         y = y + int(random.random() * dert_y)
-        #  string_lt = self.util.screen_label_battle_lastturn_processing['text']
         elf = elefinder(by_full, ele_full, waittime, self.chm)
-        print(157)
         if elf.is_element_clickable():
-            print(159)
+            time.sleep(1 + 2 * random.random())
             self.click(x, y)
-            print(161)
-        selector_data = self.util.screen_label_arcum_gauge_ok
-        self.click_by_element(selector_data, 5)
+            print('full btn clicked by posittion')
+        else:
+            print('full btn cannot be clicked')
+        #  selector_data = self.util.screen_label_arcum_gauge_ok
+        #  self.click_by_element(selector_data, 5)
 
     def selfrandom(self, value, dert):
         return int(random.random() * dert) + value
@@ -224,4 +223,5 @@ class Mouse:
             #
             # 判断是否在多人救援页面 判断第一条救援是否存在
             #
-            self.click(x, y)
+            #self.click(x, y)
+            pass

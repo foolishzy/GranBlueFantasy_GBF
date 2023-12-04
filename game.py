@@ -14,6 +14,7 @@ from elementfinder import elefinder
 from threading import Thread
 from skill_clicker import party
 from click_summon import battle_summons
+from turn_counter import turn_counter
 
 
 class game:
@@ -30,6 +31,7 @@ class game:
         self.lpl = lpl(self.chm)
         self.party = party(self.chm, self.mouse)
         self.summons = battle_summons(self.chm, self.mouse)
+        self.turn_counter = turn_counter(self.chm, self.mouse)
         # 在战斗页面初始化party
 
     def connect_chrome(self):
@@ -83,7 +85,9 @@ class game:
                     req_thread.join()
                 print('play_event_set, ', play_event.is_set())
                 if play_event.is_set():
+                    self.turn_counter.update()
                     self.party.update()
+                    self.party.use_manual_skill()
                     self.summons.update()
                     self.summons.use_all_summon()
                     self.mouse.click_full()

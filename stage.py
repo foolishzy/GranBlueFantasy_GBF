@@ -57,7 +57,7 @@ class stage:
                     )
                     break
                 except TimeoutException:
-                    refresh()
+                    self.refresh()
                 except WebDriverException:
                     pass
         print('loading page refreshed')
@@ -91,9 +91,10 @@ class stage:
 
     def refresh(self):
         url = self.chm.current_url
-        by = '//div[@class="prt-command"]'
-        ele = By.XPATH
+        ele = '//div[@class="prt-command"]'
+        by = By.XPATH
         self.loader(url, by, ele, 3)
+       # self.chm.execute_script('location.reload()')
 
 
 class checker:

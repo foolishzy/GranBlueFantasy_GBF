@@ -1,14 +1,16 @@
-from event import event_select 
+from event import event_select
 from arcumgame import arcum_select
 from shiny_slime_weekend import slime_select
 from rise_of_the_beasts import btb_select
 from HL2 import hl_select
 from unite_and_fight import unite_and_fight_select
-from reserve_crate import reserve_select 
-from backup_request_game import select 
+from reserve_crate import reserve_select
+from backup_request_game import select
 from scales_of_dominion import scales_of_dominion_select
-class jobselect:
+from refresh_job import refresh_job_select
 
+
+class jobselect:
 
     def __exit(self):
 
@@ -27,8 +29,9 @@ class jobselect:
         7.clear_crate
         8.backup
         9.anubis showdown 大马的天平
+        10.auto refresh
 '''
-        index_max = 9 
+        index_max = 10
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -57,3 +60,5 @@ class jobselect:
             select()
         elif index == 9:
             scales_of_dominion_select()
+        elif index == 10:
+            refresh_job_select()

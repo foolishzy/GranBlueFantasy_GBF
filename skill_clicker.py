@@ -8,12 +8,14 @@ from mouse import Mouse
 from stage import checker
 from elementfinder import elefinder
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
 
 
 class party:
     def __init__(self, chm: webdriver.Chrome, mouse: Mouse):
         self.chm = chm
         self.mouse = mouse
+        self.manual_skill_list = [[1, [1]]]
 
     def update(self):
         if checker(self.chm, 15).is_battle_page(15):
@@ -39,12 +41,31 @@ class party:
         pass
 
     def use_skill(self, player_num: int, skill_num: int):
-        if player_num > 0 and player_num < 5 and skill_num > 0 and skill_num < 5:
-            for p in self.players:
-                if p.index == player_num:
-                    p.use_skill(skill_num)
+        if checker(self.chm, 10).is_battle_page(10) and player_num > 0 and player_num < 5 and skill_num > 0 and skill_num < 5:
+            p = self.players[player_num - 1]
+            if p:
+                p.use_skill(skill_num)
         else:
             print('get wrong num')
+
+    def set_manual_skill_list(self,  lst=[[0, [0, 0, 0]], [0, [0]]]):
+        '''
+    #自动刷新之后使用的技能列表[[a,[b,c,d...] ], ...], a 队员index [b, c, d...] 技能index
+    主要是针对一些没法自动释放的技能
+        '''
+        if lst:
+            self.manual_skill_list = lst
+
+    def use_manual_skill(self):
+        if self.manual_skill_list:
+            for l in self.manual_skill_list:
+                player_index = l[0]
+                skill_index = l[1]
+                for si in skill_index:
+                    if player_index > 0 and player_index < 5 and si > 0 and si < 5:
+                        self.use_skill(player_index, si)
+        else:
+            print('manual skill list must be init')
 
 
 class character:
@@ -66,10 +87,10 @@ class character:
             self.extend_element = self.get_extend_element()
 
             if self.brief_element and self.extend_element and self.state == character_state.exist:
-                skill_brief_element = self.brief_element.find_element_by_class_name(
-                    'prt-ability-state')
-                skill_extend_element = self.extend_element.find_element_by_class_name(
-                    'prt-ability-list')
+                skill_brief_element = self.brief_element.find_element_by_xpath(
+                    './div[6]')
+                skill_extend_element = self.extend_element.find_element_by_xpath(
+                    './div[3]')
 
                 self.skill_one = skill(
                     1, skill_brief_element, skill_extend_element, self.chm)
@@ -90,14 +111,22 @@ class character:
     def get_hp(self):
         if self.state == character_state.exist:
             xpath = './div[3]/div[2]'
-            return int(self.brief_element.find_element_by_xpath(xpath).text)
+            txt = self.brief_element.find_element_by_xpath(xpath).text
+            if txt == "":
+                txt = "0"
+            return int(txt)
         else:
             return 0
 
     def get_gauge_attack(self):
         if self.state == character_state.exist:
             xpath = './div[4]/div[3]'
-            return int(self.brief_element.find_element_by_xpath(xpath).text.replace('%', ""))
+            txt = self.brief_element.find_element_by_xpath(xpath).text
+            if txt == "":
+                txt = "0"
+            else:
+                txt = txt.replace('%', "")
+            return int(txt)
 
     def get_buff(self):
         pass
@@ -148,16 +177,24 @@ class character:
         self.mouse.click_by_element(selector_data, 3)
 
     def use_skill(self, index: int):
-        self.open_skill_panel()
-        if index == 1:
-            self.skill_one.use()
-        elif index == 2:
-            self.skill_two.use()
-        elif index == 3:
-            self.skill_three.use()
-        elif index == 4:
-            self.skill_four.use()
-        self.close_skill_panel()
+        if self.state == character_state.exist:
+            if index == 1:
+                if self.skill_one.state == skill_state.ready:
+                    self.open_skill_panel()
+                    self.skill_one.use()
+            elif index == 2:
+                if self.skill_two.state == skill_state.ready:
+                    self.open_skill_panel()
+                    self.skill_two.use()
+            elif index == 3:
+                if self.skill_three.state == skill_stae.ready:
+                    self.open_skill_panel()
+                    self.skill_three.use()
+            elif index == 4:
+                if self.skill_four.state == skill_stae.ready:
+                    self.open_skill_panel()
+                    self.skill_four.use()
+            self.close_skill_panel()
 
 
 class skill:
@@ -173,20 +210,29 @@ class skill:
         self.group_extend_ele = group_extend_element
         self.index = index
         self.chm = chm
-        self.update_state()
         self.ex_e = self.get_extend_element()
         self.br_e = self.get_brief_element()
+        self.update_state()
         print('skill ' + str(self.index) + ' updated ' + self.state.name)
 
     def use(self):
-        l1 = re.search('disable', self.ex_e.get_attribute('class'))
+        #  class_name = self.ex_e.get_attribute('class')
+        #  l1 = re.search('disable', class_name) or re.search(
+        #  'unavailable', class_name)
         l2 = self.state == skill_state.ready
-        if (not l1) and l2:
+        if l2:
             try:
+                print('use skill', self.index,  self.state.name)
                 self.ex_e.click()
+                time.sleep(0.5)
             except NoSuchElementException:
                 print('NoSuchElementException')
-                pass
+            except ElementNotInteractableException:
+                self.chm.execute_script(
+                    '$(arguments[0]).click()', self.ex_e)
+                time.sleep(0.5)
+        else:
+            print('skill', self.index, 'can not be used')
 
     def get_extend_element(self):
         ele = './div[' + str(self.index) + ']'
@@ -199,6 +245,9 @@ class skill:
                 i = i + 1
                 time.sleep(1)
                 result = None
+            except StaleElementReferenceException:
+                i = i + 1
+                time.sleep(1)
         return result
 
     def get_brief_element(self):
@@ -215,15 +264,21 @@ class skill:
         return result
 
     def update_state(self):
-        xpath = '//div[@class="lis-ability-state ability' + \
-            str(self.index) + '"]'
+        class_name = self.ex_e.get_attribute('class')
+        l1 = re.search('disable', class_name) or re.search(
+            'unavailable', class_name)
+        xpath = './div[' + \
+            str(self.index) + ']'
         #  if elefinder(By.XPATH, xpath, 5, self.chm).is_element_presence():
         e = self.group_brife_ele.find_element_by_xpath(xpath)
         state = e.get_attribute('state')
         #  skill_type = e.get_attribute('type')
-        if state == "2":
+
+        if l1 and (state == "1" or state == "2"):
+            self.state = skill_state.forbidden
+        elif (state == "2") and (not l1):
             self.state = skill_state.ready
-        elif state == "1":
+        elif (state == "1") and (not l1):
             self.state = skill_state.used
         elif state == '0':
             self.state = skill_state.empty
@@ -236,8 +291,10 @@ class skill_state(Enum):
     # used
     ready = 2
     # ready to use
-    empty = 3
+    empty = 0
     # doesn't exist
+    forbidden = 3
+    # can't be used
 
 
 class character_state(Enum):
