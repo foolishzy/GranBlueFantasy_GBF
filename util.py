@@ -2,7 +2,22 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+    # exo ifrit
+    exo_ifrit_crucible = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/913031/3",
+        "time_limit": 5
+    }
+    exo_ifrit_veryhard = {
+
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/913011/3',
+        'time_limit': 3
+    }
+    exo_ifrit_extreme = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/913021/3",
+        'time_limit': 3
+    }
     # anubis showdown 大马
+
     anubis_showdown_data = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/103901/3',
         'time_limit': 10

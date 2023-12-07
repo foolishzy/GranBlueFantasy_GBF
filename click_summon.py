@@ -34,6 +34,8 @@ class summon:
                 e = self.element.get_attribute('summon-recast')
             except StaleElementReferenceException:
                 pass
+            except WebDriverException:
+                pass
         return e
 
     def get_summon_name(self):
@@ -82,8 +84,10 @@ class summon:
                 except NoSuchElementException:
                     print('NoSuchElementException')
                     pass
-            print('summon ' + str(self.index) + self.name + ' used')
-        pass
+            try:
+                print('summon ' + str(self.index) + self.name + ' used')
+            except TypeError:
+                pass
 
     def get_state(self):
         try:
@@ -96,6 +100,8 @@ class summon:
             else:
                 s = None
         except StaleElementReferenceException:
+            s = None
+        except WebDriverException:
             s = None
         return s
 
