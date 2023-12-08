@@ -14,6 +14,13 @@ class turn_counter:
     phrase_str = 'num-turn'
 
     def __init__(self, chm: webdriver.Chrome, mouse: Mouse):
+        """__init__.
+
+        :param chm:
+        :type chm: webdriver.Chrome
+        :param mouse:
+        :type mouse: Mouse
+        """
         self.chm = chm
         self.mouse = mouse
         self.index = 0
@@ -24,6 +31,7 @@ class turn_counter:
             print('turn counter updeted')
 
     def get_turn_num(self):
+        """get_turn_num."""
         if elefinder(By.XPATH, self.xpath, 3, self.chm).is_element_presence():
             try:
                 e = self.chm.find_element_by_xpath(self.xpath)
