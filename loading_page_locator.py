@@ -102,6 +102,19 @@ class goal_page_locator:
             time.sleep(0.1)
 
 
+class battle_final_next_bt_locator:
+
+    def __init__(self, mouse: Mouse, chm: webdriver.Chrome, ctrl_event: Event):
+        self.chm = chm
+        self.mouse = mouse
+        self.ctrl_eve = ctrl_event
+        pass
+
+    def start(self):
+
+        pass
+
+
 class request_dialog_locator:
 
     dialog_locator = util.screen_lable_battle_request_backup_dialog_backup

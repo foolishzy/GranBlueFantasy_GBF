@@ -137,12 +137,15 @@ class checker:
         by = By.CLASS_NAME
         ele = gauge_box_data['gauge_ele']
         elf = elefinder(by, ele, 1, self.chm)
+        flag = False
         if elf.is_element_visibility():
             for t in txt:
                 if elf.get_element_text() == t:
-                    return True
+                    flag = True
+                    break
                 else:
-                    return False
+                    flag = False
+        return flag
 
     def check_gauge_enemy(self,
                           gauge_box_data={
@@ -157,12 +160,15 @@ class checker:
         by = By.CLASS_NAME
         ele = gauge_box_data['box_enemy_ele']
         elf = elefinder(by, ele, 1, self.chm)
+        flag = False
         if elf.is_element_visibility():
             for t in txt:
                 if elf.get_element_text() == t:
-                    return True
+                    flag = True
+                    break
                 else:
-                    return False
+                    flag = False
+        return flag
 
     def is_goal_page(self, waittime=5):
         """

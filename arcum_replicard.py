@@ -21,8 +21,8 @@ class replicard_common(game):
                 'box_txt': "Splendid Chest",
                 'gauge_ele': 'txt-quest-name',
                 'gauge_txt': ['Herald of The Moon', 'Herald of Death', 'Herald of Justice'],
-                'enemy_ele': 'txt-quest-name',
-                'enemy_txt': ['Mimic', 'Obsidian Machina']
+                'box_enemy_ele': 'txt-quest-name',
+                'box_enemy_txt': ['Mimic', 'Obsidian Machina']
             }
 
     ):

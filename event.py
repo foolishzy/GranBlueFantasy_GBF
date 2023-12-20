@@ -1,4 +1,5 @@
 from game import game
+from timer import timer
 from util import util
 
 
@@ -15,9 +16,10 @@ class event_select:
         1.hope_from_a_snow_drop
         2.Detective Barawa...
         3.exo_ifrit_crucible...
+        4.the divine generals...
         '''
 
-        index_max = 3
+        index_max = 4
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -34,6 +36,8 @@ class event_select:
             detective_barawa().play()
         elif index == 3:
             exo_ifrit_crucible().play()
+        elif index == 4:
+            divine_generals().play()
 
 
 class event_common(game):
@@ -47,6 +51,71 @@ class event_common(game):
             game_data['time_limit']
         )
         pass
+
+
+class divine_generals(event_common):
+    """
+    20231220
+    """
+    solo_extreme_data = util.divine_generals_solo_extreme
+    rapid_extreme_data = util.divine_generals_rapid_extreme
+    game_data = solo_extreme_data
+
+    def __exit(self):
+        pass
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        my_timer = timer()
+        while times > 0:
+            my_timer.start()
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+            my_timer.end()
+
+    def play_rapid_extreme(self):
+        self.game_data = self.rapid_extreme_data
+        self.__init__()
+        self.__play()
+
+    def play_solo_extreme(self):
+        self.game_data = self.solo_extreme_data
+        self.__init__()
+        self.__play()
+
+    def play(self):
+        string_hint = """
+        0.exit
+        1.solo_extreme
+        2.rapid_extreme
+        """
+        index = -1
+        index_max = 2
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.play_solo_extreme()
+        elif index == 2:
+            self.play_rapid_extreme()
 
 
 class exo_ifrit_crucible(event_common):

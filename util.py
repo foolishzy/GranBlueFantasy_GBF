@@ -2,9 +2,21 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+
+    # divine generals
+    divine_generals_rapid_extreme = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/913961/1",
+        "time_limit": 5
+    }
+    divine_generals_solo_extreme = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/913921/5",
+        'time_limit': 5
+    }
+
     # exo ifrit
+
     exo_ifrit_crucible = {
-        'url': "https://game.granbluefantasy.jp/#quest/supporter/913031/3",
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/913071/3",
         "time_limit": 5
     }
     exo_ifrit_veryhard = {
@@ -85,6 +97,31 @@ class util:
     loading_page_element = {
         'element': "img-load",
         'by': By.CLASS_NAME
+    }
+    # six dragon
+    six_dragon_fire = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/305191/1/0/41',
+        'time_limit': 10
+    }
+    six_dragon_water = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/305201/1/0/42",
+        "time_limit": 10
+    }
+    six_dragon_earth = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/305211/1/0/43',
+        'time_limit': 10
+    }
+    six_dragon_wind = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/305221/1/0/44",
+        "time_limit": 10
+    }
+    six_dragon_dark = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/305241/1/0/46",
+        "time_limit": 10
+    }
+    six_dragon_light = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/305231/1/0/45",
+        "time_limit": 10
     }
     # HL2.0
     hl2_shiva_impossible = {

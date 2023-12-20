@@ -8,6 +8,7 @@ from reserve_crate import reserve_select
 from backup_request_game import select
 from scales_of_dominion import scales_of_dominion_select
 from refresh_job import refresh_job_select
+from six_dragon import six_dragon_select
 
 
 class jobselect:
@@ -30,8 +31,9 @@ class jobselect:
         8.backup
         9.anubis showdown 大马的天平
         10.auto refresh
+        11.six_dragon
 '''
-        index_max = 10
+        index_max = 11
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -62,3 +64,5 @@ class jobselect:
             scales_of_dominion_select()
         elif index == 10:
             refresh_job_select()
+        elif index == 11:
+            six_dragon_select()

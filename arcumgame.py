@@ -230,7 +230,7 @@ class arcumgame:
     class mundus_water_3_tide_caller(replicard_common):
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
-            data = util.mundus_water_3_tide_callers
+            data = util.mundus_water_3_tide_caller
             super().__init__(data, gb_data)
 
     class mundus_wind_v2de_morrigna_militis(arcum_defender):
