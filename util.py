@@ -3,6 +3,15 @@ from selenium.webdriver.common.by import By
 
 class util:
 
+    # ultimate_showndowns 20231225
+    tuna_lover_extreme_data = {
+        "url": 'https://game.granbluefantasy.jp/#quest/supporter/915321/1',
+        'time_limit': 1
+    }
+    salmun_lover_extreme_data = {
+        "url": "https://game.granbluefantasy.jp/#quest/supporter/915221/1",
+        "time_limit": 1
+    }
     # divine generals
     divine_generals_rapid_extreme = {
         'url': "https://game.granbluefantasy.jp/#quest/supporter/913961/1",
