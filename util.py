@@ -8,6 +8,14 @@ class util:
         "url": 'https://game.granbluefantasy.jp/#quest/supporter/915321/1',
         'time_limit': 1
     }
+    tuna_golem_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/915331/1",
+        "time_limit": 3
+    }
+    salmun_golem_data = {
+        "url": "https://game.granbluefantasy.jp/#quest/supporter/915231/1",
+        'time_limit': 3
+    }
     salmun_lover_extreme_data = {
         "url": "https://game.granbluefantasy.jp/#quest/supporter/915221/1",
         "time_limit": 1

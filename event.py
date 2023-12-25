@@ -1,6 +1,7 @@
 from game import game
 from timer import timer
 from util import util
+import time
 
 
 class event_select:
@@ -63,8 +64,8 @@ class ultimate_showndowns(event_common):
     tuna_lover_extreme_data = util.tuna_lover_extreme_data
     salmun_lover_extreme_data = util.salmun_lover_extreme_data
 
-    tuna_golem_data = None
-    salmun_golem_data = None
+    tuna_golem_data = util.tuna_golem_data
+    salmun_golem_data = util.salmun_golem_data
 
     game_data = tuna_lover_extreme_data
 
@@ -88,14 +89,38 @@ class ultimate_showndowns(event_common):
             self.mouse.click_party_ok()
             if self.ck.is_battle_page():
                 self.mouse.click_full()
+                self.mouse.click_attack()
+                time.sleep(5)
+                self.chm.refresh()
+                time.sleep(8)
+            my_timer.end()
+
+    def golem_play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        my_timer = timer()
+        while times > 0:
+            my_timer.start()
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
                 self.auto_refresh()
             my_timer.end()
 
     def play_tuna_golem(self):
-        pass
+        self.game_data = self.tuna_golem_data
+        self.__init__()
+        self.golem_play()
 
     def play_salmun_golem(self):
-        pass
+        self.game_data = self.salmun_golem_data
+        self.__init__()
+        self.golem_play()
 
     def play_tuna_extreme(self):
         self.game_data = self.tuna_lover_extreme_data
