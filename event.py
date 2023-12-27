@@ -5,6 +5,7 @@ import time
 
 
 class event_select:
+    """event_select."""
 
     def __exit(self):
 
@@ -158,9 +159,9 @@ class ultimate_showndowns(event_common):
         elif index == 2:
             self.play_salmun_extreme()
         elif index == 3:
-            pass
+            self.play_tuna_golem()
         elif index == 4:
-            pass
+            self.play_salmun_golem()
 
 
 class divine_generals(event_common):

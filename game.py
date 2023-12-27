@@ -7,7 +7,6 @@ from loading_page_locator import last_turn_locator
 from loading_page_locator import lpl
 from mouse import Mouse
 from util import util
-from stage import checker
 from stage import stage
 from selenium import webdriver
 from elementfinder import elefinder
@@ -18,6 +17,7 @@ from turn_counter import turn_counter
 
 
 class game:
+    """game."""
 
     def __init__(self, battle_time_limit):
         # 单场战斗预计最长时间 单位分钟

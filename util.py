@@ -3,6 +3,11 @@ from selenium.webdriver.common.by import By
 
 class util:
 
+    # campaign exclusive quest
+    campaign_exclusive_quest_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/800021/22",
+        'time_limit': 1
+    }
     # ultimate_showndowns 20231225
     tuna_lover_extreme_data = {
         "url": 'https://game.granbluefantasy.jp/#quest/supporter/915321/1',

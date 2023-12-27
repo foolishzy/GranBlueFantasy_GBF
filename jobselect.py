@@ -9,6 +9,7 @@ from backup_request_game import select
 from scales_of_dominion import scales_of_dominion_select
 from refresh_job import refresh_job_select
 from six_dragon import six_dragon_select
+from campaign_exclusive_quest import campaign_select
 
 
 class jobselect:
@@ -32,8 +33,9 @@ class jobselect:
         9.anubis showdown 大马的天平
         10.auto refresh
         11.six_dragon
+        12.campaign_exclusive_quest
 '''
-        index_max = 11
+        index_max = 12
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -66,3 +68,5 @@ class jobselect:
             refresh_job_select()
         elif index == 11:
             six_dragon_select()
+        elif index == 12:
+            campaign_select()
