@@ -20,9 +20,10 @@ class event_select:
         3.exo_ifrit_crucible...
         4.the divine generals...
         5.ultimate showndown
+        6.tyras bizarre misadventure
         '''
 
-        index_max = 5
+        index_max = 6
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -43,6 +44,8 @@ class event_select:
             divine_generals().play()
         elif index == 5:
             ultimate_showndowns().play()
+        elif index == 6:
+            tyras_bizarre_misadventure().play()
 
 
 class event_common(game):
@@ -56,6 +59,37 @@ class event_common(game):
             game_data['time_limit']
         )
         pass
+
+
+class tyras_bizarre_misadventure(event_common):
+    """
+    20231228
+    """
+    impossible_data = util.tyras_blizza_misadventure_impossible
+    game_data = impossible_data
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __exit(self):
+        pass
+
+    def play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        my_timer = timer()
+        while times > 0:
+            my_timer.start()
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+            my_timer.end()
 
 
 class ultimate_showndowns(event_common):

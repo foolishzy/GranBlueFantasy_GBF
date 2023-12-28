@@ -3,6 +3,11 @@ from selenium.webdriver.common.by import By
 
 class util:
 
+    # tyras blizza misadventure
+    tyras_blizza_misadventure_impossible = {
+        "url": "https://game.granbluefantasy.jp/#quest/supporter/914541/1/0/10514",
+        "time_limit": 3
+    }
     # campaign exclusive quest
     campaign_exclusive_quest_data = {
         'url': "https://game.granbluefantasy.jp/#quest/supporter/800021/22",
