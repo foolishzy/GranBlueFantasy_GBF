@@ -29,6 +29,7 @@ __exit	event.py	/^    def __exit(self):$/;"	m	class:divine_generals	file:	access
 __exit	event.py	/^    def __exit(self):$/;"	m	class:event_select	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:exo_ifrit_crucible	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
+__exit	event.py	/^    def __exit(self):$/;"	m	class:tyras_bizarre_misadventure	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:ultimate_showndowns	file:	access:private
 __exit	jobselect.py	/^    def __exit(self):$/;"	m	class:jobselect	file:	access:private
 __exit	reserve_crate.py	/^    def __exit(self):$/;"	m	class:reserve_select	file:	access:private
@@ -111,6 +112,7 @@ __init__	event.py	/^    def __init__(self):$/;"	m	class:divine_generals	access:p
 __init__	event.py	/^    def __init__(self):$/;"	m	class:event_select	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:exo_ifrit_crucible	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:hope_from_a_snow_drop	access:public
+__init__	event.py	/^    def __init__(self):$/;"	m	class:tyras_bizarre_misadventure	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:ultimate_showndowns	access:public
 __init__	event.py	/^    def __init__(self,$/;"	m	class:event_common	access:public
 __init__	game.py	/^    def __init__(self, battle_time_limit):$/;"	m	class:game	access:public
@@ -123,6 +125,8 @@ __init__	loading_page_locator.py	/^    def __init__(self, mouse: Mouse, chm: web
 __init__	mouse.py	/^    def __init__(self, chm: webdriver.Chrome):$/;"	m	class:Mouse	access:public
 __init__	play_transitions.py	/^        def __init__(self):$/;"	m	class:arcum_machine.model	access:public
 __init__	play_transitions.py	/^    def __init__(self, model : model):$/;"	m	class:arcum_machine	access:public
+__init__	read_fate.py	/^    def __init__(self):$/;"	m	class:fate_select	access:public
+__init__	read_fate.py	/^    def __init__(self):$/;"	m	class:read_fate	access:public
 __init__	refresh_job.py	/^    def __init__(self):$/;"	m	class:refresh_job_select	access:public
 __init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:auto_reserve	access:public
 __init__	reserve_crate.py	/^    def __init__(self):$/;"	m	class:clear_no_limit_summon	access:public
@@ -308,6 +312,7 @@ extreme_data	event.py	/^    extreme_data = util.hope_from_a_snow_drop_extreme$/;
 extreme_qinglong	rise_of_the_beasts.py	/^class extreme_qinglong(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
 extreme_xuanwu	rise_of_the_beasts.py	/^class extreme_xuanwu(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
 extreme_zhuque	rise_of_the_beasts.py	/^class extreme_zhuque(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
+fate_select	read_fate.py	/^class fate_select():$/;"	c	inherits:
 final_rally	unite_and_fight.py	/^class final_rally(uf_game):$/;"	c	inherits:uf_game
 find_extreme_plus	rise_of_the_beasts.py	/^    def find_extreme_plus(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 find_impossible	rise_of_the_beasts.py	/^    def find_impossible(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
@@ -316,6 +321,7 @@ game	game.py	/^class game:$/;"	c	inherits:
 game_data	event.py	/^    game_data = extreme_data$/;"	v	class:exo_ifrit_crucible
 game_data	event.py	/^    game_data = impossible_data$/;"	v	class:detective_barawa
 game_data	event.py	/^    game_data = impossible_data$/;"	v	class:hope_from_a_snow_drop
+game_data	event.py	/^    game_data = impossible_data$/;"	v	class:tyras_bizarre_misadventure
 game_data	event.py	/^    game_data = solo_extreme_data$/;"	v	class:divine_generals
 game_data	event.py	/^    game_data = tuna_lover_extreme_data$/;"	v	class:ultimate_showndowns
 generate_png	play_transitions.py	/^    def generate_png(self):$/;"	m	class:arcum_machine	access:public
@@ -358,6 +364,7 @@ hope_from_a_snow_drop_veryhard	util.py	/^    hope_from_a_snow_drop_veryhard = {$
 impossible	rise_of_the_beasts.py	/^class impossible(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
 impossible_data	event.py	/^    impossible_data = util.Detective_Barawa_impossible$/;"	v	class:detective_barawa
 impossible_data	event.py	/^    impossible_data = util.hope_from_a_snow_drop_impossible$/;"	v	class:hope_from_a_snow_drop
+impossible_data	event.py	/^    impossible_data = util.tyras_blizza_misadventure_impossible$/;"	v	class:tyras_bizarre_misadventure
 is_battle_page	stage.py	/^    def is_battle_page(self, waittime=5):$/;"	m	class:checker	access:public
 is_element_clickable	elementfinder.py	/^    def is_element_clickable(self):$/;"	m	class:elefinder	access:public
 is_element_presence	elementfinder.py	/^    def is_element_presence(self):$/;"	m	class:elefinder	access:public
@@ -458,9 +465,11 @@ play	event.py	/^    def play(self):$/;"	m	class:detective_barawa	access:public
 play	event.py	/^    def play(self):$/;"	m	class:divine_generals	access:public
 play	event.py	/^    def play(self):$/;"	m	class:exo_ifrit_crucible	access:public
 play	event.py	/^    def play(self):$/;"	m	class:hope_from_a_snow_drop	access:public
+play	event.py	/^    def play(self):$/;"	m	class:tyras_bizarre_misadventure	access:public
 play	event.py	/^    def play(self):$/;"	m	class:ultimate_showndowns	access:public
 play	game.py	/^    def play(self):$/;"	m	class:game	access:public
 play	java/ArcumBoss.java	/^    public void play() {$/;"	m	class:ArcumBoss	access:public
+play	read_fate.py	/^    def play(self):$/;"	m	class:read_fate	access:public
 play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 play	scales_of_dominion.py	/^    def play(self):$/;"	m	class:scales_of_dominion	access:public
 play	shiny_slime_weekend.py	/^    def play(self):$/;"	m	class:shiny_slime_week	access:public
@@ -494,6 +503,7 @@ rapid_extreme	unite_and_fight.py	/^class rapid_extreme(uf_game):$/;"	c	inherits:
 rapid_extreme_data	event.py	/^    rapid_extreme_data = util.divine_generals_rapid_extreme$/;"	v	class:divine_generals
 rapid_extreme_plus	unite_and_fight.py	/^class rapid_extreme_plus(uf_game):$/;"	c	inherits:uf_game
 rapid_nightmare	unite_and_fight.py	/^class rapid_nightmare(uf_game):$/;"	c	inherits:uf_game
+read_fate	read_fate.py	/^class read_fate(game):$/;"	c	inherits:game
 ready	skill_clicker.py	/^    ready = 2$/;"	v	class:skill_state
 refresh	stage.py	/^    def refresh(self):$/;"	m	class:stage	access:public
 refresh_job_select	refresh_job.py	/^class refresh_job_select:$/;"	c	inherits:
@@ -598,6 +608,8 @@ tuna_golem_data	util.py	/^    tuna_golem_data = {$/;"	v	class:util
 tuna_lover_extreme_data	event.py	/^    tuna_lover_extreme_data = util.tuna_lover_extreme_data$/;"	v	class:ultimate_showndowns
 tuna_lover_extreme_data	util.py	/^    tuna_lover_extreme_data = {$/;"	v	class:util
 turn_counter	turn_counter.py	/^class turn_counter:$/;"	c	inherits:
+tyras_bizarre_misadventure	event.py	/^class tyras_bizarre_misadventure(event_common):$/;"	c	inherits:event_common
+tyras_blizza_misadventure_impossible	util.py	/^    tyras_blizza_misadventure_impossible = {$/;"	v	class:util
 uf_final_rally	util.py	/^    uf_final_rally = {$/;"	v	class:util
 uf_game	unite_and_fight.py	/^class uf_game(game):$/;"	c	inherits:game
 uf_rapid_extreme	util.py	/^    uf_rapid_extreme = {$/;"	v	class:util

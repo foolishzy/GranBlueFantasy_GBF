@@ -10,6 +10,7 @@ from scales_of_dominion import scales_of_dominion_select
 from refresh_job import refresh_job_select
 from six_dragon import six_dragon_select
 from campaign_exclusive_quest import campaign_select
+from read_fate import fate_select
 
 
 class jobselect:
@@ -34,8 +35,9 @@ class jobselect:
         10.auto refresh
         11.six_dragon
         12.campaign_exclusive_quest
+        13.read fate
 '''
-        index_max = 12
+        index_max = 13
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -70,3 +72,5 @@ class jobselect:
             six_dragon_select()
         elif index == 12:
             campaign_select()
+        elif index == 13:
+            fate_select()
