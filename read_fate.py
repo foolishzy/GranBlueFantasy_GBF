@@ -19,6 +19,7 @@ class read_fate(game):
         times = int(input('input times :'))
         while times > 0:
             times = times - 1
+            print('left times:', times)
             self.stage.goto(self.url)
             e = {
                 'element': '//*[@id="cnt-quest"]/div[4]/div[1]/div[2]/div[1]/div[1]/div[3]',

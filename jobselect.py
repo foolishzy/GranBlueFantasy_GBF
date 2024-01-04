@@ -11,6 +11,7 @@ from refresh_job import refresh_job_select
 from six_dragon import six_dragon_select
 from campaign_exclusive_quest import campaign_select
 from read_fate import fate_select
+from free_quest_list import free_quest_list_select
 
 
 class jobselect:
@@ -36,8 +37,9 @@ class jobselect:
         11.six_dragon
         12.campaign_exclusive_quest
         13.read fate
+        14.free_quest_list 
 '''
-        index_max = 13
+        index_max = 14
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -74,3 +76,5 @@ class jobselect:
             campaign_select()
         elif index == 13:
             fate_select()
+        elif index == 14:
+            free_quest_list_select()

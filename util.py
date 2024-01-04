@@ -3,6 +3,11 @@ from selenium.webdriver.common.by import By
 
 class util:
 
+    # twin elements showdowns
+    free_quest_list_twin_element_showndowns = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/103791/3',
+        'time_limit': 5
+    }
     # tyras blizza misadventure
     tyras_blizza_misadventure_impossible = {
         "url": "https://game.granbluefantasy.jp/#quest/supporter/914541/1/0/10514",
