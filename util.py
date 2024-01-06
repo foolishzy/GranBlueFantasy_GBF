@@ -2,7 +2,24 @@ from selenium.webdriver.common.by import By
 
 
 class util:
-
+    # 剧情跳过 skip
+    screen_label_skip = {
+        'element': '//*[@id="wrapper"]/div[3]/div[4]/div[8]',
+        'by': By.XPATH
+    }
+    Items_Picked_Up_Ok = {
+        'element': '//*[@id="pop"]/div/div[3]/div',
+        'by': By.XPATH
+    }
+    screen_label_semi = {
+        'element': '//*[@id="wrapper"]/div[3]/div[2]/div[7]',
+        'by': By.XPATH
+    }
+    # zephyr feather
+    scattered_cargo = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/shop_treasure/101121/3/0/archaic!numbers!evolution!4507807213/3/10/300',
+        'time_limit': 2
+    }
     # twin elements showdowns
     free_quest_list_twin_element_showndowns = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/103791/3',
@@ -96,35 +113,92 @@ class util:
         'element': "/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/div[1]"
     }
     reserve_page_url = "https://game.granbluefantasy.jp/#present"
-    # unite and fight
-    uf_solo_normal = {
-        'url': 'https://game.granbluefantasy.jp/#quest/supporter/912611/3/0',
+    # FIRE UNITE AND FIGHT
+    uf_fire_solo_normal = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914611/3/0',
         'time_limit': 2
+    }
+    uf_fire_solo_hard = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914621/3/0',
+        'time_limit': 2
+    }
+    uf_fire_solo_veryhard = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914631/3/0',
+        'time_limit': 2
+    }
+    uf_fire_rapid_extreme = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914641/1/0',
+        'time_limit': 3
+    }
+    uf_fire_rapid_extreme_plus = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914651/1/0',
+        'time_limit': 3
+    }
+    uf_fire_rapid_nightmare = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914661/1/0/10116',
+        'time_limit': 5
+    }
+    uf_fire_final_rally = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter_raid/35368078507/914771/1/0/0/2",
+        'time_limit': 5
+    }  # unite and fight
+    uf_solo_normal = {
+        'FIRE': uf_fire_solo_normal,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None
     }
     uf_solo_hard = {
-        'url': 'https://game.granbluefantasy.jp/#quest/supporter/912621/3/0',
-        'time_limit': 2
+
+        'FIRE': uf_fire_solo_hard,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None
     }
     uf_solo_veryhard = {
-        'url': 'https://game.granbluefantasy.jp/#quest/supporter/912631/3/0',
-        'time_limit': 2
+        'FIRE': uf_fire_solo_veryhard,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None
     }
     uf_rapid_extreme = {
-        'url': 'https://game.granbluefantasy.jp/#quest/supporter/912641/1/0',
-        'time_limit': 3
+        'FIRE': uf_fire_rapid_extreme,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None
     }
     uf_rapid_extreme_plus = {
-        'url': 'https://game.granbluefantasy.jp/#quest/supporter/912651/1/0',
-        'time_limit': 3
+        'FIRE': uf_fire_rapid_extreme_plus,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None
     }
     uf_rapid_nightmare = {
-        'url': 'https://game.granbluefantasy.jp/#quest/supporter/912661/1/0/10116',
-        'time_limit': 5
+        'FIRE': uf_fire_rapid_nightmare,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None
     }
     uf_final_rally = {
-        'url': "https://game.granbluefantasy.jp/#quest/supporter_raid/35368078507/912771/1/0/0/2",
-        'time_limit': 5
-    }
+        'FIRE': uf_fire_final_rally,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None}
+
     # 场景切换页面的loading元素
     loading_page_element = {
         'element': "img-load",

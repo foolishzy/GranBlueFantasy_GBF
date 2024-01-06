@@ -1,27 +1,44 @@
 from selenium.webdriver.common.by import By
 from game import game
 from util import util
-from elementfinder import elefinder 
-from alert import alert 
+from elementfinder import elefinder
+from alert import alert
+from enum import Enum
+
 
 class uf_game(game):
-    def __init__(self, data = {
-        'url' : '',
-        'time_limit' : 1
-        }):
+    def __init__(self, data={
+        'FIRE': "",
+        'WIND': "",
+        "DARK": "",
+        "LIGHT": "",
+        "EARTH": ""
+    }):
+        self.element_type = self.select_element()
+        data = data[self.element_type.name]
         time_limit = data['time_limit']
         self.url = data['url']
         super().__init__(time_limit)
-    
+
+    def select_element(self):
+        e_t = element_type
+        print('pls select element')
+        for e in e_t:
+            print(e.value, ". ", e.name)
+        i = int(input('select: '))
+        for e in e_t:
+            if e.value == i:
+                return e
+
     def play(self):
-        # one turn 
+        # one turn
         i = int(input("""
         100% chargebar and one turn?
         pls selcet:
         1. yes
         2. no
         """
-        ))
+                      ))
         if i == 1:
             self.oneturn = True
         else:
@@ -31,7 +48,7 @@ class uf_game(game):
         by = self.util.screen_label_auto_refresh['by']
         ele = self.util.screen_label_auto_refresh['element']
         repeat_times = int(input('pls input repeat times: '))
-        while repeat_times > 0 :
+        while repeat_times > 0:
             print('while loop start')
             repeat_times = repeat_times - 1
             self.stage.goto(self.url)
@@ -42,52 +59,69 @@ class uf_game(game):
                     self.mouse.click_request_cancel()
                 if self.oneturn:
                     self.mouse.click_full()
-                    if  elefinder(by, ele, 30, self.chm).is_element_presence():
+                    if elefinder(by, ele, 30, self.chm).is_element_presence():
                         self.stage.refresh()
                 else:
                     self.mouse.click_full()
                     self.auto_refresh()
         alert().run()
 
+
+class element_type(Enum):
+    FIRE = 1
+    WATER = 2
+    EARTH = 3
+    WIND = 4
+    LIGHT = 5
+    DARK = 6
+
+
 class solo_battle_normal(uf_game):
     def __init__(self):
         data = util.uf_solo_normal
         super().__init__(data)
+
 
 class solo_battle_hard(uf_game):
     def __init__(self):
         data = util.uf_solo_hard
         super().__init__(data)
 
+
 class solo_battle_veryhard(uf_game):
     def __init__(self):
         data = util.uf_solo_veryhard
         super().__init__(data)
+
 
 class rapid_extreme(uf_game):
     def __init__(self):
         data = util.uf_rapid_extreme
         super().__init__(data)
 
+
 class rapid_extreme_plus(uf_game):
     def __init__(self):
         data = util.uf_rapid_extreme_plus
         super().__init__(data)
+
 
 class rapid_nightmare(uf_game):
     def __init__(self):
         data = util.uf_rapid_nightmare
         super().__init__(data)
 
+
 class final_rally(uf_game):
     def __init__(self):
         data = util.uf_final_rally
         super().__init__(data)
 
+
 class unite_and_fight_select:
     def __exit(self):
         pass
-    
+
     def __init__(self):
         string_hint = """
         请选择：
@@ -127,7 +161,3 @@ class unite_and_fight_select:
             rapid_nightmare().play()
         elif index == 7:
             final_rally().play()
-
-
-
-

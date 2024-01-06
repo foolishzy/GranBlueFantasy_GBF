@@ -65,6 +65,18 @@ class Mouse:
         #  self.util.mouse_position_party_ok_dert
         #  )
 
+    def click_semi(self):
+        data = util.screen_label_semi
+        self.click_by_element(data, 5)
+
+    def click_skip(self):
+        data = util.screen_label_skip
+        self.click_by_element(data, 5)
+
+    def click_items_picked_up_ok(self):
+        data = util.Items_Picked_Up_Ok
+        self.click_by_element(data, 5)
+
     def click_request_cancel(self):
         self.click_by_element(
             {'by': By.CLASS_NAME,
