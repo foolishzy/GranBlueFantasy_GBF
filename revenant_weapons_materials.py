@@ -63,5 +63,6 @@ class scattered_cargo(game):
             if self.ck.is_battle_page():
                 self.mouse.click_attack()
                 self.mouse.click_semi()
+                self.mouse.click_battle_screen_next()
             self.ck.is_goal_page(self.btl * 60)
         alert().run()

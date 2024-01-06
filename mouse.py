@@ -93,6 +93,10 @@ class Mouse:
         self.click_by_element(data,  waittime=5)
         time.sleep(1)
 
+    def click_battle_screen_next(self):
+        data = util.screen_label_battle_next
+        self.click_by_element(data)
+
     def click_check_by_sel_and_click_by_pos(
             self,
             selector_data={'by': By.CLASS_NAME, 'element': 'prt-btn-deck'},

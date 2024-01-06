@@ -11,6 +11,10 @@ class util:
         'element': '//*[@id="pop"]/div/div[3]/div',
         'by': By.XPATH
     }
+    screen_label_battle_next = {
+        'element': '//*[@id="wrapper"]/div[3]/div[2]/div[12]/div',
+        'by': By.XPATH
+    }
     screen_label_semi = {
         'element': '//*[@id="wrapper"]/div[3]/div[2]/div[7]',
         'by': By.XPATH
