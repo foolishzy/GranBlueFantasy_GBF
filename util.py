@@ -19,6 +19,12 @@ class util:
         'element': '//*[@id="wrapper"]/div[3]/div[2]/div[7]',
         'by': By.XPATH
     }
+    # antique cloth
+    antique_cloth = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/shop_treasure/101521/3/0/archaic!numbers!evolution!4507807213/54/10/100',
+        'time_limit': 5
+
+    }
     # zephyr feather
     scattered_cargo = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/shop_treasure/101121/3/0/archaic!numbers!evolution!4507807213/3/10/300',

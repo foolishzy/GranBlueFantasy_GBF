@@ -8,7 +8,8 @@ class materials_select():
         string_hint = """
         0. exit
         1. zephyr feather
-        2. ...
+        2. antiquaruan_troubles
+        3. ...
         """
         flag = False
         index_range = [[0, 2]]
@@ -26,9 +27,45 @@ class materials_select():
             self.__exit()
         elif index == 1:
             scattered_cargo().play()
+        elif index == 2:
+            antiquaruan_troubles().play()
 
     def __exit(self):
         pass
+
+
+class antiquaruan_troubles(game):
+
+    def __init__(self):
+        data = util.scattered_cargo
+        self.btl = data['time_limit']
+        self.url = data['url']
+        super().__init__(self.btl)
+
+    def play(self):
+        super().play()
+        flag = True
+        repeat_times = 0
+        while flag and (repeat_times <= 0):
+            try:
+                repeat_times = int(input("pls input repeat times :"))
+            except KeyboardInterrupt:
+                repeat_times = 0
+                flag = False
+                break
+        while repeat_times > 0:
+            print("while loop start")
+            repeat_times = repeat_times - 1
+            print("left times : ", repeat_times)
+            self.stage.goto(self.url)
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_attack()
+                self.mouse.click_semi()
+                self.mouse.click_battle_screen_next()
+            self.ck.is_goal_page(self.btl * 60)
+        alert().run()
 
 
 class scattered_cargo(game):
