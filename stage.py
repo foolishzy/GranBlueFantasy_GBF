@@ -107,12 +107,18 @@ class checker:
 
     def check_exp_gained_info(self):
         """
+        rank_progress
+        rank_point
+        exp_point
         exp
         rank
         emp
         """
         result = {}
         data = {
+            'rank_progress': '//*[@id="pc_param"]',
+            'rank_point': '//*[@id="pop"]/div/div[2]/div/div/div/div[1]/div[2]',
+            'exp_point': '//*[@id="pop"]/div/div[2]/div/div/div/div[2]/div[2]',
             'party': '//*[@id="cnt-result"]/div[1]/div[1]/div[2]/div[1]',
             'rank': '//*[@id="pc_param-level"]',
             "emp": '//*[@id="pc-zp"]/span[1]',
@@ -120,15 +126,21 @@ class checker:
         }
         elf = elefinder(By.XPATH, data['party'], 5, self.chm)
         if elf.is_element_visibility():
-            for e in ['rank', 'emp', 'master_lv']:
+            for e in ['rank',  'rank_point', 'exp_point', 'rank_progress', 'emp', 'master_lv']:
                 e_d = data[e]
                 try:
                     target = self.chm.find_element_by_xpath(e_d)
-                    result[e] = target.text
+                    if e == 'rank_progress':
+                        result[e] = target.get_attribute('style').split()[
+                            1].split(';')[0]
+                    else:
+                        result[e] = target.text
                 except TimeoutException:
                     pass
+            print("------------------")
             for r in result:
-                print(r, result[r])
+                print(r, ':', result[r])
+            print("------------------")
 
     def check_box(self,
                   gauge_box_data={
