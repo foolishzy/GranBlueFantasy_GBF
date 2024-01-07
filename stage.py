@@ -105,6 +105,31 @@ class checker:
         self.waittime = waittime
         self.stage = stage(self.chm)
 
+    def check_exp_gained_info(self):
+        """
+        exp
+        rank
+        emp
+        """
+        result = {}
+        data = {
+            'party': '//*[@id="cnt-result"]/div[1]/div[1]/div[2]/div[1]',
+            'rank': '//*[@id="pc_param-level"]',
+            "emp": '//*[@id="pc-zp"]/span[1]',
+            'master_lv': '//*[@id="cnt-result"]/div[1]/div[1]/div[2]/div[1]/div/div[3]/span/span[1]'
+        }
+        elf = elefinder(By.XPATH, data['party'], 5, self.chm)
+        if elf.is_element_visibility():
+            for e in ['rank', 'emp', 'master_lv']:
+                e_d = data[e]
+                try:
+                    target = self.chm.find_element_by_xpath(e_d)
+                    result[e] = target.text
+                except TimeoutException:
+                    pass
+            for r in result:
+                print(r, result[r])
+
     def check_box(self,
                   gauge_box_data={
                       'box_ele': 'txt-chest-name',

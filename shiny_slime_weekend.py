@@ -2,9 +2,11 @@ from stage import checker
 from game import game
 from util import util
 from alert import alert
+
+
 class slime_select:
-    
-    def exit():
+
+    def exit(self):
         pass
 
     def __init__(self):
@@ -14,7 +16,7 @@ class slime_select:
        1. shiny_slime_weekend
        2. shiny_slime_week 
         '''
-        index_max = 2 
+        index_max = 2
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -26,9 +28,10 @@ class slime_select:
         if index == 0:
             self.exit()
         elif index == 1:
-            shiny_slime_weekend().play()       
+            shiny_slime_weekend().play()
         elif index == 2:
             shiny_slime_week().play()
+
 
 class shiny_slime_weekend(game):
 
@@ -50,7 +53,9 @@ class shiny_slime_weekend(game):
             if self.ck.is_battle_page():
                 self.mouse.click_full()
             self.ck.is_goal_page(180)
-        alert().run()  
+            self.ck.check_exp_gained_info()
+        alert().run()
+
 
 class shiny_slime_week(game):
     def __init__(self):
@@ -71,6 +76,5 @@ class shiny_slime_week(game):
             if self.ck.is_battle_page():
                 self.mouse.click_full()
             self.ck.is_goal_page(180)
-        alert().run()  
-
-
+            self.ck.check_exp_gained_info()
+        alert().run()

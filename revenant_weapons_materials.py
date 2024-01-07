@@ -37,7 +37,7 @@ class materials_select():
 class antiquaruan_troubles(game):
 
     def __init__(self):
-        data = util.scattered_cargo
+        data = util.antique_cloth
         self.btl = data['time_limit']
         self.url = data['url']
         super().__init__(self.btl)
@@ -60,6 +60,7 @@ class antiquaruan_troubles(game):
             self.stage.goto(self.url)
             self.mouse.click_friend_summon()
             self.mouse.click_party_ok()
+            self.mouse.click_skip()
             if self.ck.is_battle_page():
                 self.mouse.click_attack()
                 self.mouse.click_semi()
