@@ -144,6 +144,10 @@ class util:
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/914651/1/0',
         'time_limit': 3
     }
+    uf_fire_rapid_nightmare_95 = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914671/1/0/10116',
+        'time_limit': 8
+    }
     uf_fire_rapid_nightmare = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/914661/1/0/10116',
         'time_limit': 5
@@ -195,6 +199,14 @@ class util:
     }
     uf_rapid_nightmare = {
         'FIRE': uf_fire_rapid_nightmare,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': None,
+        'DARK': None
+    }
+    uf_rapid_nightmare_95 = {
+        'FIRE': uf_fire_rapid_nightmare_95,
         'WATER': None,
         'WIND': None,
         'EARTH': None,

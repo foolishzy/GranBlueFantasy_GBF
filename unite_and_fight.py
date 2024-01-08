@@ -112,6 +112,12 @@ class rapid_nightmare(uf_game):
         super().__init__(data)
 
 
+class rapid_nightmare_95(uf_game):
+    def __init__(self):
+        data = util.uf_rapid_nightmare_95
+        super().__init__(data)
+
+
 class final_rally(uf_game):
     def __init__(self):
         data = util.uf_final_rally
@@ -132,7 +138,8 @@ class unite_and_fight_select:
         4.rapid_battle_extreme
         5.rapid_battle_extremeplus
         6.rapid_battle_nightmare_diffculty
-        7.final rally
+        7.rapid_battle_nightmare_95
+        8.final rally
         """
         flag = False
         while not flag:
@@ -160,4 +167,6 @@ class unite_and_fight_select:
         elif index == 6:
             rapid_nightmare().play()
         elif index == 7:
+            rapid_nightmare_95().play()
+        elif index == 8:
             final_rally().play()
