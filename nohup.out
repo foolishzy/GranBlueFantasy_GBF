@@ -216,3 +216,205 @@ libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_na
 [247:252:0125/190452.623903:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
 [247:252:0125/190728.059173:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
 [247:252:0125/191407.476138:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/193708.788528:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/193947.497181:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/194130.239407:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[205:233:0125/194552.541724:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[205:233:0125/194916.282254:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[205:233:0125/195449.192711:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[247:252:0125/195600.303402:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/195600.303616:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/195953.045835:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[247:252:0125/200107.510201:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/200158.693915:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/200214.057379:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/201142.481254:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[205:205:0125/201142.481498:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[247:252:0125/201223.335248:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/201517.412896:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/201730.540281:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/201930.428732:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -100
+[247:252:0125/202137.665021:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/202137.675891:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/202222.584741:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/202529.296515:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/202537.689085:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/202538.779559:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/202607.750316:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/202633.256682:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/203007.768858:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/203008.001117:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/204000.327403:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/204301.651216:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/204352.843287:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205006.381053:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205138.534366:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205209.260194:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205341.414498:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205422.376823:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205600.350975:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205600.361675:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/205600.371883:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/210426.549095:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/210457.254467:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/211033.286284:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/211521.898169:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/211750.372213:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/211810.854765:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+<--- Last few GCs --->
+
+[1:0x3b2c0080c000] 24585768 ms: Mark-sweep 1967.1 (2071.9) -> 1965.2 (2071.9) MB, 1030.4 / 0.0 ms  (average mu = 0.066, current mu = 0.009) allocation failure; GC in old space requested
+[1:0x3b2c0080c000] 24586254 ms: Mark-sweep 1965.2 (2071.9) -> 1965.1 (2071.9) MB, 483.8 / 0.0 ms  (average mu = 0.046, current mu = 0.003) allocation failure; GC in old space requested
+
+
+<--- JS stacktrace --->
+
+[388:1:0125/211828.475049:ERROR:v8_initializer.cc(688)] V8 javascript OOM: (Ineffective mark-compacts near heap limit).
+[0125/211828.489310:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0125/211828.489344:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[0125/211828.490950:ERROR:directory_reader_posix.cc(42)] opendir /home/lunar/.config/google-chrome/Crash Reports/attachments/25370c1c-ca2b-4622-890c-e1b15faa9971: No such file or directory (2)
+[0125/211928.493273:ERROR:http_transport_libcurl.cc(470)] curl_easy_perform: Timeout was reached (28)
+[247:252:0125/212018.851495:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/213521.679237:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/223342.052329:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/224026.383388:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+D3D12: Removing Device.
+[21126:21126:0125/224030.624195:ERROR:angle_platform_impl.cc(43)] renderergl_utils.cpp:2532 (CheckError): GL call functions->texStorage2D(ToGLenum(type), static_cast<GLsizei>(levels), texStorageFormat.internalFormat, size.width, size.height) generated error 0x00000505 in ../../third_party/angle/src/libANGLE/renderer/gl/TextureGL.cpp, setStorage:1052. 
+[21126:21126:0125/224030.624610:ERROR:gl_utils.cc(315)] [.RendererMainThread-0x3b2c0032f100] GL_INVALID_FRAMEBUFFER_OPERATION: Framebuffer is incomplete: Driver does not support this framebuffer configuration.
+[21126:21126:0125/224030.624793:ERROR:gl_utils.cc(315)] [.RendererMainThread-0x3b2c0032f100] GL_INVALID_FRAMEBUFFER_OPERATION: Framebuffer is incomplete: Driver does not support this framebuffer configuration.
+[21126:21126:0125/224030.624893:ERROR:gl_utils.cc(315)] [.RendererMainThread-0x3b2c0032f100] GL_INVALID_FRAMEBUFFER_OPERATION: Framebuffer is incomplete: Driver does not support this framebuffer configuration.
+[21126:21126:0125/224030.624989:ERROR:gl_utils.cc(315)] [.RendererMainThread-0x3b2c0032f100] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
+[21126:21126:0125/224030.625592:ERROR:gl_utils.cc(315)] [.RendererMainThread-0x3b2c0032f100] GL_INVALID_FRAMEBUFFER_OPERATION: Framebuffer is incomplete: Driver does not support this framebuffer configuration.
+[21126:21126:0125/224030.625907:ERROR:shared_context_state.cc(832)] SharedContextState lost due to GL_OUT_OF_MEMORY
+[21126:21126:0125/224030.626214:ERROR:gpu_service_impl.cc(986)] Exiting GPU process because some drivers can't recover from errors. GPU process will restart shortly.
+[350:1:0125/224030.687486:ERROR:command_buffer_proxy_impl.cc(331)] GPU state invalid after WaitForGetOffsetInRange.
+[205:205:0125/224030.687978:ERROR:command_buffer_proxy_impl.cc(331)] GPU state invalid after WaitForGetOffsetInRange.
+[205:205:0125/224030.725371:ERROR:gpu_process_host.cc(975)] GPU process exited unexpectedly: exit_code=8704
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1918:1918:0125/224035.795906:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[1877:7:0125/224048.681090:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[247:252:0125/224126.245692:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/224234.533461:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/224518.651139:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[247:252:0125/224926.261552:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/224944.987508:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[247:252:0125/225034.547213:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/225439.096684:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[205:233:0125/225919.154875:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[247:252:0125/225943.652162:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/225953.893390:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/225959.013700:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/230207.053771:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/230339.173016:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/230612.773377:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/230653.683520:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[247:252:0125/231226.412195:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/231546.224238:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/231551.343399:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/231601.571876:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[205:233:0125/231851.549232:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[205:205:0125/231851.549377:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[247:252:0125/232007.334313:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/232154.870312:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/235217.574978:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/235349.731829:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0125/235532.132963:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0126/000817.593263:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[247:252:0126/000817.606625:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11013:0126/000954.942311:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[10980:11013:0126/000954.942395:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[10980:11012:0126/000954.952608:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:11012:0126/000954.952639:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:11012:0126/000954.964908:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:11012:0126/000954.964944:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:11004:0126/000954.971654:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[10980:11015:0126/000954.971738:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[10980:11004:0126/000954.971787:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+[10980:11015:0126/000954.971868:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/e975ed37-fd0d-46ba-9acc-38ee4369ea2e
+[10980:11012:0126/000954.992849:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:11012:0126/000954.992877:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:11109:0126/000955.049543:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[10980:11109:0126/000955.049589:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[10980:11109:0126/000955.049616:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[10980:11109:0126/000955.049652:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[10980:11109:0126/000955.049663:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[11019:11019:0126/000955.143633:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[10980:10980:0126/000955.290247:ERROR:password_sync_bridge.cc(234)] Passwords datatype error was encountered: Password metadata store isn't available.
+[11020:11031:0126/001008.065293:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/001008.537756:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/001206.776568:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/001358.051406:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/001358.285400:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/001358.324269:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/001358.324434:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/001639.907056:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/001820.126745:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/001820.377789:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/001821.754910:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/001822.038816:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/001851.209034:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/001852.530212:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/001853.578742:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/001855.291060:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/001913.854921:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/002255.385492:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/002305.674542:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/002305.926633:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/002312.723099:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/002319.578458:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/002659.510414:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/002722.942278:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/002839.148854:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/002839.392699:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/002848.248222:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/002851.378641:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/002853.676357:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/002853.720436:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/003122.470708:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/003132.435508:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/003408.623821:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/003540.729734:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/003540.734555:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/003540.995903:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/003544.112913:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/003625.966373:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/004045.734430:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/004255.426522:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/004255.443457:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/004504.964261:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/004525.368485:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/004525.620064:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:10980:0126/004525.620187:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[10980:11007:0126/004527.422241:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/004534.738867:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/005223.100339:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/005313.366952:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/005313.430805:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/005314.452294:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/005400.841019:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/005531.275264:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/005708.211847:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/005827.888379:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/010316.917157:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/010424.189737:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/010731.432168:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/010852.313443:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:18260:0126/010955.565836:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:10980:0126/010955.565978:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10980:18260:0126/010955.566043:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:10980:0126/010955.566091:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10980:18260:0126/010955.566147:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:10980:0126/010955.566211:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10980:18260:0126/010955.566254:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:10980:0126/010955.566324:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10980:18260:0126/010955.566389:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[10980:10980:0126/010955.566432:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[10980:11007:0126/011603.070474:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/011920.016074:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/012701.644512:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:10980:0126/012701.644611:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[11020:11031:0126/012958.063071:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101

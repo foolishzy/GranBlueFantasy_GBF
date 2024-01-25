@@ -19,5 +19,3 @@ class alert:
 
     def end_box(self, msg="打完", title="gbf script", bt='ok'):
         pyautogui.alert(msg, title, bt)
-
-    def continue_sound(self):

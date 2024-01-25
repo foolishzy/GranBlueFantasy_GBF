@@ -70,6 +70,7 @@ class replicard_common(game):
                 else:
                     self.mouse.click_full()
                     self.auto_refresh()
+            #  self.ck.check_exp_gained_info()
             self.stage.goto(self.gauge_url, {
                             'element': 'prt-division-list', 'by': By.CLASS_NAME})
             if self.ck.check_box(self.gauge_box_data):

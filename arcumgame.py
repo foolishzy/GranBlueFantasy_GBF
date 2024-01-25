@@ -31,6 +31,7 @@ class arcum_select:
        115. mundus_wind_v2de_morrigna_militis
        116. mundus_wind_3_dragon_in_glittering_green
        117. mundus_water_v2de_ca_ong_militis
+       118. mundus_fire_v2de_plus_promatheus_militis
        201. joculator_dark_ve_jurassic_dino
        202. joculator_dark_3_Dreadful_scourge
        203. joculator_dark_5_bloody_soothsayer
@@ -115,6 +116,8 @@ class arcum_select:
             arcumgame().mundus_wind_3_dragon_in_glittering_green().play()
         elif index == 117:
             arcumgame().mundus_water_v2de_ca_ong_militis().play()
+        elif index == 118:
+            arcumgame().mundus_fire_v2de_plus_prometheus_militis().play()
         elif index == 201:
             arcumgame().joculator_dark_ve_jurassic_dino().play()
         elif index == 202:
@@ -201,6 +204,12 @@ class arcumgame:
         def __init__(self):
             gb_data = util.arcum_mundus_gauge_box_data
             data = util.mundus_earth_5_princess_of_the_horde
+            super().__init__(data, gb_data)
+
+    class mundus_fire_v2de_plus_prometheus_militis(arcum_defender):
+        def __init__(self):
+            gb_data = util.arcum_mundus_gauge_box_data
+            data = util.mundus_fire_v2de_plus_prometheus_militis
             super().__init__(data, gb_data)
 
     class mundus_fire_v2de_prometheus_militis(arcum_defender):

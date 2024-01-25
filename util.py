@@ -600,6 +600,11 @@ class util:
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/10",
         'time_limit': 10
     }
+    mundus_fire_v2de_plus_prometheus_militis = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/3/819141/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/10",
+        'time_limit': 10
+    }
     mundus_fire_v2de_prometheus_militis = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/2/819141/25',
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/10",
