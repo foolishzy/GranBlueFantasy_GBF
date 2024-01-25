@@ -1,3 +1,4 @@
+from alert import alert
 from threading import Event
 from elementfinder import elefinder
 from util import util
@@ -113,6 +114,27 @@ class battle_final_next_bt_locator:
     def start(self):
 
         pass
+
+
+class verification_locator:
+
+    data = util.verification_data
+
+    def __init__(self, mouse: Mouse, chm: webdriver.Chrome, ctrl_event: Event):
+        self.chm = chm
+        self.mouse = mouse
+        self.ctrl_event = ctrl_event
+        self.alert = alert()
+
+    def start(self):
+        flag = False
+        elf = elefinder(
+            self.data['by'], self.data['element'], 2, self.chm)
+        if elf.is_element_visibility():
+            flag = True
+            self.ctrl_eve.set()
+            self.alert.run(msg='验证码窗口', title='请检查')
+            self.ctrl_eve.clear()
 
 
 class request_dialog_locator:

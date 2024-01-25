@@ -2,7 +2,15 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+
+    # 验证码
+    #  verification
+    verification_data = {
+        'element': '//*[@id="pop-c-a-i"]/div/div[2]/div/div/div[2]',
+        'by': By.XPATH
+    }
     # 剧情跳过 skip
+
     screen_label_skip = {
         'element': '//*[@id="wrapper"]/div[3]/div[4]/div[8]',
         'by': By.XPATH

@@ -16,7 +16,8 @@ class timer:
         self.end_time = time.time()
         if self.name:
             print(self.name, "计时结束")
-        print("执行时间:", self.end_time - self.start_time, "s")
+        t = self.end_time - self.start_time
+        print("执行时间:", "%.2f" % t, "s")
         pass
 
     def reset(self):

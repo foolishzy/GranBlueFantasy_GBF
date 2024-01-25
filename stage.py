@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import WebDriverException
+from selenium.common.exceptions import WebDriverException, NoSuchElementException
 from selenium.common.exceptions import UnexpectedAlertPresentException
 from util import util
 from elementfinder import elefinder
@@ -136,6 +136,9 @@ class checker:
                     else:
                         result[e] = target.text
                 except TimeoutException:
+                    pass
+                except NoSuchElementException:
+                    print('NoSuchElementException')
                     pass
             print("------------------")
             for r in result:

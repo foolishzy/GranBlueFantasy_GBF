@@ -4,7 +4,7 @@ import time
 from loading_page_locator import request_dialog_locator
 from loading_page_locator import goal_page_locator
 from loading_page_locator import last_turn_locator
-from loading_page_locator import lpl
+from loading_page_locator import lpl, verification_locator
 from mouse import Mouse
 from util import util
 from stage import stage
@@ -50,6 +50,7 @@ class game:
         start_time = time.time()
         end_time = time.time()
         ck = checker(self.chm, 2)
+        # 监视进程相关
         play_event = Event()
         lst_turn_event = Event()
         goal_page_event = Event()
@@ -68,6 +69,15 @@ class game:
         lst_turn_thread.start()
         goal_page_thread.start()
         request_locator_ctrl_event.clear()
+        # 验证码进程
+        verification_event = Event()
+        vl = verification_locator(self.mouse, self.chm, verification_event)
+        verificate_thread = Thread(
+            target=vl.start
+        )
+        verificate_thread.start()
+        # 监视进程结束
+
         while play_event.is_set() and end_time - start_time < self.btl * 60:
             end_time = time.time()
             flag = False

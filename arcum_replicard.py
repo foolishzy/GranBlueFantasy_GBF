@@ -5,6 +5,7 @@ import time
 from game import game
 from stage import stage
 from mouse import Mouse
+from timer import timer
 
 
 class replicard_common(game):
@@ -33,6 +34,7 @@ class replicard_common(game):
         self.url = url
         self.gauge_url = gauge_url
         self.gauge_box_data = gauge_box_data
+        self.timer = timer(self.__delattr__)
 
     def play(self):
 
@@ -54,6 +56,7 @@ class replicard_common(game):
         super().play()
         repeat_times = int(input("pls input repeat times :"))
         while repeat_times > 0:
+            self.timer.start()
             print("while loop start")
             repeat_times = repeat_times - 1
             print("left times : ", repeat_times)
@@ -75,6 +78,7 @@ class replicard_common(game):
                 self.play_gauge()
             elif self.ck.check_gauge_enemy(self.gauge_box_data):
                 self.play_gauge_enemy()
+            self.timer.end()
         alert().run()
 
     def play_box(self):
@@ -89,10 +93,10 @@ class replicard_common(game):
         self.mouse.click_gauge()
         self.mouse.click_arcum_part_ok()
         self.mouse.click_full()
-        self.ck.is_goal_page(30)
+        self.ck.is_goal_page(300)
 
     def play_gauge_enemy(self):
         self.mouse.click_gauge_enemy()
         self.mouse.click_arcum_part_ok()
         self.mouse.click_full()
-        self.ck.is_goal_page(30)
+        self.ck.is_goal_page(300)
