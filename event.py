@@ -21,9 +21,13 @@ class event_select:
         4.the divine generals...
         5.ultimate showndown
         6.tyras bizarre misadventure
+        7.dreamer's miracle
+        8.dread barrage
+        9.exo_corow crucible
+        10.heart of the sun
         '''
 
-        index_max = 6
+        index_max = 10
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -46,6 +50,14 @@ class event_select:
             ultimate_showndowns().play()
         elif index == 6:
             tyras_bizarre_misadventure().play()
+        elif index == 7:
+            dreamers_mirecle().play()
+        elif index == 8:
+            dread_barrage().play()
+        elif index == 9:
+            exo_corow_crucible().play()
+        elif index == 10:
+            heart_of_the_sun().play()
 
 
 class event_common(game):
@@ -59,6 +71,81 @@ class event_common(game):
             game_data['time_limit']
         )
         pass
+
+
+class dreamers_mirecle(event_common):
+    """
+    20240130
+    """
+    solo_veryhard_data = util.dreamers_mirecle_solo_very_hard
+    solo_extreme_data = util.dreamers_mirecle_solo_extreme
+    solo_impossible_data = util.dreamers_mirecle_solo_impossible
+
+    game_data = solo_extreme_data
+
+    def __exit(self):
+        pass
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        my_timer = timer()
+        while times > 0:
+            my_timer.start()
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+            my_timer.end()
+
+    def play_solo_impossible(self):
+        self.game_data = self.solo_impossible_data
+        self.__init__()
+        self.__play()
+
+    def play_solo_extreme(self):
+        self.game_data = self.solo_extreme_data
+        self.__init__()
+        self.__play()
+
+    def play_solo_veryhard(self):
+        self.game_data = self.solo_veryhard_data
+        self.__init__()
+        self.__play()
+
+    def play(self):
+        string_hint = """
+        0.exit
+        1.solo_extreme
+        2.solo_veryhard
+        3.solo_impossible
+        """
+        index = -1
+        index_max = 3
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.play_solo_extreme()
+        elif index == 2:
+            self.play_solo_veryhard()
+        elif index == 3:
+            self.play_solo_impossible()
 
 
 class tyras_bizarre_misadventure(event_common):
@@ -261,6 +348,288 @@ class divine_generals(event_common):
             self.play_solo_extreme()
         elif index == 2:
             self.play_rapid_extreme()
+
+
+class dread_barrage(event_common):
+    """
+    20240217
+    """
+    data_one = util.dread_barrage_one_star_data
+    data_two = util.dread_barrage_two_star_data
+    data_three = util.dread_barrage_three_star_data
+    data_four = util.dread_barrage_four_star_data
+    data_five = util.dread_barrage_five_star_data
+    data_six = util.dread_barrage_six_star_data
+    data_fluke_skywalker = util.dread_barrage_fluke_skywalker_data
+    game_data = data_four
+
+    def __exit(self):
+        pass
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        while times > 0:
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+
+    def one_star(self):
+        self.game_data = self.data_one
+        self.__init__()
+        self.__play()
+
+    def two_start(self):
+        self.game_data = self.data_two
+        self.__init__()
+        self.__play()
+
+    def three_start(self):
+        self.game_data = self.data_two
+        self.__init__()
+        self.__play()
+
+    def four_start(self):
+        self.game_data = self.data_two
+        self.__init__()
+        self.__play()
+
+    def five_start(self):
+        self.game_data = self.data_two
+        self.__init__()
+        self.__play()
+
+    def six_start(self):
+        self.game_data = self.data_two
+        self.__init__()
+        self.__play()
+
+    def skywalker(self):
+        self.game_data = self.data_fluke_skywalker
+        self.__init__()
+        self.__play()
+
+    def play(self):
+        string_hint = """
+        0.exit
+        1.one
+        2.two
+        3.three
+        4.four
+        5.five
+        6.six
+        7.skywalker
+        """
+        index = -1
+        index_max = 7
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.one_star()
+        elif index == 2:
+            self.two_start()
+        elif index == 3:
+            self.three_start()
+        elif index == 4:
+            self.four_start()
+        elif index == 5:
+            self.five_start()
+        elif index == 6:
+            self.six_start()
+        elif index == 7:
+            self.skywalker()
+
+
+class heart_of_the_sun(event_common):
+    """
+    20240318
+    """
+    pround_turbulent_skies = util.heart_of_the_sun_turbulent_skies
+    pround_cycle_of_torment = util.heart_of_the_sun_cycle_of_torment_data
+    raids_abramelin_impossible_data = util.heart_of_the_sun_raids_abramelin_impossible_data
+    raids_tiamat_aura_omega_data = util.heart_of_the_sun_raids_timat_aura_omega_impossible_data
+    raids_phoniex_data = util.heart_of_the_sun_raids_phoniex_impossible_data
+    game_data = raids_abramelin_impossible_data
+
+    def __exit(self):
+        pass
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        while times > 0:
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+
+    def play_pround_cycle(self):
+        self.game_data = self.play_pround_cycle
+        self.__init__()
+        self.__play()
+
+    def play_pround_turbulent(self):
+        self.game_data = self.pround_turbulent_skies
+        self.__init__()
+        self.__play()
+
+    def play_impossible_phoniex(self):
+        self.game_data = self.raids_phoniex_data
+        self.__init__()
+        self.__play()
+
+    def play_impossible_tiamat(self):
+        self.game_data = self.raids_tiamat_aura_omega_data
+        self.__init__()
+        self.__play()
+
+    def play_impossible_abramelin(self):
+        self.game_data = self.raids_abramelin_impossible_data
+        self.__init__()
+        self.__play()
+
+    def play_pround_cycle(self):
+        self.game_data = self.pround_cycle_of_torment
+        self.__init__()
+        self.__play()
+
+    def play_pround_turbulent(self):
+        self.game_data = self.pround_turbulent_skies
+        self.__init__()
+        self.__play()
+
+    def play(self):
+        string_hint = """
+        0.exit
+        1.impossible_tiamat
+        2.impossible_abramelin
+        3.pround_cycle
+        4.pround_torment
+        5.impossible_phoniex
+        """
+        index = -1
+        index_max = 5
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.play_impossible_tiamat()
+        elif index == 2:
+            self.play_impossible_abramelin()
+        elif index == 5:
+            self.play_impossible_phoniex()
+
+
+class exo_corow_crucible(event_common):
+    """
+    20240223
+    """
+    veryhard_data = util.exo_corow_veryhard
+    extreme_data = util.exo_corow_extreme
+    game_data = extreme_data
+    crucible_data_120 = util.exo_corow_crucible_120
+    crucible_data_150 = util.exo_corow_crucible_150
+
+    def __exit(self):
+        pass
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        while times > 0:
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+
+    def play_crucible_150(self):
+        self.game_data = self.crucible_data_150
+        self.__init__()
+        self.__play()
+
+    def play_crucible_120(self):
+        self.game_data = self.crucible_data_120
+        self.__init__()
+        self.__play()
+
+    def play_veryhard(self):
+        self.game_data = self.veryhard_data
+        self.__init__()
+        self.__play()
+
+    def play_extreme(self):
+        self.game_data = self.extreme_data
+        self.__init__()
+        self.__play()
+
+    def play(self):
+        string_hint = """
+        0.exit
+        1.veryhard
+        2.extrem
+        3.crucible_120
+        4.crucible_150
+        """
+        index = -1
+        index_max = 4
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.play_veryhard()
+        elif index == 2:
+            self.play_extreme()
+        elif index == 3:
+            self.play_crucible_120()
+        elif index == 4:
+            self.play_crucible_150()
 
 
 class exo_ifrit_crucible(event_common):

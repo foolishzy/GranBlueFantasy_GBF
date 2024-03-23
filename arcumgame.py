@@ -66,6 +66,23 @@ class arcum_select:
        410. zone_faym_dark_5_draconic_simulacrum
        411. zone_faym_dark_5_oceanic_archon
        412. zone_faym_dark_3_mad_shearwielder
+       501. zone_goliath_vestige_of_truth
+       601. zone_harbinger_wind_5_dirgesinger
+       602. zone_harbinger_wind_5_vengeful_demigod
+       603. zone_harbinger_wind_de+_majestic_goldenwing
+       604. zone_harbinger_wind_de_majestic_goldenwing
+       605. zone_harbinger_wind_3_wildwind_conjurer/fullthunde_conjurer
+       606. zone_harbinger_wind_3_harbinger_simurgh
+       607. zone_harbinger_wind_5_harbinger_hardwood
+       608. zone_harbinger_wind_de_tempestuous_beauty
+       609. zone_harbinger_wind_de+_tempestuous_beauty
+       610. zone_harbinger_wind_5_demanding_stormgod
+       611. zone_harbinger_v2_wind_harbinger_stormer
+       612. zone_harbinger_light_3_dimensional_riftwalker
+       613. zone_harbinger_light_5_phantasmagoric_aberration
+       614. zone_harbinger_light_de_jadegleam_dragonkin
+       615. zone_harbinger_light_5_harbinger_tyrant
+       616. zone_harbinget_light_de_plus_jadegleam_dragonkin
        801. zone_kalendae_xneo_vohu_manah_militis
     '''
         flag = False
@@ -75,8 +92,8 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [101, 117], [201, 20999999999], [
-                301, 313], [401, 412], [801, 801]]
+            index_range = [[0, 0], [601, 616], [101, 118], [201, 209], [
+                301, 313], [401, 412], [501, 501], [801, 801]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -186,13 +203,143 @@ class arcum_select:
             arcumgame().zone_faym_dark_5_oceanic_archon().play()
         elif index == 412:
             arcumgame().zone_faym_dark_3_mad_shearwielder().play()
+        elif index == 501:
+            arcumgame().zone_goliath_vestige_of_truth().play()
+        elif index == 601:
+            arcumgame().zone_harbinger_wind_5_dirgesinger().play()
+        elif index == 602:
+            arcumgame().zone_harbinger_wind_5_vengful_demigod().play()
+        elif index == 603:
+            arcumgame().zone_harbinger_wind_de_plus_majestic_goldenwing().play()
+        elif index == 604:
+            arcumgame().zone_harbinger_wind_de_majestic_goldenwing().play()
+        elif index == 605:
+            arcumgame().zone_harbinger_wind_3_wildwind_conjurer().play()
+        elif index == 606:
+            arcumgame().zone_harbinger_wind_3_harbinger_simurgh()
+        elif index == 607:
+            arcumgame().zone_harbinger_wind_5_harbinger_hardwood().play()
+        elif index == 608:
+            arcumgame().zone_harbinger_wind_de_tempestuous_beauty().play()
+        elif index == 609:
+            arcumgame().zone_harbinger_wind_de_plus_tempestuous_beauty().play()
+        elif index == 610:
+            arcumgame().zone_harbinger_wind_5_demanding_stormgod().play()
+        elif index == 611:
+            arcumgame().zone_harbinger_v2_wind_harbinger_stormer().play()
+        elif index == 612:
+            arcumgame().zone_harbinger_light_3_dimensional_riftwalker().play()
+        elif index == 613:
+            arcumgame().zone_harbinger_light_5_phantasmagoric_aberration().play()
+        elif index == 614:
+            arcumgame().zone_harbinger_light_de_jadegleam_dragonkin().play()
+        elif index == 615:
+            arcumgame().zone_harbinger_light_5_harbinger_tyrant().play()
+        elif index == 616:
+            arcumgame().zone_harbinger_light_de_plus_jadegleam_dragonkin().play()
         elif index == 801:
             arcumgame().zone_kalendae_xeno_vohu_manah_militis().play()
+
+
+class zone_harbinger_common(replicard_common):
+    def __init__(self, data):
+        gb_data = util.arcum_zone_harbinger_gauge_box_data
+        super().__init__(data, gb_data)
 
 
 class arcumgame:
     def __init__(self):
         pass
+
+    class zone_harbinger_wind_5_harbinger_hardwood(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_5_harbinger_hardwood
+            super().__init__(data)
+
+    class zone_harbinger_wind_de_plus_tempestuous_beauty(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_de_plus_tempestuous_beauty
+            super().__init__(data)
+
+    class zone_harbinger_wind_de_tempestuous_beauty(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_de_tempestuous_beauty
+            super().__init__(data)
+
+    class zone_harbinger_wind_5_demanding_stormgod(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_5_demanding_stormgod
+            super().__init__(data)
+
+    class zone_harbinger_light_5_phantasmagoric_aberration(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_light_5_phantasmagoric_aberration
+            super().__init__(data)
+
+    class zone_harbinger_light_de_plus_jadegleam_dragonkin(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_light_de_plus_jadegleam_dragonkin
+            super().__init__(data)
+
+    class zone_harbinger_light_de_jadegleam_dragonkin(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_light_de_jadegleam_dragonkin
+            super().__init__(data)
+
+    class zone_harbinger_light_5_harbinger_tyrant(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_light_5_harbinger_tyrant
+            super().__init__(data)
+
+    class zone_harbinger_wind_3_harbinger_simurgh(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_3_harbinger_simurgh
+            super().__init__(data)
+
+    class zone_harbinger_wind_3_wildwind_conjurer(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_3_wildwind_conjurer
+            super().__init__(data)
+
+    class zone_harbinger_wind_de_majestic_goldenwing(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_de_majestic_goldenwing
+            #  super().__init__(data)
+            print('correct url pls')
+
+    class zone_harbinger_wind_de_plus_majestic_goldenwing(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_wind_de_plus_majestic_goldenwing
+            super().__init__(data)
+
+    class zone_harbinger_light_3_dimensional_riftwalker(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_light_3_dimensional_riftwalker
+            super().__init__(data)
+
+    class zone_harbinger_v2_wind_harbinger_stormer(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_harbinger_gauge_box_data
+            data = util.zone_harbinger_v2_wind_harbinger_stormer
+            super().__init__(data, gb_data)
+
+    class zone_harbinger_wind_5_vengful_demigod(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_harbinger_gauge_box_data
+            data = util.zone_harbinger_wind_5_vengeful_demigod
+            super().__init__(data, gb_data)
+
+    class zone_harbinger_wind_5_dirgesinger(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_harbinger_gauge_box_data
+            data = util.zone_harbinger_wind_5_dirgesing
+            super().__init__(data, gb_data)
+
+    class zone_goliath_vestige_of_truth(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_goliath_gauge_box_data
+            data = util.arcum_vestige_of_truth
+            super().__init__(data, gb_data)
 
     class zone_kalendae_xeno_vohu_manah_militis(replicard_common):
         def __init__(self):

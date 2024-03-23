@@ -101,6 +101,7 @@ class game:
                     self.summons.update()
                     self.summons.use_all_summon()
                     self.mouse.click_full()
+                    self.ck.check_battle_concluded_page()
                 else:
                     break
         lst_turn_event.clear()

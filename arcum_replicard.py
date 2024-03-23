@@ -59,7 +59,7 @@ class replicard_common(game):
             self.timer.start()
             print("while loop start")
             repeat_times = repeat_times - 1
-            print("left times : ", repeat_times)
+            print("\033[1;31;40mleft times : ", repeat_times, '\033[0m')
             self.stage.goto(self.url)
             self.mouse.click_arcum_part_ok()
             if self.ck.is_battle_page(10):

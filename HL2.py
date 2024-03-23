@@ -20,10 +20,11 @@ class hl_select:
         5. metatron impossible
         6. avatar impossible
         7. rose queen impossible
+        8. all_hl2.0
         """
         pass
         flag = False
-        index_range = [[0, 7]]
+        index_range = [[0, 8]]
         while not flag:
             try:
                 index = int(input(string_hint))
@@ -50,37 +51,62 @@ class hl_select:
             avatar_impossible().play()
         elif index == 7:
             rose_queen_impossible().play()
+        elif index == 8:
+            for e in [shiva_impossible(),
+                      europa_impossible(),
+                      godsworn_alexiel_impossible(),
+                      grimnir_impossible(),
+                      metatron_impossible(),
+                      avatar_impossible(),
+                      rose_queen_impossible()]:
+                e.three_times_play()
+            alert().run()
 
 
 class HL2(game):
 
     def __init__(self, data={'url': "", 'time_limit': 10, }):
         self.url = data['url']
+        self.name = None
+        self.three_times_flag = False
         super().__init__(data['time_limit'])
+
+    def three_times_play(self):
+        self.three_times_flag = True
+        self.play()
+        pass
 
     def play(self):
         super().play()
         flag = True
-        repeat_times = 0
-        while flag and (repeat_times <= 0 or repeat_times > 3):
-            try:
-                repeat_times = int(input("pls input repeat times :"))
-            except KeyboardInterrupt:
-                repeat_times = 0
-                flag = False
-                break
+        if not self.three_times_flag:
+            repeat_times = 0
+            while flag and (repeat_times <= 0 or repeat_times > 3):
+                try:
+                    repeat_times = int(input("pls input repeat times :"))
+                except KeyboardInterrupt:
+                    repeat_times = 0
+                    flag = False
+                    break
+        else:
+            repeat_times = 3
         while repeat_times > 0:
-            print("while loop start")
+            print("while loop start", self.name)
             repeat_times = repeat_times - 1
             print("left times : ", repeat_times)
             self.stage.goto(self.url)
             self.mouse.click_friend_summon()
             self.mouse.click_party_ok()
-            if self.ck.is_battle_page():
-                self.mouse.click_request_backup()
-                self.mouse.click_full()
-                self.auto_refresh()
-        alert().run()
+            if not self.ck.check_net_work_error():
+                if self.ck.is_battle_page():
+                    self.mouse.click_request_backup()
+                    self.mouse.click_full()
+                    self.auto_refresh()
+            else:
+                pass
+
+        if not self.three_times_flag:
+            alert().run()
 
 
 class shiva_impossible(HL2):
@@ -88,6 +114,7 @@ class shiva_impossible(HL2):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'shiva impossible'
         pass
 
 
@@ -96,6 +123,7 @@ class europa_impossible(HL2):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'europa_impossible'
         pass
 
 
@@ -104,6 +132,7 @@ class godsworn_alexiel_impossible(HL2):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'godsworn_alexiel_imposibble'
         pass
 
 
@@ -112,6 +141,7 @@ class grimnir_impossible(HL2):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'grimnir_impossible'
         pass
 
 
@@ -120,6 +150,7 @@ class metatron_impossible(HL2):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'metatron_impossible'
         pass
 
 
@@ -128,6 +159,7 @@ class avatar_impossible(HL2):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'avatar_impossible'
         pass
 
 
@@ -136,4 +168,5 @@ class rose_queen_impossible(HL2):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'rose_queen_impossible'
         pass

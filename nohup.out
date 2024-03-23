@@ -418,3 +418,513 @@ libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_na
 [10980:11007:0126/012701.644512:ERROR:registration_request.cc(247)] Registration URL fetching failed.
 [10980:10980:0126/012701.644611:ERROR:sharing_service.cc(210)] Device registration failed with transient error
 [11020:11031:0126/012958.063071:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/013710.062840:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/013920.065056:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/013925.748991:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/014027.529926:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/014040.431244:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/014106.384648:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/014125.667605:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/014451.908011:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/014721.180803:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/014940.973981:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/015017.810247:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/015125.899555:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+ssh: connect to host github.com port 22: Network is unreachable
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[10980:11007:0126/015507.607930:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/015921.260234:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/020208.076423:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/020535.148059:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/020601.736120:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/020748.549426:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/020935.670503:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/021005.672330:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/021138.825085:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0126/021140.799552:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0126/021140.827151:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0126/021140.827189:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[0126/021140.828781:ERROR:directory_reader_posix.cc(42)] opendir /home/lunar/.config/google-chrome/Crash Reports/attachments/b73757ad-9e44-4921-a447-cd09bb6f39f4: No such file or directory (2)
+[10980:10980:0126/021140.940556:ERROR:gpu_process_host.cc(975)] GPU process exited unexpectedly: exit_code=5
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[26241:26241:0126/021146.743298:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[26206:7:0126/021219.085668:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[0126/021240.837441:ERROR:http_transport_libcurl.cc(470)] curl_easy_perform: Timeout was reached (28)
+[10980:11007:0126/021308.930024:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:10980:0126/021308.930122:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[11020:11031:0126/021318.262040:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/021640.197563:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/021856.873184:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/021904.221366:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/021931.062987:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+Fontconfig error: Cannot load default config file: No such file: (null)
+Fontconfig error: Cannot load default config file: No such file: (null)
+[11020:11031:0126/023247.438103:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/023247.454381:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/023301.794013:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/023511.660055:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/023525.856042:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+Fontconfig error: Cannot load default config file: No such file: (null)
+[11020:11031:0126/023915.055682:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/023952.485497:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/024320.804244:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/024341.656577:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/024451.491154:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/025028.161217:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/025139.856711:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025222.631208:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025223.520820:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025417.961517:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025418.054762:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025527.144198:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025621.418754:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025621.435909:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/025641.132742:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/025715.146985:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/030001.702880:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/030332.419281:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/030341.704467:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/030348.559743:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/030348.592325:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/030721.345054:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/030727.168113:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/030751.378699:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/030751.682584:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:10980:0126/030751.682784:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[11020:11031:0126/030813.146775:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/030853.186103:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/031121.585985:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/031220.653536:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/031701.070614:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/031704.168266:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/031706.411841:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/032324.467253:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/032444.261728:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/033029.434021:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033110.601551:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033134.001699:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033323.502158:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033418.116531:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/033442.542964:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/033455.663158:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033537.535966:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033552.219930:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033749.747367:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033907.952154:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/033957.219134:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/034200.454104:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/034205.977633:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/034801.348851:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/034842.593184:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/035058.230060:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/035222.669874:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/035532.145400:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/035534.720795:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/035600.308408:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/035707.907852:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/035745.584341:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/035923.100799:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/040201.872362:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+D3D12: Removing Device.
+[0126/040322.009625:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0126/040322.035588:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0126/040322.035614:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[0126/040322.036984:ERROR:directory_reader_posix.cc(42)] opendir /home/lunar/.config/google-chrome/Crash Reports/attachments/cce9114d-e4b9-4daf-8771-be8d723f8f22: No such file or directory (2)
+[10980:10980:0126/040322.145755:ERROR:gpu_process_host.cc(975)] GPU process exited unexpectedly: exit_code=11
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[9929:9929:0126/040327.749474:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[9876:7:0126/040357.082349:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[0126/040422.058198:ERROR:http_transport_libcurl.cc(470)] curl_easy_perform: Timeout was reached (28)
+[11020:11031:0126/040827.836126:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/041010.227181:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/041338.552614:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:10980:0126/041338.552804:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[11020:11031:0126/041345.495406:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/041441.576416:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/041735.902099:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/042019.500749:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/042212.151750:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+<--- Last few GCs --->
+
+[1:0x12440080c000] 15622856 ms: Mark-sweep 1970.7 (2069.9) -> 1964.5 (2071.4) MB, 1295.9 / 0.1 ms  (average mu = 0.359, current mu = 0.027) allocation failure; scavenge might not succeed
+[1:0x12440080c000] 15624007 ms: Mark-sweep 1966.9 (2071.9) -> 1965.3 (2072.4) MB, 1134.7 / 0.0 ms  (average mu = 0.209, current mu = 0.014) allocation failure; GC in old space requested
+
+
+<--- JS stacktrace --->
+
+[11157:1:0126/043019.331037:ERROR:v8_initializer.cc(688)] V8 javascript OOM: (Reached heap limit).
+[0126/043019.345503:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0126/043019.345537:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[11020:11031:0126/045118.324000:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/045331.179422:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/051848.985528:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/052127.620658:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/052706.843638:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/053322.754710:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/053739.662145:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/053754.991671:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/054110.786664:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/054133.153345:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/054237.090761:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/054420.846473:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/054721.905116:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/054807.974203:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/054833.234128:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/055523.185325:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/055543.972209:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/055636.132645:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/060322.180057:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/060532.460931:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/060533.142765:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/060643.772742:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:10980:0126/060643.772974:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[11020:11031:0126/060719.974527:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/061546.903312:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/061607.351283:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/061820.455045:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/061820.465705:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/062333.359249:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+<--- Last few GCs --->
+
+[1:0x124400860000]  2930434 ms: Scavenge 1954.1 (2069.7) -> 1952.9 (2069.7) MB, 3.4 / 2.5 ms  (average mu = 0.936, current mu = 0.954) allocation failure; 
+[1:0x124400860000]  2930442 ms: Scavenge 1954.4 (2069.7) -> 1953.5 (2069.7) MB, 3.7 / 2.5 ms  (average mu = 0.936, current mu = 0.954) allocation failure; 
+[1:0x124400860000]  2930451 ms: Scavenge 1954.8 (2069.7) -> 1954.1 (2073.7) MB, 5.0 / 2.5 ms  (average mu = 0.936, current mu = 0.954) allocation failure; 
+
+
+<--- JS stacktrace --->
+
+[12062:1:0126/062621.891939:ERROR:v8_initializer.cc(688)] V8 javascript OOM: (Reached heap limit).
+[0126/062621.906372:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0126/062621.906409:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[0126/062621.908114:ERROR:directory_reader_posix.cc(42)] opendir /home/lunar/.config/google-chrome/Crash Reports/attachments/d7f3dbe1-4b5c-409c-bfd3-4c0582a73eb7: No such file or directory (2)
+[0126/062721.909365:ERROR:http_transport_libcurl.cc(470)] curl_easy_perform: Timeout was reached (28)
+[11020:11031:0126/062759.024259:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/063156.441195:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/063156.453253:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/063606.328660:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/063609.273226:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/063636.148166:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/064251.997382:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/064618.465506:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/064652.021592:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[18411:18444:0126/064819.295228:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[18411:18444:0126/064819.295315:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[18411:18443:0126/064819.305499:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[18411:18443:0126/064819.305535:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+Opening in existing browser session.
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[10980:10980:0126/064822.576193:ERROR:interface_endpoint_client.cc(665)] Message 1 rejected by interface blink.mojom.WidgetHost
+[11020:11031:0126/065140.786722:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/065141.000250:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/065225.858003:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/065235.256709:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/065811.482350:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -118
+D3D12: Removing Device.
+[0126/065901.438722:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0126/065901.464625:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0126/065901.464665:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[10980:10980:0126/065901.587926:ERROR:gpu_process_host.cc(975)] GPU process exited unexpectedly: exit_code=11
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[19158:19158:0126/065907.334181:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[11020:11031:0126/065948.784003:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/070036.207858:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/070045.082052:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -118
+[10980:11007:0126/070339.172440:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -118
+[11020:11031:0126/070456.683076:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/070742.892799:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/071419.195646:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/071818.528849:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/071905.894894:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/071948.820633:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/072436.234536:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/072904.943529:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+Fontconfig error: Cannot load default config file: No such file: (null)
+[11020:11031:0126/073229.794234:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/073548.837194:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/073704.986515:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/073959.462013:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/074106.852908:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/074456.193044:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/074525.919469:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/074639.666221:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/074715.503477:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/074720.631022:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/075039.679064:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/075227.829801:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/075942.923826:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/075948.884348:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/080239.702888:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/081024.929704:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/081432.224264:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/082052.779979:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/082458.544774:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/082720.990723:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/082721.253861:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/082749.559833:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/083149.329911:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/083633.800608:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:11007:0126/083900.168961:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/084040.857237:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/084041.628862:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/084057.187453:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/084238.625005:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/084256.091897:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/084345.940089:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/084603.175356:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/085018.608024:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/085020.158976:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/085033.552459:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[11020:11031:0126/085232.293824:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/085418.621295:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/085521.281002:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/085521.293740:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/090013.100666:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/090028.452353:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:11007:0126/090051.648625:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[10980:10980:0126/090051.648739:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[11020:11031:0126/090226.224912:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/090715.776985:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/091944.510818:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/091944.521993:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/092226.271112:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/092321.384160:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/092554.212870:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/092651.582743:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/092700.792927:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093045.504495:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093152.616212:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093152.634290:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093228.517522:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093232.725963:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093314.533806:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093426.321713:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093516.019939:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/093527.692374:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/094428.537735:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[11020:11031:0126/094716.092800:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[10980:10980:0126/095907.151236:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[10980:10980:0126/095907.152688:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[10980:10980:0126/095907.157653:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[10980:10980:0126/095907.185788:ERROR:network_service_instance_impl.cc(474)] Network service crashed, restarting service.
+[10980:10980:0126/095907.199047:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[10980:10980:0126/095907.201907:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[10980:10980:0126/095907.205985:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[10980:10980:0126/095907.220280:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[10980:10980:0126/095907.222979:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.225611:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.226696:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.227647:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.228351:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.228831:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.230600:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.231153:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.231989:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[10980:10980:0126/095907.232052:FATAL:gpu_data_manager_impl_private.cc(451)] GPU process isn't usable. Goodbye.
+[0126/095907.244329:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0126/095907.244379:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[0126/095907.246308:ERROR:directory_reader_posix.cc(42)] opendir /home/lunar/.config/google-chrome/Crash Reports/attachments/d678ffac-4868-4466-8005-9f4919e46f42: No such file or directory (2)
+[0126/095907.247097:WARNING:minidump_to_upload_parameters.cc(32)] duplicate key guid, discarding value ae1e5c4082934c6aa070d3c1ee73ef32
+[0130/133908.041577:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[0130/133908.042901:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/d678ffac-4868-4466-8005-9f4919e46f42.lock: File exists (17)
+[118:150:0130/133908.430486:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[118:150:0130/133908.430843:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[118:149:0130/133908.454057:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:149:0130/133908.454116:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:149:0130/133908.492024:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:149:0130/133908.492068:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:176:0130/133908.504941:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[118:143:0130/133908.504941:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[118:143:0130/133908.505533:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+[118:176:0130/133908.505595:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/3c2b5dc8-cdbd-4db0-a9d7-f2a3cd6110cc
+[118:149:0130/133908.566968:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:149:0130/133908.567000:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[118:261:0130/133908.676973:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[118:261:0130/133908.677030:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[118:261:0130/133908.677077:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[118:261:0130/133908.677123:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[118:261:0130/133908.677155:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[157:157:0130/133908.706120:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[118:118:0130/133908.884598:ERROR:password_sync_bridge.cc(234)] Passwords datatype error was encountered: Password metadata store isn't available.
+[160:164:0130/134122.121095:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/134310.696104:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/134310.946980:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/134310.996357:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/134310.996461:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/134531.734649:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134543.010504:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134555.419023:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134557.330782:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134617.811558:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134703.644913:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/134731.210383:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/134731.460526:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/134732.316330:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/134736.022647:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/134744.850792:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134744.868530:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134756.125573:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134807.430412:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/134807.662875:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0130/134908.041792:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/d678ffac-4868-4466-8005-9f4919e46f42.lock: File exists (17)
+[0130/134908.042653:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[0130/134908.042691:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[0130/134908.042938:ERROR:filesystem_posix.cc(102)] unlink /home/lunar/.config/google-chrome/Crash Reports/pending/d678ffac-4868-4466-8005-9f4919e46f42.dmp: No such file or directory (2)
+[0130/134908.051251:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[118:146:0130/135211.613329:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/135211.863927:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/135212.166680:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/135224.713850:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/135402.443275:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0130/135408.043507:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[118:146:0130/135753.533463:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/135753.784011:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/135756.504043:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/135759.064463:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/135813.642642:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:118:0130/135934.627105:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-7).
+[160:164:0130/140012.807616:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/140100.937902:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/140341.789898:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/140504.337840:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[157:157:0130/140504.494394:ERROR:shared_image_manager.cc(228)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[157:157:0130/140504.497923:ERROR:shared_image_manager.cc(228)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[157:157:0130/140504.501609:ERROR:shared_image_manager.cc(228)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[157:157:0130/140504.506845:ERROR:shared_image_manager.cc(228)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[118:146:0130/140519.261055:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/140526.615636:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/140545.169557:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/140555.411139:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/140733.670608:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0130/140908.043770:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[160:164:0130/140931.490729:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/141033.977174:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/141043.369708:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/141245.008690:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/141348.528379:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/141348.543032:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/141357.783427:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:146:0130/141451.688475:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:118:0130/141451.688691:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[118:146:0130/141517.181398:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/141838.526584:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/142256.176486:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/142335.157797:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[0130/142408.043965:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[118:146:0130/142758.490986:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/142901.971617:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/142943.888395:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/142949.571052:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/143112.091272:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/143207.694554:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/143246.437670:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/143303.010232:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/143324.050744:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/143552.130211:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/143552.146910:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/143724.282423:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/143826.960161:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[0130/143908.044221:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[118:5510:0130/143909.227878:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:118:0130/143909.228093:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[118:5510:0130/143909.228167:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:118:0130/143909.228302:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[118:5510:0130/143909.228422:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:118:0130/143909.228556:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[118:5510:0130/143909.228672:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:118:0130/143909.228803:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[118:5510:0130/143909.228913:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[118:118:0130/143909.229025:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[160:164:0130/144341.688885:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/144344.003931:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/144358.987194:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/144615.340138:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/144742.892817:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/144945.005043:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/145114.203290:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0130/145408.044502:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[160:164:0130/145555.805975:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/145754.221624:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:118:0130/145754.221830:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[160:164:0130/150217.855828:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/150758.425239:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/150808.684888:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/150905.195278:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0130/150908.044735:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[160:164:0130/151023.439679:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/151118.961954:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/151234.141116:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/151356.051758:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/151547.303862:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/151601.082582:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/151614.283307:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/151632.144257:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/151651.402624:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/152027.468859:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[0130/152408.045117:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[118:146:0130/152549.126037:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/152756.114297:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/152756.363727:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/152810.853191:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/152906.295464:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/153017.885818:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/153331.807955:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/153601.355827:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0130/153908.045723:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[160:164:0130/154057.657178:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/154509.877027:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:118:0130/154509.877162:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+[160:164:0130/154801.458869:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/154803.693336:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/154814.390337:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0130/155408.050255:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[160:164:0130/160106.401213:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/160327.868433:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/160726.350600:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/160802.180037:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/160812.414371:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/160848.511240:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/160850.877727:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[0130/160908.055493:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/25226521-c86f-417e-8e52-9ae2f237a359.lock: File exists (17)
+[160:164:0130/160940.455328:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/161310.432194:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/161340.137189:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/161424.408541:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/161434.383840:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:146:0130/161758.121239:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[160:164:0130/161855.721765:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/161855.749255:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[160:164:0130/161856.799971:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[118:118:0130/162039.326091:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:118:0130/162039.329621:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:118:0130/162039.332350:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:146:0130/162039.335267:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[118:118:0130/162039.356785:ERROR:network_service_instance_impl.cc(474)] Network service crashed, restarting service.
+[118:118:0130/162039.371612:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:118:0130/162039.375492:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:118:0130/162039.384799:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:118:0130/162039.389965:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:118:0130/162039.408217:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[118:118:0130/162039.415231:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.416051:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.416539:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.417239:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.417727:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.418391:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.421562:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.422349:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.423042:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
+[118:118:0130/162039.423068:FATAL:gpu_data_manager_impl_private.cc(451)] GPU process isn't usable. Goodbye.
+[0130/162039.431515:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0130/162039.435844:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0130/162039.435897:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[0130/162039.438788:ERROR:directory_reader_posix.cc(42)] opendir /home/lunar/.config/google-chrome/Crash Reports/attachments/5258ed3b-c687-42ef-902c-de79c804416d: No such file or directory (2)
+[0130/162039.439443:WARNING:minidump_to_upload_parameters.cc(32)] duplicate key guid, discarding value ae1e5c4082934c6aa070d3c1ee73ef32
+[0130/162139.471704:ERROR:http_transport_libcurl.cc(470)] curl_easy_perform: Timeout was reached (28)

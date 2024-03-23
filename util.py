@@ -2,6 +2,97 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+    # advice
+    screen_label_advice_data = {
+        'element': '//*[@id="wrapper"]/div[3]/div[2]/div[9]/div[2]',
+        'by': By.XPATH
+    }
+    # heart of the sun
+    heart_of_the_sun_raids_phoniex_impossible_data = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/916481/1/0/10523',
+        'time_limit': 10
+    }
+    heart_of_the_sun_raids_timat_aura_omega_impossible_data = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/916451/1/0/10523',
+        'time_limit': 5
+    }
+    heart_of_the_sun_raids_abramelin_impossible_data = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/916421/1/0/10523',
+        'time_limit': 5
+    }
+    heart_of_the_sun_cycle_of_torment_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/916301/3",
+        'time_limit': 10
+    }
+    heart_of_the_sun_turbulent_skies = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/916311/3',
+        'time_limit':  10
+    }
+    # Battle Concluded page
+    battle_concluded_page_data = {
+        'by': By.XPATH,
+        'element': '//*[@id="pop"]/div/div[1]',
+        'txt': 'Battle Concluded'
+    }
+    # error page
+    error_page_data = {
+        'by': By.XPATH,
+        'element': '/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[1]/div/div[1]',
+        'txt': 'Error'
+    }
+    # net work error
+    net_work_error_data = {
+        'by': By.XPATH,
+        'element': '//*[@id="pop-force"]/div',
+        'title': 'エラー'
+    }
+    # dread barrage
+    dread_barrage_one_star_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/916711/1",
+        'time_limit': 3
+    }
+    dread_barrage_two_star_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/916721/1",
+        'time_limit': 3
+
+    }
+    dread_barrage_three_star_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/916731/1",
+        'time_limit': 3
+
+    }
+    dread_barrage_four_star_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/916741/1",
+        'time_limit': 3
+
+    }
+    dread_barrage_five_star_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/916751/1",
+        'time_limit': 3
+
+    }
+    dread_barrage_six_star_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/916761/1",
+        'time_limit': 3
+
+    }
+    dread_barrage_fluke_skywalker_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter_raid/36369016986/916791/1/0/0/2",
+        "time_limit": 10
+    }
+    # dreamers mirecle
+    dreamers_mirecle_solo_very_hard = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914921/1',
+        'time_limit': 3
+    }
+    dreamers_mirecle_solo_extreme = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/914931/1/0/10518',
+        'time_limit': 3
+    }
+    dreamers_mirecle_solo_impossible = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/914941/1/0/10518",
+        'time_limit': 3
+    }
 
     # 验证码
     #  verification
@@ -50,7 +141,7 @@ class util:
     }
     # campaign exclusive quest
     campaign_exclusive_quest_data = {
-        'url': "https://game.granbluefantasy.jp/#quest/supporter/800021/22",
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/800011/22",
         'time_limit': 1
     }
     # ultimate_showndowns 20231225
@@ -78,6 +169,26 @@ class util:
     divine_generals_solo_extreme = {
         'url': "https://game.granbluefantasy.jp/#quest/supporter/913921/5",
         'time_limit': 5
+    }
+
+    # exo corow
+
+    exo_corow_crucible_150 = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/915971/3",
+        "time_limit": 5
+    }
+    exo_corow_crucible_120 = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/915911/3",
+        "time_limit": 5
+    }
+    exo_corow_veryhard = {
+
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/915811/3',
+        'time_limit': 3
+    }
+    exo_corow_extreme = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/915821/3",
+        'time_limit': 3
     }
 
     # exo ifrit
@@ -387,6 +498,15 @@ class util:
     # url
     url_home = "https://game.granbluefantasy.jp/#mypage"
     # arcum
+    arcum_zone_goliath_gauge_box_data = {
+        'box_ele': 'txt-chest-name',
+        'box_txt': "Splendid Chest",
+        'gauge_ele': 'txt-quest-name',
+        'gauge_name': ['Herald of Death', 'Herald of The Tower', 'Herald of The Hanged Man'],
+        'box_enemy_ele': 'txt-quest-name',
+        'box_enemy_name': ['Mimic', 'Obsidian Machina']
+    }
+
     arcum_zone_kalendae_gauge_box_data = {
         'box_ele': 'txt-chest-name',
         'box_txt': "Splendid Chest",
@@ -427,6 +547,16 @@ class util:
         'box_enemy_ele': 'txt-quest-name',
         'box_enemy_name': ['Mimic']
     }
+    arcum_zone_harbinger_gauge_box_data = {
+        'box_ele': 'txt-chest-name',
+        'box_txt': "Splendid Chest",
+        'gauge_ele': 'txt-quest-name',
+        'gauge_name': ['Herald of Temperance', 'Herald of The Star'],
+        'box_enemy_ele': 'txt-quest-name',
+        'box_enemy_name': ['Mimic', 'Emerald Machina']
+
+    }
+
     # stage 9
     liber_boss_wind_garuda_militis = {
         'url': "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
@@ -723,7 +853,91 @@ class util:
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
         'time_limit': 3
     }
+    # stage5
+    zone_harbinger_wind_5_harbinger_hardwood = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/2/814011/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 5
 
+    }
+    zone_harbinger_wind_de_tempestuous_beauty = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/2/814111/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 5
+
+    }
+    zone_harbinger_wind_de_plus_tempestuous_beauty = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/2/814111/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 5
+
+    }
+    zone_harbinger_wind_5_demanding_stormgod = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/11/814061/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 5
+
+    }
+    zone_harbinger_light_de_jadegleam_dragonkin = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/14/814101/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 5
+    }
+    zone_harbinger_light_5_phantasmagoric_aberration = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/14/814071/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 3
+    }
+    zone_harbinger_light_de_plus_jadegleam_dragonkin = zone_harbinger_light_de_jadegleam_dragonkin
+    zone_harbinger_light_5_harbinger_tyrant = {
+
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/19/814091/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 3
+    }
+    zone_harbinger_wind_3_harbinger_simurgh = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/4/814021/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 3
+    }
+    zone_harbinger_wind_3_wildwind_conjurer = {
+        'url': "https://game.granbluefantasy.jp/#replicard/supporter/5/5/5/814031/25",
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 10
+    }
+
+    zone_harbinger_wind_de_majestic_goldenwing = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/7/814121/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 10
+
+    }
+    zone_harbinger_wind_de_plus_majestic_goldenwing = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/7/814121/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 10
+
+    }
+    zone_harbinger_light_3_dimensional_riftwalker = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/16/814081/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 3
+    }
+    zone_harbinger_v2_wind_harbinger_stormer = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/22/814131/25/0/25067',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 10
+    }
+    zone_harbinger_wind_5_vengeful_demigod = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/8/814051/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 3
+    }
+    zone_harbinger_wind_5_dirgesing = {
+        'url': "https://game.granbluefantasy.jp/#replicard/supporter/5/5/7/814041/25",
+        'gauge_url': 'https://game.granbluefantasy.jp/#replicard/stage/5',
+        'time_limit': 3
+    }
     # event
     Detective_Barawa_very_hard = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/912921/1',

@@ -39,6 +39,7 @@ class campaign(game):
             self.mouse.click_friend_summon()
             self.mouse.click_party_ok()
             if self.ck.is_battle_page():
-                self.mouse.click_full()
+                #  self.mouse.click_full()
+                self.mouse.click_attack()
                 self.auto_refresh()
         alert().run()

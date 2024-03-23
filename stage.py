@@ -187,6 +187,40 @@ class checker:
                     flag = False
         return flag
 
+    def check_net_work_error(self):
+        data = util.net_work_error_data
+        by = data['by']
+        element = data['element']
+        elf = elefinder(by, element, 2, self.chm)
+        flag = False
+        if elf.is_element_visibility():
+            flag = True
+        else:
+            flag = self.check_error_page()
+        return flag
+
+    def check_battle_concluded_page(self):
+        data = util.battle_concluded_page_data
+        elf = elefinder(data['by'], data['element'], 1, self.chm)
+        flag = False
+        if elf.is_element_visibility():
+            if data['txt'] == elf.get_element_text():
+                flag = True
+                self.chm.refresh()
+                time.sleep(3)
+        return flag
+
+    def check_error_page(self):
+        data = util.error_page_data
+        elf = elefinder(data['by'], data['element'], 2, self.chm)
+        flag = False
+        if elf.is_element_visibility():
+            if data['txt'] == elf.get_element_text():
+                flag = True
+                self.chm.refresh()
+                time.sleep(3)
+        return flag
+
     def check_gauge_enemy(self,
                           gauge_box_data={
                               'box_ele': 'txt-chest-name',

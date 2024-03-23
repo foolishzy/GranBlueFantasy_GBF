@@ -19,10 +19,11 @@ class six_dragon_select:
         4. wind 
         5. light 
         6. dark 
+        7. all_six
         """
         pass
         flag = False
-        index_range = [[0, 6]]
+        index_range = [[0, 7]]
         while not flag:
             try:
                 index = int(input(string_hint))
@@ -38,7 +39,7 @@ class six_dragon_select:
         elif index == 1:
             six_dragon_fire().play()
         elif index == 2:
-            six_dragon_earth().play()
+            six_dragon_water().play()
         elif index == 3:
             six_dragon_earth().play()
         elif index == 4:
@@ -47,37 +48,59 @@ class six_dragon_select:
             six_dragon_light().play()
         elif index == 6:
             six_dragon_dark().play()
+        elif index == 7:
+            for e in [
+                    six_dragon_fire(),
+                    six_dragon_water(),
+                    six_dragon_earth(),
+                    six_dragon_wind(),
+                    six_dragon_light(),
+                    six_dragon_dark()
+            ]:
+                e.all_play()
+            alert().run()
 
 
 class six_dragon(game):
 
     def __init__(self, data={'url': "", 'time_limit': 10, }):
         self.url = data['url']
+        self.name = None
         super().__init__(data['time_limit'])
+
+    def all_play(self):
+        self.all_play_flag = True
+        self.play()
 
     def play(self):
         super().play()
         flag = True
-        repeat_times = 0
-        while flag and (repeat_times <= 0 or repeat_times > 3):
-            try:
-                repeat_times = int(input("pls input repeat times :"))
-            except KeyboardInterrupt:
-                repeat_times = 0
-                flag = False
-                break
+        repeat_times = 1
+        #  repeat_times = 0
+        #  while flag and (repeat_times <= 0 or repeat_times > 3):
+        #  try:
+        #  repeat_times = int(input("pls input repeat times :"))
+        #  except KeyboardInterrupt:
+        #  repeat_times = 0
+        #  flag = False
+        #  break
         while repeat_times > 0:
             print("while loop start")
+            print(self.name)
             repeat_times = repeat_times - 1
             print("left times : ", repeat_times)
             self.stage.goto(self.url)
             self.mouse.click_friend_summon()
             self.mouse.click_party_ok()
-            if self.ck.is_battle_page():
-                self.mouse.click_request_backup()
-                self.mouse.click_full()
-                self.auto_refresh()
-        alert().run()
+            if not self.ck.check_net_work_error():
+                if self.ck.is_battle_page():
+                    self.mouse.click_request_backup()
+                    self.mouse.click_full()
+                    self.auto_refresh()
+            else:
+                pass
+            if not self.all_play_flag:
+                alert().run()
 
 
 class six_dragon_fire(six_dragon):
@@ -85,6 +108,7 @@ class six_dragon_fire(six_dragon):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'six dragon fire'
         pass
 
 
@@ -94,6 +118,7 @@ class six_dragon_water(six_dragon):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'six dragon water'
         pass
 
 
@@ -103,6 +128,7 @@ class six_dragon_earth(six_dragon):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'six dragon earth'
         pass
 
 
@@ -112,6 +138,7 @@ class six_dragon_wind(six_dragon):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'six dragon wind'
         pass
 
 
@@ -121,6 +148,7 @@ class six_dragon_light(six_dragon):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'six dragon light'
         pass
 
 
@@ -130,4 +158,5 @@ class six_dragon_dark(six_dragon):
 
     def __init__(self):
         super().__init__(self.data)
+        self.name = 'six dragon dark'
         pass
