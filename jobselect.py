@@ -3,6 +3,7 @@ from arcumgame import arcum_select
 from shiny_slime_weekend import slime_select
 from rise_of_the_beasts import btb_select
 from HL2 import hl_select
+from HL3 import hl_select as hl3_select
 from unite_and_fight import unite_and_fight_select
 from reserve_crate import reserve_select
 from backup_request_game import select
@@ -40,8 +41,9 @@ class jobselect:
         13.read fate
         14.free_quest_list 
         15.revenant_weapons_materials
+        16.hl3
 '''
-        index_max = 15
+        index_max = 16
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -82,3 +84,5 @@ class jobselect:
             free_quest_list_select()
         elif index == 15:
             materials_select()
+        elif index == 16:
+            hl3_select()

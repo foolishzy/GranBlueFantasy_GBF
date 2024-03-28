@@ -19,7 +19,7 @@ class arcum_select:
        103. mundus_dark_3_proud_war_princess_of_dragons
        104. mundus_light_3_goddess_of_the_wild_hunt
        105. mundus_light_5_high_voltage_rock
-       106. mundus_fire_v2de_prometheus_militis       
+       106. mundus_fire_v2de_prometheus_militis
        107. mundus_fire_5_hotheaded_pincers
        108. mundus_fire_3_earth_shattering_fire_demon
        109. mundus_water_5_parasite_steve
@@ -49,24 +49,27 @@ class arcum_select:
        306. zoneeletio_fire_3_blazing_everwing
        307. zoneeletio_fire_3_rageborn_one
        308. zoneeletio_fire_5_terror_trifecta
-       309. zoneeletio_light_3_living_lighting_rod 
+       309. zoneeletio_light_3_living_lighting_rod
        310. zoneeletio_light_5_death_seer
        311. zoneeletio_light_de_violetflash_sovereign
        312. zoneeletio_light_3_hundred_armed_hulk
        313. zoneeletio_fire_boss_eletion_glider
        401. zone_faym_water_de_creeping_seashadow
-       402. zone_faym_water_de_lilywhite_paragon 
+       402. zone_faym_water_de_lilywhite_paragon
        403. zone_faym_water_5_trident_grandmaster
-       404. zone_faym_water_5_farsea_predator 
+       404. zone_faym_water_5_farsea_predator
        405. zone_faym_water_5_azureflame_dragon
-       406. zone_faym_water_5_eyes_of_sorrow 
+       406. zone_faym_water_5_eyes_of_sorrow
        407. zone_faym_water_3_hoarfrost_icequeen
-       408. zone_faym_water_3_faymian_fortress 
+       408. zone_faym_water_3_faymian_fortress
        409. zone_faym_dark_de_iceberg_champion
        410. zone_faym_dark_5_draconic_simulacrum
        411. zone_faym_dark_5_oceanic_archon
        412. zone_faym_dark_3_mad_shearwielder
+       413. zone_faym_boss_water_faymian_gun
        501. zone_goliath_vestige_of_truth
+       502. zone_goliath_dark_3_writhing_despair
+       503. zone_goliath_boss_water_goliath_triune
        601. zone_harbinger_wind_5_dirgesinger
        602. zone_harbinger_wind_5_vengeful_demigod
        603. zone_harbinger_wind_de+_majestic_goldenwing
@@ -83,7 +86,11 @@ class arcum_select:
        614. zone_harbinger_light_de_jadegleam_dragonkin
        615. zone_harbinger_light_5_harbinger_tyrant
        616. zone_harbinget_light_de_plus_jadegleam_dragonkin
+       617. zone_harbinger_boss_wind_harbinger_stormer
+       701. zone_liber_wind_5_ageless_guardian_beast
+       702. zone_liber_wind_5_mounted_toxophilite
        801. zone_kalendae_xneo_vohu_manah_militis
+       999. all daily boss
     '''
         flag = False
         while not flag:
@@ -92,8 +99,8 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [601, 616], [101, 118], [201, 209], [
-                301, 313], [401, 412], [501, 501], [801, 801]]
+            index_range = [[0, 0], [601, 617], [701, 702], [101, 118], [201, 209], [
+                301, 313], [999, 999], [401, 413], [501, 503], [801, 801]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -203,8 +210,14 @@ class arcum_select:
             arcumgame().zone_faym_dark_5_oceanic_archon().play()
         elif index == 412:
             arcumgame().zone_faym_dark_3_mad_shearwielder().play()
+        elif index == 413:
+            arcumgame().zone_faym_boss_water_faymian_gun().play()
         elif index == 501:
             arcumgame().zone_goliath_vestige_of_truth().play()
+        elif index == 502:
+            arcumgame().zone_goliath_dark_3_writhing_despair().play()
+        elif index == 503:
+            arcumgame().zone_goliath_boss_water_goliath_triune().play()
         elif index == 601:
             arcumgame().zone_harbinger_wind_5_dirgesinger().play()
         elif index == 602:
@@ -237,8 +250,16 @@ class arcum_select:
             arcumgame().zone_harbinger_light_5_harbinger_tyrant().play()
         elif index == 616:
             arcumgame().zone_harbinger_light_de_plus_jadegleam_dragonkin().play()
+        elif index == 617:
+            arcumgame().zone_harbinger_boss_wind_harbinger_stormer().play()
         elif index == 801:
             arcumgame().zone_kalendae_xeno_vohu_manah_militis().play()
+        elif index == 701:
+            arcumgame().zone_liber_wind_5_ageless_guardian_beast().play()
+        elif index == 702:
+            arcumgame().zone_liber_wind_5_mounted_toxophilite().play()
+        elif index == 999:
+            all_daily_boss().play()
 
 
 class zone_harbinger_common(replicard_common):
@@ -247,9 +268,46 @@ class zone_harbinger_common(replicard_common):
         super().__init__(data, gb_data)
 
 
+class zone_liber_common(replicard_common):
+    def __init__(self, data):
+        gb_data = util.arcum_zone_liber_gauge_box_data
+        super().__init__(data, gb_data)
+
+
+class zone_goliath_common(replicard_common):
+    def __init__(self, data):
+        gb_data = util.arcum_zone_goliath_gauge_box_data
+        super().__init__(data, gb_data)
+
+
 class arcumgame:
     def __init__(self):
         pass
+
+    class zone_goliath_boss_water_goliath_triune(zone_goliath_common):
+        def __init__(self):
+            data = util.zone_goliath_boss_water_goliath_triune
+            super().__init__(data)
+
+    class zone_goliath_dark_3_writhing_despair(zone_goliath_common):
+        def __init__(self):
+            data = util.zone_goliath_dark_3_writhing_despair
+            super().__init__(data)
+
+    class zone_liber_wind_5_mounted_toxophilite(zone_liber_common):
+        def __init__(self):
+            data = util.zone_liber_wind_5_mounted_toxophilite
+            super().__init__(data)
+
+    class zone_liber_wind_5_ageless_guardian_beast(zone_liber_common):
+        def __init__(self):
+            data = util.zone_liber_wind_5_ageless_guardian_beast
+            super().__init__(data)
+
+    class zone_harbinger_boss_wind_harbinger_stormer(zone_harbinger_common):
+        def __init__(self):
+            data = util.zone_harbinger_boss_wind_harbinger_stormer
+            super().__init__(data)
 
     class zone_harbinger_wind_5_harbinger_hardwood(zone_harbinger_common):
         def __init__(self):
@@ -650,8 +708,28 @@ class arcumgame:
             data = util.zone_faym_dark_5_oceanic_archon
             super().__init__(data, gb_data)
 
+    class zone_faym_boss_water_faymian_gun(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_faym_gauge_box_data
+            data = util.zone_faym_boss_water_faymian_gun
+            super().__init__(data, gb_data)
+
     class zone_faym_dark_3_mad_shearwielder(replicard_common):
         def __init__(self):
             gb_data = util.arcum_zone_faym_gauge_box_data
             data = util.zone_faym_dark_3_mad_shearwielder
             super().__init__(data, gb_data)
+
+
+class all_daily_boss():
+
+    ag = arcumgame()
+    boss_list = [ag.zoneeletio_fire_boss_eletion_glider(),
+                 ag.zone_faym_boss_water_faymian_gun(),
+                 ag.zone_goliath_boss_water_goliath_triune(),
+                 ag.zone_harbinger_boss_wind_harbinger_stormer()
+                 ]
+
+    def play(self):
+        for e in self.boss_list:
+            e.play()

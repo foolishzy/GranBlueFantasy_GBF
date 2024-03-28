@@ -370,7 +370,36 @@ class util:
         'url': "https://game.granbluefantasy.jp/#quest/supporter/305231/1/0/45",
         "time_limit": 10
     }
-    # HL2.0
+    # hl3.0
+    hl3_shiva_impossible = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/303151/1/0/522",
+        'time_limit': 10
+    }
+    hl3_europa_impossible = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/303161/1/0/523',
+        'time_limit': 10
+    }
+    hl3_godsworn_alexxiel_impossible = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/303171/1/0/524",
+        "time_limit": 10
+    }
+    hl3_grimnir_impossible = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/305601/1/0/525",
+        'time_limit': 10
+    }
+    hl3_metatron_impossible = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/305591/1/0/526',
+        'time_limit': 10
+    }
+    hl3_avatar_impossible = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/303221/1/0/527",
+        'time_limit': 10
+    }
+    hl3_rose_queen_impossible = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/300471/1/0/1204',
+        'time_limit': 10
+    }
+# HL2.0
     hl2_shiva_impossible = {
         'url': "https://game.granbluefantasy.jp/#quest/supporter/303151/1/0/522",
         'time_limit': 10
@@ -399,7 +428,7 @@ class util:
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/300471/1/0/1204',
         'time_limit': 10
     }
-    # 四象降临
+   # 四象降临
     btb_event_main_url = "https://game.granbluefantasy.jp/#event/advent"
     btb_extreme_plus = {
         'by': By.CLASS_NAME,
@@ -556,10 +585,38 @@ class util:
         'box_enemy_name': ['Mimic', 'Emerald Machina']
 
     }
+    arcum_zone_liber_gauge_box_data = {
+        'box_ele': 'txt-chest-name',
+        'box_txt': "Splendid Chest",
+        'gauge_ele': 'txt-quest-name',
+        'gauge_name': ['Herald of Light', 'Herald of The Wind'],
+        'box_enemy_ele': 'txt-quest-name',
+        'box_enemy_name': ['Mimic']
 
+    }
+
+    # stage 4
+    zone_goliath_boss_water_goliath_triune = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/21/813131/25/0/25064',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
+        "time_limit": 10
+
+    }
+    zone_goliath_dark_3_writhing_despair = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/18/813091/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
+        "time_limit": 3
+
+    }
     # stage 9
     liber_boss_wind_garuda_militis = {
         'url': "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
+    }
+    zone_liber_wind_5_mounted_toxophilite = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/9/9/3/818011/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9",
+        "time_limit": 3
+
     }
     # stage 8
     zone_kalendae_xeno_vohu_manah_militis = {
@@ -688,6 +745,13 @@ class util:
         "time_limit": 10
     }
 
+    # stage 9
+    zone_liber_wind_5_ageless_guardian_beast = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/9/9/5/818021/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9",
+        'time_limit': 10
+
+    }
     # stage 10
     mundus_wind_v2de_morrigna_militis = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/10/10/15/819171/25',
@@ -776,6 +840,11 @@ class util:
         'time_limit': 3
     }
     # zone faym
+    zone_faym_boss_water_faymian_gun = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/18/812131/25/0/25061',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/10",
+        'time_limit': 10
+    }
     zone_faym_water_de_creeping_seashadow = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/4/812101/25',
         'gauge_url': 'https://game.granbluefantasy.jp/#replicard/stage/3',
@@ -856,6 +925,12 @@ class util:
     # stage5
     zone_harbinger_wind_5_harbinger_hardwood = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/5/5/2/814011/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
+        'time_limit': 5
+
+    }
+    zone_harbinger_boss_wind_harbinger_stormer = {
+        'url': "https://game.granbluefantasy.jp/#replicard/supporter/5/5/22/814131/25/0/25067",
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/5",
         'time_limit': 5
 
