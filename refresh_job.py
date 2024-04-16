@@ -20,7 +20,7 @@ class refresh_job_select:
         2. no
         '''))
         if flag == 1:
-            self.game.summons.use_all_summon_flag = True
+            self.game.summons.use_all_summons_flag = True
         else:
-            self.game.summons.use_all_summon_flag = None
+            self.game.summons.use_all_summons_flag = None
         self.game.auto_refresh()

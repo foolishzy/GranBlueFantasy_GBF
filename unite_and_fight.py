@@ -118,6 +118,12 @@ class rapid_nightmare_95(uf_game):
         super().__init__(data)
 
 
+class rapid_nightmare_100(uf_game):
+    def __init__(self):
+        data = util.uf_rapid_nightmare_100
+        super().__init__(data)
+
+
 class final_rally(uf_game):
     def __init__(self):
         data = util.uf_final_rally
@@ -140,6 +146,7 @@ class unite_and_fight_select:
         6.rapid_battle_nightmare_diffculty
         7.rapid_battle_nightmare_95
         8.final rally
+        9.rapid_battle_nightmare_100
         """
         flag = False
         while not flag:
@@ -148,7 +155,7 @@ class unite_and_fight_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 7]]
+            index_range = [[0, 9]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -170,3 +177,5 @@ class unite_and_fight_select:
             rapid_nightmare_95().play()
         elif index == 8:
             final_rally().play()
+        elif index == 9:
+            rapid_nightmare_100().play()

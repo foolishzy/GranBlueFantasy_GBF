@@ -8,6 +8,5 @@ class arcum_boss(game):
         pass
 
     def __init__(self):
-        
-        pass
 
+        pass

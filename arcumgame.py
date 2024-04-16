@@ -732,4 +732,4 @@ class all_daily_boss():
 
     def play(self):
         for e in self.boss_list:
-            e.play()
+            e.single_time_play()

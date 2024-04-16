@@ -2,7 +2,23 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+    # foreboding clover
+    miscongeniality = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/shop_treasure/102961/3/0/archaic!numbers!evolution!4593599494/39/10/80',
+        'time_limit': 2
+
+    }
+
     # advice
+
+    event_paliulipararaiha_solo_extreme_data = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917721/5',
+        'time_limit': 3
+    }
+    event_paliulipararaiha_raid_extreme_data = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917761/1',
+        'time_limit': 3
+    }
     screen_label_advice_data = {
         'element': '//*[@id="wrapper"]/div[3]/div[2]/div[9]/div[2]',
         'by': By.XPATH
@@ -274,13 +290,49 @@ class util:
     uf_fire_final_rally = {
         'url': "https://game.granbluefantasy.jp/#quest/supporter_raid/35368078507/914771/1/0/0/2",
         'time_limit': 5
-    }  # unite and fight
+    }
+    uf_light_solo_normal = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917811/3/0',
+        'time_limit': 2
+    }
+    uf_light_solo_hard = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917821/3/0',
+        'time_limit': 2
+    }
+    uf_light_solo_veryhard = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917831/3/0',
+        'time_limit': 2
+    }
+    uf_light_rapid_extreme = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917841/1/0',
+        'time_limit': 3
+    }
+    uf_light_rapid_extreme_plus = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917851/1/0',
+        'time_limit': 3
+    }
+    uf_light_rapid_nightmare_95 = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917871/1/0/10116',
+        'time_limit': 8
+    }
+    uf_light_rapid_nightmare_100 = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917881/1/0/10116',
+        'time_limit': 10
+    }
+    uf_light_rapid_nightmare = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/917861/1/0/10116',
+        'time_limit': 5
+    }
+    #  uf_light_final_rally = {
+    #  'url': "https://game.granbluefantasy.jp/#quest/supporter_raid/35368078507/914771/1/0/0/2",
+    #  'time_limit': 5
+    #  } # unite and fight
     uf_solo_normal = {
         'FIRE': uf_fire_solo_normal,
         'WATER': None,
         'WIND': None,
         'EARTH': None,
-        'LIGHT': None,
+        'LIGHT': uf_light_solo_normal,
         'DARK': None
     }
     uf_solo_hard = {
@@ -289,7 +341,7 @@ class util:
         'WATER': None,
         'WIND': None,
         'EARTH': None,
-        'LIGHT': None,
+        'LIGHT': uf_light_solo_hard,
         'DARK': None
     }
     uf_solo_veryhard = {
@@ -297,7 +349,7 @@ class util:
         'WATER': None,
         'WIND': None,
         'EARTH': None,
-        'LIGHT': None,
+        'LIGHT': uf_light_solo_veryhard,
         'DARK': None
     }
     uf_rapid_extreme = {
@@ -305,7 +357,7 @@ class util:
         'WATER': None,
         'WIND': None,
         'EARTH': None,
-        'LIGHT': None,
+        'LIGHT': uf_light_rapid_extreme,
         'DARK': None
     }
     uf_rapid_extreme_plus = {
@@ -313,7 +365,7 @@ class util:
         'WATER': None,
         'WIND': None,
         'EARTH': None,
-        'LIGHT': None,
+        'LIGHT': uf_light_rapid_extreme_plus,
         'DARK': None
     }
     uf_rapid_nightmare = {
@@ -321,7 +373,7 @@ class util:
         'WATER': None,
         'WIND': None,
         'EARTH': None,
-        'LIGHT': None,
+        'LIGHT': uf_light_rapid_nightmare,
         'DARK': None
     }
     uf_rapid_nightmare_95 = {
@@ -329,7 +381,15 @@ class util:
         'WATER': None,
         'WIND': None,
         'EARTH': None,
-        'LIGHT': None,
+        'LIGHT': uf_light_rapid_nightmare_95,
+        'DARK': None
+    }
+    uf_rapid_nightmare_100 = {
+        'FIRE': None,
+        'WATER': None,
+        'WIND': None,
+        'EARTH': None,
+        'LIGHT': uf_light_rapid_nightmare_100,
         'DARK': None
     }
     uf_final_rally = {

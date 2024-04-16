@@ -27,6 +27,7 @@ class replicard_common(game):
             }
 
     ):
+        self.single_flag = False
         battle_time_limit = game_data['time_limit']
         url = game_data['url']
         gauge_url = game_data['gauge_url']
@@ -35,6 +36,10 @@ class replicard_common(game):
         self.gauge_url = gauge_url
         self.gauge_box_data = gauge_box_data
         self.timer = timer(self.__delattr__)
+
+    def single_time_play(self):
+        self.single_flag = True
+        self.play()
 
     def play(self):
 
@@ -54,7 +59,10 @@ class replicard_common(game):
         by = self.util.screen_label_auto_refresh['by']
         ele = self.util.screen_label_auto_refresh['element']
         super().play()
-        repeat_times = int(input("pls input repeat times :"))
+        if self.single_flag:
+            repeat_times = 1
+        else:
+            repeat_times = int(input("pls input repeat times :"))
         while repeat_times > 0:
             self.timer.start()
             print("while loop start")

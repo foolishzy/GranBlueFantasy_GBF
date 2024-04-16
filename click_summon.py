@@ -4,7 +4,7 @@ from mouse import Mouse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from elementfinder import elefinder
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, ElementClickInterceptedException
 from selenium.common.exceptions import ElementNotInteractableException, WebDriverException
 import time
 from stage import checker
@@ -69,6 +69,8 @@ class summon:
             except ElementNotInteractableException:
                 self.chm.execute_script(
                     '$(arguments[0]).click()', self.element)
+            except ElementClickInterceptedException:
+                pass
             time.sleep(1)
             elf = elefinder(
                 By.XPATH, self.summon_okbt_dialog_xpath, 3, self.chm)
@@ -84,6 +86,9 @@ class summon:
                 except NoSuchElementException:
                     print('NoSuchElementException')
                     pass
+                except ElementClickInterceptedException:
+                    pass
+
             try:
                 print('summon ' + str(self.index) + self.name + ' used')
             except TypeError:
