@@ -70,6 +70,7 @@ class arcum_select:
        501. zone_goliath_vestige_of_truth
        502. zone_goliath_dark_3_writhing_despair
        503. zone_goliath_boss_water_goliath_triune
+       504. zone_goliath_earth_5_goliath_keeper
        601. zone_harbinger_wind_5_dirgesinger
        602. zone_harbinger_wind_5_vengeful_demigod
        603. zone_harbinger_wind_de+_majestic_goldenwing
@@ -89,6 +90,7 @@ class arcum_select:
        617. zone_harbinger_boss_wind_harbinger_stormer
        701. zone_liber_wind_5_ageless_guardian_beast
        702. zone_liber_wind_5_mounted_toxophilite
+       703. zone_liber_wind_3_beetle_of_damnation
        801. zone_kalendae_xneo_vohu_manah_militis
        999. all daily boss
     '''
@@ -99,8 +101,8 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [601, 617], [701, 702], [101, 118], [201, 209], [
-                301, 313], [999, 999], [401, 413], [501, 503], [801, 801]]
+            index_range = [[0, 0], [601, 617], [701, 703], [101, 118], [201, 209], [
+                301, 313], [999, 999], [401, 413], [501, 504], [801, 801]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -218,6 +220,8 @@ class arcum_select:
             arcumgame().zone_goliath_dark_3_writhing_despair().play()
         elif index == 503:
             arcumgame().zone_goliath_boss_water_goliath_triune().play()
+        elif index == 504:
+            arcumgame().zone_goliath_earth_5_goliath_keeper().play()
         elif index == 601:
             arcumgame().zone_harbinger_wind_5_dirgesinger().play()
         elif index == 602:
@@ -229,7 +233,7 @@ class arcum_select:
         elif index == 605:
             arcumgame().zone_harbinger_wind_3_wildwind_conjurer().play()
         elif index == 606:
-            arcumgame().zone_harbinger_wind_3_harbinger_simurgh()
+            arcumgame().zone_harbinger_wind_3_harbinger_simurgh().play()
         elif index == 607:
             arcumgame().zone_harbinger_wind_5_harbinger_hardwood().play()
         elif index == 608:
@@ -258,6 +262,8 @@ class arcum_select:
             arcumgame().zone_liber_wind_5_ageless_guardian_beast().play()
         elif index == 702:
             arcumgame().zone_liber_wind_5_mounted_toxophilite().play()
+        elif index == 703:
+            arcumgame().zone_liber_wind_3_beetle_of_damnation().play()
         elif index == 999:
             all_daily_boss().play()
 
@@ -284,6 +290,11 @@ class arcumgame:
     def __init__(self):
         pass
 
+    class zone_goliath_earth_5_goliath_keeper(zone_goliath_common):
+        def __init__(self):
+            data = util.zone_goliath_earth_5_goliath_keeper
+            super().__init__(data)
+
     class zone_goliath_boss_water_goliath_triune(zone_goliath_common):
         def __init__(self):
             data = util.zone_goliath_boss_water_goliath_triune
@@ -292,6 +303,11 @@ class arcumgame:
     class zone_goliath_dark_3_writhing_despair(zone_goliath_common):
         def __init__(self):
             data = util.zone_goliath_dark_3_writhing_despair
+            super().__init__(data)
+
+    class zone_liber_wind_3_beetle_of_damnation(zone_liber_common):
+        def __init__(self):
+            data = util.zone_liber_wind_3_beetle_of_damnation
             super().__init__(data)
 
     class zone_liber_wind_5_mounted_toxophilite(zone_liber_common):

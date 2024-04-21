@@ -490,6 +490,25 @@ class util:
     }
    # 四象降临
     btb_event_main_url = "https://game.granbluefantasy.jp/#event/advent"
+    btb_manic_xuanwu = {
+        'time_limit': 10,
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/711261/3'
+
+    }
+    btb_manic_qinglong = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/711281/3',
+        'time_limit': 10
+    }
+    btb_manic_zhuque = {
+        'time_limit': 10,
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/711251/3'
+
+    }
+    btb_manic_baihu = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/711271/3',
+
+        'time_limit': 10
+    }
     btb_extreme_plus = {
         'by': By.CLASS_NAME,
         'element': "prt-raid-image",
@@ -668,12 +687,24 @@ class util:
         "time_limit": 3
 
     }
+    zone_goliath_earth_5_goliath_keeper = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/14/813071/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
+        "time_limit": 3
+
+    }
     # stage 9
     liber_boss_wind_garuda_militis = {
         'url': "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
     }
     zone_liber_wind_5_mounted_toxophilite = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/9/9/3/818011/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9",
+        "time_limit": 3
+
+    }
+    zone_liber_wind_3_beetle_of_damnation = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/9/9/4/818031/25',
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9",
         "time_limit": 3
 

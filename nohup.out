@@ -1262,3 +1262,39 @@ Error creating proxy: Unknown or unsupported transport “disabled” for addres
 [25304:25331:0325/010339.119459:ERROR:registration_request.cc(247)] Registration URL fetching failed.
 [25304:25331:0325/010348.295807:ERROR:registration_request.cc(247)] Registration URL fetching failed.
 [25344:25356:0325/010444.526512:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0421/205101.543080:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0421/205101.543173:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[6783:6816:0421/205101.605831:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[6783:6816:0421/205101.605928:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[6783:6815:0421/205101.611499:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6783:6815:0421/205101.611649:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6783:6815:0421/205101.623695:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6783:6815:0421/205101.623732:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6783:6809:0421/205101.630090:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[6783:6809:0421/205101.630594:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+[6783:6808:0421/205101.630662:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[6783:6808:0421/205101.630883:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/56fe73a5-28fc-45d1-85bf-7159a1a3dbe7
+[6783:6815:0421/205101.656551:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6783:6815:0421/205101.656584:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6783:6917:0421/205101.716316:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[6783:6917:0421/205101.716377:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[6783:6917:0421/205101.716420:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[6783:6917:0421/205101.716475:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[6783:6917:0421/205101.716572:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[6823:6823:0421/205101.834575:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[6783:6783:0421/205101.976311:ERROR:password_sync_bridge.cc(234)] Passwords datatype error was encountered: Password metadata store isn't available.
+[6824:6835:0421/205114.744121:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205114.755227:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205233.818630:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6783:6810:0421/205318.301709:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -118
+[6824:6835:0421/205532.593428:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205532.603534:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205532.614339:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205532.627271:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205532.638980:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205547.030916:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6824:6835:0421/205547.041679:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[6783:6810:0421/205551.901853:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -118
