@@ -14,6 +14,7 @@ from campaign_exclusive_quest import campaign_select
 from read_fate import fate_select
 from free_quest_list import free_quest_list_select
 from revenant_weapons_materials import materials_select
+from primarch_trials import primarch_select
 
 
 class jobselect:
@@ -42,8 +43,9 @@ class jobselect:
         14.free_quest_list 
         15.revenant_weapons_materials
         16.hl3
+        17.primarch_trials
 '''
-        index_max = 16
+        index_max = 17
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -86,3 +88,5 @@ class jobselect:
             materials_select()
         elif index == 16:
             hl3_select()
+        elif index == 17:
+            primarch_select()

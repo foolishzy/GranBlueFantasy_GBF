@@ -488,12 +488,82 @@ class util:
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/300471/1/0/1204',
         'time_limit': 10
     }
+    # 天司
+    # extreme
+    primarch_trials_extreme_fire = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/500901/18',
+        'time_limit': 5
+
+    }
+    primarch_trials_extreme_water = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/500981/18',
+        'time_limit': 5
+
+    }
+    primarch_trials_extreme_wind = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/501021/18',
+        'time_limit': 5
+
+    }
+    primarch_trials_extreme_earth = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/500941/18',
+        'time_limit': 5
+
+    }
+    # extreme+
+    primarch_trials_extreme_plus_fire = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/501621/18',
+        'time_limit': 5
+    }
+    primarch_trials_extreme_plus_water = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/501641/18',
+        'time_limit': 5
+    }
+    primarch_trials_extreme_plus_earth = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/501631/18',
+        'time_limit': 5
+    }
+    primarch_trials_extreme_plus_wind = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/501651/18',
+        'time_limit': 5
+    }
+    standard_trials_fire = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/303101/1/0/5311',
+        'time_limit': 3
+    }
+    standard_trials_water = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/303091/1/0/5321',
+        'time_limit': 3
+    }
+    standard_trials_earth = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/303111/1/0/5331',
+        'time_limit': 3
+    }
+    standard_trials_wind = {
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/303081/1/0/5341',
+        'time_limit': 3
+    }
    # 四象降临
     btb_event_main_url = "https://game.granbluefantasy.jp/#event/advent"
+    btb_extreme_plus_fire = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/711201/1",
+        'time_limit': 10
+    }
+    btb_extreme_plus_water = {
+        'time_limit': 10,
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/711051/1"
+    }
+    btb_extreme_plus_earth = {
+        'time_limit': 10,
+        "url": "https://game.granbluefantasy.jp/#quest/supporter/711151/1"
+    }
+    btb_extreme_plus_wind = {
+        'time_limit': 10,
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/711101/1'
+    }
     btb_manic_xuanwu = {
         'time_limit': 10,
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/711261/3'
-
     }
     btb_manic_qinglong = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/711281/3',

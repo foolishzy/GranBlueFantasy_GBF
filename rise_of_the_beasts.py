@@ -25,8 +25,13 @@ class btb_select:
        9. manic_qinglong
        10. manic_all
        11. extreme_all
+       12. extreme_plus_fire
+       13. extreme_plus_water
+       14. extreme_plus_earth
+       15. extreme_plus_wind
+       16. extreme_plus_all
        '''
-        index_max = 11
+        index_max = 16
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -58,6 +63,16 @@ class btb_select:
         elif index == 10:
             btb_manic_all().play()
         elif index == 11:
+            btb_extreme_all().play()
+        elif index == 12:
+            btb_extreme_plus_fire().play()
+        elif index == 13:
+            btb_extreme_plus_water().play()
+        elif index == 14:
+            btb_extreme_plus_earth().play()
+        elif index == 15:
+            btb_extreme_plus_wind().play()
+        elif index == 16:
             btb_extreme_all().play()
 
 
@@ -170,6 +185,102 @@ class extreme_battle_of_the_beasts(game):
         else:
             flag = False
         return flag
+
+
+class btb_extreme_plus(game):
+    game_data = {
+        "url": "",
+        'time_limit': ""
+    }
+    # 在实例中初始化game_data
+
+    def __init__(self):
+        self.play_all_flag = False
+        self.repeat_times = 0
+        self.oneturn = False
+        btl = self.game_data['time_limit']
+        self.url = self.game_data['url']
+        super().__init__(btl)
+
+    def init_repeat_times(self, times):
+        self.repeat_times = times
+
+    def set_play_all_flag(self):
+        self.play_all_flag = True
+
+    def play(self):
+
+        if not self.play_all_flag:
+            i = int(input('''100% chargebar and one turn?
+                pls select:
+                1. yes
+                2. no
+                '''))
+        else:
+            i = 2
+        if i == 1:
+            self.oneturn = True
+        else:
+            self.oneturn = False
+
+        super().play()
+        if self.repeat_times == 0:
+            repeat_times = int(input("pls input repeat times: "))
+        else:
+            repeat_times = self.repeat_times
+
+        while repeat_times > 0:
+            repeat_times = repeat_times - 1
+            print("left times :", repeat_times)
+            self.stage.goto(self.url)
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                if self.oneturn:
+                    self.mouse.click_attack()
+                    time.sleep(1)
+                    self.chm.refresh()
+                else:
+                    self.mouse.click_full()
+                    self.auto_refresh()
+        if not self.play_all_flag:
+            alert().run()
+
+
+class btb_extreme_plus_fire(btb_extreme_plus):
+    game_data = util.btb_extreme_plus_fire
+
+
+class btb_extreme_plus_water(btb_extreme_plus):
+    game_data = util.btb_extreme_plus_water
+
+
+class btb_extreme_plus_earth(btb_extreme_plus):
+    game_data = util.btb_extreme_plus_earth
+
+
+class btb_extreme_plus_wind(btb_extreme_plus):
+    game_data = util.btb_extreme_plus_wind
+
+
+class btb_extreme_plus_all:
+
+    def __init__(self):
+        times = int(input('pls input repeat times :'))
+        self.play_list = [
+            btb_extreme_plus_fire(),
+            btb_extreme_plus_water(),
+            btb_extreme_plus_earth(),
+            btb_extreme_plus_wind()
+        ]
+        for p in self.play_list:
+            p.init_repeat_times(times)
+            p.set_play_all_flag()
+
+    def play(self):
+        for p in self.play_list:
+            p.play()
+        alert().run()
 
 
 class btb_extreme_all:
