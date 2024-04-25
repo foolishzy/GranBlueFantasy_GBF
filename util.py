@@ -529,19 +529,19 @@ class util:
     }
     standard_trials_fire = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/303101/1/0/5311',
-        'time_limit': 3
+        'time_limit': 10
     }
     standard_trials_water = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/303091/1/0/5321',
-        'time_limit': 3
+        'time_limit': 10
     }
     standard_trials_earth = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/303111/1/0/5331',
-        'time_limit': 3
+        'time_limit': 10
     }
     standard_trials_wind = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/303081/1/0/5341',
-        'time_limit': 3
+        'time_limit': 10
     }
    # 四象降临
     btb_event_main_url = "https://game.granbluefantasy.jp/#event/advent"
@@ -751,10 +751,28 @@ class util:
         "time_limit": 10
 
     }
+    zone_goliath_dark_5_temptations_guide = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/10/813041/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
+        "time_limit": 3
+
+    }
     zone_goliath_dark_3_writhing_despair = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/18/813091/25',
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
         "time_limit": 3
+
+    }
+    zone_goliath_earth_5_bloodstained_barbarian = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/6/813031/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
+        "time_limit": 3
+
+    }
+    zone_goliath_earth_3_goliath_vanguard = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/16/813081/25',
+        'time_limit': 3,
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4"
 
     }
     zone_goliath_earth_5_goliath_keeper = {

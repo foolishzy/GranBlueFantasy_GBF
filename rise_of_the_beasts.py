@@ -327,6 +327,7 @@ class btb_manic(game):
     # 在实例中初始化game_gata
 
     def __init__(self):
+        print('manic cannot be defeated in one turn/n')
         self.play_all_flag = False
         self.repeat_times = 0
         self.oneturn = False

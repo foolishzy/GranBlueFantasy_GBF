@@ -71,6 +71,9 @@ class arcum_select:
        502. zone_goliath_dark_3_writhing_despair
        503. zone_goliath_boss_water_goliath_triune
        504. zone_goliath_earth_5_goliath_keeper
+       505. zone_goliath_dark_5_temptations_guide 
+       506. zone_goliath_earth_5_bloodstained_barbarian
+       507. zone_goliath_earth_3_goliath_vanguard
        601. zone_harbinger_wind_5_dirgesinger
        602. zone_harbinger_wind_5_vengeful_demigod
        603. zone_harbinger_wind_de+_majestic_goldenwing
@@ -102,7 +105,7 @@ class arcum_select:
                 index = 0
                 break
             index_range = [[0, 0], [601, 617], [701, 703], [101, 118], [201, 209], [
-                301, 313], [999, 999], [401, 413], [501, 504], [801, 801]]
+                301, 313], [999, 999], [401, 413], [501, 507], [801, 801]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -222,6 +225,12 @@ class arcum_select:
             arcumgame().zone_goliath_boss_water_goliath_triune().play()
         elif index == 504:
             arcumgame().zone_goliath_earth_5_goliath_keeper().play()
+        elif index == 505:
+            arcumgame().zone_goliath_dark_5_temptations_guide().play()
+        elif index == 506:
+            arcumgame().zone_goliath_earth_5_bloodstained_barbarian().play()
+        elif index == 507:
+            arcumgame().zone_goliath_earth_3_goliath_vanguard().play()
         elif index == 601:
             arcumgame().zone_harbinger_wind_5_dirgesinger().play()
         elif index == 602:
@@ -290,9 +299,24 @@ class arcumgame:
     def __init__(self):
         pass
 
+    class zone_goliath_earth_3_goliath_vanguard(zone_goliath_common):
+        def __init__(self):
+            data = util.zone_goliath_earth_3_goliath_vanguard
+            super().__init__(data)
+
+    class zone_goliath_earth_5_bloodstained_barbarian (zone_goliath_common):
+        def __init__(self):
+            data = util.zone_goliath_earth_5_bloodstained_barbarian
+            super().__init__(data)
+
     class zone_goliath_earth_5_goliath_keeper(zone_goliath_common):
         def __init__(self):
             data = util.zone_goliath_earth_5_goliath_keeper
+            super().__init__(data)
+
+    class zone_goliath_dark_5_temptations_guide(zone_goliath_common):
+        def __init__(self):
+            data = util.zone_goliath_dark_5_temptations_guide
             super().__init__(data)
 
     class zone_goliath_boss_water_goliath_triune(zone_goliath_common):
