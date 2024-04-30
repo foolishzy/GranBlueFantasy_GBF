@@ -75,7 +75,8 @@ class game_all:
     game_list = []
 
     def __init__(self):
-        times = int(input('pls input repeat times: '))
+        #  times = int(input('pls input repeat times: '))
+        times = 1
         for g in self.game_list:
             g.init_repeat_times(times)
             g.set_play_all_flag()

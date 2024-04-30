@@ -52,15 +52,23 @@ class hl_select:
         elif index == 7:
             rose_queen_impossible().play()
         elif index == 8:
-            for e in [shiva_impossible(),
-                      europa_impossible(),
-                      godsworn_alexiel_impossible(),
-                      grimnir_impossible(),
-                      metatron_impossible(),
-                      avatar_impossible(),
-                      rose_queen_impossible()]:
-                e.three_times_play()
-            alert().run()
+            play_all().play()
+
+
+class play_all:
+    def __init__(self):
+        pass
+
+    def play(self):
+        for e in [shiva_impossible(),
+                  europa_impossible(),
+                  godsworn_alexiel_impossible(),
+                  grimnir_impossible(),
+                  metatron_impossible(),
+                  avatar_impossible(),
+                  rose_queen_impossible()]:
+            e.three_times_play()
+        alert().run()
 
 
 class HL2(game):

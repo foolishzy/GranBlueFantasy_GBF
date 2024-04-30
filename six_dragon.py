@@ -16,9 +16,9 @@ class six_dragon_select:
         1. fire
         2. water
         3. earth
-        4. wind 
-        5. light 
-        6. dark 
+        4. wind
+        5. light
+        6. dark
         7. all_six
         """
         pass
@@ -49,16 +49,21 @@ class six_dragon_select:
         elif index == 6:
             six_dragon_dark().play()
         elif index == 7:
-            for e in [
-                    six_dragon_fire(),
-                    six_dragon_water(),
-                    six_dragon_earth(),
-                    six_dragon_wind(),
-                    six_dragon_light(),
-                    six_dragon_dark()
-            ]:
-                e.all_play()
-            alert().run()
+            all_play().play()
+
+
+class all_play:
+    def play(self):
+        for e in [
+            six_dragon_fire(),
+            six_dragon_water(),
+            six_dragon_earth(),
+            six_dragon_wind(),
+            six_dragon_light(),
+            six_dragon_dark()
+        ]:
+            e.all_play()
+        alert().run()
 
 
 class six_dragon(game):

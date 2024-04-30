@@ -6,9 +6,25 @@ class util:
     miscongeniality = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/shop_treasure/102961/3/0/archaic!numbers!evolution!4593599494/39/10/80',
         'time_limit': 2
-
     }
 
+    wings_of_terror_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/301061/1/0/59",
+        "time_limit": 15
+    }
+    omen_of_the_broken_skies = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/303251/1/0/533",
+        "time_limit": 15
+    }
+    the_peacemakers_wings = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/305161/1/0/83",
+
+        "time_limit": 15
+    }
+    lindwurm_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/305171/1/0/535",
+        'time_limit': 15
+    }
     # advice
 
     event_paliulipararaiha_solo_extreme_data = {
@@ -745,11 +761,16 @@ class util:
     }
 
     # stage 4
+    zone_goliath_earth_3_worlds_veil = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/9/813061/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
+        "time_limit": 10
+    }
+
     zone_goliath_boss_water_goliath_triune = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/21/813131/25/0/25064',
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
         "time_limit": 10
-
     }
     zone_goliath_dark_5_temptations_guide = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/10/813041/25',
@@ -782,6 +803,11 @@ class util:
 
     }
     # stage 9
+    zone_liber_xeno_sagittatius_militis = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/9/9/10/818131/25/0/25083',
+        'time_limit': 10,
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9",
+    }
     liber_boss_wind_garuda_militis = {
         'url': "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
     }
@@ -798,6 +824,11 @@ class util:
 
     }
     # stage 8
+    zone_kalendae_scintllant_matter = {
+        'url': "https://game.granbluefantasy.jp/#replicard/supporter/8/8/13/817061/25",
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/8,",
+        'time_limit': 3
+    }
     zone_kalendae_xeno_vohu_manah_militis = {
         'url': "https://game.granbluefantasy.jp/#replicard/supporter/8/8/9/817131/25/0/25083",
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/8",

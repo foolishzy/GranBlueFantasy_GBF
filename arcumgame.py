@@ -74,6 +74,7 @@ class arcum_select:
        505. zone_goliath_dark_5_temptations_guide 
        506. zone_goliath_earth_5_bloodstained_barbarian
        507. zone_goliath_earth_3_goliath_vanguard
+       508. zone_goliath_earth_3_worlds_veil
        601. zone_harbinger_wind_5_dirgesinger
        602. zone_harbinger_wind_5_vengeful_demigod
        603. zone_harbinger_wind_de+_majestic_goldenwing
@@ -95,6 +96,8 @@ class arcum_select:
        702. zone_liber_wind_5_mounted_toxophilite
        703. zone_liber_wind_3_beetle_of_damnation
        801. zone_kalendae_xneo_vohu_manah_militis
+       803. zone_kalendae_scintllant_matter
+       802. zone_liber_xeno_sagittatius_militis
        999. all daily boss
     '''
         flag = False
@@ -105,7 +108,7 @@ class arcum_select:
                 index = 0
                 break
             index_range = [[0, 0], [601, 617], [701, 703], [101, 118], [201, 209], [
-                301, 313], [999, 999], [401, 413], [501, 507], [801, 801]]
+                301, 313], [999, 999], [401, 413], [501, 508], [801, 803]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -231,6 +234,8 @@ class arcum_select:
             arcumgame().zone_goliath_earth_5_bloodstained_barbarian().play()
         elif index == 507:
             arcumgame().zone_goliath_earth_3_goliath_vanguard().play()
+        elif index == 508:
+            arcumgame().zone_goliath_earth_3_worlds_veil().play()
         elif index == 601:
             arcumgame().zone_harbinger_wind_5_dirgesinger().play()
         elif index == 602:
@@ -267,6 +272,10 @@ class arcum_select:
             arcumgame().zone_harbinger_boss_wind_harbinger_stormer().play()
         elif index == 801:
             arcumgame().zone_kalendae_xeno_vohu_manah_militis().play()
+        elif index == 802:
+            arcumgame().zone_liber_xeno_sagittatius_militis().play()
+        elif index == 803:
+            arcumgame().zone_kalendae_scintllant_matter().play()
         elif index == 701:
             arcumgame().zone_liber_wind_5_ageless_guardian_beast().play()
         elif index == 702:
@@ -298,6 +307,11 @@ class zone_goliath_common(replicard_common):
 class arcumgame:
     def __init__(self):
         pass
+
+    class zone_goliath_earth_3_worlds_veil(zone_goliath_common):
+        def __init__(self):
+            data = util.zone_goliath_earth_3_worlds_veil
+            super().__init__(data)
 
     class zone_goliath_earth_3_goliath_vanguard(zone_goliath_common):
         def __init__(self):
@@ -437,6 +451,18 @@ class arcumgame:
         def __init__(self):
             gb_data = util.arcum_zone_goliath_gauge_box_data
             data = util.arcum_vestige_of_truth
+            super().__init__(data, gb_data)
+
+    class zone_liber_xeno_sagittatius_militis(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_liber_gauge_box_data
+            data = util.zone_liber_xeno_sagittatius_militis
+            super().__init__(data, gb_data)
+
+    class zone_kalendae_scintllant_matter(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_kalendae_gauge_box_data
+            data = util.zone_kalendae_scintllant_matter
             super().__init__(data, gb_data)
 
     class zone_kalendae_xeno_vohu_manah_militis(replicard_common):

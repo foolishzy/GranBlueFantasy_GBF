@@ -15,6 +15,8 @@ from read_fate import fate_select
 from free_quest_list import free_quest_list_select
 from revenant_weapons_materials import materials_select
 from primarch_trials import primarch_select
+from daily_missions import daily_missions
+from six_start_liejin import liejin_select
 
 
 class jobselect:
@@ -44,8 +46,10 @@ class jobselect:
         15.revenant_weapons_materials
         16.hl3
         17.primarch_trials
+        18.daily_missions
+        19.liejin
 '''
-        index_max = 17
+        index_max = 18
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -90,3 +94,7 @@ class jobselect:
             hl3_select()
         elif index == 17:
             primarch_select()
+        elif index == 18:
+            daily_missions().play()
+        elif index == 19:
+            liejin_select()
