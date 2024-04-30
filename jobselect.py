@@ -49,7 +49,7 @@ class jobselect:
         18.daily_missions
         19.liejin
 '''
-        index_max = 18
+        index_max = 19
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):

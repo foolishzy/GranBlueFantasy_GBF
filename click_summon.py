@@ -8,6 +8,7 @@ from selenium.common.exceptions import NoSuchElementException, StaleElementRefer
 from selenium.common.exceptions import ElementNotInteractableException, WebDriverException
 import time
 from stage import checker
+from util import util
 
 
 class summon:
@@ -121,6 +122,8 @@ class battle_summons:
     extend_summon_panel_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div/div[1]'
     close_summon_panel_xpath = '//*[@id="cnt-raid-information"]/div[1]'
     brief_summons_xpath = '//*[@id="wrapper"]/div[3]/div[2]/div[11]/div[2]/div'
+    full_bt_classname = util.screen_label_battle_full['element']
+    full_bt_by = util.screen_label_battle_full['by']
 
     def set_use_all_summons_flag(self, flag: bool):
         if type(flag) == bool:
@@ -177,8 +180,11 @@ class battle_summons:
 
     def update(self):
         xpath = self.brief_summons_xpath
-        elf = elefinder(By.XPATH, xpath, 3, self.chm)
-        if elf.is_element_presence():
+        #  elf = elefinder(By.XPATH, xpath, 3, self.chm)
+        #  if elf.is_element_presence():
+        # 使用full_bt判断页面，然后获取数据
+        elf = elefinder(self.full_bt_by, self.full_bt_classname, 10, self.chm)
+        if elf.is_element_clickable():
             try:
                 self.brief_summons_element = self.chm.find_element_by_xpath(
                     xpath)
@@ -190,3 +196,4 @@ class battle_summons:
             except NoSuchElementException:
                 self.summon_group = list()
                 print('cannot find summons')
+        pass

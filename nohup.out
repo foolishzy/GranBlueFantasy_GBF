@@ -1434,3 +1434,63 @@ libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_na
 [0422/002610.370573:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
 [0422/002610.378328:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
 [0422/002610.378398:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0430/213851.417829:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0430/213851.417959:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0430/213851.417981:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[24237:24270:0430/213851.590296:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[24237:24270:0430/213851.590554:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[24237:24269:0430/213851.609337:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[24237:24269:0430/213851.609418:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[24237:24269:0430/213851.640400:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[24237:24269:0430/213851.640488:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[24237:24261:0430/213851.662028:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[24237:24272:0430/213851.662074:ERROR:login_database.cc(778)] Password store database is too new, kCurrentVersionNumber=33, GetCompatibleVersionNumber=40
+[24237:24261:0430/213851.663068:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+[24237:24272:0430/213851.663086:ERROR:login_database_async_helper.cc(53)] Could not create/open login database.
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/7cb6ea0a-3e68-428d-ace4-d96338058073
+[24237:24269:0430/213851.723540:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[24237:24269:0430/213851.723622:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[24237:24367:0430/213851.880378:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[24237:24367:0430/213851.880515:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[24237:24367:0430/213851.880675:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[24237:24367:0430/213851.880812:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+[24237:24367:0430/213851.880927:ERROR:bus.cc(398)] Failed to connect to the bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[24277:24277:0430/213852.166575:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[24237:24237:0430/213852.668284:ERROR:password_sync_bridge.cc(234)] Passwords datatype error was encountered: Password metadata store isn't available.
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[24237:24264:0430/214254.838208:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24237:24264:0430/214255.089106:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24237:24264:0430/214255.139073:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24237:24264:0430/214255.139225:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24278:24290:0430/214415.750829:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/214425.966408:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24237:24264:0430/214716.076895:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24237:24264:0430/214716.328752:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24237:24264:0430/214716.651050:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24237:24264:0430/214717.969662:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[24278:24290:0430/214806.132185:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/214806.143840:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/214831.724748:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0430/214851.418165:ERROR:file_io.cc(94)] ReadExactly: expected 8, observed 0
+[0430/214851.418265:ERROR:file_io.cc(94)] ReadExactly: expected 8, observed 0
+[0430/214851.418286:ERROR:file_io.cc(94)] ReadExactly: expected 8, observed 0
+[0430/214851.418307:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0430/214851.418324:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0430/214851.418334:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[0430/214851.418344:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0430/214851.418353:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0430/214851.418363:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[0430/214851.440190:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0430/214851.440307:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0430/214851.440330:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[24278:24290:0430/214907.604820:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/214942.915216:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/215007.597333:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/215011.934652:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/215011.945627:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
+[24278:24290:0430/215105.337442:ERROR:ssl_client_socket_impl.cc(996)] handshake failed; returned -1, SSL error code 1, net_error -101
