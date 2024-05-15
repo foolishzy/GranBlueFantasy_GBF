@@ -41,6 +41,7 @@ class arcum_select:
        207. joculator_water_3_maiden_of_the_depiths
        208. joculator_de_water_lady_of_redemption
        209. joculator_water_xeno_cocytus_militis
+       210. joculator_boss_water_grani_militis
        301. zoneeletio_fire_de_cleansing_wyrmgod
        302. zoneeletio_fire_5_slithering_seductress
        303. zoneeletio_fire_5_eletion_drake
@@ -71,7 +72,7 @@ class arcum_select:
        502. zone_goliath_dark_3_writhing_despair
        503. zone_goliath_boss_water_goliath_triune
        504. zone_goliath_earth_5_goliath_keeper
-       505. zone_goliath_dark_5_temptations_guide 
+       505. zone_goliath_dark_5_temptations_guide
        506. zone_goliath_earth_5_bloodstained_barbarian
        507. zone_goliath_earth_3_goliath_vanguard
        508. zone_goliath_earth_3_worlds_veil
@@ -95,8 +96,11 @@ class arcum_select:
        701. zone_liber_wind_5_ageless_guardian_beast
        702. zone_liber_wind_5_mounted_toxophilite
        703. zone_liber_wind_3_beetle_of_damnation
+       704. zone_liber_boss_wind_garuda_militis
+       705. zone_liber_ligh_3_simpering_beast
        801. zone_kalendae_xneo_vohu_manah_militis
        803. zone_kalendae_scintllant_matter
+       804. zone_kalendae_bedeviled_plague
        802. zone_liber_xeno_sagittatius_militis
        999. all daily boss
     '''
@@ -107,8 +111,8 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [601, 617], [701, 703], [101, 118], [201, 209], [
-                301, 313], [999, 999], [401, 413], [501, 508], [801, 803]]
+            index_range = [[0, 0], [601, 617], [701, 705], [101, 118], [201, 210], [
+                301, 313], [999, 999], [401, 413], [501, 508], [801, 804]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
                     flag = True
@@ -167,7 +171,9 @@ class arcum_select:
         elif index == 208:
             arcumgame().joculator_de_water_lady_of_redemption().play()
         elif index == 209:
-            arcumgame().joculator_water_xeno_cocytus_militis
+            arcumgame().joculator_water_xeno_cocytus_militis().play()
+        elif index == 210:
+            arcumgame().joculator_boss_water_grani_militis().play()
         elif index == 301:
             arcumgame().zoneeletio_fire_de_cleansing_wyrmgod().play()
         elif index == 302:
@@ -276,12 +282,18 @@ class arcum_select:
             arcumgame().zone_liber_xeno_sagittatius_militis().play()
         elif index == 803:
             arcumgame().zone_kalendae_scintllant_matter().play()
+        elif index == 804:
+            arcumgame().zone_kalendae_bedeviled_plague().play()
         elif index == 701:
             arcumgame().zone_liber_wind_5_ageless_guardian_beast().play()
         elif index == 702:
             arcumgame().zone_liber_wind_5_mounted_toxophilite().play()
         elif index == 703:
             arcumgame().zone_liber_wind_3_beetle_of_damnation().play()
+        elif index == 704:
+            arcumgame().zone_liber_boss_wind_garuda_militis().play()
+        elif index == 705:
+            arcumgame().zone_liber_light_3_simpering_beast().play()
         elif index == 999:
             all_daily_boss().play()
 
@@ -289,6 +301,12 @@ class arcum_select:
 class zone_harbinger_common(replicard_common):
     def __init__(self, data):
         gb_data = util.arcum_zone_harbinger_gauge_box_data
+        super().__init__(data, gb_data)
+
+
+class zone_kalendae_common(replicard_common):
+    def __init__(self, data):
+        gb_data = util.arcum_zone_kalendae_gauge_box_data
         super().__init__(data, gb_data)
 
 
@@ -307,6 +325,11 @@ class zone_goliath_common(replicard_common):
 class arcumgame:
     def __init__(self):
         pass
+
+    class zone_kalendae_bedeviled_plague(zone_kalendae_common):
+        def __init__(self):
+            data = util.zone_kalendae_bedeviled_plague
+            super().__init__(data)
 
     class zone_goliath_earth_3_worlds_veil(zone_goliath_common):
         def __init__(self):
@@ -348,6 +371,11 @@ class arcumgame:
             data = util.zone_liber_wind_3_beetle_of_damnation
             super().__init__(data)
 
+    class zone_liber_light_3_simpering_beast(zone_liber_common):
+        def __init__(self):
+            data = util.zone_liber_light_3_simpering_beast
+            super().__init__(data)
+
     class zone_liber_wind_5_mounted_toxophilite(zone_liber_common):
         def __init__(self):
             data = util.zone_liber_wind_5_mounted_toxophilite
@@ -368,7 +396,8 @@ class arcumgame:
             data = util.zone_harbinger_wind_5_harbinger_hardwood
             super().__init__(data)
 
-    class zone_harbinger_wind_de_plus_tempestuous_beauty(zone_harbinger_common):
+    class zone_harbinger_wind_de_plus_tempestuous_beauty(
+            zone_harbinger_common):
         def __init__(self):
             data = util.zone_harbinger_wind_de_plus_tempestuous_beauty
             super().__init__(data)
@@ -383,12 +412,14 @@ class arcumgame:
             data = util.zone_harbinger_wind_5_demanding_stormgod
             super().__init__(data)
 
-    class zone_harbinger_light_5_phantasmagoric_aberration(zone_harbinger_common):
+    class zone_harbinger_light_5_phantasmagoric_aberration(
+            zone_harbinger_common):
         def __init__(self):
             data = util.zone_harbinger_light_5_phantasmagoric_aberration
             super().__init__(data)
 
-    class zone_harbinger_light_de_plus_jadegleam_dragonkin(zone_harbinger_common):
+    class zone_harbinger_light_de_plus_jadegleam_dragonkin(
+            zone_harbinger_common):
         def __init__(self):
             data = util.zone_harbinger_light_de_plus_jadegleam_dragonkin
             super().__init__(data)
@@ -419,7 +450,8 @@ class arcumgame:
             #  super().__init__(data)
             print('correct url pls')
 
-    class zone_harbinger_wind_de_plus_majestic_goldenwing(zone_harbinger_common):
+    class zone_harbinger_wind_de_plus_majestic_goldenwing(
+            zone_harbinger_common):
         def __init__(self):
             data = util.zone_harbinger_wind_de_plus_majestic_goldenwing
             super().__init__(data)
@@ -451,6 +483,12 @@ class arcumgame:
         def __init__(self):
             gb_data = util.arcum_zone_goliath_gauge_box_data
             data = util.arcum_vestige_of_truth
+            super().__init__(data, gb_data)
+
+    class zone_liber_boss_wind_garuda_militis(replicard_common):
+        def __init__(self):
+            gb_data = util.arcum_zone_liber_gauge_box_data
+            data = util.zone_liber_boss_wind_garuda_militis
             super().__init__(data, gb_data)
 
     class zone_liber_xeno_sagittatius_militis(replicard_common):
@@ -624,6 +662,12 @@ class arcumgame:
     class joculator_water_xeno_cocytus_militis(replicard_common):
         def __init__(self):
             data = util.joculator_water_xeno_cocytus_militis
+            gb_data = util.arcum_joculator_gauge_box_data
+            super().__init__(data, gb_data)
+
+    class joculator_boss_water_grani_militis(replicard_common):
+        def __init__(self):
+            data = util.joculator_boss_water_grani_militis
             gb_data = util.arcum_joculator_gauge_box_data
             super().__init__(data, gb_data)
 

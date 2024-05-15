@@ -26,9 +26,10 @@ class event_select:
         9.exo_corow crucible
         10.heart of the sun
         11.paliuli
+        12.our style and our substance
         '''
 
-        index_max = 11
+        index_max = 12
         index_min = 0
         index = -1
         while not (index >= index_min and index <= index_max):
@@ -61,6 +62,8 @@ class event_select:
             heart_of_the_sun().play()
         elif index == 11:
             paliuli().play()
+        elif index == 12:
+            our_style_our_substance().play()
 
 
 class event_common(game):
@@ -74,6 +77,149 @@ class event_common(game):
             game_data['time_limit']
         )
         pass
+
+
+class our_style_our_substance(event_common):
+    """
+    20240430
+    """
+    game_data = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/918141/1/0/10536",
+        "time_limit": 1
+    }
+
+    def __exit(self):
+        pass
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        my_timer = timer()
+        while times > 0:
+            my_timer.start()
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+            my_timer.end()
+
+    def play_impossible(self):
+        self.game_data = {
+            'url': "https://game.granbluefantasy.jp/#quest/supporter/918141/1/0/10536",
+            "time_limit": 1
+        }
+        self.__init__()
+        self.__play()
+
+    def play_raid_extreme(self):
+        pass
+        #  self.game_data = self.raid_extreme_data
+        #  self.__init__()
+        #  self.__play()
+
+    def play_solo_extreme(self):
+        pass
+        #  self.game_data = self.solo_extreme_data
+        #  self.__init__()
+        #  self.__play()
+
+    def play(self):
+        string_hint = """
+        0.exit
+        1.impossible
+        """
+        index = -1
+        index_max = 1
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.play_impossible()
+
+
+class event_falseto_in_the_autumn_gray(event_common):
+    """20240515"""
+    solo_veryhard_data = util.event_falseto_in_the_autumn_gray_solo_very_hard
+    solo_extreme_data = util.event_falseto_in_the_autumn_gray_solo_extreme
+    solo_mannic = util.event_falseto_in_the_autumn_gray_solo_mannic
+
+    def __exit(self):
+        pass
+
+    def __init__(self):
+        super().__init__(self.game_data)
+
+    def __play(self):
+        # 私有方法，实例中不要直接调用，会出错
+        times = int(input('please input times to repeat : '))
+        my_timer = timer()
+        while times > 0:
+            my_timer.start()
+            times = times - 1
+            print("left times :", times)
+            self.stage.goto(self.url)
+            # 打开网页
+            self.mouse.click_friend_summon()
+            self.mouse.click_party_ok()
+            if self.ck.is_battle_page():
+                self.mouse.click_full()
+                self.auto_refresh()
+            my_timer.end()
+
+    def play_solo_mannic(self):
+        self.game_data = self.solo_mannic
+        self.__init__()
+        self.__play()
+
+    def play_solo_veryhard(self):
+        self.game_data = self.solo_veryhard_data
+        self.__init__()
+        self.__play()
+
+    def play_solo_extreme(self):
+        self.game_data = self.solo_extreme_data
+        self.__init__()
+        self.__play()
+
+    def play(self):
+        string_hint = """
+        0.exit
+        1.solo_extreme
+        2.solo_veryhard
+        3.solo_mannic
+        """
+        index = -1
+        index_max = 3
+        index_min = 0
+        while (not (index >= index_min and index <= index_max)):
+            try:
+                index = int(input(string_hint))
+            except KeyboardInterrupt:
+                self.__exit()
+                break
+        if index == 0:
+            self.__exit()
+        elif index == 1:
+            self.play_solo_extreme()
+        elif index == 2:
+            self.play_solo_veryhard()
+        elif index == 3:
+            self.play_solo_mannic()
 
 
 class paliuli(event_common):

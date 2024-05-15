@@ -2,6 +2,20 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+    event_falseto_in_the_autumn_gray_solo_very_hard = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/918811/5",
+        'time_limit': 2
+    }
+    event_falseto_in_the_autumn_gray_solo_extreme = {
+        'url':
+            "https://game.granbluefantasy.jp/#quest/supporter/918821/5",
+            "time_limit": 2
+    }
+    event_falseto_in_the_autumn_gray_solo_mannic = {
+        'url':
+            "https://game.granbluefantasy.jp/#quest/supporter/918831/5",
+            "time_limit": 2
+    }
     # foreboding clover
     miscongeniality = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/shop_treasure/102961/3/0/archaic!numbers!evolution!4593599494/39/10/80',
@@ -803,12 +817,19 @@ class util:
 
     }
     # stage 9
+    zone_liber_light_3_simpering_beast = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/9/9/14/818061/25',
+        'time_limit': 10,
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9"
+    }
     zone_liber_xeno_sagittatius_militis = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/9/9/10/818131/25/0/25083',
         'time_limit': 10,
-        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9",
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9"
     }
-    liber_boss_wind_garuda_militis = {
+    zone_liber_boss_wind_garuda_militis = {
+        'time_limit': 10,
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/9",
         'url': "https://game.granbluefantasy.jp/#replicard/supporter/9/9/16/818091/25/0/25078"
     }
     zone_liber_wind_5_mounted_toxophilite = {
@@ -824,6 +845,15 @@ class util:
 
     }
     # stage 8
+    zone_kalendae_bedeviled_plague = {
+        "url":
+            "https://game.granbluefantasy.jp/#replicard/supporter/8/8/6/817031/25",
+        'time_limit':
+            3,
+        'gauge_url':
+            "https://game.granbluefantasy.jp/#replicard/stage/8,"
+
+    }
     zone_kalendae_scintllant_matter = {
         'url': "https://game.granbluefantasy.jp/#replicard/supporter/8/8/13/817061/25",
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/8,",
@@ -926,7 +956,7 @@ class util:
 
     }
     joculator_de_water_lady_of_the_redemption = {
-        'url': "https://game.granbluefantasy.jp/#replicard/supporter/7/7/3/816071/25",
+        'url': "https://game.granbluefantasy.jp/#replicard/supporter/7/7/5/816071/25",
         'time_limit': 10,
         'gauge_url': 'https://game.granbluefantasy.jp/#replicard/stage/7'
 
@@ -953,6 +983,12 @@ class util:
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/7/7/14/816081/25',
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/7",
         "time_limit": 10
+    }
+    joculator_boss_water_grani_militis = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/7/7/16/816091/25/0/25076',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/7",
+        "time_limit": 10
+
     }
 
     # stage 9
@@ -1056,7 +1092,7 @@ class util:
         'time_limit': 10
     }
     zone_faym_water_de_creeping_seashadow = {
-        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/4/812101/25',
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/3/3/8/812101/25',
         'gauge_url': 'https://game.granbluefantasy.jp/#replicard/stage/3',
         'time_limit':  10
     }

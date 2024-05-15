@@ -17,8 +17,14 @@ class daily_missions:
     def play(self):
         #  hl2_play_all().play()
         prt_exa().play()
+        # 天司ex难度
         prt_sta().play()
+        # 天司标准难度
         prt_expa().play()
+        # 天司explus
         six_dragon_all_play().play()
+        # 六龙
         lind_all_play().play()
+        # 林德龙
         liejin_all_Play().play()
+        # 猎金 大巴 阿卡夏 大公

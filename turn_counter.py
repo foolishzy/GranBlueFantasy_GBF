@@ -36,9 +36,9 @@ class turn_counter:
         #  if elefinder(By.XPATH, self.xpath, 3, self.chm).is_element_presence():
         # 使用full标签判断页面，然后获取数值
         full_bt = util.screen_label_battle_full
-        elf = elefinder(full_bt['by'], full_bt['element', 3, self.chm])
+        elf = elefinder(full_bt['by'], full_bt['element'], 3, self.chm)
         if elf.is_element_clickable():
-           try:
+            try:
                 e = self.chm.find_element_by_xpath(self.xpath)
                 txt = e.get_attribute('class')
                 txt = txt.replace(self.phrase_str, '')

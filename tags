@@ -41,15 +41,18 @@ __exit	event.py	/^    def __exit(self):$/;"	m	class:detective_barawa	file:	acces
 __exit	event.py	/^    def __exit(self):$/;"	m	class:divine_generals	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:dread_barrage	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:dreamers_mirecle	file:	access:private
+__exit	event.py	/^    def __exit(self):$/;"	m	class:event_falseto_in_the_autumn_gray	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:event_select	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:exo_corow_crucible	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:exo_ifrit_crucible	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:heart_of_the_sun	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
+__exit	event.py	/^    def __exit(self):$/;"	m	class:our_style_our_substance	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:paliuli	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:tyras_bizarre_misadventure	file:	access:private
 __exit	event.py	/^    def __exit(self):$/;"	m	class:ultimate_showndowns	file:	access:private
 __exit	jobselect.py	/^    def __exit(self):$/;"	m	class:jobselect	file:	access:private
+__exit	primarch_trials.py	/^    def __exit(self):$/;"	m	class:primarch_select	file:	access:private
 __exit	reserve_crate.py	/^    def __exit(self):$/;"	m	class:reserve_select	file:	access:private
 __exit	revenant_weapons_materials.py	/^    def __exit(self):$/;"	m	class:materials_select	file:	access:private
 __exit	rise_of_the_beasts.py	/^    def __exit(self):$/;"	m	class:btb_select	file:	access:private
@@ -60,6 +63,7 @@ __init__	HL2.py	/^    def __init__(self):$/;"	m	class:godsworn_alexiel_impossibl
 __init__	HL2.py	/^    def __init__(self):$/;"	m	class:grimnir_impossible	access:public
 __init__	HL2.py	/^    def __init__(self):$/;"	m	class:hl_select	access:public
 __init__	HL2.py	/^    def __init__(self):$/;"	m	class:metatron_impossible	access:public
+__init__	HL2.py	/^    def __init__(self):$/;"	m	class:play_all	access:public
 __init__	HL2.py	/^    def __init__(self):$/;"	m	class:rose_queen_impossible	access:public
 __init__	HL2.py	/^    def __init__(self):$/;"	m	class:shiva_impossible	access:public
 __init__	HL2.py	/^    def __init__(self, data={'url': "", 'time_limit': 10, }):$/;"	m	class:HL2	access:public
@@ -72,9 +76,10 @@ __init__	HL3.py	/^    def __init__(self):$/;"	m	class:metatron_impossible	access
 __init__	HL3.py	/^    def __init__(self):$/;"	m	class:rose_queen_impossible	access:public
 __init__	HL3.py	/^    def __init__(self):$/;"	m	class:shiva_impossible	access:public
 __init__	HL3.py	/^    def __init__(self, data={'url': "", 'time_limit': 10, }):$/;"	m	class:hl3	access:public
-__init__	alert.py	/^    def __init__(self):$/;"	m	class:alert	access:public
+__init__	alert.py	/^    def __init__(self, string=""):$/;"	m	class:alert	access:public
 __init__	arcum_boss.py	/^    def __init__(self):$/;"	m	class:arcum_boss	access:public
 __init__	arcum_replicard.py	/^    def __init__($/;"	m	class:replicard_common	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.joculator_boss_water_grani_militis	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.joculator_dark_3_Dreadful_scourge	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.joculator_dark_5_bloody_soothsayer	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.joculator_dark_5_nebulous_one	access:public
@@ -116,6 +121,10 @@ __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_f
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_faym_water_de_lilywhite_paragon	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_boss_water_goliath_triune	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_dark_3_writhing_despair	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_dark_5_temptations_guide	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_earth_3_goliath_vanguard	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_earth_3_worlds_veil	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_earth_5_bloodstained_barbarian	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_earth_5_goliath_keeper	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_goliath_vestige_of_truth	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_harbinger_boss_wind_harbinger_stormer	access:public
@@ -135,10 +144,14 @@ __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_h
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_harbinger_wind_de_plus_majestic_goldenwing	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_harbinger_wind_de_plus_tempestuous_beauty	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_harbinger_wind_de_tempestuous_beauty	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_kalendae_scintllant_matter	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_kalendae_xeno_vohu_manah_militis	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_liber_boss_wind_garuda_militis	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_liber_light_3_simpering_beast	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_liber_wind_3_beetle_of_damnation	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_liber_wind_5_ageless_guardian_beast	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_liber_wind_5_mounted_toxophilite	access:public
+__init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zone_liber_xeno_sagittatius_militis	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_3_blazing_everwing	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_3_rageborn_one	access:public
 __init__	arcumgame.py	/^        def __init__(self):$/;"	m	class:arcumgame.zoneeletio_fire_5_eletion_drake	access:public
@@ -163,16 +176,19 @@ __init__	campaign_exclusive_quest.py	/^    def __init__(self):$/;"	m	class:campa
 __init__	campaign_exclusive_quest.py	/^    def __init__(self):$/;"	m	class:campaign_select	access:public
 __init__	click_summon.py	/^    def __init__(self, chm: webdriver.Chrome, mouse: Mouse):$/;"	m	class:battle_summons	access:public
 __init__	click_summon.py	/^    def __init__(self, index: int, chm: webdriver.Chrome, mouse: Mouse):$/;"	m	class:summon	access:public
+__init__	daily_missions.py	/^    def __init__(self):$/;"	m	class:daily_missions	access:public
 __init__	elementfinder.py	/^    def __init__(self, by : By, element, waittime  : int, chm_webdriver : webdriver.chrome):$/;"	m	class:elefinder	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:detective_barawa	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:divine_generals	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:dread_barrage	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:dreamers_mirecle	access:public
+__init__	event.py	/^    def __init__(self):$/;"	m	class:event_falseto_in_the_autumn_gray	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:event_select	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:exo_corow_crucible	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:exo_ifrit_crucible	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:heart_of_the_sun	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:hope_from_a_snow_drop	access:public
+__init__	event.py	/^    def __init__(self):$/;"	m	class:our_style_our_substance	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:paliuli	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:tyras_bizarre_misadventure	access:public
 __init__	event.py	/^    def __init__(self):$/;"	m	class:ultimate_showndowns	access:public
@@ -182,7 +198,9 @@ __init__	free_quest_list.py	/^    def __init__(self):$/;"	m	class:pride_of_the_a
 __init__	free_quest_list.py	/^    def __init__(self):$/;"	m	class:two_star_twin_elements_showdowns	access:public
 __init__	free_quest_list.py	/^    def __init__(self, game_data={'utl': "", "time_limit": 1}):$/;"	m	class:world_treasure_quest	access:public
 __init__	game.py	/^    def __init__(self, battle_time_limit):$/;"	m	class:game	access:public
+__init__	jobargs.py	/^    def __init__(self, argv=[]):$/;"	m	class:jobargs	access:public
 __init__	jobselect.py	/^    def __init__(self):$/;"	m	class:jobselect	access:public
+__init__	lindwurm.py	/^    def __init__(self):$/;"	m	class:lindwurm_game	access:public
 __init__	loading_page_locator.py	/^    def __init__(self, chm: webdriver.Chrome, event: Event, ctrl_event: Event):$/;"	m	class:goal_page_locator	access:public
 __init__	loading_page_locator.py	/^    def __init__(self, chm: webdriver.Chrome, event: Event, mouse: Mouse):$/;"	m	class:last_turn_locator	access:public
 __init__	loading_page_locator.py	/^    def __init__(self, chm: webdriver.Chrome, refreshtime=10):$/;"	m	class:lpl	access:public
@@ -192,6 +210,15 @@ __init__	loading_page_locator.py	/^    def __init__(self, mouse: Mouse, chm: web
 __init__	mouse.py	/^    def __init__(self, chm: webdriver.Chrome):$/;"	m	class:Mouse	access:public
 __init__	play_transitions.py	/^        def __init__(self):$/;"	m	class:arcum_machine.model	access:public
 __init__	play_transitions.py	/^    def __init__(self, model : model):$/;"	m	class:arcum_machine	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:extreme_all	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:extreme_game	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:extreme_plus_all	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:extreme_plus_game	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:game_all	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:primarch_common	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:primarch_select	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:standard_all	access:public
+__init__	primarch_trials.py	/^    def __init__(self):$/;"	m	class:standard_game	access:public
 __init__	read_fate.py	/^    def __init__(self):$/;"	m	class:fate_select	access:public
 __init__	read_fate.py	/^    def __init__(self):$/;"	m	class:read_fate	access:public
 __init__	refresh_job.py	/^    def __init__(self):$/;"	m	class:refresh_job_select	access:public
@@ -206,6 +233,8 @@ __init__	revenant_weapons_materials.py	/^    def __init__(self):$/;"	m	class:mat
 __init__	revenant_weapons_materials.py	/^    def __init__(self):$/;"	m	class:miscongeniality	access:public
 __init__	revenant_weapons_materials.py	/^    def __init__(self):$/;"	m	class:scattered_cargo	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_extreme_all	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_extreme_plus	access:public
+__init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_extreme_plus_all	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_manic	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_manic_all	access:public
 __init__	rise_of_the_beasts.py	/^    def __init__(self):$/;"	m	class:btb_select	access:public
@@ -228,6 +257,11 @@ __init__	six_dragon.py	/^    def __init__(self):$/;"	m	class:six_dragon_select	a
 __init__	six_dragon.py	/^    def __init__(self):$/;"	m	class:six_dragon_water	access:public
 __init__	six_dragon.py	/^    def __init__(self):$/;"	m	class:six_dragon_wind	access:public
 __init__	six_dragon.py	/^    def __init__(self, data={'url': "", 'time_limit': 10, }):$/;"	m	class:six_dragon	access:public
+__init__	six_start_liejin.py	/^    def __init__(self):$/;"	m	class:liejin_select	access:public
+__init__	six_start_liejin.py	/^    def __init__(self):$/;"	m	class:omen_of_the_broken_skies	access:public
+__init__	six_start_liejin.py	/^    def __init__(self):$/;"	m	class:the_peacemakers_wings	access:public
+__init__	six_start_liejin.py	/^    def __init__(self):$/;"	m	class:wings_of_terror_impossible	access:public
+__init__	six_start_liejin.py	/^    def __init__(self, name="", game_data={"url": "", "time_limit": 0}):$/;"	m	class:common_game	access:public
 __init__	skill_clicker.py	/^    def __init__(self, chm: webdriver.Chrome, mouse: Mouse):$/;"	m	class:party	access:public
 __init__	skill_clicker.py	/^    def __init__(self, index: int, chm: webdriver.Chrome, mouse: Mouse):$/;"	m	class:character	access:public
 __init__	skill_clicker.py	/^    def __init__(self,$/;"	m	class:skill	access:public
@@ -255,17 +289,24 @@ __play	event.py	/^    def __play(self):$/;"	m	class:detective_barawa	file:	acces
 __play	event.py	/^    def __play(self):$/;"	m	class:divine_generals	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:dread_barrage	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:dreamers_mirecle	file:	access:private
+__play	event.py	/^    def __play(self):$/;"	m	class:event_falseto_in_the_autumn_gray	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:exo_corow_crucible	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:exo_ifrit_crucible	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:heart_of_the_sun	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:hope_from_a_snow_drop	file:	access:private
+__play	event.py	/^    def __play(self):$/;"	m	class:our_style_our_substance	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:paliuli	file:	access:private
 __play	event.py	/^    def __play(self):$/;"	m	class:ultimate_showndowns	file:	access:private
+_exit	daily_missions.py	/^    def _exit(self):$/;"	m	class:daily_missions	access:public
+a	alert.py	/^    a = alert("test")$/;"	v	class:alert
 add_data	static_print.py	/^    def add_data(self, Data: data):$/;"	m	class:data_manger	access:public
 ag	arcumgame.py	/^    ag = arcumgame()$/;"	v	class:all_daily_boss
 alert	alert.py	/^class alert:$/;"	c	inherits:
 all_daily_boss	arcumgame.py	/^class all_daily_boss():$/;"	c	inherits:
+all_play	lindwurm.py	/^class all_play:$/;"	c	inherits:
 all_play	six_dragon.py	/^    def all_play(self):$/;"	m	class:six_dragon	access:public
+all_play	six_dragon.py	/^class all_play:$/;"	c	inherits:
+all_play	six_start_liejin.py	/^class all_play:$/;"	c	inherits:
 am	play_transitions.py	/^am = arcum_machine(m)$/;"	v
 antiquaruan_troubles	revenant_weapons_materials.py	/^class antiquaruan_troubles(game):$/;"	c	inherits:game
 antique_cloth	util.py	/^    antique_cloth = {$/;"	v	class:util
@@ -285,6 +326,7 @@ arcum_zone_harbinger_gauge_box_data	util.py	/^    arcum_zone_harbinger_gauge_box
 arcum_zone_kalendae_gauge_box_data	util.py	/^    arcum_zone_kalendae_gauge_box_data = {$/;"	v	class:util
 arcum_zone_liber_gauge_box_data	util.py	/^    arcum_zone_liber_gauge_box_data = {$/;"	v	class:util
 arcumgame	arcumgame.py	/^class arcumgame:$/;"	c	inherits:
+args	main.py	/^    args = sys.argv$/;"	v
 auto_refresh	game.py	/^    def auto_refresh(self):$/;"	m	class:game	access:public
 auto_reserve	reserve_crate.py	/^class auto_reserve:$/;"	c	inherits:
 available	click_summon.py	/^    available = 1$/;"	v	class:summon_state
@@ -298,7 +340,17 @@ boss_list	arcumgame.py	/^    boss_list = [ag.zoneeletio_fire_boss_eletion_glider
 btb_event_main_url	util.py	/^    btb_event_main_url = "https:\/\/game.granbluefantasy.jp\/#event\/advent"$/;"	v	class:util
 btb_extreme_all	rise_of_the_beasts.py	/^class btb_extreme_all:$/;"	c	inherits:
 btb_extreme_baihu	util.py	/^    btb_extreme_baihu = {$/;"	v	class:util
+btb_extreme_plus	rise_of_the_beasts.py	/^class btb_extreme_plus(game):$/;"	c	inherits:game
 btb_extreme_plus	util.py	/^    btb_extreme_plus = {$/;"	v	class:util
+btb_extreme_plus_all	rise_of_the_beasts.py	/^class btb_extreme_plus_all:$/;"	c	inherits:
+btb_extreme_plus_earth	rise_of_the_beasts.py	/^class btb_extreme_plus_earth(btb_extreme_plus):$/;"	c	inherits:btb_extreme_plus
+btb_extreme_plus_earth	util.py	/^    btb_extreme_plus_earth = {$/;"	v	class:util
+btb_extreme_plus_fire	rise_of_the_beasts.py	/^class btb_extreme_plus_fire(btb_extreme_plus):$/;"	c	inherits:btb_extreme_plus
+btb_extreme_plus_fire	util.py	/^    btb_extreme_plus_fire = {$/;"	v	class:util
+btb_extreme_plus_water	rise_of_the_beasts.py	/^class btb_extreme_plus_water(btb_extreme_plus):$/;"	c	inherits:btb_extreme_plus
+btb_extreme_plus_water	util.py	/^    btb_extreme_plus_water = {$/;"	v	class:util
+btb_extreme_plus_wind	rise_of_the_beasts.py	/^class btb_extreme_plus_wind(btb_extreme_plus):$/;"	c	inherits:btb_extreme_plus
+btb_extreme_plus_wind	util.py	/^    btb_extreme_plus_wind = {$/;"	v	class:util
 btb_extreme_qinglong	util.py	/^    btb_extreme_qinglong = {$/;"	v	class:util
 btb_extreme_xuanwu	util.py	/^    btb_extreme_xuanwu = {$/;"	v	class:util
 btb_extreme_zhuque	util.py	/^    btb_extreme_zhuque = {$/;"	v	class:util
@@ -359,10 +411,12 @@ click_semi	mouse.py	/^    def click_semi(self):$/;"	m	class:Mouse	access:public
 click_skip	mouse.py	/^    def click_skip(self):$/;"	m	class:Mouse	access:public
 close_skill_panel	skill_clicker.py	/^    def close_skill_panel(self):$/;"	m	class:character	access:public
 close_summon_panel	click_summon.py	/^    def close_summon_panel(self):$/;"	m	class:battle_summons	access:public
+common_game	six_start_liejin.py	/^class common_game(game):$/;"	c	inherits:game
 connect_chrome	game.py	/^    def connect_chrome(self):$/;"	m	class:game	access:public
 crucible_data	event.py	/^    crucible_data = util.exo_ifrit_crucible$/;"	v	class:exo_ifrit_crucible
 crucible_data_120	event.py	/^    crucible_data_120 = util.exo_corow_crucible_120$/;"	v	class:exo_corow_crucible
 crucible_data_150	event.py	/^    crucible_data_150 = util.exo_corow_crucible_150$/;"	v	class:exo_corow_crucible
+daily_missions	daily_missions.py	/^class daily_missions:$/;"	c	inherits:
 data	HL2.py	/^    data = util.hl2_avatar_impossible$/;"	v	class:avatar_impossible
 data	HL2.py	/^    data = util.hl2_europa_impossible$/;"	v	class:europa_impossible
 data	HL2.py	/^    data = util.hl2_godsworn_alexxiel_impossible$/;"	v	class:godsworn_alexiel_impossible
@@ -433,6 +487,10 @@ error_page_data	util.py	/^    error_page_data = {$/;"	v	class:util
 europa_impossible	HL2.py	/^class europa_impossible(HL2):$/;"	c	inherits:HL2
 europa_impossible	HL3.py	/^class europa_impossible(hl3):$/;"	c	inherits:hl3
 event_common	event.py	/^class event_common(game):$/;"	c	inherits:game
+event_falseto_in_the_autumn_gray	event.py	/^class event_falseto_in_the_autumn_gray(event_common):$/;"	c	inherits:event_common
+event_falseto_in_the_autumn_gray_solo_extreme	util.py	/^    event_falseto_in_the_autumn_gray_solo_extreme = {$/;"	v	class:util
+event_falseto_in_the_autumn_gray_solo_mannic	util.py	/^    event_falseto_in_the_autumn_gray_solo_mannic = {$/;"	v	class:util
+event_falseto_in_the_autumn_gray_solo_very_hard	util.py	/^    event_falseto_in_the_autumn_gray_solo_very_hard = {$/;"	v	class:util
 event_paliulipararaiha_raid_extreme_data	util.py	/^    event_paliulipararaiha_raid_extreme_data = {$/;"	v	class:util
 event_paliulipararaiha_solo_extreme_data	util.py	/^    event_paliulipararaiha_solo_extreme_data = {$/;"	v	class:util
 event_select	event.py	/^class event_select:$/;"	c	inherits:
@@ -443,6 +501,7 @@ exit	arcumgame.py	/^    def exit(self):$/;"	m	class:arcum_select	access:public
 exit	free_quest_list.py	/^    def exit(self):$/;"	m	class:free_quest_list_select	access:public
 exit	shiny_slime_weekend.py	/^    def exit(self):$/;"	m	class:slime_select	access:public
 exit	six_dragon.py	/^    def exit(self):$/;"	m	class:six_dragon_select	access:public
+exit	six_start_liejin.py	/^    def exit(self):$/;"	m	class:liejin_select	access:public
 exo_corow_crucible	event.py	/^class exo_corow_crucible(event_common):$/;"	c	inherits:event_common
 exo_corow_crucible_120	util.py	/^    exo_corow_crucible_120 = {$/;"	v	class:util
 exo_corow_crucible_150	util.py	/^    exo_corow_crucible_150 = {$/;"	v	class:util
@@ -452,13 +511,25 @@ exo_ifrit_crucible	event.py	/^class exo_ifrit_crucible(event_common):$/;"	c	inhe
 exo_ifrit_crucible	util.py	/^    exo_ifrit_crucible = {$/;"	v	class:util
 exo_ifrit_extreme	util.py	/^    exo_ifrit_extreme = {$/;"	v	class:util
 exo_ifrit_veryhard	util.py	/^    exo_ifrit_veryhard = {$/;"	v	class:util
+extreme_all	primarch_trials.py	/^class extreme_all(game_all):$/;"	c	inherits:game_all
 extreme_baihu	rise_of_the_beasts.py	/^class extreme_baihu(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
 extreme_battle_of_the_beasts	rise_of_the_beasts.py	/^class extreme_battle_of_the_beasts(game):$/;"	c	inherits:game
 extreme_data	event.py	/^    extreme_data = util.Detective_Barawa_extreme$/;"	v	class:detective_barawa
 extreme_data	event.py	/^    extreme_data = util.exo_corow_extreme$/;"	v	class:exo_corow_crucible
 extreme_data	event.py	/^    extreme_data = util.exo_ifrit_extreme$/;"	v	class:exo_ifrit_crucible
 extreme_data	event.py	/^    extreme_data = util.hope_from_a_snow_drop_extreme$/;"	v	class:hope_from_a_snow_drop
+extreme_earth	primarch_trials.py	/^class extreme_earth(extreme_game):$/;"	c	inherits:extreme_game
+extreme_fire	primarch_trials.py	/^class extreme_fire(extreme_game):$/;"	c	inherits:extreme_game
+extreme_game	primarch_trials.py	/^class extreme_game(primarch_common):$/;"	c	inherits:primarch_common
+extreme_plus_all	primarch_trials.py	/^class extreme_plus_all(game_all):$/;"	c	inherits:game_all
+extreme_plus_earth	primarch_trials.py	/^class extreme_plus_earth(extreme_plus_game):$/;"	c	inherits:extreme_plus_game
+extreme_plus_fire	primarch_trials.py	/^class extreme_plus_fire(extreme_plus_game):$/;"	c	inherits:extreme_plus_game
+extreme_plus_game	primarch_trials.py	/^class extreme_plus_game(primarch_common):$/;"	c	inherits:primarch_common
+extreme_plus_water	primarch_trials.py	/^class extreme_plus_water(extreme_plus_game):$/;"	c	inherits:extreme_plus_game
+extreme_plus_wind	primarch_trials.py	/^class extreme_plus_wind(extreme_plus_game):$/;"	c	inherits:extreme_plus_game
 extreme_qinglong	rise_of_the_beasts.py	/^class extreme_qinglong(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
+extreme_water	primarch_trials.py	/^class extreme_water(extreme_game):$/;"	c	inherits:extreme_game
+extreme_wind	primarch_trials.py	/^class extreme_wind(extreme_game):$/;"	c	inherits:extreme_game
 extreme_xuanwu	rise_of_the_beasts.py	/^class extreme_xuanwu(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
 extreme_zhuque	rise_of_the_beasts.py	/^class extreme_zhuque(extreme_battle_of_the_beasts):$/;"	c	inherits:extreme_battle_of_the_beasts
 fate_select	read_fate.py	/^class fate_select():$/;"	c	inherits:
@@ -470,7 +541,10 @@ forbidden	skill_clicker.py	/^    forbidden = 3$/;"	v	class:skill_state
 four_start	event.py	/^    def four_start(self):$/;"	m	class:dread_barrage	access:public
 free_quest_list_select	free_quest_list.py	/^class free_quest_list_select:$/;"	c	inherits:
 free_quest_list_twin_element_showndowns	util.py	/^    free_quest_list_twin_element_showndowns = {$/;"	v	class:util
+full_bt_by	click_summon.py	/^    full_bt_by = util.screen_label_battle_full['by']$/;"	v	class:battle_summons
+full_bt_classname	click_summon.py	/^    full_bt_classname = util.screen_label_battle_full['element']$/;"	v	class:battle_summons
 game	game.py	/^class game:$/;"	c	inherits:
+game_all	primarch_trials.py	/^class game_all:$/;"	c	inherits:
 game_data	event.py	/^    game_data = data_four$/;"	v	class:dread_barrage
 game_data	event.py	/^    game_data = extreme_data$/;"	v	class:exo_corow_crucible
 game_data	event.py	/^    game_data = extreme_data$/;"	v	class:exo_ifrit_crucible
@@ -482,11 +556,31 @@ game_data	event.py	/^    game_data = raids_abramelin_impossible_data$/;"	v	class
 game_data	event.py	/^    game_data = solo_extreme_data$/;"	v	class:divine_generals
 game_data	event.py	/^    game_data = solo_extreme_data$/;"	v	class:dreamers_mirecle
 game_data	event.py	/^    game_data = tuna_lover_extreme_data$/;"	v	class:ultimate_showndowns
+game_data	event.py	/^    game_data = {$/;"	v	class:our_style_our_substance
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_earth$/;"	v	class:extreme_earth
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_fire$/;"	v	class:extreme_fire
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_plus_earth$/;"	v	class:extreme_plus_earth
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_plus_fire$/;"	v	class:extreme_plus_fire
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_plus_water$/;"	v	class:extreme_plus_water
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_plus_wind$/;"	v	class:extreme_plus_wind
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_water$/;"	v	class:extreme_water
+game_data	primarch_trials.py	/^    game_data = util.primarch_trials_extreme_wind$/;"	v	class:extreme_wind
+game_data	primarch_trials.py	/^    game_data = util.standard_trials_earth$/;"	v	class:standard_earth
+game_data	primarch_trials.py	/^    game_data = util.standard_trials_fire$/;"	v	class:standard_fire
+game_data	primarch_trials.py	/^    game_data = util.standard_trials_water$/;"	v	class:standard_water
+game_data	primarch_trials.py	/^    game_data = util.standard_trials_wind$/;"	v	class:standard_wind
+game_data	primarch_trials.py	/^    game_data = {$/;"	v	class:primarch_common
+game_data	rise_of_the_beasts.py	/^    game_data = util.btb_extreme_plus_earth$/;"	v	class:btb_extreme_plus_earth
+game_data	rise_of_the_beasts.py	/^    game_data = util.btb_extreme_plus_fire$/;"	v	class:btb_extreme_plus_fire
+game_data	rise_of_the_beasts.py	/^    game_data = util.btb_extreme_plus_water$/;"	v	class:btb_extreme_plus_water
+game_data	rise_of_the_beasts.py	/^    game_data = util.btb_extreme_plus_wind$/;"	v	class:btb_extreme_plus_wind
 game_data	rise_of_the_beasts.py	/^    game_data = util.btb_manic_baihu$/;"	v	class:manic_baihu
 game_data	rise_of_the_beasts.py	/^    game_data = util.btb_manic_qinglong$/;"	v	class:manic_qinglong
 game_data	rise_of_the_beasts.py	/^    game_data = util.btb_manic_xuanwu$/;"	v	class:manic_xuanwu
 game_data	rise_of_the_beasts.py	/^    game_data = util.btb_manic_zhuque$/;"	v	class:manic_zhuque
+game_data	rise_of_the_beasts.py	/^    game_data = {$/;"	v	class:btb_extreme_plus
 game_data	rise_of_the_beasts.py	/^    game_data = {$/;"	v	class:btb_manic
+game_list	primarch_trials.py	/^    game_list = []$/;"	v	class:game_all
 generate_png	play_transitions.py	/^    def generate_png(self):$/;"	m	class:arcum_machine	access:public
 get_battle_turn	game.py	/^    def get_battle_turn(self):$/;"	m	class:game	access:public
 get_brief_element	click_summon.py	/^    def get_brief_element(self):$/;"	m	class:summon	access:public
@@ -548,6 +642,8 @@ impossible_data	event.py	/^    impossible_data = util.tyras_blizza_misadventure_
 index1	test_3.py	/^    index1 = i % 10$/;"	v
 index2	test_3.py	/^    index2 = (i % 100 - i % 100 % 10) \/ 10$/;"	v
 index3	test_3.py	/^    index3 = (i - i % 100) \/ 100$/;"	v
+init_repeat_times	primarch_trials.py	/^    def init_repeat_times(self, times):$/;"	m	class:primarch_common	access:public
+init_repeat_times	rise_of_the_beasts.py	/^    def init_repeat_times(self, times):$/;"	m	class:btb_extreme_plus	access:public
 init_repeat_times	rise_of_the_beasts.py	/^    def init_repeat_times(self, times=0):$/;"	m	class:btb_manic	access:public
 init_repeat_times	rise_of_the_beasts.py	/^    def init_repeat_times(self, times=0):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 is_battle_page	stage.py	/^    def is_battle_page(self, waittime=5):$/;"	m	class:checker	access:public
@@ -558,7 +654,10 @@ is_goal_page	stage.py	/^    def is_goal_page(self, waittime=5):$/;"	m	class:chec
 is_loading_page	loading_page_locator.py	/^    def is_loading_page(self):$/;"	m	class:lpl	access:public
 is_loading_page	stage.py	/^    def is_loading_page(self):$/;"	m	class:checker	access:public
 is_party_all_dead	stage.py	/^    def is_party_all_dead(self):$/;"	m	class:checker	access:public
+jobargs	jobargs.py	/^class jobargs:$/;"	c	inherits:
 jobselect	jobselect.py	/^class jobselect:$/;"	c	inherits:
+joculator_boss_water_grani_militis	arcumgame.py	/^    class joculator_boss_water_grani_militis(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+joculator_boss_water_grani_militis	util.py	/^    joculator_boss_water_grani_militis = {$/;"	v	class:util
 joculator_dark_3_Dreadful_scourge	arcumgame.py	/^    class joculator_dark_3_Dreadful_scourge(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 joculator_dark_3_Dreadful_scourge	util.py	/^    joculator_dark_3_Dreadful_scourge = {$/;"	v	class:util
 joculator_dark_5_bloody_soothsayer	arcumgame.py	/^    class joculator_dark_5_bloody_soothsayer(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
@@ -578,7 +677,9 @@ joculator_water_5_glacial_hellbeast	util.py	/^    joculator_water_5_glacial_hell
 joculator_water_xeno_cocytus_militis	arcumgame.py	/^    class joculator_water_xeno_cocytus_militis(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 joculator_water_xeno_cocytus_militis	util.py	/^    joculator_water_xeno_cocytus_militis = {$/;"	v	class:util
 last_turn_locator	loading_page_locator.py	/^class last_turn_locator:$/;"	c	inherits:
-liber_boss_wind_garuda_militis	util.py	/^    liber_boss_wind_garuda_militis = {$/;"	v	class:util
+liejin_select	six_start_liejin.py	/^class liejin_select:$/;"	c	inherits:
+lindwurm_data	util.py	/^    lindwurm_data = {$/;"	v	class:util
+lindwurm_game	lindwurm.py	/^class lindwurm_game(game):$/;"	c	inherits:game
 loader	stage.py	/^    def loader(self, url: str, flag_by: By, flag_ele: str, retry_times=3):$/;"	m	class:stage	access:public
 loading_page_element	util.py	/^    loading_page_element = {$/;"	v	class:util
 loading_page_refresh	stage.py	/^    def loading_page_refresh(self, waittime=10):$/;"	m	class:stage	access:public
@@ -647,13 +748,17 @@ mundus_wind_v2de_morrigna_militis	util.py	/^    mundus_wind_v2de_morrigna_militi
 my_print	static_print.py	/^    def my_print(self):$/;"	m	class:data_manger	access:public
 net_work_error_data	util.py	/^    net_work_error_data = {$/;"	v	class:util
 nightmare_data	event.py	/^    nightmare_data = util.Detective_solo_Nightmare$/;"	v	class:detective_barawa
+omen_of_the_broken_skies	six_start_liejin.py	/^class omen_of_the_broken_skies(common_game):$/;"	c	inherits:common_game
+omen_of_the_broken_skies	util.py	/^    omen_of_the_broken_skies = {$/;"	v	class:util
 one_star	event.py	/^    def one_star(self):$/;"	m	class:dread_barrage	access:public
 open_skill_panel	skill_clicker.py	/^    def open_skill_panel(self):$/;"	m	class:character	access:public
 open_summon_panel	click_summon.py	/^    def open_summon_panel(self):$/;"	m	class:battle_summons	access:public
+our_style_our_substance	event.py	/^class our_style_our_substance(event_common):$/;"	c	inherits:event_common
 paliuli	event.py	/^class paliuli(event_common):$/;"	c	inherits:event_common
 party	skill_clicker.py	/^class party:$/;"	c	inherits:
 phrase_str	turn_counter.py	/^    phrase_str = 'num-turn'$/;"	v	class:turn_counter
 play	HL2.py	/^    def play(self):$/;"	m	class:HL2	access:public
+play	HL2.py	/^    def play(self):$/;"	m	class:play_all	access:public
 play	HL3.py	/^    def play(self):$/;"	m	class:hl3	access:public
 play	arcum_boss.py	/^    def play(self):$/;"	m	class:arcum_boss	access:public
 play	arcum_defender.py	/^    def play(self):$/;"	m	class:arcum_defender	access:public
@@ -662,14 +767,17 @@ play	arcumgame.py	/^        def play(self):$/;"	m	class:arcumgame.zoneeletio_fir
 play	arcumgame.py	/^    def play(self):$/;"	m	class:all_daily_boss	access:public
 play	backup_request_game.py	/^    def play(self):$/;"	m	class:backup_request_game	access:public
 play	campaign_exclusive_quest.py	/^    def play(self):$/;"	m	class:campaign	access:public
+play	daily_missions.py	/^    def play(self):$/;"	m	class:daily_missions	access:public
 play	event.py	/^    def play(self):$/;"	m	class:detective_barawa	access:public
 play	event.py	/^    def play(self):$/;"	m	class:divine_generals	access:public
 play	event.py	/^    def play(self):$/;"	m	class:dread_barrage	access:public
 play	event.py	/^    def play(self):$/;"	m	class:dreamers_mirecle	access:public
+play	event.py	/^    def play(self):$/;"	m	class:event_falseto_in_the_autumn_gray	access:public
 play	event.py	/^    def play(self):$/;"	m	class:exo_corow_crucible	access:public
 play	event.py	/^    def play(self):$/;"	m	class:exo_ifrit_crucible	access:public
 play	event.py	/^    def play(self):$/;"	m	class:heart_of_the_sun	access:public
 play	event.py	/^    def play(self):$/;"	m	class:hope_from_a_snow_drop	access:public
+play	event.py	/^    def play(self):$/;"	m	class:our_style_our_substance	access:public
 play	event.py	/^    def play(self):$/;"	m	class:paliuli	access:public
 play	event.py	/^    def play(self):$/;"	m	class:tyras_bizarre_misadventure	access:public
 play	event.py	/^    def play(self):$/;"	m	class:ultimate_showndowns	access:public
@@ -677,18 +785,29 @@ play	free_quest_list.py	/^    def play(self):$/;"	m	class:two_star_twin_elements
 play	free_quest_list.py	/^    def play(self):$/;"	m	class:world_treasure_quest	access:public
 play	game.py	/^    def play(self):$/;"	m	class:game	access:public
 play	java/ArcumBoss.java	/^    public void play() {$/;"	m	class:ArcumBoss	access:public
+play	lindwurm.py	/^    def play(self):$/;"	m	class:all_play	access:public
+play	lindwurm.py	/^    def play(self):$/;"	m	class:lindwurm_game	access:public
+play	primarch_trials.py	/^    def play(self):$/;"	m	class:game_all	access:public
+play	primarch_trials.py	/^    def play(self):$/;"	m	class:primarch_common	access:public
 play	read_fate.py	/^    def play(self):$/;"	m	class:read_fate	access:public
 play	revenant_weapons_materials.py	/^    def play(self):$/;"	m	class:antiquaruan_troubles	access:public
 play	revenant_weapons_materials.py	/^    def play(self):$/;"	m	class:miscongeniality	access:public
 play	revenant_weapons_materials.py	/^    def play(self):$/;"	m	class:scattered_cargo	access:public
+play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:btb_extreme_all	access:public
+play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:btb_extreme_plus	access:public
+play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:btb_extreme_plus_all	access:public
 play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:btb_manic	access:public
 play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:btb_manic_all	access:public
 play	rise_of_the_beasts.py	/^    def play(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 play	scales_of_dominion.py	/^    def play(self):$/;"	m	class:scales_of_dominion	access:public
 play	shiny_slime_weekend.py	/^    def play(self):$/;"	m	class:shiny_slime_week	access:public
 play	shiny_slime_weekend.py	/^    def play(self):$/;"	m	class:shiny_slime_weekend	access:public
+play	six_dragon.py	/^    def play(self):$/;"	m	class:all_play	access:public
 play	six_dragon.py	/^    def play(self):$/;"	m	class:six_dragon	access:public
+play	six_start_liejin.py	/^    def play(self):$/;"	m	class:all_play	access:public
+play	six_start_liejin.py	/^    def play(self):$/;"	m	class:common_game	access:public
 play	unite_and_fight.py	/^    def play(self):$/;"	m	class:uf_game	access:public
+play_all	HL2.py	/^class play_all:$/;"	c	inherits:
 play_box	arcum_replicard.py	/^    def play_box(self):$/;"	m	class:replicard_common	access:public
 play_crucible	event.py	/^    def play_crucible(self):$/;"	m	class:exo_ifrit_crucible	access:public
 play_crucible_120	event.py	/^    def play_crucible_120(self):$/;"	m	class:exo_corow_crucible	access:public
@@ -702,6 +821,7 @@ play_gauge	arcum_replicard.py	/^    def play_gauge(self):$/;"	m	class:replicard_
 play_gauge_enemy	arcum_replicard.py	/^    def play_gauge_enemy(self):$/;"	m	class:replicard_common	access:public
 play_impossible	event.py	/^    def play_impossible(self):$/;"	m	class:detective_barawa	access:public
 play_impossible	event.py	/^    def play_impossible(self):$/;"	m	class:hope_from_a_snow_drop	access:public
+play_impossible	event.py	/^    def play_impossible(self):$/;"	m	class:our_style_our_substance	access:public
 play_impossible	rise_of_the_beasts.py	/^    def play_impossible(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 play_impossible_abramelin	event.py	/^    def play_impossible_abramelin(self):$/;"	m	class:heart_of_the_sun	access:public
 play_impossible_phoniex	event.py	/^    def play_impossible_phoniex(self):$/;"	m	class:heart_of_the_sun	access:public
@@ -709,15 +829,20 @@ play_impossible_tiamat	event.py	/^    def play_impossible_tiamat(self):$/;"	m	cl
 play_nightmare	event.py	/^    def play_nightmare(self):$/;"	m	class:detective_barawa	access:public
 play_pround_cycle	event.py	/^    def play_pround_cycle(self):$/;"	m	class:heart_of_the_sun	access:public
 play_pround_turbulent	event.py	/^    def play_pround_turbulent(self):$/;"	m	class:heart_of_the_sun	access:public
+play_raid_extreme	event.py	/^    def play_raid_extreme(self):$/;"	m	class:our_style_our_substance	access:public
 play_raid_extreme	event.py	/^    def play_raid_extreme(self):$/;"	m	class:paliuli	access:public
 play_rapid_extreme	event.py	/^    def play_rapid_extreme(self):$/;"	m	class:divine_generals	access:public
 play_salmun_extreme	event.py	/^    def play_salmun_extreme(self):$/;"	m	class:ultimate_showndowns	access:public
 play_salmun_golem	event.py	/^    def play_salmun_golem(self):$/;"	m	class:ultimate_showndowns	access:public
 play_solo_extreme	event.py	/^    def play_solo_extreme(self):$/;"	m	class:divine_generals	access:public
 play_solo_extreme	event.py	/^    def play_solo_extreme(self):$/;"	m	class:dreamers_mirecle	access:public
+play_solo_extreme	event.py	/^    def play_solo_extreme(self):$/;"	m	class:event_falseto_in_the_autumn_gray	access:public
+play_solo_extreme	event.py	/^    def play_solo_extreme(self):$/;"	m	class:our_style_our_substance	access:public
 play_solo_extreme	event.py	/^    def play_solo_extreme(self):$/;"	m	class:paliuli	access:public
 play_solo_impossible	event.py	/^    def play_solo_impossible(self):$/;"	m	class:dreamers_mirecle	access:public
+play_solo_mannic	event.py	/^    def play_solo_mannic(self):$/;"	m	class:event_falseto_in_the_autumn_gray	access:public
 play_solo_veryhard	event.py	/^    def play_solo_veryhard(self):$/;"	m	class:dreamers_mirecle	access:public
+play_solo_veryhard	event.py	/^    def play_solo_veryhard(self):$/;"	m	class:event_falseto_in_the_autumn_gray	access:public
 play_tuna_extreme	event.py	/^    def play_tuna_extreme(self):$/;"	m	class:ultimate_showndowns	access:public
 play_tuna_golem	event.py	/^    def play_tuna_golem(self):$/;"	m	class:ultimate_showndowns	access:public
 play_veryhard	event.py	/^    def play_veryhard(self):$/;"	m	class:detective_barawa	access:public
@@ -725,6 +850,16 @@ play_veryhard	event.py	/^    def play_veryhard(self):$/;"	m	class:exo_corow_cruc
 play_veryhard	event.py	/^    def play_veryhard(self):$/;"	m	class:exo_ifrit_crucible	access:public
 play_veryhard	event.py	/^    def play_veryhard(self):$/;"	m	class:hope_from_a_snow_drop	access:public
 pride_of_the_ascendant	free_quest_list.py	/^class pride_of_the_ascendant(game):$/;"	c	inherits:game
+primarch_common	primarch_trials.py	/^class primarch_common(game):$/;"	c	inherits:game
+primarch_select	primarch_trials.py	/^class primarch_select:$/;"	c	inherits:
+primarch_trials_extreme_earth	util.py	/^    primarch_trials_extreme_earth = {$/;"	v	class:util
+primarch_trials_extreme_fire	util.py	/^    primarch_trials_extreme_fire = {$/;"	v	class:util
+primarch_trials_extreme_plus_earth	util.py	/^    primarch_trials_extreme_plus_earth = {$/;"	v	class:util
+primarch_trials_extreme_plus_fire	util.py	/^    primarch_trials_extreme_plus_fire = {$/;"	v	class:util
+primarch_trials_extreme_plus_water	util.py	/^    primarch_trials_extreme_plus_water = {$/;"	v	class:util
+primarch_trials_extreme_plus_wind	util.py	/^    primarch_trials_extreme_plus_wind = {$/;"	v	class:util
+primarch_trials_extreme_water	util.py	/^    primarch_trials_extreme_water = {$/;"	v	class:util
+primarch_trials_extreme_wind	util.py	/^    primarch_trials_extreme_wind = {$/;"	v	class:util
 print	static_print.py	/^    def print(self):$/;"	m	class:static_print	access:public
 print_info	skill_clicker.py	/^    def print_info(self):$/;"	m	class:party	access:public
 pround_cycle_of_torment	event.py	/^    pround_cycle_of_torment = util.heart_of_the_sun_cycle_of_torment_data$/;"	v	class:heart_of_the_sun
@@ -761,6 +896,7 @@ rose_queen_impossible	HL2.py	/^class rose_queen_impossible(HL2):$/;"	c	inherits:
 rose_queen_impossible	HL3.py	/^class rose_queen_impossible(hl3):$/;"	c	inherits:hl3
 run	alert.py	/^    def run(self, msg=None, title=None):$/;"	m	class:alert	access:public
 run	java/Alert.java	/^    public void run() {$/;"	m	class:Alert	access:public
+run	jobargs.py	/^    def run(self):$/;"	m	class:jobargs	access:public
 run	reserve_crate.py	/^    def run(self):$/;"	m	class:auto_reserve	access:public
 run	reserve_crate.py	/^    def run(self):$/;"	m	class:clear_no_limit_summon	access:public
 run	reserve_crate.py	/^    def run(self):$/;"	m	class:clear_no_limit_weapon	access:public
@@ -805,6 +941,10 @@ selfrandom	mouse.py	/^    def selfrandom(self, value, dert):$/;"	m	class:Mouse	a
 set_data	static_print.py	/^    def set_data(self, data):$/;"	m	class:data	access:public
 set_manual_skill_list	skill_clicker.py	/^    def set_manual_skill_list(self,  lst=[[0, [0, 0, 0]], [0, [0]]]):$/;"	m	class:party	access:public
 set_name	static_print.py	/^    def set_name(self, name):$/;"	m	class:data	access:public
+set_play_all_flag	primarch_trials.py	/^    def set_play_all_flag(self):$/;"	m	class:primarch_common	access:public
+set_play_all_flag	rise_of_the_beasts.py	/^    def set_play_all_flag(self):$/;"	m	class:btb_extreme_plus	access:public
+set_play_all_flag	rise_of_the_beasts.py	/^    def set_play_all_flag(self):$/;"	m	class:btb_manic	access:public
+set_play_all_flag	rise_of_the_beasts.py	/^    def set_play_all_flag(self):$/;"	m	class:extreme_battle_of_the_beasts	access:public
 set_use_all_summons_flag	click_summon.py	/^    def set_use_all_summons_flag(self, flag: bool):$/;"	m	class:battle_summons	access:public
 shiny_slime_week	shiny_slime_weekend.py	/^class shiny_slime_week(game):$/;"	c	inherits:game
 shiny_slime_week	util.py	/^    shiny_slime_week = {'url': 'https:\/\/game.granbluefantasy.jp\/#quest\/supporter\/400181\/4',$/;"	v	class:util
@@ -837,12 +977,25 @@ solo_battle_normal	unite_and_fight.py	/^class solo_battle_normal(uf_game):$/;"	c
 solo_battle_veryhard	unite_and_fight.py	/^class solo_battle_veryhard(uf_game):$/;"	c	inherits:uf_game
 solo_extreme_data	event.py	/^    solo_extreme_data = util.divine_generals_solo_extreme$/;"	v	class:divine_generals
 solo_extreme_data	event.py	/^    solo_extreme_data = util.dreamers_mirecle_solo_extreme$/;"	v	class:dreamers_mirecle
+solo_extreme_data	event.py	/^    solo_extreme_data = util.event_falseto_in_the_autumn_gray_solo_extreme$/;"	v	class:event_falseto_in_the_autumn_gray
 solo_extreme_data	event.py	/^    solo_extreme_data = util.event_paliulipararaiha_solo_extreme_data$/;"	v	class:paliuli
 solo_impossible_data	event.py	/^    solo_impossible_data = util.dreamers_mirecle_solo_impossible$/;"	v	class:dreamers_mirecle
+solo_mannic	event.py	/^    solo_mannic = util.event_falseto_in_the_autumn_gray_solo_mannic$/;"	v	class:event_falseto_in_the_autumn_gray
 solo_veryhard_data	event.py	/^    solo_veryhard_data = util.dreamers_mirecle_solo_very_hard$/;"	v	class:dreamers_mirecle
+solo_veryhard_data	event.py	/^    solo_veryhard_data = util.event_falseto_in_the_autumn_gray_solo_very_hard$/;"	v	class:event_falseto_in_the_autumn_gray
 sound	alert.py	/^    def sound(self):$/;"	m	class:alert	access:public
 sound	java/Alert.java	/^    public void sound() {$/;"	m	class:Alert	access:public
 stage	stage.py	/^class stage:$/;"	c	inherits:
+standard_all	primarch_trials.py	/^class standard_all(game_all):$/;"	c	inherits:game_all
+standard_earth	primarch_trials.py	/^class standard_earth(standard_game):$/;"	c	inherits:standard_game
+standard_fire	primarch_trials.py	/^class standard_fire(standard_game):$/;"	c	inherits:standard_game
+standard_game	primarch_trials.py	/^class standard_game(primarch_common):$/;"	c	inherits:primarch_common
+standard_trials_earth	util.py	/^    standard_trials_earth = {$/;"	v	class:util
+standard_trials_fire	util.py	/^    standard_trials_fire = {$/;"	v	class:util
+standard_trials_water	util.py	/^    standard_trials_water = {$/;"	v	class:util
+standard_trials_wind	util.py	/^    standard_trials_wind = {$/;"	v	class:util
+standard_water	primarch_trials.py	/^class standard_water(standard_game):$/;"	c	inherits:standard_game
+standard_wind	primarch_trials.py	/^class standard_wind(standard_game):$/;"	c	inherits:standard_game
 start	loading_page_locator.py	/^    def start(self):$/;"	m	class:battle_final_next_bt_locator	access:public
 start	loading_page_locator.py	/^    def start(self):$/;"	m	class:goal_page_locator	access:public
 start	loading_page_locator.py	/^    def start(self):$/;"	m	class:last_turn_locator	access:public
@@ -856,9 +1009,12 @@ stp	static_print.py	/^stp = static_print(dm)$/;"	v
 summon	click_summon.py	/^class summon:$/;"	c	inherits:
 summon_state	click_summon.py	/^class summon_state(Enum):$/;"	c	inherits:Enum
 temp	test_3.py	/^temp = []$/;"	v
+the_peacemakers_wings	six_start_liejin.py	/^class the_peacemakers_wings(common_game):$/;"	c	inherits:common_game
+the_peacemakers_wings	util.py	/^    the_peacemakers_wings = {$/;"	v	class:util
 three_start	event.py	/^    def three_start(self):$/;"	m	class:dread_barrage	access:public
 three_times_play	HL2.py	/^    def three_times_play(self):$/;"	m	class:HL2	access:public
 three_times_play	HL3.py	/^    def three_times_play(self):$/;"	m	class:hl3	access:public
+three_times_play	lindwurm.py	/^    def three_times_play(self):$/;"	m	class:lindwurm_game	access:public
 timer	timer.py	/^class timer:$/;"	c	inherits:
 tuna_golem_data	event.py	/^    tuna_golem_data = util.tuna_golem_data$/;"	v	class:ultimate_showndowns
 tuna_golem_data	util.py	/^    tuna_golem_data = {$/;"	v	class:util
@@ -904,6 +1060,7 @@ update	skill_clicker.py	/^    def update(self):$/;"	m	class:party	access:public
 update	turn_counter.py	/^    def update(self):$/;"	m	class:turn_counter	access:public
 update_state	skill_clicker.py	/^    def update_state(self):$/;"	m	class:skill	access:public
 url_home	util.py	/^    url_home = "https:\/\/game.granbluefantasy.jp\/#mypage"$/;"	v	class:util
+usage	jobargs.py	/^    def usage(self):$/;"	m	class:jobargs	access:public
 use	click_summon.py	/^    def use(self):$/;"	m	class:summon	access:public
 use	skill_clicker.py	/^    def use(self):$/;"	m	class:skill	access:public
 use_all_summon	click_summon.py	/^    def use_all_summon(self):$/;"	m	class:battle_summons	access:public
@@ -919,6 +1076,8 @@ veryhard_data	event.py	/^    veryhard_data = util.Detective_Barawa_very_hard$/;"
 veryhard_data	event.py	/^    veryhard_data = util.exo_corow_veryhard$/;"	v	class:exo_corow_crucible
 veryhard_data	event.py	/^    veryhard_data = util.exo_ifrit_veryhard$/;"	v	class:exo_ifrit_crucible
 veryhard_data	event.py	/^    veryhard_data = util.hope_from_a_snow_drop_veryhard$/;"	v	class:hope_from_a_snow_drop
+wings_of_terror_data	util.py	/^    wings_of_terror_data = {$/;"	v	class:util
+wings_of_terror_impossible	six_start_liejin.py	/^class wings_of_terror_impossible(common_game):$/;"	c	inherits:common_game
 world_treasure_quest	free_quest_list.py	/^class world_treasure_quest(game):$/;"	c	inherits:game
 zone_faym_boss_water_faymian_gun	arcumgame.py	/^    class zone_faym_boss_water_faymian_gun(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 zone_faym_boss_water_faymian_gun	util.py	/^    zone_faym_boss_water_faymian_gun = {$/;"	v	class:util
@@ -951,6 +1110,14 @@ zone_goliath_boss_water_goliath_triune	util.py	/^    zone_goliath_boss_water_gol
 zone_goliath_common	arcumgame.py	/^class zone_goliath_common(replicard_common):$/;"	c	inherits:replicard_common
 zone_goliath_dark_3_writhing_despair	arcumgame.py	/^    class zone_goliath_dark_3_writhing_despair(zone_goliath_common):$/;"	c	class:arcumgame	inherits:zone_goliath_common
 zone_goliath_dark_3_writhing_despair	util.py	/^    zone_goliath_dark_3_writhing_despair = {$/;"	v	class:util
+zone_goliath_dark_5_temptations_guide	arcumgame.py	/^    class zone_goliath_dark_5_temptations_guide(zone_goliath_common):$/;"	c	class:arcumgame	inherits:zone_goliath_common
+zone_goliath_dark_5_temptations_guide	util.py	/^    zone_goliath_dark_5_temptations_guide = {$/;"	v	class:util
+zone_goliath_earth_3_goliath_vanguard	arcumgame.py	/^    class zone_goliath_earth_3_goliath_vanguard(zone_goliath_common):$/;"	c	class:arcumgame	inherits:zone_goliath_common
+zone_goliath_earth_3_goliath_vanguard	util.py	/^    zone_goliath_earth_3_goliath_vanguard = {$/;"	v	class:util
+zone_goliath_earth_3_worlds_veil	arcumgame.py	/^    class zone_goliath_earth_3_worlds_veil(zone_goliath_common):$/;"	c	class:arcumgame	inherits:zone_goliath_common
+zone_goliath_earth_3_worlds_veil	util.py	/^    zone_goliath_earth_3_worlds_veil = {$/;"	v	class:util
+zone_goliath_earth_5_bloodstained_barbarian	arcumgame.py	/^    class zone_goliath_earth_5_bloodstained_barbarian (zone_goliath_common):$/;"	c	class:arcumgame	inherits:zone_goliath_common
+zone_goliath_earth_5_bloodstained_barbarian	util.py	/^    zone_goliath_earth_5_bloodstained_barbarian = {$/;"	v	class:util
 zone_goliath_earth_5_goliath_keeper	arcumgame.py	/^    class zone_goliath_earth_5_goliath_keeper(zone_goliath_common):$/;"	c	class:arcumgame	inherits:zone_goliath_common
 zone_goliath_earth_5_goliath_keeper	util.py	/^    zone_goliath_earth_5_goliath_keeper = {$/;"	v	class:util
 zone_goliath_vestige_of_truth	arcumgame.py	/^    class zone_goliath_vestige_of_truth(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
@@ -961,11 +1128,11 @@ zone_harbinger_light_3_dimensional_riftwalker	arcumgame.py	/^    class zone_harb
 zone_harbinger_light_3_dimensional_riftwalker	util.py	/^    zone_harbinger_light_3_dimensional_riftwalker = {$/;"	v	class:util
 zone_harbinger_light_5_harbinger_tyrant	arcumgame.py	/^    class zone_harbinger_light_5_harbinger_tyrant(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
 zone_harbinger_light_5_harbinger_tyrant	util.py	/^    zone_harbinger_light_5_harbinger_tyrant = {$/;"	v	class:util
-zone_harbinger_light_5_phantasmagoric_aberration	arcumgame.py	/^    class zone_harbinger_light_5_phantasmagoric_aberration(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
+zone_harbinger_light_5_phantasmagoric_aberration	arcumgame.py	/^            zone_harbinger_common):$/;"	c	class:arcumgame	inherits:             zone_harbinger_common
 zone_harbinger_light_5_phantasmagoric_aberration	util.py	/^    zone_harbinger_light_5_phantasmagoric_aberration = {$/;"	v	class:util
 zone_harbinger_light_de_jadegleam_dragonkin	arcumgame.py	/^    class zone_harbinger_light_de_jadegleam_dragonkin(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
 zone_harbinger_light_de_jadegleam_dragonkin	util.py	/^    zone_harbinger_light_de_jadegleam_dragonkin = {$/;"	v	class:util
-zone_harbinger_light_de_plus_jadegleam_dragonkin	arcumgame.py	/^    class zone_harbinger_light_de_plus_jadegleam_dragonkin(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
+zone_harbinger_light_de_plus_jadegleam_dragonkin	arcumgame.py	/^            zone_harbinger_common):$/;"	c	class:arcumgame	inherits:             zone_harbinger_common
 zone_harbinger_light_de_plus_jadegleam_dragonkin	util.py	/^    zone_harbinger_light_de_plus_jadegleam_dragonkin = zone_harbinger_light_de_jadegleam_dragonkin$/;"	v	class:util
 zone_harbinger_v2_wind_harbinger_stormer	arcumgame.py	/^    class zone_harbinger_v2_wind_harbinger_stormer(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 zone_harbinger_v2_wind_harbinger_stormer	util.py	/^    zone_harbinger_v2_wind_harbinger_stormer = {$/;"	v	class:util
@@ -983,21 +1150,30 @@ zone_harbinger_wind_5_vengeful_demigod	util.py	/^    zone_harbinger_wind_5_venge
 zone_harbinger_wind_5_vengful_demigod	arcumgame.py	/^    class zone_harbinger_wind_5_vengful_demigod(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 zone_harbinger_wind_de_majestic_goldenwing	arcumgame.py	/^    class zone_harbinger_wind_de_majestic_goldenwing(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
 zone_harbinger_wind_de_majestic_goldenwing	util.py	/^    zone_harbinger_wind_de_majestic_goldenwing = {$/;"	v	class:util
-zone_harbinger_wind_de_plus_majestic_goldenwing	arcumgame.py	/^    class zone_harbinger_wind_de_plus_majestic_goldenwing(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
+zone_harbinger_wind_de_plus_majestic_goldenwing	arcumgame.py	/^            zone_harbinger_common):$/;"	c	class:arcumgame	inherits:             zone_harbinger_common
 zone_harbinger_wind_de_plus_majestic_goldenwing	util.py	/^    zone_harbinger_wind_de_plus_majestic_goldenwing = {$/;"	v	class:util
-zone_harbinger_wind_de_plus_tempestuous_beauty	arcumgame.py	/^    class zone_harbinger_wind_de_plus_tempestuous_beauty(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
+zone_harbinger_wind_de_plus_tempestuous_beauty	arcumgame.py	/^            zone_harbinger_common):$/;"	c	class:arcumgame	inherits:             zone_harbinger_common
 zone_harbinger_wind_de_plus_tempestuous_beauty	util.py	/^    zone_harbinger_wind_de_plus_tempestuous_beauty = {$/;"	v	class:util
 zone_harbinger_wind_de_tempestuous_beauty	arcumgame.py	/^    class zone_harbinger_wind_de_tempestuous_beauty(zone_harbinger_common):$/;"	c	class:arcumgame	inherits:zone_harbinger_common
 zone_harbinger_wind_de_tempestuous_beauty	util.py	/^    zone_harbinger_wind_de_tempestuous_beauty = {$/;"	v	class:util
+zone_kalendae_bedeviled_plague	util.py	/^    zone_kalendae_bedeviled_plague = {$/;"	v	class:util
+zone_kalendae_scintllant_matter	arcumgame.py	/^    class zone_kalendae_scintllant_matter(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zone_kalendae_scintllant_matter	util.py	/^    zone_kalendae_scintllant_matter = {$/;"	v	class:util
 zone_kalendae_xeno_vohu_manah_militis	arcumgame.py	/^    class zone_kalendae_xeno_vohu_manah_militis(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 zone_kalendae_xeno_vohu_manah_militis	util.py	/^    zone_kalendae_xeno_vohu_manah_militis = {$/;"	v	class:util
+zone_liber_boss_wind_garuda_militis	arcumgame.py	/^    class zone_liber_boss_wind_garuda_militis(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zone_liber_boss_wind_garuda_militis	util.py	/^    zone_liber_boss_wind_garuda_militis = {$/;"	v	class:util
 zone_liber_common	arcumgame.py	/^class zone_liber_common(replicard_common):$/;"	c	inherits:replicard_common
+zone_liber_light_3_simpering_beast	arcumgame.py	/^    class zone_liber_light_3_simpering_beast(zone_liber_common):$/;"	c	class:arcumgame	inherits:zone_liber_common
+zone_liber_light_3_simpering_beast	util.py	/^    zone_liber_light_3_simpering_beast = {$/;"	v	class:util
 zone_liber_wind_3_beetle_of_damnation	arcumgame.py	/^    class zone_liber_wind_3_beetle_of_damnation(zone_liber_common):$/;"	c	class:arcumgame	inherits:zone_liber_common
 zone_liber_wind_3_beetle_of_damnation	util.py	/^    zone_liber_wind_3_beetle_of_damnation = {$/;"	v	class:util
 zone_liber_wind_5_ageless_guardian_beast	arcumgame.py	/^    class zone_liber_wind_5_ageless_guardian_beast(zone_liber_common):$/;"	c	class:arcumgame	inherits:zone_liber_common
 zone_liber_wind_5_ageless_guardian_beast	util.py	/^    zone_liber_wind_5_ageless_guardian_beast = {$/;"	v	class:util
 zone_liber_wind_5_mounted_toxophilite	arcumgame.py	/^    class zone_liber_wind_5_mounted_toxophilite(zone_liber_common):$/;"	c	class:arcumgame	inherits:zone_liber_common
 zone_liber_wind_5_mounted_toxophilite	util.py	/^    zone_liber_wind_5_mounted_toxophilite = {$/;"	v	class:util
+zone_liber_xeno_sagittatius_militis	arcumgame.py	/^    class zone_liber_xeno_sagittatius_militis(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
+zone_liber_xeno_sagittatius_militis	util.py	/^    zone_liber_xeno_sagittatius_militis = {$/;"	v	class:util
 zoneeletio_fire_3_blazing_everwing	arcumgame.py	/^    class zoneeletio_fire_3_blazing_everwing(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common
 zoneeletio_fire_3_blazing_everwing	util.py	/^    zoneeletio_fire_3_blazing_everwing = {$/;"	v	class:util
 zoneeletio_fire_3_rageborn_one	arcumgame.py	/^    class zoneeletio_fire_3_rageborn_one(replicard_common):$/;"	c	class:arcumgame	inherits:replicard_common

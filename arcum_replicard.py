@@ -72,7 +72,8 @@ class replicard_common(game):
             self.mouse.click_arcum_part_ok()
             if self.ck.is_battle_page(10):
                 if self.oneturn:
-                    self.mouse.click_full()
+                    #  self.mouse.click_full()
+                    self.mouse.click_attack()
                     if elefinder(by, ele, 30, self.chm).is_element_presence():
                         self.stage.refresh()
                 else:
