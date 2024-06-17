@@ -2338,3 +2338,23 @@ libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_na
 [100:136:0617/205751.435380:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
 [100:136:0617/205752.738685:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
 [100:136:0617/205752.738726:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:1140:0617/205910.443626:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+[100:133:0617/205910.693966:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[100:133:0617/210024.433602:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[100:133:0617/210025.910421:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[100:136:0617/210031.894664:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210031.894700:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210153.041263:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210153.041301:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:1341:0617/210355.458730:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+[0617/210431.890015:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/d2af0a5f-e981-4611-9370-5916cfee02db.lock: File exists (17)
+[0617/210431.890058:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0617/210431.890066:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/f16c8cd3-f02c-44fc-953d-54b157bd72b4.lock: File exists (17)
+[0617/210431.890072:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0617/210431.890077:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[100:136:0617/210431.897191:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210431.897258:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210553.043017:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210553.043048:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210831.899164:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:136:0617/210831.899195:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
