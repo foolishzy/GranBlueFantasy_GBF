@@ -1,1 +1,2 @@
 # GranBlueFantasy_GBF
+test
