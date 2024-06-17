@@ -102,6 +102,8 @@ class arcum_select:
        803. zone_kalendae_scintllant_matter
        804. zone_kalendae_bedeviled_plague
        802. zone_liber_xeno_sagittatius_militis
+       901. zone_invidia_fire_3_blushing_groom
+       902. zone_invidia_light_3_deva_of_wisdom
        999. all daily boss
     '''
         flag = False
@@ -111,7 +113,7 @@ class arcum_select:
             except KeyboardInterrupt:
                 index = 0
                 break
-            index_range = [[0, 0], [601, 617], [701, 705], [101, 118], [201, 210], [
+            index_range = [[901, 902], [0, 0], [601, 617], [701, 705], [101, 118], [201, 210], [
                 301, 313], [999, 999], [401, 413], [501, 508], [801, 804]]
             for i in index_range:
                 if index >= i[0] and index <= i[1]:
@@ -294,8 +296,19 @@ class arcum_select:
             arcumgame().zone_liber_boss_wind_garuda_militis().play()
         elif index == 705:
             arcumgame().zone_liber_light_3_simpering_beast().play()
+        elif index == 901:
+            arcumgame().zone_invidia_fire_3_blushing_groom().play()
+        elif index == 902:
+            arcumgame().zone_invidia_light_3_deva_of_wisdom().play()
+
         elif index == 999:
             all_daily_boss().play()
+
+
+class zone_invidia_common(replicard_common):
+    def __init__(self, data):
+        gb_data = util.arcum_zone_invidia_gauge_box_data
+        super().__init__(data, gb_data)
 
 
 class zone_harbinger_common(replicard_common):
@@ -325,6 +338,16 @@ class zone_goliath_common(replicard_common):
 class arcumgame:
     def __init__(self):
         pass
+
+    class zone_invidia_light_3_deva_of_wisdom(zone_invidia_common):
+        def __init__(self):
+            data = util.zone_invidia_light_3_deva_of_wisdom
+            super().__init__(data)
+
+    class zone_invidia_fire_3_blushing_groom(zone_invidia_common):
+        def __init__(self):
+            data = util.zone_invidia_fire_3_blushing_groom
+            super().__init__(data)
 
     class zone_kalendae_bedeviled_plague(zone_kalendae_common):
         def __init__(self):

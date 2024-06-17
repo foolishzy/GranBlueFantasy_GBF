@@ -46,7 +46,8 @@ class Mouse:
         position = util.mouse_position_friend_summon
         dert = util.mouse_position_friend_summon_dert
         selector = util.screen_label_friend_summmon_page
-        self.click_check_by_sel_and_click_by_pos(selector, position, dert, 10)
+        self.click_check_by_sel_and_click_by_pos(
+            selector, position, dert, 10)
 
     def click_arcum_part_ok(self):
         #  selector_data = self.util.screen_label_arcum_part_ok
@@ -117,7 +118,7 @@ class Mouse:
         while times < 3:
             times = times + 1
             if elefinder(by, ele,  waittime, self.chm).is_element_visibility():
-                time.sleep(3 + random.random())
+                time.sleep(1 + random.random())
                 pyautogui.click(x, y)
                 break
             else:

@@ -12,6 +12,7 @@ from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import StaleElementReferenceException
+from selenium.webdriver.common.by import By
 
 
 class lpl:
@@ -135,6 +136,37 @@ class verification_locator:
             self.ctrl_eve.set()
             self.alert.run(msg='验证码窗口', title='请检查')
             self.ctrl_eve.clear()
+
+
+class rapid_end_locator:
+    # 河道还没进入战斗 战斗就已经结束了
+
+    data = {
+        'element':
+            '/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[4]/div/div[2]/div',
+            'by': By.XPATH
+    }
+
+    def __init__(self, mouse: Mouse, chm: webdriver.Chrome, ctrl_event:
+                 Event, eve: Event):
+        self.chm = chm
+        self.eve = eve
+        self.mouse = mouse
+        self.ctrl_event = ctrl_event
+        self.alert = alert()
+
+    def start(self):
+        if self.eve.is_set():
+            flag = False
+            elf = elefinder(
+                self.data['by'], self.data['element'], 2, self.chm)
+            if elf.is_element_visibility():
+                flag = True
+                self.ctrl_eve.set()
+                print("the battle has already ended...")
+                time.sleep(1)
+        else:
+            self.ctrl_event.clear()
 
 
 class request_dialog_locator:

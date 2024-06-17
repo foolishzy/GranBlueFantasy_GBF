@@ -2,6 +2,27 @@ from selenium.webdriver.common.by import By
 
 
 class util:
+    """and you"""
+    event_and_you_girl_in_the_sea_of_tears_impossible = {
+        "url":
+            'https://game.granbluefantasy.jp/#quest/supporter/919721/1/0/10471',
+            "time_limit": 3
+    }
+    event_and_you_sword_saint_in_the_sea_of_tears_impossible = {
+        "url": 'https://game.granbluefantasy.jp/#quest/supporter/919751/1/0/10471',
+        "time_limit": 3
+
+    }
+    event_and_you_orologia_impossible = {
+        "url": 'https://game.granbluefantasy.jp/#quest/supporter/919781/1/0/10471',
+        "time_limit": 3
+
+    }
+    event_samurai_trials_impossible = {
+        'url':
+            "https://game.granbluefantasy.jp/#quest/supporter/919041/1/0/10537",
+            "time_limit": 3
+    }
     event_falseto_in_the_autumn_gray_solo_very_hard = {
         'url': "https://game.granbluefantasy.jp/#quest/supporter/918811/5",
         'time_limit': 2
@@ -15,6 +36,15 @@ class util:
         'url':
             "https://game.granbluefantasy.jp/#quest/supporter/918831/5",
             "time_limit": 2
+    }
+    event_falseto_in_the_autumn_gray_rapid_veryhard = {
+        'url':
+            "https://game.granbluefantasy.jp/#quest/supporter/918851/1",
+            "time_limit": 2
+    }
+    event_falseto_in_the_autumn_gray_rapid_ex = {
+        "url": "https://game.granbluefantasy.jp/#quest/supporter/918861/1",
+        "time_limit": 2
     }
     # foreboding clover
     miscongeniality = {
@@ -215,6 +245,25 @@ class util:
     divine_generals_solo_extreme = {
         'url': "https://game.granbluefantasy.jp/#quest/supporter/913921/5",
         'time_limit': 5
+    }
+    # exo diablo
+
+    exo_diablo_crucible_150 = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/919271/3",
+        "time_limit": 5
+    }
+    exo_diablo_crucible_120 = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/919211/3",
+        "time_limit": 5
+    }
+    exo_diablo_veryhard = {
+
+        'url': 'https://game.granbluefantasy.jp/#quest/supporter/919111/3',
+        'time_limit': 3
+    }
+    exo_diablo_extreme = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/919121/3",
+        'time_limit': 3
     }
 
     # exo corow
@@ -703,6 +752,10 @@ class util:
         'element': 'btn-usual-ok', 'by': By.CLASS_NAME}
     screen_lable_battle_request_backup_dialog_backup = {
         'element': "/html/body/div/div[2]/div/div[3]/div[3]/div[6]/div/div[3]/a", "by": By.XPATH}
+    screen_label_rapid_assit_no_target = {
+        'element': "/html/body/div/div[2]/div/div[3]/div[3]/div[2]/div[3]/div[2]/div[2]/div[2]/div[4]/div[1]/p",
+        "by": By.XPATH
+    }
     # url
     url_home = "https://game.granbluefantasy.jp/#mypage"
     # arcum
@@ -764,6 +817,16 @@ class util:
         'box_enemy_name': ['Mimic', 'Emerald Machina']
 
     }
+    arcum_zone_invidia_gauge_box_data = {
+        'box_ele': 'txt-chest-name',
+        'box_txt': "Splendid Chest",
+        'gauge_ele': 'txt-quest-name',
+        'gauge_name': ['Herald of Light', 'Herald of The Fire'],
+        'box_enemy_ele': 'txt-quest-name',
+        'box_enemy_name': ['Mimic']
+
+    }
+
     arcum_zone_liber_gauge_box_data = {
         'box_ele': 'txt-chest-name',
         'box_txt': "Splendid Chest",
@@ -791,6 +854,18 @@ class util:
         'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/4",
         "time_limit": 3
 
+    }
+    zone_invidia_light_3_deva_of_wisdom = {
+        'url':
+            'https://game.granbluefantasy.jp/#replicard/supporter/6/6/10/815061/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/6",
+        "time_limit": 3
+
+    }
+    zone_invidia_fire_3_blushing_groom = {
+        'url': 'https://game.granbluefantasy.jp/#replicard/supporter/6/6/8/815031/25',
+        'gauge_url': "https://game.granbluefantasy.jp/#replicard/stage/6",
+        "time_limit": 3
     }
     zone_goliath_dark_3_writhing_despair = {
         'url': 'https://game.granbluefantasy.jp/#replicard/supporter/4/4/18/813091/25',
