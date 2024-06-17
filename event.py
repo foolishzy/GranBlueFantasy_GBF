@@ -93,6 +93,7 @@ class event_common(game):
 
 class andyou(event_common):
     """20240617"""
+    "这里每次and you 活动复刻的时候url可能会不一样"
     game_data = util.event_and_you_girl_in_the_sea_of_tears_impossible
 
     def __exit(self):

@@ -2358,3 +2358,50 @@ libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_na
 [100:136:0617/210553.043048:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
 [100:136:0617/210831.899164:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
 [100:136:0617/210831.899195:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:133:0617/210916.618234:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[100:1700:0617/210947.969054:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+[100:133:0617/210952.939433:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[100:133:0617/211046.032532:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+[100:2269:0617/211636.724454:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+[0617/211931.890260:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/d2af0a5f-e981-4611-9370-5916cfee02db.lock: File exists (17)
+[0617/211931.890310:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0617/211931.890316:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/f16c8cd3-f02c-44fc-953d-54b157bd72b4.lock: File exists (17)
+[0617/211931.890320:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0617/211931.890325:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[100:4606:0617/212738.605201:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+[0617/213431.890489:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/d2af0a5f-e981-4611-9370-5916cfee02db.lock: File exists (17)
+[0617/213431.890540:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0617/213431.890550:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/f16c8cd3-f02c-44fc-953d-54b157bd72b4.lock: File exists (17)
+[0617/213431.890556:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0617/213431.890563:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[100:4606:0617/213433.036764:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:100:0617/213433.036875:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[100:4606:0617/213433.036950:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:100:0617/213433.037003:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[100:4606:0617/213433.037061:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:100:0617/213433.037108:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[100:4606:0617/213433.037174:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:100:0617/213433.037217:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[100:4606:0617/213433.037261:ERROR:bus.cc(398)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[100:100:0617/213433.037299:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[100:5982:0617/214138.614336:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+[0617/214931.890763:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/d2af0a5f-e981-4611-9370-5916cfee02db.lock: File exists (17)
+[0617/214931.890818:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0617/214931.890828:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/f16c8cd3-f02c-44fc-953d-54b157bd72b4.lock: File exists (17)
+[0617/214931.890835:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0617/214931.890841:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
+[100:5982:0617/215538.619101:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+D3D12: Removing Device.
+[0617/215716.329752:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0617/215716.353292:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[0617/215716.353321:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+[0617/215716.354899:ERROR:directory_reader_posix.cc(42)] opendir /home/lunar/.config/google-chrome/Crash Reports/attachments/136fde32-9d02-4827-a6f9-c32fae52ea23: No such file or directory (2)
+[100:100:0617/215716.437284:ERROR:gpu_process_host.cc(975)] GPU process exited unexpectedly: exit_code=11
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[6979:6979:0617/215721.730427:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[0617/215816.360150:ERROR:http_transport_libcurl.cc(470)] curl_easy_perform: Timeout was reached (28)
+[0617/215816.365919:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/d2af0a5f-e981-4611-9370-5916cfee02db.lock: File exists (17)
+[0617/215816.365949:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/581e6a3e-6945-4c34-9710-f2c1fa5892a2.lock: File exists (17)
+[0617/215816.365954:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/f16c8cd3-f02c-44fc-953d-54b157bd72b4.lock: File exists (17)
+[0617/215816.365958:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/74411de7-399b-4c08-a293-9369ab2f51a1.lock: File exists (17)
+[0617/215816.365962:ERROR:file_io_posix.cc(152)] open /home/lunar/.config/google-chrome/Crash Reports/pending/47e01db4-4237-46f7-b66d-6bc0bd0b6f70.lock: File exists (17)
