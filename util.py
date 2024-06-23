@@ -338,6 +338,32 @@ class util:
     }
     reserve_page_url = "https://game.granbluefantasy.jp/#present"
     # FIRE UNITE AND FIGHT
+    uf_dark_solo_normal = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/920211/3/0",
+        'time_limit': 2
+    }
+    uf_dark_solo_hard = {
+        'url':
+            "https://game.granbluefantasy.jp/#quest/supporter/920221/3/0",
+            'time_limit': 2
+    }
+    uf_dark_solo_veryhard = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/920231/3/0",
+        'time_limit': 2
+    }
+    uf_dark_rapid_extreme = {
+        'url':
+            "https://game.granbluefantasy.jp/#quest/supporter/920241/1/0",
+            'time_limit': 2
+    }
+    uf_dark_rapid_extremeplus = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/920251/1/0",
+        'time_limit': 2
+    }
+    uf_dark_nightmare = {
+        'url': "https://game.granbluefantasy.jp/#quest/supporter/920261/1/0/10116",
+        'time_limit': 3
+    }
     uf_fire_solo_normal = {
         'url': 'https://game.granbluefantasy.jp/#quest/supporter/914611/3/0',
         'time_limit': 2
@@ -412,7 +438,7 @@ class util:
         'WIND': None,
         'EARTH': None,
         'LIGHT': uf_light_solo_normal,
-        'DARK': None
+        'DARK': uf_dark_solo_normal
     }
     uf_solo_hard = {
 
@@ -421,7 +447,7 @@ class util:
         'WIND': None,
         'EARTH': None,
         'LIGHT': uf_light_solo_hard,
-        'DARK': None
+        'DARK': uf_dark_solo_hard
     }
     uf_solo_veryhard = {
         'FIRE': uf_fire_solo_veryhard,
@@ -429,7 +455,7 @@ class util:
         'WIND': None,
         'EARTH': None,
         'LIGHT': uf_light_solo_veryhard,
-        'DARK': None
+        'DARK': uf_dark_solo_veryhard
     }
     uf_rapid_extreme = {
         'FIRE': uf_fire_rapid_extreme,
@@ -437,7 +463,7 @@ class util:
         'WIND': None,
         'EARTH': None,
         'LIGHT': uf_light_rapid_extreme,
-        'DARK': None
+        'DARK': uf_dark_rapid_extreme
     }
     uf_rapid_extreme_plus = {
         'FIRE': uf_fire_rapid_extreme_plus,
@@ -445,7 +471,7 @@ class util:
         'WIND': None,
         'EARTH': None,
         'LIGHT': uf_light_rapid_extreme_plus,
-        'DARK': None
+        'DARK': uf_dark_rapid_extremeplus
     }
     uf_rapid_nightmare = {
         'FIRE': uf_fire_rapid_nightmare,
@@ -453,7 +479,7 @@ class util:
         'WIND': None,
         'EARTH': None,
         'LIGHT': uf_light_rapid_nightmare,
-        'DARK': None
+        'DARK': uf_dark_nightmare
     }
     uf_rapid_nightmare_95 = {
         'FIRE': uf_fire_rapid_nightmare_95,
